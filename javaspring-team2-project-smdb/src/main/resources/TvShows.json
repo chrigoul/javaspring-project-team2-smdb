@@ -18,7 +18,7 @@
           "lastName": "Corbero",
           "birthday": "11-8-1989",
           "birthPlace": "Barcelona, Spain",
-          "professions": ["Actor"],
+          "professions": ["ACTOR"],
           "role": "Tokyo"
         },
         {
@@ -26,7 +26,7 @@
           "lastName": "Morte",
           "birthday": "23-2-1975",
           "birthPlace": "Algeciras, Spain",
-          "professions": ["Actor"],
+          "professions": ["ACTOR"],
           "role": "El Professor"
         },
         {
@@ -34,7 +34,7 @@
           "lastName": "Ituno",
           "birthday": "1975",
           "birthPlace": "Basauri, Spain",
-          "professions": ["Actor"],
+          "professions": ["ACTOR"],
           "role": "Raquel Murillo"
         }
       ],
@@ -44,16 +44,126 @@
           "lastName": "Pina",
           "birthday": "Unknown",
           "birthPlace": "Unknown",
-          "professions": ["Writer", "Producer", "Director"]
+          "professions": ["WRITER", "PRODUCER", "DIRECTOR"]
         },
         {
           "firstName":"Jesus",
           "lastName": "Colmenar",
           "birthday": "Unknown",
           "birthPlace": "Unknown",
-          "professions": ["Producer", "Director"]
+          "professions": ["PRODUCER", "DIRECTOR"]
         }
       ]
+    },
+    {
+      "primaryTitle": "Game of Thrones",
+      "genre": ["ADVENTURE", "ACTION", "DRAMA","FANTASY"],
+      "durationInMinutes": "57",
+      "releaseYear": "2011",
+      "endYear":"2019",
+      "numberOfSeasons": "8",
+      "numberOfEpisodes": "73",
+      "smdbRating": "9.2",
+      "storyLine": "In the mythical continent of Westeros, several powerful families fight for control of the Seven Kingdoms. As conflict erupts in the kingdoms of men, an ancient enemy rises once again to threaten them all. Meanwhile, the last heirs of a recently usurped dynasty plot to take back their homeland from across the Narrow Sea",
+      "countriesOfOrigin": ["UNITED_STATES", "UNITED_KINGDOM"],
+      "languages": ["ENGLISH", "VALYRIAN", "DOTHRAKI"],
+      "cast": [
+        {
+          "firstName":"Peter",
+          "lastName": "Dinklage",
+          "birthday": "11-6-1969",
+          "birthPlace": "Morristown, New Jersey USA",
+          "professions": ["ACTOR","PRODUCER"],
+          "role": "Tyrion Lannister"
+        },
+        {
+          "firstName":"Lena",
+          "lastName": "Hedey",
+          "birthday": "3-10-1973",
+          "birthPlace": "Hamilton, Bermuda",
+          "professions": ["ACTOR","PRODUCER","DIRECTOR"],
+          "role": "Cercei Lannister"
+        },
+        {
+          "firstName":"Emilia",
+          "lastName": "Clarke",
+          "birthday": "23-10-1986",
+          "birthPlace": "London, UK",
+          "professions": ["ACTOR", "PRODUCER"],
+          "role": "Daenerys Targaryen"
+        },
+        {
+          "firstName":"Kit",
+          "lastName": "Harrington",
+          "birthday": "26-12-1986",
+          "birthPlace": "London, UK",
+          "professions": ["ACTOR","WRITER","PRODUCER"],
+          "role": "Jon Snow"
+        },
+        {
+          "firstName":"Sophie",
+          "lastName": "Turner",
+          "birthday": "21-2-1996",
+          "birthPlace": "Northhampton, UK",
+          "professions": ["ACTOR"],
+          "role": "Sansa Stark"
+        },
+        {
+          "firstName":"Maisie",
+          "lastName": "Williams",
+          "birthday": "15-4-1997",
+          "birthPlace": "Bristol, UK",
+          "professions": ["ACTOR","PRODUCER"],
+          "role": "Arya Stark"
+        },
+        {
+          "firstName":"Nicolaj",
+          "lastName": "Coster-Waldau",
+          "birthday": "27-7-1970",
+          "birthPlace": "Rudkøbing, Denmark",
+          "professions": ["ACTOR","WRITER","PRODUCER"],
+          "role": "Jaime Lannister"
+        },
+        {
+          "firstName":"Iain",
+          "lastName": "Glain",
+          "birthday": "24-6-1961",
+          "birthPlace": "Edinburgh, Scotland, UK",
+          "professions": ["ACTOR","PRODUCER"],
+          "role": "Jorah Mormont"
+        },
+        {
+          "firstName":"John",
+          "lastName": "Bradley",
+          "birthday": "15-9-1988",
+          "birthPlace": "England, UK",
+          "professions": ["ACTOR"],
+          "role": "Samwell Tarly"
+        }
+      ],
+        "producers": [
+          {
+            "firstName":"David",
+            "lastName": "Beionff",
+            "birthday": "29-9-1970",
+            "birthPlace": "New York, USA",
+            "professions": ["WRITER", "PRODUCER", "DIRECTOR"]
+          },
+          {
+            "firstName":"George R R",
+            "lastName": "Martin",
+            "birthday": "20-9-1948",
+            "birthPlace": "New Jersey, USA",
+            "professions": ["PRODUCER", "WRITER"]
+          },
+          {
+            "firstName":"D.B.",
+            "lastName": "Weiss",
+            "birthday": "23-4-1971",
+            "birthPlace": "Chicago, USA",
+            "professions": ["WRITER", "PRODUCER", "DIRECTOR"]
+          }
+        ]
     }
   ]
 }

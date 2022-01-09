@@ -2,6 +2,7 @@ package com.javaspring.team2.project.smdb.bootstrap;
 
 import com.javaspring.team2.project.smdb.base.AbstractLogComponent;
 import com.javaspring.team2.project.smdb.domain.*;
+import com.javaspring.team2.project.smdb.extraMethods.InsertMethods;
 import com.javaspring.team2.project.smdb.service.PersonService;
 import com.javaspring.team2.project.smdb.service.TvShowService;
 import lombok.RequiredArgsConstructor;
@@ -26,6 +27,7 @@ public class TvShowCreatorRunnerFile extends AbstractLogComponent implements Com
 
     private final PersonService personService;
     private final TvShowService tvShowService;
+    private final InsertMethods im;
 
     @Override
     public void run(String... ars) throws Exception {
@@ -34,49 +36,16 @@ public class TvShowCreatorRunnerFile extends AbstractLogComponent implements Com
         JSONObject file = (JSONObject) parser.parse(new FileReader("javaspring-team2-project-smdb/src/main/resources/TvShows.json"));
         JSONArray tvShows = (JSONArray) file.get("tvShow");
         Iterator<JSONObject> showIterator = tvShows.iterator();
-        JSONObject dummyIterrator;
-        while (showIterator.hasNext()) {
-            dummyIterrator = showIterator.next();
+        JSONObject dummyIterator;
 
+        while (showIterator.hasNext()) {
+            dummyIterator = showIterator.next();
 
             //TvShow
             //!!! To do --> Before creating object check if tvShow exists in database
-            TvShow tvShow = new TvShow();
-            tvShow.setPrimaryTitle((String) dummyIterrator.get("primaryTitle"));
-
-            //Adding Genres from file
-/*            Set<Genre> genres = new HashSet<>();
-            JSONArray genresArray = (JSONArray) dummyIterrator.get("genre");
-            for (int i = 0; i < genresArray.size(); i++) {
-                genres.add((Genre)genresArray.get(i));
-            }
-
-            tvShow.setGenres(genres);*/
-            tvShow.setDurationInMinutes(Integer.parseInt((String) dummyIterrator.get("durationInMinutes")));
-            tvShow.setReleaseYear(Integer.parseInt((String) dummyIterrator.get("releaseYear")));
-            tvShow.setEndYear(Integer.parseInt((String) dummyIterrator.get("endYear")));
-            tvShow.setNumberOfSeasons(Integer.parseInt((String) dummyIterrator.get("numberOfSeasons")));
-            tvShow.setNumberOfEpisodes(Integer.parseInt((String) dummyIterrator.get("numberOfEpisodes")));
-            tvShow.setSmdbRating(Double.parseDouble((String) dummyIterrator.get("smdbRating")));
-            tvShow.setStoryLine((String) dummyIterrator.get("storyLine"));
-
-            Set<String> languages = new HashSet<>();
-            JSONArray langsArray = (JSONArray) dummyIterrator.get("languages");
-            for (int i = 0; i < langsArray.size(); i++) {
-                languages.add((String) langsArray.get(i));
-            }
-            tvShow.setLanguages(languages);
-
-            Set<String> countries = new HashSet<>();
-            JSONArray countriesArray = (JSONArray) dummyIterrator.get("countriesOfOrigin");
-            for (int i = 0; i < countriesArray.size(); i++) {
-                countries.add((String) countriesArray.get(i));
-            }
-            tvShow.setCountriesOfOrigin(countries);
-
-            tvShowService.create(tvShow);
+            TvShow tvShow = tvShowService.create(im.addTvShow(dummyIterator));
             //Cast and Crew
-            JSONArray castArray = (JSONArray) dummyIterrator.get("cast");
+            JSONArray castArray = (JSONArray) dummyIterator.get("cast");
             Iterator<JSONObject> castIterator = castArray.iterator();
             JSONObject dummy;
             //Prepare for adding actors
@@ -85,13 +54,8 @@ public class TvShowCreatorRunnerFile extends AbstractLogComponent implements Com
                 actorSet = new HashSet<>();
             while (castIterator.hasNext()) {
                 dummy = castIterator.next();
-
+                Person person= im.addPerson(dummy);
                 //!!! To do --> Before creating object check if person exists in database
-                Person person = new Person();
-                person.setFirstName((String) dummy.get("firstName"));
-                person.setLastName((String) dummy.get("lastName"));
-                person.setBirthDay((String) dummy.get("birthday"));
-                person.setBirthPlace((String) dummy.get("birthPlace"));
                 personService.create(person);
 
                 String role = (String) dummy.get("role");
@@ -103,28 +67,23 @@ public class TvShowCreatorRunnerFile extends AbstractLogComponent implements Com
             tvShowService.update(tvShow);
             logger.info("Added {} actors from Show: {}", actorSet.size(), tvShow.getPrimaryTitle());
 
-            JSONArray productionArray = (JSONArray) dummyIterrator.get("producers");
+            JSONArray productionArray = (JSONArray) dummyIterator.get("producers");
             Iterator<JSONObject> productionIterator = productionArray.iterator();
             JSONObject dummyProd;
-
             Set<Person> newProducers = tvShow.getProducers();
             if(newProducers==null)
                 newProducers=new HashSet<>();
             while (productionIterator.hasNext()) {
                 dummyProd=productionIterator.next();
-                Person person = new Person();
-                person.setFirstName((String) dummyProd.get("firstName"));
-                person.setLastName((String) dummyProd.get("lastName"));
-                person.setBirthDay((String) dummyProd.get("birthday"));
-                person.setBirthPlace((String) dummyProd.get("birthPlace"));
+
+                Person person = im.addPerson(dummyProd);
                 personService.create(person);
-
                 newProducers.add(person);
-
-
             }
             tvShow.setProducers(newProducers);
             tvShowService.update(tvShow);
         }
     }
+
+
 }
