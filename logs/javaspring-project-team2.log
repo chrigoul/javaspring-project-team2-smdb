@@ -1045,3 +1045,466 @@ insert into CREATORS (MOVIE_ID, PERSON_ID) values (?, ?) [23502-200]
 2022-01-09 14:26:43.313  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Created 6 people.
 2022-01-09 14:26:43.433  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Movies created: 3.
 2022-01-09 14:26:43.458  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : TvShows created: 1.
+2022-01-09 17:28:44.733  INFO DESKTOP-NRAM18P - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 17:28:44.797  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on DESKTOP-NRAM18P with PID 9696 (C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by azeli in C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-09 17:28:44.801  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : No active profile set, falling back to default profiles: default
+2022-01-09 17:28:46.160  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 17:28:46.169  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 17:28:46.170  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 17:28:46.170  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 17:28:46.283  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 17:28:46.284  INFO DESKTOP-NRAM18P - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1442 ms
+2022-01-09 17:28:46.591  INFO DESKTOP-NRAM18P - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 17:28:46.714  INFO DESKTOP-NRAM18P - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 17:28:46.794  INFO DESKTOP-NRAM18P - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 17:28:46.888 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 17:28:46.949 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 17:28:46.954  INFO DESKTOP-NRAM18P - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 17:28:46.982 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 17:28:46.990 DEBUG DESKTOP-NRAM18P - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 17:28:47.083  INFO DESKTOP-NRAM18P - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 17:28:47.137 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 17:28:47.153  WARN DESKTOP-NRAM18P - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 17:28:47.209  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 17:28:47.225  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 17:28:47.258  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 17:28:47.263  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 17:28:47.265  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 17:28:47.500  INFO DESKTOP-NRAM18P - [         task-1] [o.h.t.PojoInstantiator             ] : HHH000182: No default (no-argument) constructor for class: com.javaspring.team2.project.smdb.domain.ActorKey (class must be instantiated by Interceptor)
+2022-01-09 17:28:47.925  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@64d5280a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 17:28:47.945  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@114852e9] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 17:28:47.986  INFO DESKTOP-NRAM18P - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 17:28:48.339  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 4.03 seconds (JVM running for 5.877)
+2022-01-09 17:30:38.226  INFO DESKTOP-NRAM18P - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 17:30:38.227  INFO DESKTOP-NRAM18P - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 17:30:40.294  INFO DESKTOP-NRAM18P - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1095d29f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 17:30:52.241  INFO DESKTOP-NRAM18P - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 17:30:52.293  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on DESKTOP-NRAM18P with PID 11856 (C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by azeli in C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-09 17:30:52.296  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: anna
+2022-01-09 17:30:53.428  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 17:30:53.435  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 17:30:53.436  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 17:30:53.436  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 17:30:53.548  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 17:30:53.548  INFO DESKTOP-NRAM18P - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1215 ms
+2022-01-09 17:30:53.814  INFO DESKTOP-NRAM18P - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 17:30:53.930  INFO DESKTOP-NRAM18P - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 17:30:53.973  INFO DESKTOP-NRAM18P - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 17:30:54.087 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 17:30:54.105  INFO DESKTOP-NRAM18P - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 17:30:54.138 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 17:30:54.178 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 17:30:54.187 DEBUG DESKTOP-NRAM18P - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 17:30:54.218  INFO DESKTOP-NRAM18P - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 17:30:54.320 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 17:30:54.335  WARN DESKTOP-NRAM18P - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 17:30:54.374  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 17:30:54.379  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 17:30:54.381  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 17:30:54.384  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 17:30:54.400  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 17:30:54.580  INFO DESKTOP-NRAM18P - [         task-1] [o.h.t.PojoInstantiator             ] : HHH000182: No default (no-argument) constructor for class: com.javaspring.team2.project.smdb.domain.ActorKey (class must be instantiated by Interceptor)
+2022-01-09 17:30:54.935  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@ab4fb3e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 17:30:54.941  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3f48c713] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 17:30:54.990  INFO DESKTOP-NRAM18P - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 17:30:55.302  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 3.438 seconds (JVM running for 4.829)
+2022-01-09 17:30:55.305  INFO DESKTOP-NRAM18P - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-09 17:30:55.326 ERROR DESKTOP-NRAM18P - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: java.lang.NullPointerException
+	at com.javaspring.team2.project.smdb.bootstrap.TvShowCreatorRunner.run(TvShowCreatorRunner.java:30)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767)
+	... 5 more
+2022-01-09 17:30:55.378  INFO DESKTOP-NRAM18P - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 17:30:55.378  INFO DESKTOP-NRAM18P - [           main] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 17:30:55.379  INFO DESKTOP-NRAM18P - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@67e11bda] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 17:32:39.436  INFO DESKTOP-NRAM18P - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 17:32:39.463  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on DESKTOP-NRAM18P with PID 11068 (C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by azeli in C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-09 17:32:39.467  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: anna
+2022-01-09 17:32:40.658  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 17:32:40.665  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 17:32:40.665  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 17:32:40.666  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 17:32:40.799  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 17:32:40.799  INFO DESKTOP-NRAM18P - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1294 ms
+2022-01-09 17:32:41.037  INFO DESKTOP-NRAM18P - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 17:32:41.152  INFO DESKTOP-NRAM18P - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 17:32:41.204  INFO DESKTOP-NRAM18P - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 17:32:41.321 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 17:32:41.342  INFO DESKTOP-NRAM18P - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 17:32:41.374 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 17:32:41.404 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 17:32:41.412 DEBUG DESKTOP-NRAM18P - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 17:32:41.440  INFO DESKTOP-NRAM18P - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 17:32:41.540 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 17:32:41.555  WARN DESKTOP-NRAM18P - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 17:32:41.601  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 17:32:41.603  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 17:32:41.606  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 17:32:41.608  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 17:32:41.622  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 17:32:41.808  INFO DESKTOP-NRAM18P - [         task-1] [o.h.t.PojoInstantiator             ] : HHH000182: No default (no-argument) constructor for class: com.javaspring.team2.project.smdb.domain.ActorKey (class must be instantiated by Interceptor)
+2022-01-09 17:32:42.156  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@78243644] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 17:32:42.162  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@793a6da4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 17:32:42.215  INFO DESKTOP-NRAM18P - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 17:32:42.567  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 3.644 seconds (JVM running for 6.661)
+2022-01-09 17:32:42.571  INFO DESKTOP-NRAM18P - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-09 17:32:42.591 ERROR DESKTOP-NRAM18P - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: java.lang.NullPointerException
+	at com.javaspring.team2.project.smdb.bootstrap.TvShowCreatorRunner.run(TvShowCreatorRunner.java:30)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767)
+	... 5 more
+2022-01-09 17:32:42.649  INFO DESKTOP-NRAM18P - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 17:32:42.649  INFO DESKTOP-NRAM18P - [           main] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 17:32:42.650  INFO DESKTOP-NRAM18P - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3129299f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 17:33:13.805  INFO DESKTOP-NRAM18P - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 17:33:13.858  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on DESKTOP-NRAM18P with PID 8204 (C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by azeli in C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-09 17:33:13.861  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: anna
+2022-01-09 17:33:14.978  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 17:33:14.985  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 17:33:14.986  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 17:33:14.986  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 17:33:15.097  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 17:33:15.097  INFO DESKTOP-NRAM18P - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1195 ms
+2022-01-09 17:33:15.345  INFO DESKTOP-NRAM18P - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 17:33:15.452  INFO DESKTOP-NRAM18P - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 17:33:15.494  INFO DESKTOP-NRAM18P - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 17:33:15.593 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 17:33:15.618  INFO DESKTOP-NRAM18P - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 17:33:15.657 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 17:33:15.702 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 17:33:15.711 DEBUG DESKTOP-NRAM18P - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 17:33:15.750  INFO DESKTOP-NRAM18P - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 17:33:15.840 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 17:33:15.856  WARN DESKTOP-NRAM18P - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 17:33:15.903  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 17:33:15.906  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 17:33:15.911  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 17:33:15.913  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 17:33:15.919  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 17:33:16.118  INFO DESKTOP-NRAM18P - [         task-1] [o.h.t.PojoInstantiator             ] : HHH000182: No default (no-argument) constructor for class: com.javaspring.team2.project.smdb.domain.ActorKey (class must be instantiated by Interceptor)
+2022-01-09 17:33:16.459  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1853f893] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 17:33:16.466  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@36a13e02] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 17:33:16.516  INFO DESKTOP-NRAM18P - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 17:33:16.825  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 3.41 seconds (JVM running for 4.691)
+2022-01-09 17:33:16.826  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.b.TvShowCreatorRunner    ] : ========================================================
+2022-01-09 17:33:16.828  INFO DESKTOP-NRAM18P - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-09 17:33:16.849 ERROR DESKTOP-NRAM18P - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: java.lang.NullPointerException
+	at com.javaspring.team2.project.smdb.bootstrap.TvShowCreatorRunner.run(TvShowCreatorRunner.java:33)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767)
+	... 5 more
+2022-01-09 17:33:16.901  INFO DESKTOP-NRAM18P - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 17:33:16.901  INFO DESKTOP-NRAM18P - [           main] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 17:33:16.902  INFO DESKTOP-NRAM18P - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4491eaeb] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 17:35:21.812  INFO DESKTOP-NRAM18P - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 17:35:21.849  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on DESKTOP-NRAM18P with PID 2436 (C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by azeli in C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-09 17:35:21.855  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: anna
+2022-01-09 17:35:22.986  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 17:35:22.995  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 17:35:22.996  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 17:35:22.996  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 17:35:23.111  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 17:35:23.111  INFO DESKTOP-NRAM18P - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1220 ms
+2022-01-09 17:35:23.335  INFO DESKTOP-NRAM18P - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 17:35:23.434  INFO DESKTOP-NRAM18P - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 17:35:23.479  INFO DESKTOP-NRAM18P - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 17:35:23.578 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 17:35:23.599  INFO DESKTOP-NRAM18P - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 17:35:23.631 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 17:35:23.668 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 17:35:23.676 DEBUG DESKTOP-NRAM18P - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 17:35:23.704  INFO DESKTOP-NRAM18P - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 17:35:23.795 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 17:35:23.810  WARN DESKTOP-NRAM18P - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 17:35:23.857  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 17:35:23.858  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 17:35:23.863  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 17:35:23.866  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 17:35:23.875  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 17:35:24.063  INFO DESKTOP-NRAM18P - [         task-1] [o.h.t.PojoInstantiator             ] : HHH000182: No default (no-argument) constructor for class: com.javaspring.team2.project.smdb.domain.ActorKey (class must be instantiated by Interceptor)
+2022-01-09 17:35:24.439  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@77672a2a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 17:35:24.445  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@48a092a2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 17:35:24.502  INFO DESKTOP-NRAM18P - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 17:35:24.794  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 3.4 seconds (JVM running for 4.855)
+2022-01-09 17:35:24.913  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.b.TvShowCreatorRunner    ] : Created 8 people.
+2022-01-09 17:35:24.968  INFO DESKTOP-NRAM18P - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-09 17:35:24.990 ERROR DESKTOP-NRAM18P - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: org.springframework.orm.jpa.JpaSystemException: No default constructor for entity:  : com.javaspring.team2.project.smdb.domain.ActorKey; nested exception is org.hibernate.InstantiationException: No default constructor for entity:  : com.javaspring.team2.project.smdb.domain.ActorKey
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:331)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy147.save(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy81.save(Unknown Source)
+	at com.javaspring.team2.project.smdb.service.BaseServiceImpl.update(BaseServiceImpl.java:34)
+	at com.javaspring.team2.project.smdb.service.BaseServiceImpl.update(BaseServiceImpl.java:11)
+	at com.javaspring.team2.project.smdb.bootstrap.TvShowCreatorRunner.run(TvShowCreatorRunner.java:70)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767)
+	... 5 more
+Caused by: org.hibernate.InstantiationException: No default constructor for entity:  : com.javaspring.team2.project.smdb.domain.ActorKey
+	at org.hibernate.tuple.PojoInstantiator.instantiate(PojoInstantiator.java:85)
+	at org.hibernate.tuple.component.AbstractComponentTuplizer.instantiate(AbstractComponentTuplizer.java:84)
+	at org.hibernate.type.ComponentType.instantiate(ComponentType.java:587)
+	at org.hibernate.type.ComponentType.deepCopy(ComponentType.java:507)
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsDetached(DefaultMergeEventListener.java:305)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:172)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:118)
+	at org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:867)
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:840)
+	at org.hibernate.engine.spi.CascadingActions$6.cascade(CascadingActions.java:261)
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:510)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:434)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:220)
+	at org.hibernate.engine.internal.Cascade.cascadeCollectionElements(Cascade.java:543)
+	at org.hibernate.engine.internal.Cascade.cascadeCollection(Cascade.java:474)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:437)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:220)
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:153)
+	at org.hibernate.event.internal.DefaultMergeEventListener.cascadeOnMerge(DefaultMergeEventListener.java:518)
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsDetached(DefaultMergeEventListener.java:346)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:172)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:70)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:847)
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:834)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311)
+	at com.sun.proxy.$Proxy132.merge(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:627)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:638)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 23 more
+2022-01-09 17:35:25.048  INFO DESKTOP-NRAM18P - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 17:35:25.048  INFO DESKTOP-NRAM18P - [           main] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 17:35:25.049  INFO DESKTOP-NRAM18P - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2b1d1a5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 17:36:25.711  INFO DESKTOP-NRAM18P - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 17:36:25.750  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on DESKTOP-NRAM18P with PID 1148 (C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by azeli in C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-09 17:36:25.753  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: anna
+2022-01-09 17:36:26.881  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 17:36:26.896  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 17:36:26.896  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 17:36:26.897  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 17:36:27.004  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 17:36:27.004  INFO DESKTOP-NRAM18P - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1215 ms
+2022-01-09 17:36:27.237  INFO DESKTOP-NRAM18P - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 17:36:27.335  INFO DESKTOP-NRAM18P - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 17:36:27.380  INFO DESKTOP-NRAM18P - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 17:36:27.483 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 17:36:27.503  INFO DESKTOP-NRAM18P - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 17:36:27.535 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 17:36:27.565 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 17:36:27.580 DEBUG DESKTOP-NRAM18P - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 17:36:27.609  INFO DESKTOP-NRAM18P - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 17:36:27.701 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 17:36:27.716  WARN DESKTOP-NRAM18P - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 17:36:27.763  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 17:36:27.765  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 17:36:27.769  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 17:36:27.770  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 17:36:27.782  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 17:36:27.965  INFO DESKTOP-NRAM18P - [         task-1] [o.h.t.PojoInstantiator             ] : HHH000182: No default (no-argument) constructor for class: com.javaspring.team2.project.smdb.domain.ActorKey (class must be instantiated by Interceptor)
+2022-01-09 17:36:28.335  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@34d5b76f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 17:36:28.341  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4cc1b124] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 17:36:28.393  INFO DESKTOP-NRAM18P - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 17:36:28.692  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 3.398 seconds (JVM running for 4.752)
+2022-01-09 17:36:28.826  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.b.TvShowCreatorRunner    ] : Created 8 people.
+2022-01-09 17:36:28.907  INFO DESKTOP-NRAM18P - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-09 17:36:28.939 ERROR DESKTOP-NRAM18P - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: org.springframework.orm.jpa.JpaSystemException: No default constructor for entity:  : com.javaspring.team2.project.smdb.domain.ActorKey; nested exception is org.hibernate.InstantiationException: No default constructor for entity:  : com.javaspring.team2.project.smdb.domain.ActorKey
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:331)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy145.save(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy81.save(Unknown Source)
+	at com.javaspring.team2.project.smdb.service.BaseServiceImpl.update(BaseServiceImpl.java:34)
+	at com.javaspring.team2.project.smdb.service.BaseServiceImpl.update(BaseServiceImpl.java:11)
+	at com.javaspring.team2.project.smdb.bootstrap.TvShowCreatorRunner.run(TvShowCreatorRunner.java:70)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767)
+	... 5 more
+Caused by: org.hibernate.InstantiationException: No default constructor for entity:  : com.javaspring.team2.project.smdb.domain.ActorKey
+	at org.hibernate.tuple.PojoInstantiator.instantiate(PojoInstantiator.java:85)
+	at org.hibernate.tuple.component.AbstractComponentTuplizer.instantiate(AbstractComponentTuplizer.java:84)
+	at org.hibernate.type.ComponentType.instantiate(ComponentType.java:587)
+	at org.hibernate.type.ComponentType.deepCopy(ComponentType.java:507)
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsDetached(DefaultMergeEventListener.java:305)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:172)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:118)
+	at org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:867)
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:840)
+	at org.hibernate.engine.spi.CascadingActions$6.cascade(CascadingActions.java:261)
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:510)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:434)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:220)
+	at org.hibernate.engine.internal.Cascade.cascadeCollectionElements(Cascade.java:543)
+	at org.hibernate.engine.internal.Cascade.cascadeCollection(Cascade.java:474)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:437)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:220)
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:153)
+	at org.hibernate.event.internal.DefaultMergeEventListener.cascadeOnMerge(DefaultMergeEventListener.java:518)
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsDetached(DefaultMergeEventListener.java:346)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:172)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:70)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:847)
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:834)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311)
+	at com.sun.proxy.$Proxy132.merge(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:627)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:638)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 23 more
+2022-01-09 17:36:28.999  INFO DESKTOP-NRAM18P - [           main] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 17:36:28.999  INFO DESKTOP-NRAM18P - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 17:36:29.001  INFO DESKTOP-NRAM18P - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1b8ee69d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 17:37:14.239  INFO DESKTOP-NRAM18P - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 17:37:14.275  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on DESKTOP-NRAM18P with PID 2096 (C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by azeli in C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-09 17:37:14.279  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: anna
+2022-01-09 17:37:15.912  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 17:37:15.920  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 17:37:15.921  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 17:37:15.921  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 17:37:16.072  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 17:37:16.073  INFO DESKTOP-NRAM18P - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1750 ms
+2022-01-09 17:37:16.360  INFO DESKTOP-NRAM18P - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 17:37:16.469  INFO DESKTOP-NRAM18P - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 17:37:16.514  INFO DESKTOP-NRAM18P - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 17:37:16.632 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 17:37:16.648  INFO DESKTOP-NRAM18P - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 17:37:16.690 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 17:37:16.723 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 17:37:16.732 DEBUG DESKTOP-NRAM18P - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 17:37:16.755  INFO DESKTOP-NRAM18P - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 17:37:16.868 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 17:37:16.894  WARN DESKTOP-NRAM18P - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 17:37:16.948  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 17:37:16.955  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 17:37:16.956  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 17:37:16.956  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 17:37:16.972  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 17:37:18.109  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@69cad2e4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 17:37:18.117  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7e942351] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 17:37:18.369  INFO DESKTOP-NRAM18P - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 17:37:19.305  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 5.595 seconds (JVM running for 7.31)
+2022-01-09 17:37:19.442  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.b.TvShowCreatorRunner    ] : Created 8 people.
+2022-01-09 17:37:35.310  INFO DESKTOP-NRAM18P - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 17:37:35.310  INFO DESKTOP-NRAM18P - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 17:37:35.311  INFO DESKTOP-NRAM18P - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@50ab40dc] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
