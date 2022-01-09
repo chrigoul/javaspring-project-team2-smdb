@@ -1,10 +1,11 @@
 package com.javaspring.team2.project.smdb.domain;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -26,10 +27,10 @@ public class TvShow extends Title{
         private Integer numberOfEpisodesPerSeason;
 
         @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.LAZY)
-        @JoinTable(name = "CREATORS",
-                joinColumns = @JoinColumn(name = "TITLE_ID"),
+        @JoinTable(name = "PRODUCERS",
+                joinColumns = @JoinColumn(name = "TV_SHOW_ID"),
                 inverseJoinColumns = @JoinColumn(name = "PERSON_ID"))
-        private Set<Person> creators = new HashSet<>();
+        private Set<Person> producers = new HashSet<>();
 
         @Column
         private Integer endYear;

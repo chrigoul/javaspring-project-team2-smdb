@@ -282,3 +282,766 @@
 2022-01-09 13:25:49.125  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-01-09 13:25:49.126  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
 2022-01-09 13:25:49.220  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2ffbc867] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 13:41:14.837  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 13:41:14.947  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 22100 (C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2)
+2022-01-09 13:41:14.957  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : No active profile set, falling back to default profiles: default
+2022-01-09 13:41:18.124  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 13:41:18.145  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 13:41:18.146  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 13:41:18.147  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 13:41:18.367  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 13:41:18.368  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3305 ms
+2022-01-09 13:41:18.937  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 13:41:19.227  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 13:41:19.386  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 13:41:19.603 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 13:41:19.758 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 13:41:19.802  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 13:41:19.831 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 13:41:19.854 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 13:41:20.137  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 13:41:20.216 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 13:41:20.259  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 13:41:20.373  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 13:41:20.416  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 13:41:20.560  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 13:41:20.570  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 13:41:20.574  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 13:41:22.218  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@55f2c914] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 13:41:22.236  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@12826d8d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 13:41:22.370  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 13:41:23.121  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 9.359 seconds (JVM running for 13.786)
+2022-01-09 13:46:55.051  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 13:46:55.052  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 13:46:55.157  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@69dfe661] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 13:47:12.079  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 13:47:12.172  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 12588 (C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2)
+2022-01-09 13:47:12.183  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : No active profile set, falling back to default profiles: default
+2022-01-09 13:47:15.205  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 13:47:15.226  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 13:47:15.228  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 13:47:15.228  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 13:47:15.487  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 13:47:15.488  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3195 ms
+2022-01-09 13:47:16.037  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 13:47:16.332  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 13:47:16.535  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 13:47:16.837 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 13:47:16.980 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 13:47:17.003  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 13:47:17.053 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 13:47:17.074 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 13:47:17.322  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 13:47:17.413 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 13:47:17.458  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 13:47:17.582  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 13:47:17.629  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 13:47:17.791  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 13:47:17.805  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 13:47:17.811  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 13:47:19.389  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@52a1d730] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 13:47:19.407  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@647555a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 13:47:19.548  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 13:47:20.388  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 9.359 seconds (JVM running for 13.397)
+2022-01-09 13:47:58.167  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 13:47:58.167  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 13:47:58.318  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2e4560f2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 13:48:09.267  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 13:48:09.355  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 7976 (C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2)
+2022-01-09 13:48:09.364  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: content-creator
+2022-01-09 13:48:12.168  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 13:48:12.186  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 13:48:12.188  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 13:48:12.188  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 13:48:12.412  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 13:48:12.413  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2949 ms
+2022-01-09 13:48:13.005  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 13:48:13.409  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 13:48:13.579  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 13:48:13.918 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 13:48:14.022  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 13:48:14.232 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 13:48:14.337 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 13:48:14.366 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 13:48:14.509  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 13:48:14.762 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 13:48:14.816  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 13:48:14.973  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 13:48:15.008  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 13:48:15.022  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 13:48:15.026  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 13:48:15.028  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 13:48:16.450  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2a3b91df] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 13:48:16.470  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4b0cf372] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 13:48:16.627  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 13:48:17.386  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 9.079 seconds (JVM running for 13.009)
+2022-01-09 13:48:17.619  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Created 6 people.
+2022-01-09 13:48:17.720  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Titles created: 3.
+2022-01-09 13:55:56.559  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 13:55:56.560  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 13:55:56.658  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@15f46f6f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 13:56:14.212  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 13:56:14.301  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 4188 (C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2)
+2022-01-09 13:56:14.310  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: content-creator
+2022-01-09 13:56:17.327  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 13:56:17.347  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 13:56:17.348  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 13:56:17.349  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 13:56:17.594  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 13:56:17.594  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3184 ms
+2022-01-09 13:56:18.074  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 13:56:18.341  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 13:56:18.483  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 13:56:18.704 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 13:56:18.828  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 13:56:18.857 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 13:56:18.938 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 13:56:18.958 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 13:56:19.111  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 13:56:19.309 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 13:56:19.350  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 13:56:19.466  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 13:56:19.506  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 13:56:19.550  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 13:56:19.564  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 13:56:19.573  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 13:56:20.992  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2cebe304] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 13:56:21.006  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@629c47fc] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 13:56:21.130  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 13:56:21.910  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 8.728 seconds (JVM running for 13.099)
+2022-01-09 13:56:22.125  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Created 6 people.
+2022-01-09 13:56:22.220  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Movies created: 3.
+2022-01-09 13:57:40.143  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 13:57:40.143  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 13:57:40.225  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@17afb92d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 13:57:55.024  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 13:57:55.113  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 13832 (C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2)
+2022-01-09 13:57:55.123  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: content-creator
+2022-01-09 13:57:58.228  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 13:57:58.246  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 13:57:58.247  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 13:57:58.248  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 13:57:58.498  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 13:57:58.499  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3286 ms
+2022-01-09 13:57:58.987  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 13:57:59.267  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 13:57:59.405  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 13:57:59.612 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 13:57:59.751  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 13:57:59.754 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 13:57:59.829 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 13:57:59.850 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 13:58:00.048  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 13:58:00.221 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 13:58:00.268  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 13:58:00.374  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 13:58:00.418  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 13:58:00.493  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 13:58:00.504  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 13:58:00.508  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 13:58:01.945  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@545d99] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 13:58:01.964  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7e44a816] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 13:58:02.089  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 13:58:02.780  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 8.719 seconds (JVM running for 12.781)
+2022-01-09 13:58:02.990  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Created 6 people.
+2022-01-09 13:58:03.082  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Movies created: 3.
+2022-01-09 13:58:03.100  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : TvShows created: 1.
+2022-01-09 14:00:10.076  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:00:10.076  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 14:00:10.154  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@434ed227] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:00:26.098  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 14:00:26.196  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 18760 (C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2)
+2022-01-09 14:00:26.207  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: content-creator
+2022-01-09 14:00:29.114  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 14:00:29.132  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:00:29.133  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 14:00:29.134  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 14:00:29.374  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 14:00:29.374  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3074 ms
+2022-01-09 14:00:29.904  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 14:00:30.175  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 14:00:30.314  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 14:00:30.537 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 14:00:30.682  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 14:00:30.694 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 14:00:30.804 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 14:00:30.823 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 14:00:31.005  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 14:00:31.151 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 14:00:31.193  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 14:00:31.316  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:00:31.363  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 14:00:31.462  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:00:31.474  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:00:31.479  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:00:32.960  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5c0e4294] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:00:32.982  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@66902197] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:00:33.150  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:00:33.902  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 8.791 seconds (JVM running for 13.204)
+2022-01-09 14:00:34.107  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Created 6 people.
+2022-01-09 14:00:34.212  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Movies created: 3.
+2022-01-09 14:00:34.230  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : TvShows created: 1.
+2022-01-09 14:01:43.658  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:01:43.658  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 14:01:43.745  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7e5282bd] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:01:59.526  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 14:01:59.607  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 20996 (C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2)
+2022-01-09 14:01:59.616  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: content-creator
+2022-01-09 14:02:02.551  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 14:02:02.575  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:02:02.577  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 14:02:02.578  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 14:02:02.807  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 14:02:02.808  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3102 ms
+2022-01-09 14:02:03.304  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 14:02:03.625  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 14:02:03.756  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 14:02:03.987 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 14:02:04.128  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 14:02:04.141 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 14:02:04.213 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 14:02:04.232 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 14:02:04.412  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 14:02:04.564 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 14:02:04.604  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 14:02:04.722  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:02:04.764  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 14:02:04.836  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:02:04.846  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:02:04.850  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:02:06.233  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5352ace7] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:02:06.249  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@a1198b8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:02:06.392  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:02:07.181  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 8.601 seconds (JVM running for 12.847)
+2022-01-09 14:02:07.420  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Created 6 people.
+2022-01-09 14:02:07.548  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Movies created: 3.
+2022-01-09 14:02:07.575  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : TvShows created: 1.
+2022-01-09 14:02:32.594  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:02:32.595  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 14:02:32.756  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6f26903d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:02:50.292  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 14:02:50.394  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 16116 (C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2)
+2022-01-09 14:02:50.404  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: content-creator
+2022-01-09 14:02:53.458  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 14:02:53.476  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:02:53.477  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 14:02:53.478  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 14:02:53.711  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 14:02:53.711  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3205 ms
+2022-01-09 14:02:54.192  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 14:02:54.474  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 14:02:54.606  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 14:02:54.854 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 14:02:55.017  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 14:02:55.033 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 14:02:55.118 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 14:02:55.139 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 14:02:55.323  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 14:02:55.468 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 14:02:55.506  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 14:02:55.649  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:02:55.694  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 14:02:55.784  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:02:55.797  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:02:55.803  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:02:57.349  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3090e8bd] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:02:57.367  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7d9842e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:02:57.537  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:02:58.236  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 8.974 seconds (JVM running for 13.81)
+2022-01-09 14:02:58.451  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Created 6 people.
+2022-01-09 14:02:58.620  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Movies created: 3.
+2022-01-09 14:02:58.649  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : TvShows created: 1.
+2022-01-09 14:05:04.624  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:05:04.624  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 14:05:04.850  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@41f682c8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:05:27.190  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 14:05:27.468  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 20820 (C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2)
+2022-01-09 14:05:27.484  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: content-creator
+2022-01-09 14:05:31.313  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 14:05:31.343  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:05:31.345  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 14:05:31.346  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 14:05:31.682  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 14:05:31.683  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 4043 ms
+2022-01-09 14:05:32.351  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 14:05:32.704  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 14:05:32.871  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 14:05:33.437 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 14:05:33.598  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 14:05:33.719 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 14:05:33.858 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 14:05:33.888 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 14:05:34.074  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 14:05:34.637 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 14:05:34.747  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 14:05:35.106  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:05:35.140  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:05:35.140  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:05:35.156  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:05:35.411  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 14:05:37.570  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@291ec9e9] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:05:37.587  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e55c51f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:05:37.760  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:05:38.580  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 12.942 seconds (JVM running for 19.39)
+2022-01-09 14:05:38.672  INFO Christos-PC - [           main] [o.h.SQL_SLOW                       ] : SlowQuery: 29 milliseconds. SQL: 'HikariProxyPreparedStatement@2143419697 wrapping prep3: call next value for PEOPLE_SEQ'
+2022-01-09 14:05:38.848  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Created 6 people.
+2022-01-09 14:05:38.945  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Movies created: 3.
+2022-01-09 14:05:38.968  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : TvShows created: 1.
+2022-01-09 14:08:41.843  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:08:41.844  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 14:08:41.935  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1f4eddf5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:09:02.134  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 14:09:02.253  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 13900 (C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2)
+2022-01-09 14:09:02.265  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: content-creator
+2022-01-09 14:09:06.034  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 14:09:06.056  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:09:06.057  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 14:09:06.058  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 14:09:06.363  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 14:09:06.363  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3961 ms
+2022-01-09 14:09:06.994  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 14:09:07.352  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 14:09:07.548  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 14:09:07.837 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 14:09:07.998 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 14:09:08.036  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 14:09:08.093 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 14:09:08.114 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 14:09:08.417  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 14:09:08.518 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 14:09:08.565  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 14:09:08.726  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:09:08.781  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 14:09:08.948  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:09:08.959  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:09:08.965  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:09:10.701  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@15dd9b2a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:09:10.723  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2d820017] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:09:10.880  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:09:11.727  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 10.791 seconds (JVM running for 16.021)
+2022-01-09 14:09:11.999  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Created 6 people.
+2022-01-09 14:09:12.092  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Movies created: 3.
+2022-01-09 14:09:12.116  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : TvShows created: 1.
+2022-01-09 14:10:48.767  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:10:48.768  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 14:10:48.924  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2c7cfdb5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:11:09.298  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 14:11:09.408  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 9508 (C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2)
+2022-01-09 14:11:09.419  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: content-creator
+2022-01-09 14:11:13.298  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 14:11:13.318  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:11:13.319  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 14:11:13.320  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 14:11:13.572  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 14:11:13.572  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 4019 ms
+2022-01-09 14:11:14.141  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 14:11:14.481  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 14:11:14.635  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 14:11:14.971 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 14:11:15.100  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 14:11:15.156 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 14:11:15.253 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 14:11:15.288 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 14:11:15.466  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 14:11:15.695 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 14:11:15.738  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 14:11:15.887  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:11:15.949  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 14:11:15.992  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:11:16.005  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:11:16.009  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:11:17.747  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6eb3a15a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:11:17.768  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@ccfd684] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:11:17.932  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:11:18.702  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 10.737 seconds (JVM running for 16.237)
+2022-01-09 14:11:18.989  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Created 6 people.
+2022-01-09 14:11:19.105  INFO Christos-PC - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-09 14:11:19.208 ERROR Christos-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: org.springframework.dao.DataIntegrityViolationException: could not execute batch; SQL [insert into CREATORS (MOVIE_ID, PERSON_ID) values (?, ?)]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute batch
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:276)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:566)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy147.saveAll(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy81.saveAll(Unknown Source)
+	at com.javaspring.team2.project.smdb.service.BaseServiceImpl.createAll(BaseServiceImpl.java:28)
+	at com.javaspring.team2.project.smdb.bootstrap.ContentCreatorRunner.run(ContentCreatorRunner.java:60)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767)
+	... 5 more
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute batch
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:109)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.batch.internal.BatchingBatch.performExecution(BatchingBatch.java:131)
+	at org.hibernate.engine.jdbc.batch.internal.BatchingBatch.doExecuteBatch(BatchingBatch.java:106)
+	at org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl.execute(AbstractBatchImpl.java:148)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.getBatch(JdbcCoordinatorImpl.java:187)
+	at org.hibernate.persister.collection.AbstractCollectionPersister.recreate(AbstractCollectionPersister.java:1332)
+	at org.hibernate.action.internal.CollectionRecreateAction.execute(CollectionRecreateAction.java:50)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1416)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:507)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3299)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2434)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:449)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562)
+	... 29 more
+Caused by: org.h2.jdbc.JdbcBatchUpdateException: NULL not allowed for column "TV_SHOW_ID"; SQL statement:
+insert into CREATORS (MOVIE_ID, PERSON_ID) values (?, ?) [23502-200]
+	at org.h2.jdbc.JdbcPreparedStatement.executeBatch(JdbcPreparedStatement.java:1235)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeBatch(ProxyStatement.java:127)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeBatch(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.batch.internal.BatchingBatch.performExecution(BatchingBatch.java:121)
+	... 51 more
+2022-01-09 14:11:19.997  INFO Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:11:19.997  INFO Christos-PC - [           main] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 14:11:20.000  INFO Christos-PC - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1a06602f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:12:14.653  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 14:12:14.751  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 7504 (C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2)
+2022-01-09 14:12:14.761  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: content-creator
+2022-01-09 14:12:17.906  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 14:12:17.925  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:12:17.926  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 14:12:17.927  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 14:12:18.178  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 14:12:18.179  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3314 ms
+2022-01-09 14:12:18.718  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 14:12:19.062  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 14:12:19.204  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 14:12:19.473 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 14:12:19.604  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 14:12:19.629 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 14:12:19.709 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 14:12:19.741 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 14:12:19.937  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 14:12:20.135 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 14:12:20.192  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 14:12:20.330  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:12:20.382  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 14:12:20.453  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:12:20.468  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:12:20.473  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:12:22.125  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5c0e4294] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:12:22.141  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@66902197] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:12:22.284  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:12:23.083  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 9.482 seconds (JVM running for 14.011)
+2022-01-09 14:12:23.341  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Created 6 people.
+2022-01-09 14:12:23.467  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Movies created: 3.
+2022-01-09 14:14:10.819  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:14:10.820  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 14:14:10.937  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@675bea63] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:14:55.806  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 14:14:55.915  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 11628 (C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2)
+2022-01-09 14:14:55.929  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: content-creator
+2022-01-09 14:14:59.546  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 14:14:59.566  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:14:59.567  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 14:14:59.569  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 14:14:59.814  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 14:14:59.815  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3735 ms
+2022-01-09 14:15:00.366  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 14:15:00.671  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 14:15:00.821  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 14:15:01.070 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 14:15:01.222  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 14:15:01.239 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 14:15:01.329 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 14:15:01.359 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 14:15:01.592  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 14:15:01.777 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 14:15:01.829  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 14:15:01.963  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:15:02.012  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 14:15:02.105  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:15:02.116  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:15:02.121  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:15:03.733  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@742c1e75] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:15:03.753  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@435341be] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:15:03.894  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:15:04.728  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 9.987 seconds (JVM running for 14.943)
+2022-01-09 14:15:05.007  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Created 6 people.
+2022-01-09 14:15:05.130  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Movies created: 3.
+2022-01-09 14:15:05.155  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : TvShows created: 1.
+2022-01-09 14:17:11.662  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:17:11.663  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 14:17:11.814  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@40e3baea] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:17:34.759  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 14:17:34.871  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 22748 (C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2)
+2022-01-09 14:17:34.881  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: content-creator
+2022-01-09 14:17:38.281  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 14:17:38.315  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:17:38.318  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 14:17:38.321  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 14:17:38.641  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 14:17:38.642  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3656 ms
+2022-01-09 14:17:39.214  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 14:17:39.693  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 14:17:39.871  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 14:17:40.201 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 14:17:40.337  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 14:17:40.384 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 14:17:40.503 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 14:17:40.532 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 14:17:40.784  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 14:17:41.038 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 14:17:41.096  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 14:17:41.270  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:17:41.330  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 14:17:41.414  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:17:41.437  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:17:41.447  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:17:43.127  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@168ca7d3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:17:43.148  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@52857ee0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:17:43.298  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:17:44.171  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 10.552 seconds (JVM running for 15.559)
+2022-01-09 14:17:44.434  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Created 6 people.
+2022-01-09 14:17:44.536  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Movies created: 3.
+2022-01-09 14:17:44.554  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : TvShows created: 1.
+2022-01-09 14:18:30.279  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:18:30.280  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 14:18:30.380  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4ac61ca7] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:18:48.375  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 14:18:48.465  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 14512 (C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2)
+2022-01-09 14:18:48.475  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: content-creator
+2022-01-09 14:18:51.687  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 14:18:51.708  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:18:51.710  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 14:18:51.711  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 14:18:51.975  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 14:18:51.976  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3393 ms
+2022-01-09 14:18:52.532  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 14:18:52.832  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 14:18:52.983  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 14:18:53.262 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 14:18:53.406  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 14:18:53.439 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 14:18:53.518 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 14:18:53.540 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 14:18:53.734  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 14:18:53.914 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 14:18:53.984  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 14:18:54.102  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:18:54.143  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 14:18:54.228  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:18:54.249  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:18:54.254  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:18:55.826  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@545d99] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:18:55.844  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7e44a816] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:18:55.993  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:18:56.812  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 9.553 seconds (JVM running for 14.364)
+2022-01-09 14:18:57.050  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Created 6 people.
+2022-01-09 14:18:57.170  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Movies created: 3.
+2022-01-09 14:18:57.189  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : TvShows created: 1.
+2022-01-09 14:20:13.116  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:20:13.116  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 14:20:13.206  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@56195f90] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:20:36.103  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 14:20:36.194  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 20760 (C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2)
+2022-01-09 14:20:36.204  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: content-creator
+2022-01-09 14:20:39.463  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 14:20:39.484  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:20:39.486  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 14:20:39.487  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 14:20:39.757  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 14:20:39.758  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3445 ms
+2022-01-09 14:20:40.348  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 14:20:40.634  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 14:20:40.781  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 14:20:41.058 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 14:20:41.190  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 14:20:41.230 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 14:20:41.317 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 14:20:41.343 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 14:20:41.618  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 14:20:41.800 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 14:20:41.855  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 14:20:41.996  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:20:42.047  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 14:20:42.134  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:20:42.146  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:20:42.151  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:20:43.725  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@25309801] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:20:43.745  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6a180d90] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:20:43.894  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:20:44.654  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 9.676 seconds (JVM running for 16.083)
+2022-01-09 14:20:44.891  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Created 6 people.
+2022-01-09 14:20:45.006  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Movies created: 3.
+2022-01-09 14:20:45.036  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : TvShows created: 1.
+2022-01-09 14:21:13.351  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:21:13.355  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 14:21:13.516  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@34e0beec] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:21:33.152  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 14:21:33.246  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 4032 (C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2)
+2022-01-09 14:21:33.258  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: content-creator
+2022-01-09 14:21:36.397  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 14:21:36.422  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:21:36.424  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 14:21:36.425  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 14:21:36.724  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 14:21:36.724  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3350 ms
+2022-01-09 14:21:37.273  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 14:21:37.592  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 14:21:37.738  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 14:21:37.983 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 14:21:38.127  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 14:21:38.144 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 14:21:38.251 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 14:21:38.276 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 14:21:38.485  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 14:21:38.693 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 14:21:38.778  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 14:21:38.934  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:21:38.997  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 14:21:39.089  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:21:39.102  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:21:39.106  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:21:40.884  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@168ca7d3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:21:40.905  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@52857ee0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:21:41.108  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:21:41.946  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 9.847 seconds (JVM running for 14.507)
+2022-01-09 14:21:42.191  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Created 6 people.
+2022-01-09 14:21:42.323  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Movies created: 3.
+2022-01-09 14:21:42.348  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : TvShows created: 1.
+2022-01-09 14:23:17.474  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:23:17.474  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 14:23:17.554  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3d275484] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:23:38.405  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 14:23:38.513  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 15092 (C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2)
+2022-01-09 14:23:38.524  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: content-creator
+2022-01-09 14:23:41.729  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 14:23:41.752  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:23:41.753  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 14:23:41.754  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 14:23:42.042  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 14:23:42.042  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3410 ms
+2022-01-09 14:23:42.623  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 14:23:42.914  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 14:23:43.060  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 14:23:43.307 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 14:23:43.453  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 14:23:43.472 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 14:23:43.560 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 14:23:43.581 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 14:23:43.792  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 14:23:43.967 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 14:23:44.017  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 14:23:44.158  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:23:44.204  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 14:23:44.329  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:23:44.352  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:23:44.361  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:23:46.127  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6fc3ed6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:23:46.144  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@38c381a7] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:23:46.282  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:23:47.355  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 10.05 seconds (JVM running for 15.229)
+2022-01-09 14:23:47.446  INFO Christos-PC - [           main] [o.h.SQL_SLOW                       ] : SlowQuery: 11 milliseconds. SQL: 'HikariProxyPreparedStatement@560383114 wrapping prep3: call next value for PEOPLE_SEQ'
+2022-01-09 14:23:47.660  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Created 6 people.
+2022-01-09 14:23:47.806  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Movies created: 3.
+2022-01-09 14:23:47.842  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : TvShows created: 1.
+2022-01-09 14:25:24.242  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:25:24.242  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 14:25:24.355  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@48ee1c7c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:25:45.312  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 14:25:45.424  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 6016 (C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2)
+2022-01-09 14:25:45.436  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: content-creator
+2022-01-09 14:25:48.683  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 14:25:48.705  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:25:48.707  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 14:25:48.708  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 14:25:48.983  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 14:25:48.984  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3437 ms
+2022-01-09 14:25:49.558  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 14:25:49.866  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 14:25:50.013  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 14:25:50.268 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 14:25:50.405  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 14:25:50.424 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 14:25:50.510 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 14:25:50.535 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 14:25:50.723  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 14:25:50.935 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 14:25:50.981  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 14:25:51.099  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:25:51.147  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 14:25:51.234  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:25:51.246  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:25:51.252  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:25:52.910  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3090e8bd] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:25:52.931  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7d9842e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:25:53.085  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:25:53.954  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 9.829 seconds (JVM running for 14.656)
+2022-01-09 14:25:54.198  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Created 6 people.
+2022-01-09 14:25:54.330  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Movies created: 3.
+2022-01-09 14:25:54.354  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : TvShows created: 1.
+2022-01-09 14:26:12.489  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:26:12.497  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 14:26:12.850  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7d4b48ed] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:26:33.716  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 14:26:33.822  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 13952 (C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo - Copy\javaspring-project-team2)
+2022-01-09 14:26:33.833  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: content-creator
+2022-01-09 14:26:37.270  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 14:26:37.293  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:26:37.295  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 14:26:37.296  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 14:26:37.616  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 14:26:37.617  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3607 ms
+2022-01-09 14:26:38.228  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 14:26:38.634  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 14:26:38.801  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 14:26:39.116 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 14:26:39.288  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 14:26:39.326 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 14:26:39.426 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 14:26:39.455 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 14:26:39.668  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 14:26:39.835 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 14:26:39.914  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 14:26:40.061  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 14:26:40.106  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 14:26:40.212  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:26:40.224  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:26:40.231  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 14:26:42.061  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@21b7259a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:26:42.083  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6063eb3b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 14:26:42.253  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 14:26:43.050  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 10.453 seconds (JVM running for 15.463)
+2022-01-09 14:26:43.313  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Created 6 people.
+2022-01-09 14:26:43.433  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : Movies created: 3.
+2022-01-09 14:26:43.458  INFO Christos-PC - [           main] [c.j.t.p.s.b.ContentCreatorRunner   ] : TvShows created: 1.

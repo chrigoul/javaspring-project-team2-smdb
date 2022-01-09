@@ -22,15 +22,16 @@ public class Movie extends Title{
 
         @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.LAZY)
         @JoinTable(name = "DIRECTORS",
-                joinColumns = @JoinColumn(name = "TITLE_ID"),
+                joinColumns = @JoinColumn(name = "MOVIE_ID"),
                 inverseJoinColumns = @JoinColumn(name = "PERSON_ID"))
         private Set<Person> directors = new HashSet<>();
 
         @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.LAZY)
         @JoinTable(name = "WRITERS",
-                joinColumns = @JoinColumn(name = "TITLE_ID"),
+                joinColumns = @JoinColumn(name = "MOVIE_ID"),
                 inverseJoinColumns = @JoinColumn(name = "PERSON_ID"))
         private Set<Person> writers = new HashSet<>();
+
 
 }
 
