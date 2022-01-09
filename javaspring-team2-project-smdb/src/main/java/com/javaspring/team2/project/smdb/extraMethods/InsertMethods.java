@@ -63,7 +63,7 @@ public class InsertMethods {
         tvShow.setEndYear(Integer.parseInt((String) iterator.get("endYear")));
         tvShow.setNumberOfSeasons(Integer.parseInt((String) iterator.get("numberOfSeasons")));
         tvShow.setNumberOfEpisodes(Integer.parseInt((String) iterator.get("numberOfEpisodes")));
-        tvShow.setSmdbRating(Float.parseFloat((String) iterator.get("smdbRating")));
+        tvShow.setSmdbRating(Double.parseDouble((String) iterator.get("smdbRating")));
         tvShow.setStoryLine((String) iterator.get("storyLine"));
 
         //Adding the sets
