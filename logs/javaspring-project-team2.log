@@ -3130,3 +3130,212 @@ Caused by: java.lang.IllegalArgumentException: No enum constant com.javaspring.t
 2022-01-09 22:23:34.492  INFO DESKTOP-NRAM18P - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-01-09 22:23:34.492  INFO DESKTOP-NRAM18P - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
 2022-01-09 22:23:36.581  INFO DESKTOP-NRAM18P - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5d376250] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 22:28:24.361  INFO DESKTOP-NRAM18P - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 22:28:24.400  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on DESKTOP-NRAM18P with PID 3488 (C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by azeli in C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-09 22:28:24.403  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: tvShow-content-loader
+2022-01-09 22:28:25.525  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 22:28:25.544  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 22:28:25.545  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 22:28:25.545  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 22:28:25.658  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 22:28:25.658  INFO DESKTOP-NRAM18P - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1218 ms
+2022-01-09 22:28:25.889  INFO DESKTOP-NRAM18P - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 22:28:25.988  INFO DESKTOP-NRAM18P - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 22:28:26.032  INFO DESKTOP-NRAM18P - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 22:28:26.131 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 22:28:26.152  INFO DESKTOP-NRAM18P - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 22:28:26.190 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 22:28:26.220 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 22:28:26.230 DEBUG DESKTOP-NRAM18P - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 22:28:26.259  INFO DESKTOP-NRAM18P - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 22:28:26.348 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 22:28:26.363  WARN DESKTOP-NRAM18P - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 22:28:26.413  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 22:28:26.414  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 22:28:26.419  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 22:28:26.422  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 22:28:26.429  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 22:28:26.978  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@42ac5306] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 22:28:26.984  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1ce4d732] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 22:28:27.033  INFO DESKTOP-NRAM18P - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 22:28:27.323  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 3.361 seconds (JVM running for 4.711)
+2022-01-09 22:28:27.496  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.b.TvShowCreatorRunnerFile] : Added 3 actors from Show: Money Heist
+2022-01-09 22:30:19.959  INFO DESKTOP-NRAM18P - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 22:30:19.960  INFO DESKTOP-NRAM18P - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 22:30:19.961  INFO DESKTOP-NRAM18P - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@630fa966] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 22:50:00.222  INFO DESKTOP-NRAM18P - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 22:50:00.258  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on DESKTOP-NRAM18P with PID 3444 (C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by azeli in C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-09 22:50:00.262  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: tvShow-content-loader
+2022-01-09 22:50:01.406  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 22:50:01.413  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 22:50:01.414  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 22:50:01.414  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 22:50:01.519  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 22:50:01.519  INFO DESKTOP-NRAM18P - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1221 ms
+2022-01-09 22:50:01.757  INFO DESKTOP-NRAM18P - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 22:50:01.853  INFO DESKTOP-NRAM18P - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 22:50:01.863  WARN DESKTOP-NRAM18P - [           main] [gServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'tvShowCreatorRunnerFile' defined in file [C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes\com\javaspring\team2\project\smdb\bootstrap\TvShowCreatorRunnerFile.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.javaspring.team2.project.smdb.extraMethods.InsertMethods' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-01-09 22:50:01.863  INFO DESKTOP-NRAM18P - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 22:50:01.895  INFO DESKTOP-NRAM18P - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 22:50:02.008  INFO DESKTOP-NRAM18P - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 22:50:02.101  INFO DESKTOP-NRAM18P - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 22:50:02.252  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 22:50:02.258  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 22:50:02.259  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 22:50:02.797  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@63eebdc9] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 22:50:02.803  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1a410be1] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 22:50:02.851  INFO DESKTOP-NRAM18P - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 22:50:02.851  INFO DESKTOP-NRAM18P - [           main] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 22:50:02.852  INFO DESKTOP-NRAM18P - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@78d92eef] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 22:50:02.913  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardService            ] : Stopping service [Tomcat]
+2022-01-09 22:50:02.925  INFO DESKTOP-NRAM18P - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-09 22:50:02.960 ERROR DESKTOP-NRAM18P - [           main] [.b.d.LoggingFailureAnalysisReporter] : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in com.javaspring.team2.project.smdb.bootstrap.TvShowCreatorRunnerFile required a bean of type 'com.javaspring.team2.project.smdb.extraMethods.InsertMethods' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.javaspring.team2.project.smdb.extraMethods.InsertMethods' in your configuration.
+
+2022-01-09 22:52:12.138  INFO DESKTOP-NRAM18P - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 22:52:12.179  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on DESKTOP-NRAM18P with PID 9732 (C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by azeli in C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-09 22:52:12.182  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: tvShow-content-loader
+2022-01-09 22:52:13.320  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 22:52:13.327  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 22:52:13.328  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 22:52:13.328  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 22:52:13.443  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 22:52:13.443  INFO DESKTOP-NRAM18P - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1224 ms
+2022-01-09 22:52:13.686  INFO DESKTOP-NRAM18P - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 22:52:13.786  INFO DESKTOP-NRAM18P - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 22:52:13.829  INFO DESKTOP-NRAM18P - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 22:52:13.936 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 22:52:13.949  INFO DESKTOP-NRAM18P - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 22:52:13.990 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 22:52:14.021 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 22:52:14.040 DEBUG DESKTOP-NRAM18P - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 22:52:14.057  INFO DESKTOP-NRAM18P - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 22:52:14.159 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 22:52:14.174  WARN DESKTOP-NRAM18P - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 22:52:14.208  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 22:52:14.214  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 22:52:14.216  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 22:52:14.224  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 22:52:14.241  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 22:52:14.779  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@44aeb647] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 22:52:14.785  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@439ddd3f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 22:52:14.837  INFO DESKTOP-NRAM18P - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 22:52:15.176  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 3.491 seconds (JVM running for 4.875)
+2022-01-09 22:52:15.348  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.b.TvShowCreatorRunnerFile] : Added 3 actors from Show: Money Heist
+2022-01-09 22:54:42.807  INFO DESKTOP-NRAM18P - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 22:54:42.808  INFO DESKTOP-NRAM18P - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 22:54:44.895  INFO DESKTOP-NRAM18P - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@59de1b69] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 22:54:48.652  INFO DESKTOP-NRAM18P - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 22:54:48.693  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on DESKTOP-NRAM18P with PID 1588 (C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by azeli in C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-09 22:54:48.696  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: tvShow-content-loader
+2022-01-09 22:54:49.888  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 22:54:49.897  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 22:54:49.897  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 22:54:49.898  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 22:54:50.014  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 22:54:50.014  INFO DESKTOP-NRAM18P - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1281 ms
+2022-01-09 22:54:50.266  INFO DESKTOP-NRAM18P - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 22:54:50.376  INFO DESKTOP-NRAM18P - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 22:54:50.442  INFO DESKTOP-NRAM18P - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 22:54:50.558 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 22:54:50.638 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 22:54:50.657  INFO DESKTOP-NRAM18P - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 22:54:50.680 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 22:54:50.695 DEBUG DESKTOP-NRAM18P - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 22:54:50.810  INFO DESKTOP-NRAM18P - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 22:54:50.858 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 22:54:50.873  WARN DESKTOP-NRAM18P - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 22:54:50.919  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 22:54:50.934  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 22:54:50.979  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 22:54:50.984  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 22:54:50.986  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 22:54:51.615  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6f91b86f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 22:54:51.621  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5f4bf5f0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 22:54:51.671  INFO DESKTOP-NRAM18P - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 22:54:51.985  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 3.744 seconds (JVM running for 5.834)
+2022-01-09 22:54:52.147  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.b.TvShowCreatorRunnerFile] : Added 3 actors from Show: Money Heist
+2022-01-09 22:54:54.845  INFO DESKTOP-NRAM18P - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 22:54:54.845  INFO DESKTOP-NRAM18P - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 22:54:54.846  INFO DESKTOP-NRAM18P - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@f5450c4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 23:00:57.942  INFO DESKTOP-NRAM18P - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 23:00:57.979  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on DESKTOP-NRAM18P with PID 1168 (C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by azeli in C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-09 23:00:57.983  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: tvShow-content-loader
+2022-01-09 23:00:59.115  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 23:00:59.133  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 23:00:59.134  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 23:00:59.134  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 23:00:59.250  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 23:00:59.250  INFO DESKTOP-NRAM18P - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1231 ms
+2022-01-09 23:00:59.490  INFO DESKTOP-NRAM18P - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 23:00:59.591  INFO DESKTOP-NRAM18P - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 23:00:59.634  INFO DESKTOP-NRAM18P - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 23:00:59.742 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 23:00:59.756  INFO DESKTOP-NRAM18P - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 23:00:59.813 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 23:00:59.842 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 23:00:59.853 DEBUG DESKTOP-NRAM18P - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 23:00:59.875  INFO DESKTOP-NRAM18P - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 23:00:59.976 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 23:00:59.992  WARN DESKTOP-NRAM18P - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 23:01:00.036  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 23:01:00.041  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 23:01:00.043  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 23:01:00.043  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 23:01:00.059  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 23:01:00.593  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@78f0fe38] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 23:01:00.599  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@47a3a77a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 23:01:00.649  INFO DESKTOP-NRAM18P - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 23:01:00.940  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 3.47 seconds (JVM running for 4.798)
+2022-01-09 23:01:01.135  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.b.TvShowCreatorRunnerFile] : Added 3 actors from Show: Money Heist
+2022-01-09 23:01:35.855  INFO DESKTOP-NRAM18P - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 23:01:35.855  INFO DESKTOP-NRAM18P - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 23:01:37.939  INFO DESKTOP-NRAM18P - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@253afc79] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 23:29:33.971  INFO DESKTOP-NRAM18P - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-09 23:29:34.014  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on DESKTOP-NRAM18P with PID 13052 (C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by azeli in C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-09 23:29:34.018  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: tvShow-content-loader
+2022-01-09 23:29:35.318  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-09 23:29:35.327  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-09 23:29:35.327  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-09 23:29:35.327  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-09 23:29:35.445  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-09 23:29:35.445  INFO DESKTOP-NRAM18P - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1385 ms
+2022-01-09 23:29:35.724  INFO DESKTOP-NRAM18P - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-09 23:29:35.841  INFO DESKTOP-NRAM18P - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 23:29:35.906  INFO DESKTOP-NRAM18P - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-09 23:29:36.015 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-09 23:29:36.087  INFO DESKTOP-NRAM18P - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 23:29:36.088 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2022-01-09 23:29:36.121 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-09 23:29:36.133 DEBUG DESKTOP-NRAM18P - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-09 23:29:36.215  INFO DESKTOP-NRAM18P - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-09 23:29:36.290 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-09 23:29:36.309  WARN DESKTOP-NRAM18P - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-09 23:29:36.359  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-09 23:29:36.375  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-09 23:29:36.394  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 23:29:36.399  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 23:29:36.401  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-09 23:29:37.054  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1696f907] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 23:29:37.060  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@557b74b0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-09 23:29:37.109  INFO DESKTOP-NRAM18P - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 23:29:37.433  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 3.917 seconds (JVM running for 5.44)
+2022-01-09 23:29:37.617  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.b.TvShowCreatorRunnerFile] : Added 3 actors from Show: Money Heist
+2022-01-09 23:29:37.693  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.b.TvShowCreatorRunnerFile] : Added 9 actors from Show: Game of Thrones
+2022-01-09 23:30:33.187  INFO DESKTOP-NRAM18P - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 23:30:33.188  INFO DESKTOP-NRAM18P - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-09 23:30:35.253  INFO DESKTOP-NRAM18P - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@330c517c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
