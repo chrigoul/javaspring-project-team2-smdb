@@ -18,7 +18,7 @@
           "lastName": "Corbero",
           "birthday": "11-8-1989",
           "birthPlace": "Barcelona, Spain",
-          "professions": ["Actor"],
+          "professions": ["ACTOR"],
           "role": "Tokyo"
         },
         {
@@ -26,7 +26,7 @@
           "lastName": "Morte",
           "birthday": "23-2-1975",
           "birthPlace": "Algeciras, Spain",
-          "professions": ["Actor"],
+          "professions": ["ACTOR"],
           "role": "El Professor"
         },
         {
@@ -34,7 +34,7 @@
           "lastName": "Ituno",
           "birthday": "1975",
           "birthPlace": "Basauri, Spain",
-          "professions": ["Actor"],
+          "professions": ["ACTOR"],
           "role": "Raquel Murillo"
         }
       ],
@@ -44,14 +44,14 @@
           "lastName": "Pina",
           "birthday": "Unknown",
           "birthPlace": "Unknown",
-          "professions": ["Writer", "Producer", "Director"]
+          "professions": ["WRITER", "PRODUCER", "DIRECTOR"]
         },
         {
           "firstName":"Jesus",
           "lastName": "Colmenar",
           "birthday": "Unknown",
           "birthPlace": "Unknown",
-          "professions": ["Producer", "Director"]
+          "professions": ["PRODUCER", "DIRECTOR"]
         }
       ]
     }
