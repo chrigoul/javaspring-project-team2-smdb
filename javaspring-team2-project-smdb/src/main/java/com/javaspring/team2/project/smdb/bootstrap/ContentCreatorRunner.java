@@ -62,7 +62,7 @@ public class ContentCreatorRunner extends AbstractLogComponent implements Comman
         List<TvShow> tvShows = List.of(
         TvShow.builder().primaryTitle("Stupid thing").genres(Set.of(Genre.COMEDY)).durationInMinutes(20).smdbRating(5.2f).releaseYear(2014)
                 .endYear(2018).storyLine("A stupid story").countriesOfOrigin(Set.of("USA")).languages(Set.of("English")).producers(Set.of(people.get(1),people.get(3)))
-                .numberOfEpisodesPerSeason(22).numberOfSeasons(4).build()
+                .numberOfEpisodes(22).numberOfSeasons(4).build()
         );
 
         logger.info("TvShows created: {}.",tvShowService.createAll(tvShows).size());

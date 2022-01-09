@@ -24,7 +24,7 @@ public class TvShow extends Title{
         private Integer numberOfSeasons;
 
         @Column
-        private Integer numberOfEpisodesPerSeason;
+        private Integer numberOfEpisodes;
 
         @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.LAZY)
         @JoinTable(name = "PRODUCERS",

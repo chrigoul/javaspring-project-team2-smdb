@@ -63,9 +63,7 @@ public class TvShowCreatorRunner extends AbstractLogComponent implements Command
         }
         tvShow.setActors(actorSet);
 
-/*        Person p = Person.builder().firstName("Tom").lastName("Ellis").
-                birthDay("January").birthPlace("London").build();
-        personService.create(p);*/
+
 
         tvShowService.update(tvShow);
     }

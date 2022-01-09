@@ -1,0 +1,59 @@
+{
+  "tvShow": [
+    {
+      "primaryTitle": "Money Heist",
+      "genre": ["ADVENTURE", "ACTION", "DRAMA","MYSTERY", "THRILLER"],
+      "durationInMinutes": "69",
+      "releaseYear": "2017",
+      "endYear":"2021",
+      "numberOfSeasons": "5",
+      "numberOfEpisodes": "41",
+      "smdbRating": "8.2",
+      "storyLine": "An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.",
+      "countriesOfOrigin": ["SPAIN"],
+      "languages": ["SPANISH", "ENGLISH", "RUSSIAN", "SERBIAN"],
+      "cast": [
+        {
+          "firstName":"Ursula",
+          "lastName": "Corbero",
+          "birthday": "11-8-1989",
+          "birthPlace": "Barcelona, Spain",
+          "professions": ["Actor"],
+          "role": "Tokyo"
+        },
+        {
+          "firstName":"Alvaro",
+          "lastName": "Morte",
+          "birthday": "23-2-1975",
+          "birthPlace": "Algeciras, Spain",
+          "professions": ["Actor"],
+          "role": "El Professor"
+        },
+        {
+          "firstName":"Iztiar",
+          "lastName": "Ituno",
+          "birthday": "1975",
+          "birthPlace": "Basauri, Spain",
+          "professions": ["Actor"],
+          "role": "Raquel Murillo"
+        }
+      ],
+      "producers": [
+        {
+          "firstName":"Alex",
+          "lastName": "Pina",
+          "birthday": "Unknown",
+          "birthPlace": "Unknown",
+          "professions": ["Writer", "Producer", "Director"]
+        },
+        {
+          "firstName":"Jesus",
+          "lastName": "Colmenar",
+          "birthday": "Unknown",
+          "birthPlace": "Unknown",
+          "professions": ["Producer", "Director"]
+        }
+      ]
+    }
+  ]
+}
