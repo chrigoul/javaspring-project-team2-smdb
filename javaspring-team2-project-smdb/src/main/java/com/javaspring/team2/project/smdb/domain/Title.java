@@ -27,10 +27,6 @@ public class Title extends BaseModel {
     @Column(length = 200, nullable = false)
     private String primaryTitle;
 
-//    @Column(length = 50, nullable = false)
-//    @Enumerated(EnumType.STRING)
-//    private TitleType titleType;
-
     @Column(name = "genre", nullable = false)
     @ElementCollection(targetClass = Genre.class)
     @Enumerated(EnumType.STRING)
@@ -44,25 +40,7 @@ public class Title extends BaseModel {
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "title")
-    private Set<Actor> cast = new HashSet<>();
-
-    @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.LAZY)
-    @JoinTable(name = "DIRECTORS",
-            joinColumns = @JoinColumn(name = "TITLE_ID"),
-            inverseJoinColumns = @JoinColumn(name = "PERSON_ID"))
-    private Set<Person> directors = new HashSet<>();
-
-    @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.LAZY)
-    @JoinTable(name = "WRITERS",
-            joinColumns = @JoinColumn(name = "TITLE_ID"),
-            inverseJoinColumns = @JoinColumn(name = "PERSON_ID"))
-    private Set<Person> writers = new HashSet<>();
-
-    @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.LAZY)
-    @JoinTable(name = "PRODUCERS",
-            joinColumns = @JoinColumn(name = "TITLE_ID"),
-            inverseJoinColumns = @JoinColumn(name = "PERSON_ID"))
-    private Set<Person> producers = new HashSet<>();
+    private Set<Actor> actors = new HashSet<>();
 
     @Column(length = 4096, nullable = false)
     private String storyLine;
@@ -80,8 +58,6 @@ public class Title extends BaseModel {
     @Max(10)
     private Float smdbRating;
 
-    @Column
-    private Integer numberOfVotes;
 
     @Column
     private Integer releaseYear;

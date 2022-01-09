@@ -37,7 +37,7 @@ public class Person extends BaseModel {
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     @OneToMany( mappedBy = "person", cascade = CascadeType.ALL, orphanRemoval = true,fetch = FetchType.LAZY)
-    private Set<Actor> roles = new HashSet<>();
+    private Set<Actor> actors = new HashSet<>();
 
     @Column(name = "profession", nullable = false)
     @ElementCollection(targetClass = ContributionRole.class)

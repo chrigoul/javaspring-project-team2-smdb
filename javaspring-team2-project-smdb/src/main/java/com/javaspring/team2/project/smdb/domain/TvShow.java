@@ -21,16 +21,17 @@ public class TvShow extends Title{
 
         @Column
         private Integer numberOfSeasons;
-//
-//        @ToString.Exclude
-//        @EqualsAndHashCode.Exclude
-//        @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "tvshow")
-//        private Set<Episode> episodes = new HashSet<>();
 
+        @Column
+        private Integer numberOfEpisodesPerSeason;
 
-        @Column(name = "episodes", nullable = false)
-        @ElementCollection
-        @CollectionTable(name="episodes", joinColumns= {@JoinColumn(name="TV_SHOW_ID")})
-        private Set<String> episodes;
+        @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.LAZY)
+        @JoinTable(name = "CREATORS",
+                joinColumns = @JoinColumn(name = "TITLE_ID"),
+                inverseJoinColumns = @JoinColumn(name = "PERSON_ID"))
+        private Set<Person> creators = new HashSet<>();
+
+        @Column
+        private Integer endYear;
 }
 
