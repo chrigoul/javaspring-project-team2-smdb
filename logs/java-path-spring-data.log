@@ -1,0 +1,306 @@
+2022-01-09 12:41:43.317  INFO Christos-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-01-09 12:41:43.391  INFO Christos-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 35 ms. Found 0 JPA repository interfaces.
+2022-01-09 12:41:45.424 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : Driver class org.h2.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+jdk.internal.loader.ClassLoaders$AppClassLoader@368239c8
+
+2022-01-09 12:41:45.479 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : smdbConnectionPooling - configuration:
+2022-01-09 12:41:45.484 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : allowPoolSuspension................................false
+2022-01-09 12:41:45.485 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : autoCommit................................false
+2022-01-09 12:41:45.485 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : catalog................................none
+2022-01-09 12:41:45.485 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : connectionInitSql................................none
+2022-01-09 12:41:45.486 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTestQuery................................"select 1 from dual;"
+2022-01-09 12:41:45.486 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTimeout................................10000
+2022-01-09 12:41:45.486 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : dataSource................................none
+2022-01-09 12:41:45.486 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceClassName................................none
+2022-01-09 12:41:45.487 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceJNDI................................none
+2022-01-09 12:41:45.488 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceProperties................................{password=<masked>, prepStmtCacheSqlLimit=2048, cachePrepStmts=true, prepStmtCacheSize=250}
+2022-01-09 12:41:45.489 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : driverClassName................................"org.h2.Driver"
+2022-01-09 12:41:45.490 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : exceptionOverrideClassName................................none
+2022-01-09 12:41:45.490 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckProperties................................{}
+2022-01-09 12:41:45.490 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckRegistry................................none
+2022-01-09 12:41:45.491 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : idleTimeout................................30000
+2022-01-09 12:41:45.491 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : initializationFailTimeout................................1
+2022-01-09 12:41:45.492 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : isolateInternalQueries................................false
+2022-01-09 12:41:45.492 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : jdbcUrl................................jdbc:h2:./smdb;AUTO_SERVER=TRUE
+2022-01-09 12:41:45.493 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : keepaliveTime................................0
+2022-01-09 12:41:45.494 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : leakDetectionThreshold................................0
+2022-01-09 12:41:45.494 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : maxLifetime................................60000
+2022-01-09 12:41:45.495 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : maximumPoolSize................................10
+2022-01-09 12:41:45.495 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : metricRegistry................................none
+2022-01-09 12:41:45.495 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : metricsTrackerFactory................................none
+2022-01-09 12:41:45.496 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : minimumIdle................................1
+2022-01-09 12:41:45.496 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : password................................<masked>
+2022-01-09 12:41:45.497 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : poolName................................"smdbConnectionPooling"
+2022-01-09 12:41:45.497 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : readOnly................................false
+2022-01-09 12:41:45.497 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : registerMbeans................................false
+2022-01-09 12:41:45.497 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : scheduledExecutor................................none
+2022-01-09 12:41:45.498 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : schema................................none
+2022-01-09 12:41:45.498 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : threadFactory................................internal
+2022-01-09 12:41:45.498 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : transactionIsolation................................"TRANSACTION_READ_COMMITTED"
+2022-01-09 12:41:45.498 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : username................................"sa"
+2022-01-09 12:41:45.499 DEBUG Christos-PC - [           main] [c.z.h.HikariConfig                 ] : validationTimeout................................5000
+2022-01-09 12:41:45.499  INFO Christos-PC - [           main] [c.z.h.HikariDataSource             ] : smdbConnectionPooling - Starting...
+2022-01-09 12:41:45.998 DEBUG Christos-PC - [           main] [c.z.h.p.HikariPool                 ] : smdbConnectionPooling - Added connection conn1: url=jdbc:h2:./smdb user=SA
+2022-01-09 12:41:46.001  INFO Christos-PC - [           main] [c.z.h.HikariDataSource             ] : smdbConnectionPooling - Start completed.
+2022-01-09 12:41:46.024 DEBUG Christos-PC - [           main] [c.z.h.p.ProxyConnection            ] : smdbConnectionPooling - Executed rollback on connection conn1: url=jdbc:h2:./smdb user=SA due to dirty commit state on close().
+2022-01-09 12:41:46.102 DEBUG Christos-PC - [ing housekeeper] [c.z.h.p.HikariPool                 ] : smdbConnectionPooling - Before cleanup stats (total=1, active=0, idle=1, waiting=0)
+2022-01-09 12:41:46.103 DEBUG Christos-PC - [ing housekeeper] [c.z.h.p.HikariPool                 ] : smdbConnectionPooling - After cleanup  stats (total=1, active=0, idle=1, waiting=0)
+2022-01-09 12:41:46.104 DEBUG Christos-PC - [ing housekeeper] [c.z.h.p.HikariPool                 ] : smdbConnectionPooling - Fill pool skipped, pool is at sufficient level.
+2022-01-09 12:41:47.406 DEBUG Christos-PC - [         task-1] [.h.e.j.e.i.JdbcEnvironmentInitiator] : Database ->
+       name : H2
+    version : 1.4.200 (2019-10-14)
+      major : 1
+      minor : 4
+2022-01-09 12:41:47.406 DEBUG Christos-PC - [         task-1] [.h.e.j.e.i.JdbcEnvironmentInitiator] : Driver ->
+       name : H2 JDBC Driver
+    version : 1.4.200 (2019-10-14)
+      major : 1
+      minor : 4
+2022-01-09 12:41:47.406 DEBUG Christos-PC - [         task-1] [.h.e.j.e.i.JdbcEnvironmentInitiator] : JDBC version : 4.1
+2022-01-09 12:41:47.485 DEBUG Christos-PC - [         task-1] [o.h.e.j.e.s.IdentifierHelperBuilder] : JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+2022-01-09 12:41:47.506 DEBUG Christos-PC - [         task-1] [c.z.h.p.ProxyConnection            ] : smdbConnectionPooling - Executed rollback on connection conn1: url=jdbc:h2:./smdb user=SA due to dirty commit state on close().
+2022-01-09 12:41:47.783  INFO Christos-PC - [           main] [redRepositoryInitializationListener] : Triggering deferred initialization of Spring Data repositories…
+2022-01-09 12:41:47.784  INFO Christos-PC - [           main] [redRepositoryInitializationListener] : Spring Data repositories initialized!
+2022-01-09 12:41:49.852 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    drop table if exists ACTORS CASCADE 
+2022-01-09 12:41:49.862 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    drop table if exists DIRECTORS CASCADE 
+2022-01-09 12:41:49.863 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    drop table if exists episodes CASCADE 
+2022-01-09 12:41:49.863 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    drop table if exists PEOPLE CASCADE 
+2022-01-09 12:41:49.864 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    drop table if exists person_worked_as CASCADE 
+2022-01-09 12:41:49.864 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    drop table if exists PRODUCERS CASCADE 
+2022-01-09 12:41:49.864 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    drop table if exists Title_countriesOfOrigin CASCADE 
+2022-01-09 12:41:49.865 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    drop table if exists title_genres CASCADE 
+2022-01-09 12:41:49.866 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    drop table if exists Title_languages CASCADE 
+2022-01-09 12:41:49.866 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    drop table if exists TITLES CASCADE 
+2022-01-09 12:41:49.866 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    drop table if exists TV_SHOWS CASCADE 
+2022-01-09 12:41:49.867 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    drop table if exists WRITERS CASCADE 
+2022-01-09 12:41:49.867 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    drop sequence if exists PEOPLE_SEQ
+2022-01-09 12:41:49.868 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    drop sequence if exists TITLES_SEQ
+2022-01-09 12:41:49.874 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : create sequence PEOPLE_SEQ start with 1 increment by 1
+2022-01-09 12:41:49.880 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : create sequence TITLES_SEQ start with 1 increment by 1
+2022-01-09 12:41:49.882 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    create table ACTORS (
+       PERSON_ID bigint not null,
+        TITLE_ID bigint not null,
+        role varchar(200) not null,
+        primary key (PERSON_ID, TITLE_ID)
+    )
+2022-01-09 12:41:49.890 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    create table DIRECTORS (
+       TITLE_ID bigint not null,
+        PERSON_ID bigint not null,
+        primary key (TITLE_ID, PERSON_ID)
+    )
+2022-01-09 12:41:49.893 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    create table episodes (
+       TV_SHOW_ID bigint not null,
+        episodes varchar(255) not null,
+        primary key (TV_SHOW_ID, episodes)
+    )
+2022-01-09 12:41:49.896 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    create table PEOPLE (
+       id bigint not null,
+        birthDay varchar(255) not null,
+        birthPlace varchar(50) not null,
+        deathDay varchar(255),
+        firstName varchar(20) not null,
+        lastName varchar(30) not null,
+        primary key (id)
+    )
+2022-01-09 12:41:49.898 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    create table person_worked_as (
+       PERSON_ID bigint not null,
+        profession varchar(255) not null,
+        primary key (PERSON_ID, profession)
+    )
+2022-01-09 12:41:49.901 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    create table PRODUCERS (
+       TITLE_ID bigint not null,
+        PERSON_ID bigint not null,
+        primary key (TITLE_ID, PERSON_ID)
+    )
+2022-01-09 12:41:49.904 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    create table Title_countriesOfOrigin (
+       Title_id bigint not null,
+        countriesOfOrigin varchar(255)
+    )
+2022-01-09 12:41:49.905 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    create table title_genres (
+       TITLE_ID bigint not null,
+        genre varchar(255) not null,
+        primary key (TITLE_ID, genre)
+    )
+2022-01-09 12:41:49.907 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    create table Title_languages (
+       Title_id bigint not null,
+        languages varchar(255)
+    )
+2022-01-09 12:41:49.909 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    create table TITLES (
+       id bigint not null,
+        durationInMinutes integer not null,
+        numberOfVotes integer,
+        primaryTitle varchar(200) not null,
+        releaseYear integer,
+        smdbRating float check (smdbRating>=0 AND smdbRating<=10),
+        storyLine varchar(4096) not null,
+        primary key (id)
+    )
+2022-01-09 12:41:49.918 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    create table TV_SHOWS (
+       numberOfSeasons integer,
+        id bigint not null,
+        primary key (id)
+    )
+2022-01-09 12:41:49.920 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    create table WRITERS (
+       TITLE_ID bigint not null,
+        PERSON_ID bigint not null,
+        primary key (TITLE_ID, PERSON_ID)
+    )
+2022-01-09 12:41:49.924 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    alter table ACTORS 
+       add constraint FK4r95odjou5bpnuy8rf4ti7luc 
+       foreign key (PERSON_ID) 
+       references PEOPLE
+2022-01-09 12:41:49.942 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    alter table ACTORS 
+       add constraint FKpsfst7c3jvbjoh4uhu4oy3wka 
+       foreign key (TITLE_ID) 
+       references TITLES
+2022-01-09 12:41:49.946 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    alter table DIRECTORS 
+       add constraint FK3dnxikpvm1h31wpkfirxerr8b 
+       foreign key (PERSON_ID) 
+       references PEOPLE
+2022-01-09 12:41:49.950 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    alter table DIRECTORS 
+       add constraint FK6hcf9cgkhr8mba766f41tkr0t 
+       foreign key (TITLE_ID) 
+       references TITLES
+2022-01-09 12:41:49.954 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    alter table episodes 
+       add constraint FKghups0bow1lwq6ssqe0j5m31l 
+       foreign key (TV_SHOW_ID) 
+       references TV_SHOWS
+2022-01-09 12:41:49.958 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    alter table person_worked_as 
+       add constraint FKsykjm3i29pd1ojx0csamcsind 
+       foreign key (PERSON_ID) 
+       references PEOPLE
+2022-01-09 12:41:49.961 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    alter table PRODUCERS 
+       add constraint FK1no5goggsuujlauyb512mo2s6 
+       foreign key (PERSON_ID) 
+       references PEOPLE
+2022-01-09 12:41:49.965 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    alter table PRODUCERS 
+       add constraint FK66uplfbm2nvko4a7m9debiitw 
+       foreign key (TITLE_ID) 
+       references TITLES
+2022-01-09 12:41:49.968 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    alter table Title_countriesOfOrigin 
+       add constraint FK3294ss75p3691vms12gg1mgnk 
+       foreign key (Title_id) 
+       references TITLES
+2022-01-09 12:41:49.972 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    alter table title_genres 
+       add constraint FKgqa4ljdw5jy5wlhxshpxeumpd 
+       foreign key (TITLE_ID) 
+       references TITLES
+2022-01-09 12:41:49.976 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    alter table Title_languages 
+       add constraint FKed3maggw1j3im6dpjr3inwyl7 
+       foreign key (Title_id) 
+       references TITLES
+2022-01-09 12:41:49.980 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    alter table TV_SHOWS 
+       add constraint FKa5l0u7119p1foe28737oa7bo6 
+       foreign key (id) 
+       references TITLES
+2022-01-09 12:41:49.983 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    alter table WRITERS 
+       add constraint FKnduqaeas7h7g0u640miah5yy6 
+       foreign key (PERSON_ID) 
+       references PEOPLE
+2022-01-09 12:41:49.987 DEBUG Christos-PC - [         task-1] [o.h.SQL                            ] : 
+    
+    alter table WRITERS 
+       add constraint FKg8wa07t71ydsltn1n9c6gry4q 
+       foreign key (TITLE_ID) 
+       references TITLES
+2022-01-09 12:41:49.998  INFO Christos-PC - [         task-1] [o.h.e.t.j.p.i.JtaPlatformInitiator ] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-09 12:42:16.105 DEBUG Christos-PC - [ing housekeeper] [c.z.h.p.HikariPool                 ] : smdbConnectionPooling - Before cleanup stats (total=1, active=0, idle=1, waiting=0)
+2022-01-09 12:42:16.105 DEBUG Christos-PC - [ing housekeeper] [c.z.h.p.HikariPool                 ] : smdbConnectionPooling - After cleanup  stats (total=1, active=0, idle=1, waiting=0)
+2022-01-09 12:42:16.105 DEBUG Christos-PC - [ing housekeeper] [c.z.h.p.HikariPool                 ] : smdbConnectionPooling - Fill pool skipped, pool is at sufficient level.
+2022-01-09 12:42:45.382 DEBUG Christos-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : smdbConnectionPooling - Closing connection conn1: url=jdbc:h2:./smdb user=SA: (connection has passed maxLifetime)
+2022-01-09 12:42:45.527 DEBUG Christos-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : smdbConnectionPooling - Added connection conn3: url=jdbc:h2:./smdb user=SA
+2022-01-09 12:42:46.106 DEBUG Christos-PC - [ing housekeeper] [c.z.h.p.HikariPool                 ] : smdbConnectionPooling - Before cleanup stats (total=1, active=0, idle=1, waiting=0)
+2022-01-09 12:42:46.106 DEBUG Christos-PC - [ing housekeeper] [c.z.h.p.HikariPool                 ] : smdbConnectionPooling - After cleanup  stats (total=1, active=0, idle=1, waiting=0)
+2022-01-09 12:42:46.106 DEBUG Christos-PC - [ing housekeeper] [c.z.h.p.HikariPool                 ] : smdbConnectionPooling - Fill pool skipped, pool is at sufficient level.
+2022-01-09 12:43:16.107 DEBUG Christos-PC - [ing housekeeper] [c.z.h.p.HikariPool                 ] : smdbConnectionPooling - Before cleanup stats (total=1, active=0, idle=1, waiting=0)
+2022-01-09 12:43:16.107 DEBUG Christos-PC - [ing housekeeper] [c.z.h.p.HikariPool                 ] : smdbConnectionPooling - After cleanup  stats (total=1, active=0, idle=1, waiting=0)
+2022-01-09 12:43:16.107 DEBUG Christos-PC - [ing housekeeper] [c.z.h.p.HikariPool                 ] : smdbConnectionPooling - Fill pool skipped, pool is at sufficient level.
+2022-01-09 12:43:44.735 DEBUG Christos-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : smdbConnectionPooling - Closing connection conn3: url=jdbc:h2:./smdb user=SA: (connection has passed maxLifetime)
+2022-01-09 12:43:44.903 DEBUG Christos-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : smdbConnectionPooling - Added connection conn5: url=jdbc:h2:./smdb user=SA
+2022-01-09 12:43:46.109 DEBUG Christos-PC - [ing housekeeper] [c.z.h.p.HikariPool                 ] : smdbConnectionPooling - Before cleanup stats (total=1, active=0, idle=1, waiting=0)
+2022-01-09 12:43:46.109 DEBUG Christos-PC - [ing housekeeper] [c.z.h.p.HikariPool                 ] : smdbConnectionPooling - After cleanup  stats (total=1, active=0, idle=1, waiting=0)
+2022-01-09 12:43:46.109 DEBUG Christos-PC - [ing housekeeper] [c.z.h.p.HikariPool                 ] : smdbConnectionPooling - Fill pool skipped, pool is at sufficient level.
+2022-01-09 12:44:16.109 DEBUG Christos-PC - [ing housekeeper] [c.z.h.p.HikariPool                 ] : smdbConnectionPooling - Before cleanup stats (total=1, active=0, idle=1, waiting=0)
+2022-01-09 12:44:16.110 DEBUG Christos-PC - [ing housekeeper] [c.z.h.p.HikariPool                 ] : smdbConnectionPooling - After cleanup  stats (total=1, active=0, idle=1, waiting=0)
+2022-01-09 12:44:16.110 DEBUG Christos-PC - [ing housekeeper] [c.z.h.p.HikariPool                 ] : smdbConnectionPooling - Fill pool skipped, pool is at sufficient level.

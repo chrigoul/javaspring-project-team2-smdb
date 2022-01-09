@@ -1,0 +1,1146 @@
+2021-12-27 14:33:45.866  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2021-12-27 14:33:45.945  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 20000 (C:\Users\chris\IdeaProjects\demo\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo\javaspring-project-team2)
+2021-12-27 14:33:45.952  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : No active profile set, falling back to default profiles: default
+2021-12-27 14:33:49.485  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2021-12-27 14:33:49.576  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 19368 (C:\Users\chris\IdeaProjects\demo\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo\javaspring-project-team2)
+2021-12-27 14:33:49.585  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : No active profile set, falling back to default profiles: default
+2021-12-27 14:33:51.797  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2021-12-27 14:33:51.815  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 14:33:51.815  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2021-12-27 14:33:51.816  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 14:33:51.968  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2021-12-27 14:33:51.968  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2247 ms
+2021-12-27 14:33:52.375  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/smdb'
+2021-12-27 14:33:52.504  INFO Christos-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 14:33:52.561  INFO Christos-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-27 14:33:52.777  INFO Christos-PC - [           main] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-27 14:33:52.963  INFO Christos-PC - [           main] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 14:33:53.404  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:33:53.476  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.Episode
+2021-12-27 14:33:53.478  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:33:53.483  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.TvShow
+2021-12-27 14:33:53.483  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:33:54.494 ERROR Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+2021-12-27 14:33:54.497  WARN Christos-PC - [           main] [gServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+2021-12-27 14:33:54.575  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Stopping service [Tomcat]
+2021-12-27 14:33:54.616  INFO Christos-PC - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-27 14:33:54.717 ERROR Christos-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 more
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:512)
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:479)
+	at org.hibernate.mapping.Property.isValid(Property.java:231)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:627)
+	at org.hibernate.mapping.SingleTableSubclass.validate(SingleTableSubclass.java:54)
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:359)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:307)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 20 more
+2021-12-27 14:34:01.992  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2021-12-27 14:34:02.038  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 7556 (C:\Users\chris\IdeaProjects\demo\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo\javaspring-project-team2)
+2021-12-27 14:34:02.045  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : No active profile set, falling back to default profiles: default
+2021-12-27 14:34:03.521  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2021-12-27 14:34:03.532  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 14:34:03.533  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2021-12-27 14:34:03.533  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 14:34:03.633  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2021-12-27 14:34:03.633  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1529 ms
+2021-12-27 14:34:03.943  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/smdb'
+2021-12-27 14:34:04.063  INFO Christos-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 14:34:04.125  INFO Christos-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-27 14:34:04.305  INFO Christos-PC - [           main] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-27 14:34:04.464  INFO Christos-PC - [           main] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 14:34:04.654  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:34:04.672  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.Episode
+2021-12-27 14:34:04.673  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:34:04.676  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.TvShow
+2021-12-27 14:34:04.677  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:34:04.954 ERROR Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+2021-12-27 14:34:04.955  WARN Christos-PC - [           main] [gServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+2021-12-27 14:34:04.996  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Stopping service [Tomcat]
+2021-12-27 14:34:05.011  INFO Christos-PC - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-27 14:34:05.036 ERROR Christos-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 more
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:512)
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:479)
+	at org.hibernate.mapping.Property.isValid(Property.java:231)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:627)
+	at org.hibernate.mapping.SingleTableSubclass.validate(SingleTableSubclass.java:54)
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:359)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:307)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 20 more
+2021-12-27 14:35:10.674  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2021-12-27 14:35:10.732  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 19748 (C:\Users\chris\IdeaProjects\demo\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo\javaspring-project-team2)
+2021-12-27 14:35:10.739  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : No active profile set, falling back to default profiles: default
+2021-12-27 14:35:12.290  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2021-12-27 14:35:12.302  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 14:35:12.303  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2021-12-27 14:35:12.303  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 14:35:12.445  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2021-12-27 14:35:12.445  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1621 ms
+2021-12-27 14:35:12.772  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/smdb'
+2021-12-27 14:35:12.904  INFO Christos-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 14:35:12.984  INFO Christos-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-27 14:35:13.151  INFO Christos-PC - [           main] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-27 14:35:13.253  INFO Christos-PC - [           main] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 14:35:13.406  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:35:13.420  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.Episode
+2021-12-27 14:35:13.420  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:35:13.422  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.TvShow
+2021-12-27 14:35:13.422  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:35:13.675 ERROR Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+2021-12-27 14:35:13.676  WARN Christos-PC - [           main] [gServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+2021-12-27 14:35:13.697  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Stopping service [Tomcat]
+2021-12-27 14:35:13.708  INFO Christos-PC - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-27 14:35:13.732 ERROR Christos-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 more
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:512)
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:479)
+	at org.hibernate.mapping.Property.isValid(Property.java:231)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:627)
+	at org.hibernate.mapping.SingleTableSubclass.validate(SingleTableSubclass.java:54)
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:359)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:307)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 20 more
+2021-12-27 14:36:28.964  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2021-12-27 14:36:29.010  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 5452 (C:\Users\chris\IdeaProjects\demo\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo\javaspring-project-team2)
+2021-12-27 14:36:29.014  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : No active profile set, falling back to default profiles: default
+2021-12-27 14:36:30.260  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2021-12-27 14:36:30.271  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 14:36:30.272  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2021-12-27 14:36:30.272  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 14:36:30.370  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2021-12-27 14:36:30.370  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1287 ms
+2021-12-27 14:36:30.619  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/smdb'
+2021-12-27 14:36:30.731  INFO Christos-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 14:36:30.781  INFO Christos-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-27 14:36:30.923  INFO Christos-PC - [           main] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-27 14:36:31.042  INFO Christos-PC - [           main] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 14:36:31.192  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:36:31.210  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.Episode
+2021-12-27 14:36:31.210  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:36:31.212  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.TvShow
+2021-12-27 14:36:31.212  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:36:31.448 ERROR Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+2021-12-27 14:36:31.450  WARN Christos-PC - [           main] [gServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+2021-12-27 14:36:31.470  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Stopping service [Tomcat]
+2021-12-27 14:36:31.484  INFO Christos-PC - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-27 14:36:31.508 ERROR Christos-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 more
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:512)
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:479)
+	at org.hibernate.mapping.Property.isValid(Property.java:231)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:627)
+	at org.hibernate.mapping.SingleTableSubclass.validate(SingleTableSubclass.java:54)
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:359)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:307)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 20 more
+2021-12-27 14:37:40.509  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2021-12-27 14:37:40.562  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 18612 (C:\Users\chris\IdeaProjects\demo\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo\javaspring-project-team2)
+2021-12-27 14:37:40.567  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : No active profile set, falling back to default profiles: default
+2021-12-27 14:37:41.808  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2021-12-27 14:37:41.815  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 14:37:41.816  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2021-12-27 14:37:41.816  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 14:37:41.931  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2021-12-27 14:37:41.931  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1305 ms
+2021-12-27 14:37:42.195  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/smdb'
+2021-12-27 14:37:42.307  INFO Christos-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 14:37:42.349  INFO Christos-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-27 14:37:42.483  INFO Christos-PC - [           main] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-27 14:37:42.595  INFO Christos-PC - [           main] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 14:37:42.766  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:37:42.781  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.Episode
+2021-12-27 14:37:42.782  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:37:42.784  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.TvShow
+2021-12-27 14:37:42.784  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:37:42.983 ERROR Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+2021-12-27 14:37:42.983  WARN Christos-PC - [           main] [gServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+2021-12-27 14:37:43.004  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Stopping service [Tomcat]
+2021-12-27 14:37:43.017  INFO Christos-PC - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-27 14:37:43.042 ERROR Christos-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 more
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:512)
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:479)
+	at org.hibernate.mapping.Property.isValid(Property.java:231)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:627)
+	at org.hibernate.mapping.SingleTableSubclass.validate(SingleTableSubclass.java:54)
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:359)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:307)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 20 more
+2021-12-27 14:39:19.804  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2021-12-27 14:39:19.845  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 19500 (C:\Users\chris\IdeaProjects\demo\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo\javaspring-project-team2)
+2021-12-27 14:39:19.851  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : No active profile set, falling back to default profiles: default
+2021-12-27 14:39:20.989  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2021-12-27 14:39:20.997  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 14:39:20.998  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2021-12-27 14:39:20.998  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 14:39:21.099  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2021-12-27 14:39:21.099  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1183 ms
+2021-12-27 14:39:21.327  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/smdb'
+2021-12-27 14:39:21.419  INFO Christos-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 14:39:21.468  INFO Christos-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-27 14:39:21.598  INFO Christos-PC - [           main] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-27 14:39:21.688  INFO Christos-PC - [           main] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 14:39:21.802  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:39:21.814  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.Episode
+2021-12-27 14:39:21.814  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:39:21.815  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.TvShow
+2021-12-27 14:39:21.816  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:39:22.031 ERROR Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+2021-12-27 14:39:22.032  WARN Christos-PC - [           main] [gServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+2021-12-27 14:39:22.050  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Stopping service [Tomcat]
+2021-12-27 14:39:22.063  INFO Christos-PC - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-27 14:39:22.090 ERROR Christos-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 more
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:512)
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:479)
+	at org.hibernate.mapping.Property.isValid(Property.java:231)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:627)
+	at org.hibernate.mapping.SingleTableSubclass.validate(SingleTableSubclass.java:54)
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:359)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:307)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 20 more
+2021-12-27 14:40:18.288  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2021-12-27 14:40:18.321  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 15116 (C:\Users\chris\IdeaProjects\demo\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo\javaspring-project-team2)
+2021-12-27 14:40:18.326  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : No active profile set, falling back to default profiles: default
+2021-12-27 14:40:19.383  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2021-12-27 14:40:19.391  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 14:40:19.392  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2021-12-27 14:40:19.392  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 14:40:19.477  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2021-12-27 14:40:19.477  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1100 ms
+2021-12-27 14:40:19.679  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/smdb'
+2021-12-27 14:40:19.791  INFO Christos-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 14:40:19.842  INFO Christos-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-27 14:40:19.976  INFO Christos-PC - [           main] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-27 14:40:20.078  INFO Christos-PC - [           main] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 14:40:20.205  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:40:20.215  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.Episode
+2021-12-27 14:40:20.216  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:40:20.217  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.TvShow
+2021-12-27 14:40:20.218  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:40:20.402 ERROR Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+2021-12-27 14:40:20.403  WARN Christos-PC - [           main] [gServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+2021-12-27 14:40:20.419  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Stopping service [Tomcat]
+2021-12-27 14:40:20.430  INFO Christos-PC - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-27 14:40:20.453 ERROR Christos-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 more
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.Set, at table: TITLES, for columns: [org.hibernate.mapping.Column(tvEpisodes)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:512)
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:479)
+	at org.hibernate.mapping.Property.isValid(Property.java:231)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:627)
+	at org.hibernate.mapping.SingleTableSubclass.validate(SingleTableSubclass.java:54)
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:359)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:307)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 20 more
+2021-12-27 14:48:05.151  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2021-12-27 14:48:05.189  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 2924 (C:\Users\chris\IdeaProjects\demo\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo\javaspring-project-team2)
+2021-12-27 14:48:05.193  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : No active profile set, falling back to default profiles: default
+2021-12-27 14:48:06.414  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2021-12-27 14:48:06.421  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 14:48:06.422  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2021-12-27 14:48:06.422  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 14:48:06.522  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2021-12-27 14:48:06.522  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1271 ms
+2021-12-27 14:48:06.748  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/smdb'
+2021-12-27 14:48:06.842  INFO Christos-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 14:48:06.897  INFO Christos-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-27 14:48:07.039  INFO Christos-PC - [           main] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-27 14:48:07.127  INFO Christos-PC - [           main] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 14:48:07.259  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:48:07.276 ERROR Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Failed to initialize JPA EntityManagerFactory: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.Title.genres[com.javaspring.team2.project.smdb.domain.Genre]
+2021-12-27 14:48:07.276  WARN Christos-PC - [           main] [gServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.Title.genres[com.javaspring.team2.project.smdb.domain.Genre]
+2021-12-27 14:48:07.308  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Stopping service [Tomcat]
+2021-12-27 14:48:07.319  INFO Christos-PC - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-27 14:48:07.340 ERROR Christos-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.Title.genres[com.javaspring.team2.project.smdb.domain.Genre]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.Title.genres[com.javaspring.team2.project.smdb.domain.Genre]
+	at org.hibernate.cfg.annotations.CollectionBinder.bindManyToManySecondPass(CollectionBinder.java:1351)
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:874)
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:799)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:53)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1678)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1646)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:295)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 more
+2021-12-27 14:48:58.336  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2021-12-27 14:48:58.373  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 1032 (C:\Users\chris\IdeaProjects\demo\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo\javaspring-project-team2)
+2021-12-27 14:48:58.378  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : No active profile set, falling back to default profiles: default
+2021-12-27 14:48:59.610  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2021-12-27 14:48:59.619  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 14:48:59.619  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2021-12-27 14:48:59.619  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 14:48:59.727  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2021-12-27 14:48:59.728  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1302 ms
+2021-12-27 14:49:00.092  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/smdb'
+2021-12-27 14:49:00.275  INFO Christos-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 14:49:00.341  INFO Christos-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-27 14:49:00.461  INFO Christos-PC - [           main] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-27 14:49:00.572  INFO Christos-PC - [           main] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 14:49:00.736  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:49:00.750  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.Episode
+2021-12-27 14:49:00.750  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:49:00.752  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.TvShow
+2021-12-27 14:49:00.753  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:49:00.760 ERROR Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Failed to initialize JPA EntityManagerFactory: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.Title.genres[com.javaspring.team2.project.smdb.domain.Genre]
+2021-12-27 14:49:00.761  WARN Christos-PC - [           main] [gServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.Title.genres[com.javaspring.team2.project.smdb.domain.Genre]
+2021-12-27 14:49:00.779  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Stopping service [Tomcat]
+2021-12-27 14:49:00.794  INFO Christos-PC - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-27 14:49:00.883 ERROR Christos-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.Title.genres[com.javaspring.team2.project.smdb.domain.Genre]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.Title.genres[com.javaspring.team2.project.smdb.domain.Genre]
+	at org.hibernate.cfg.annotations.CollectionBinder.bindManyToManySecondPass(CollectionBinder.java:1351)
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:874)
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:799)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:53)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1678)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1646)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:295)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 more
+2021-12-27 14:51:03.885  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2021-12-27 14:51:03.921  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 21476 (C:\Users\chris\IdeaProjects\demo\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo\javaspring-project-team2)
+2021-12-27 14:51:03.926  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : No active profile set, falling back to default profiles: default
+2021-12-27 14:51:05.106  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2021-12-27 14:51:05.114  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 14:51:05.115  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2021-12-27 14:51:05.115  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 14:51:05.205  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2021-12-27 14:51:05.205  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1232 ms
+2021-12-27 14:51:05.446  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/smdb'
+2021-12-27 14:51:05.540  INFO Christos-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 14:51:05.590  INFO Christos-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-27 14:51:05.715  INFO Christos-PC - [           main] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-27 14:51:05.801  INFO Christos-PC - [           main] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 14:51:05.920  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:51:05.935  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.Episode
+2021-12-27 14:51:05.936  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:51:05.938  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.TvShow
+2021-12-27 14:51:05.939  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:51:05.946 ERROR Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Failed to initialize JPA EntityManagerFactory: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.Title.genres[com.javaspring.team2.project.smdb.domain.Genre]
+2021-12-27 14:51:05.947  WARN Christos-PC - [           main] [gServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.Title.genres[com.javaspring.team2.project.smdb.domain.Genre]
+2021-12-27 14:51:05.984  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Stopping service [Tomcat]
+2021-12-27 14:51:05.997  INFO Christos-PC - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-27 14:51:06.021 ERROR Christos-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.Title.genres[com.javaspring.team2.project.smdb.domain.Genre]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.Title.genres[com.javaspring.team2.project.smdb.domain.Genre]
+	at org.hibernate.cfg.annotations.CollectionBinder.bindManyToManySecondPass(CollectionBinder.java:1351)
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:874)
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:799)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:53)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1678)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1646)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:295)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 more
+2021-12-27 14:51:42.348  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2021-12-27 14:51:42.381  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 6888 (C:\Users\chris\IdeaProjects\demo\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo\javaspring-project-team2)
+2021-12-27 14:51:42.386  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : No active profile set, falling back to default profiles: default
+2021-12-27 14:51:43.607  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2021-12-27 14:51:43.616  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 14:51:43.616  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2021-12-27 14:51:43.616  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 14:51:43.722  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2021-12-27 14:51:43.722  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1280 ms
+2021-12-27 14:51:43.983  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/smdb'
+2021-12-27 14:51:44.098  INFO Christos-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 14:51:44.147  INFO Christos-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-27 14:51:44.304  INFO Christos-PC - [           main] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-27 14:51:44.447  INFO Christos-PC - [           main] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 14:51:44.607  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:51:44.627  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.TvShow
+2021-12-27 14:51:44.627  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:51:44.634 ERROR Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Failed to initialize JPA EntityManagerFactory: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.TvShow.tvEpisodes[com.javaspring.team2.project.smdb.domain.Episode]
+2021-12-27 14:51:44.635  WARN Christos-PC - [           main] [gServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.TvShow.tvEpisodes[com.javaspring.team2.project.smdb.domain.Episode]
+2021-12-27 14:51:44.674  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Stopping service [Tomcat]
+2021-12-27 14:51:44.692  INFO Christos-PC - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-27 14:51:44.734 ERROR Christos-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.TvShow.tvEpisodes[com.javaspring.team2.project.smdb.domain.Episode]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.TvShow.tvEpisodes[com.javaspring.team2.project.smdb.domain.Episode]
+	at org.hibernate.cfg.annotations.CollectionBinder.bindManyToManySecondPass(CollectionBinder.java:1351)
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:874)
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:799)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:53)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1678)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1646)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:295)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 more
+2021-12-27 14:55:58.463  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2021-12-27 14:55:58.506  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 12884 (C:\Users\chris\IdeaProjects\demo\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo\javaspring-project-team2)
+2021-12-27 14:55:58.511  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : No active profile set, falling back to default profiles: default
+2021-12-27 14:55:59.702  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2021-12-27 14:55:59.711  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 14:55:59.711  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2021-12-27 14:55:59.712  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 14:55:59.830  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2021-12-27 14:55:59.831  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1269 ms
+2021-12-27 14:56:00.059  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/smdb'
+2021-12-27 14:56:00.147  INFO Christos-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 14:56:00.195  INFO Christos-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-27 14:56:00.332  INFO Christos-PC - [           main] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-27 14:56:00.428  INFO Christos-PC - [           main] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 14:56:00.544  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:56:00.557  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.TvShow
+2021-12-27 14:56:00.557  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:56:00.564 ERROR Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Failed to initialize JPA EntityManagerFactory: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.TvShow.tvEpisodes[com.javaspring.team2.project.smdb.domain.Episode]
+2021-12-27 14:56:00.565  WARN Christos-PC - [           main] [gServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.TvShow.tvEpisodes[com.javaspring.team2.project.smdb.domain.Episode]
+2021-12-27 14:56:00.597  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Stopping service [Tomcat]
+2021-12-27 14:56:00.608  INFO Christos-PC - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-27 14:56:00.632 ERROR Christos-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.TvShow.tvEpisodes[com.javaspring.team2.project.smdb.domain.Episode]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.TvShow.tvEpisodes[com.javaspring.team2.project.smdb.domain.Episode]
+	at org.hibernate.cfg.annotations.CollectionBinder.bindManyToManySecondPass(CollectionBinder.java:1351)
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:874)
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:799)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:53)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1678)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1646)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:295)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 more
+2021-12-27 14:56:37.513  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2021-12-27 14:56:37.552  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 18600 (C:\Users\chris\IdeaProjects\demo\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo\javaspring-project-team2)
+2021-12-27 14:56:37.558  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : No active profile set, falling back to default profiles: default
+2021-12-27 14:56:38.599  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2021-12-27 14:56:38.608  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 14:56:38.608  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2021-12-27 14:56:38.608  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 14:56:38.696  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2021-12-27 14:56:38.697  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1084 ms
+2021-12-27 14:56:38.910  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/smdb'
+2021-12-27 14:56:39.008  INFO Christos-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 14:56:39.045  INFO Christos-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-27 14:56:39.172  INFO Christos-PC - [           main] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-27 14:56:39.269  INFO Christos-PC - [           main] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 14:56:39.396  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:56:39.409  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.TvShow
+2021-12-27 14:56:39.410  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:56:39.415 ERROR Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Failed to initialize JPA EntityManagerFactory: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.TvShow.tvEpisodes[com.javaspring.team2.project.smdb.domain.Episode]
+2021-12-27 14:56:39.416  WARN Christos-PC - [           main] [gServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.TvShow.tvEpisodes[com.javaspring.team2.project.smdb.domain.Episode]
+2021-12-27 14:56:39.453  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Stopping service [Tomcat]
+2021-12-27 14:56:39.464  INFO Christos-PC - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-27 14:56:39.487 ERROR Christos-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.TvShow.tvEpisodes[com.javaspring.team2.project.smdb.domain.Episode]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.TvShow.tvEpisodes[com.javaspring.team2.project.smdb.domain.Episode]
+	at org.hibernate.cfg.annotations.CollectionBinder.bindManyToManySecondPass(CollectionBinder.java:1351)
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:874)
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:799)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:53)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1678)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1646)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:295)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 more
+2021-12-27 14:57:24.056  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2021-12-27 14:57:24.096  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 3740 (C:\Users\chris\IdeaProjects\demo\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo\javaspring-project-team2)
+2021-12-27 14:57:24.100  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : No active profile set, falling back to default profiles: default
+2021-12-27 14:57:25.347  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2021-12-27 14:57:25.354  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 14:57:25.354  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2021-12-27 14:57:25.355  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 14:57:25.454  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2021-12-27 14:57:25.454  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1299 ms
+2021-12-27 14:57:25.674  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/smdb'
+2021-12-27 14:57:25.780  INFO Christos-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 14:57:25.828  INFO Christos-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-27 14:57:25.956  INFO Christos-PC - [           main] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-27 14:57:26.043  INFO Christos-PC - [           main] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 14:57:26.162  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:57:26.171  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.TvShow
+2021-12-27 14:57:26.171  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:57:26.177 ERROR Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Failed to initialize JPA EntityManagerFactory: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.TvShow.tvEpisodes[com.javaspring.team2.project.smdb.domain.Episode]
+2021-12-27 14:57:26.177  WARN Christos-PC - [           main] [gServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.TvShow.tvEpisodes[com.javaspring.team2.project.smdb.domain.Episode]
+2021-12-27 14:57:26.208  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Stopping service [Tomcat]
+2021-12-27 14:57:26.219  INFO Christos-PC - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-27 14:57:26.240 ERROR Christos-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.TvShow.tvEpisodes[com.javaspring.team2.project.smdb.domain.Episode]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.javaspring.team2.project.smdb.domain.TvShow.tvEpisodes[com.javaspring.team2.project.smdb.domain.Episode]
+	at org.hibernate.cfg.annotations.CollectionBinder.bindManyToManySecondPass(CollectionBinder.java:1351)
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:874)
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:799)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:53)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1678)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1646)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:295)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 more
+2021-12-27 14:58:27.345  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2021-12-27 14:58:27.454  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 16460 (C:\Users\chris\IdeaProjects\demo\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo\javaspring-project-team2)
+2021-12-27 14:58:27.461  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : No active profile set, falling back to default profiles: default
+2021-12-27 14:58:28.944  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2021-12-27 14:58:28.952  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 14:58:28.953  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2021-12-27 14:58:28.953  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 14:58:29.055  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2021-12-27 14:58:29.055  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1540 ms
+2021-12-27 14:58:29.283  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/smdb'
+2021-12-27 14:58:29.388  INFO Christos-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 14:58:29.444  INFO Christos-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-27 14:58:29.637  INFO Christos-PC - [           main] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-27 14:58:29.899  INFO Christos-PC - [           main] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 14:58:30.200  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:58:30.217  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.Episode
+2021-12-27 14:58:30.217  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:58:30.221  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.TvShow
+2021-12-27 14:58:30.221  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 14:58:31.312  INFO Christos-PC - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1344f7fe] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-12-27 14:58:31.336  INFO Christos-PC - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@18209303] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-12-27 14:58:31.397  INFO Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 14:58:31.618 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-12-27 14:58:31.715 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2021-12-27 14:58:31.753 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-12-27 14:58:31.762 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-12-27 14:58:32.014 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2021-12-27 14:58:32.033  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-12-27 14:58:32.086  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2021-12-27 14:58:32.108  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-27 14:58:32.119  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 5.24 seconds (JVM running for 7.336)
+2021-12-27 15:06:18.583  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 15:06:18.583  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-12-27 15:06:20.659  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@349d1e77] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-12-27 20:56:48.485  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2021-12-27 20:56:48.527  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 3928 (C:\Users\chris\IdeaProjects\demo\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo\javaspring-project-team2)
+2021-12-27 20:56:48.531  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : No active profile set, falling back to default profiles: default
+2021-12-27 20:56:49.882  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2021-12-27 20:56:49.893  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 20:56:49.893  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2021-12-27 20:56:49.894  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 20:56:50.016  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2021-12-27 20:56:50.016  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1434 ms
+2021-12-27 20:56:50.364  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/smdb'
+2021-12-27 20:56:50.498  INFO Christos-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 20:56:50.582  INFO Christos-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-27 20:56:50.758  INFO Christos-PC - [           main] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-27 20:56:50.890  INFO Christos-PC - [           main] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 20:56:51.044  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 20:56:51.055  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.Episode
+2021-12-27 20:56:51.055  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 20:56:51.057  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.TvShow
+2021-12-27 20:56:51.057  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 20:56:51.748  INFO Christos-PC - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5f4df55e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-12-27 20:56:51.755  INFO Christos-PC - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2d3eb1ea] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-12-27 20:56:51.797  INFO Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 20:56:51.958 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-12-27 20:56:52.071 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2021-12-27 20:56:52.123 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-12-27 20:56:52.136 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-12-27 20:56:52.366 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2021-12-27 20:56:52.397  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-12-27 20:56:52.474  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2021-12-27 20:56:52.496  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-27 20:56:52.508  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 4.601 seconds (JVM running for 7.01)
+2021-12-27 21:04:09.052  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 21:04:09.052  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-12-27 21:04:11.129  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5658b889] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-12-27 21:04:21.808  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2021-12-27 21:04:21.847  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 1168 (C:\Users\chris\IdeaProjects\demo\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo\javaspring-project-team2)
+2021-12-27 21:04:21.852  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : No active profile set, falling back to default profiles: default
+2021-12-27 21:04:23.076  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2021-12-27 21:04:23.086  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 21:04:23.086  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2021-12-27 21:04:23.087  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 21:04:23.190  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2021-12-27 21:04:23.190  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1284 ms
+2021-12-27 21:04:23.490  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/smdb'
+2021-12-27 21:04:23.613  INFO Christos-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 21:04:23.680  INFO Christos-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-27 21:04:23.855  INFO Christos-PC - [           main] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-27 21:04:23.993  INFO Christos-PC - [           main] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 21:04:24.173  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 21:04:24.189  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.Episode
+2021-12-27 21:04:24.190  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 21:04:24.192  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.TvShow
+2021-12-27 21:04:24.193  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 21:04:24.922  INFO Christos-PC - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1479ed5a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-12-27 21:04:24.928  INFO Christos-PC - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5c9e6d95] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-12-27 21:04:24.985  INFO Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 21:04:25.183 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-12-27 21:04:25.247 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2021-12-27 21:04:25.279 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-12-27 21:04:25.287 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-12-27 21:04:25.419 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2021-12-27 21:04:25.437  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-12-27 21:04:25.485  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2021-12-27 21:04:25.501  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-27 21:04:25.510  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 4.176 seconds (JVM running for 6.517)
+2021-12-27 21:07:10.460  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 21:07:10.460  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-12-27 21:07:12.516  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3715f8a5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-12-27 21:07:23.290  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2021-12-27 21:07:23.329  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 20580 (C:\Users\chris\IdeaProjects\demo\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo\javaspring-project-team2)
+2021-12-27 21:07:23.334  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : No active profile set, falling back to default profiles: default
+2021-12-27 21:07:24.462  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2021-12-27 21:07:24.470  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 21:07:24.470  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2021-12-27 21:07:24.471  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 21:07:24.566  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2021-12-27 21:07:24.567  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1184 ms
+2021-12-27 21:07:24.798  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/smdb'
+2021-12-27 21:07:24.901  INFO Christos-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 21:07:24.949  INFO Christos-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-27 21:07:25.085  INFO Christos-PC - [           main] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-27 21:07:25.186  INFO Christos-PC - [           main] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 21:07:25.320  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 21:07:25.335  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.Episode
+2021-12-27 21:07:25.335  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 21:07:25.338  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.TvShow
+2021-12-27 21:07:25.338  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 21:07:25.883  INFO Christos-PC - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@11ee671f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-12-27 21:07:25.887  INFO Christos-PC - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@72bce309] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-12-27 21:07:25.934  INFO Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 21:07:26.086 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-12-27 21:07:26.148 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2021-12-27 21:07:26.178 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-12-27 21:07:26.187 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-12-27 21:07:26.304 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2021-12-27 21:07:26.321  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-12-27 21:07:26.364  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2021-12-27 21:07:26.381  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-27 21:07:26.391  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 3.53 seconds (JVM running for 5.851)
+2021-12-27 21:11:42.481  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 21:11:42.482  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-12-27 21:11:42.536  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5badd1d0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-12-27 21:11:50.708  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2021-12-27 21:11:50.752  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 11716 (C:\Users\chris\IdeaProjects\demo\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo\javaspring-project-team2)
+2021-12-27 21:11:50.757  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : No active profile set, falling back to default profiles: default
+2021-12-27 21:11:51.971  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2021-12-27 21:11:51.985  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 21:11:51.986  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2021-12-27 21:11:51.986  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 21:11:52.113  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2021-12-27 21:11:52.113  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1301 ms
+2021-12-27 21:11:52.371  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/smdb'
+2021-12-27 21:11:52.472  INFO Christos-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 21:11:52.526  INFO Christos-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-27 21:11:52.683  INFO Christos-PC - [           main] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-27 21:11:52.774  INFO Christos-PC - [           main] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 21:11:52.900  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 21:11:52.915  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.Episode
+2021-12-27 21:11:52.916  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 21:11:52.918  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.TvShow
+2021-12-27 21:11:52.918  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 21:11:53.426  INFO Christos-PC - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@20b67366] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-12-27 21:11:53.432  INFO Christos-PC - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3921135e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-12-27 21:11:53.471  INFO Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 21:11:53.626 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-12-27 21:11:53.688 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2021-12-27 21:11:53.713 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-12-27 21:11:53.721 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-12-27 21:11:53.839 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2021-12-27 21:11:53.853  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-12-27 21:11:53.892  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2021-12-27 21:11:53.910  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-27 21:11:53.920  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 3.709 seconds (JVM running for 5.831)
+2021-12-27 21:13:14.777  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 21:13:14.777  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-12-27 21:13:16.840  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2baf8ea2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-12-27 21:13:27.991  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2021-12-27 21:13:28.039  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 13412 (C:\Users\chris\IdeaProjects\demo\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo\javaspring-project-team2)
+2021-12-27 21:13:28.043  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : No active profile set, falling back to default profiles: default
+2021-12-27 21:13:29.175  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2021-12-27 21:13:29.185  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 21:13:29.186  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2021-12-27 21:13:29.186  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 21:13:29.287  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2021-12-27 21:13:29.287  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1180 ms
+2021-12-27 21:13:29.506  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/smdb'
+2021-12-27 21:13:29.607  INFO Christos-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 21:13:29.655  INFO Christos-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-27 21:13:29.784  INFO Christos-PC - [           main] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-27 21:13:29.872  INFO Christos-PC - [           main] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 21:13:30.002  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 21:13:30.513  INFO Christos-PC - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1ed52f44] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-12-27 21:13:30.518  INFO Christos-PC - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1ab85862] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-12-27 21:13:30.554  INFO Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 21:13:30.699 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-12-27 21:13:30.747 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2021-12-27 21:13:30.777 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-12-27 21:13:30.787 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-12-27 21:13:30.909 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2021-12-27 21:13:30.922  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-12-27 21:13:30.960  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2021-12-27 21:13:30.977  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-27 21:13:30.987  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 3.436 seconds (JVM running for 5.509)
+2021-12-27 21:46:00.380  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 21:46:00.393  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-12-27 21:46:02.499  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@486d37a3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-12-27 21:46:14.019  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2021-12-27 21:46:14.099  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 22716 (C:\Users\chris\IdeaProjects\demo\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo\javaspring-project-team2)
+2021-12-27 21:46:14.106  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : No active profile set, falling back to default profiles: default
+2021-12-27 21:46:15.761  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2021-12-27 21:46:15.772  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 21:46:15.774  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2021-12-27 21:46:15.774  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 21:46:15.891  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2021-12-27 21:46:15.891  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1728 ms
+2021-12-27 21:46:16.245  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/smdb'
+2021-12-27 21:46:16.363  INFO Christos-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 21:46:16.446  INFO Christos-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-27 21:46:16.654  INFO Christos-PC - [           main] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-27 21:46:16.828  INFO Christos-PC - [           main] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 21:46:17.002  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 21:46:17.019  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.Episode
+2021-12-27 21:46:17.019  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 21:46:17.022  WARN Christos-PC - [           main] [o.h.c.AnnotationBinder             ] : HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.javaspring.team2.project.smdb.domain.TvShow
+2021-12-27 21:46:17.022  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 21:46:17.735  INFO Christos-PC - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@759f45f1] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-12-27 21:46:17.741  INFO Christos-PC - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6f67ece5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-12-27 21:46:17.802  INFO Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 21:46:17.988 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-12-27 21:46:18.056 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2021-12-27 21:46:18.092 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-12-27 21:46:18.102 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-12-27 21:46:18.265 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2021-12-27 21:46:18.283  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-12-27 21:46:18.366  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2021-12-27 21:46:18.396  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-27 21:46:18.412  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 4.95 seconds (JVM running for 7.331)
+2021-12-27 21:51:29.320  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 21:51:29.320  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-12-27 21:51:29.321  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@b9640cf] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-12-27 21:51:41.116  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2021-12-27 21:51:41.157  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 8276 (C:\Users\chris\IdeaProjects\demo\javaspring-project-team2\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\demo\javaspring-project-team2)
+2021-12-27 21:51:41.162  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : No active profile set, falling back to default profiles: default
+2021-12-27 21:51:42.419  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2021-12-27 21:51:42.428  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-27 21:51:42.429  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2021-12-27 21:51:42.429  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 21:51:42.536  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2021-12-27 21:51:42.536  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1322 ms
+2021-12-27 21:51:42.798  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/smdb'
+2021-12-27 21:51:42.919  INFO Christos-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-27 21:51:42.982  INFO Christos-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-27 21:51:43.143  INFO Christos-PC - [           main] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-27 21:51:43.262  INFO Christos-PC - [           main] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-27 21:51:43.392  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 21:51:43.410  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 21:51:43.412  WARN Christos-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2021-12-27 21:51:43.995  INFO Christos-PC - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@220be130] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-12-27 21:51:44.001  INFO Christos-PC - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@59cde35] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-12-27 21:51:44.054  INFO Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 21:51:44.227 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-12-27 21:51:44.286 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 2 mappings in 'requestMappingHandlerMapping'
+2021-12-27 21:51:44.319 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-12-27 21:51:44.328 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-12-27 21:51:44.458 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2021-12-27 21:51:44.474  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-12-27 21:51:44.519  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2021-12-27 21:51:44.536  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-27 21:51:44.550  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 3.876 seconds (JVM running for 5.881)
+2021-12-27 22:20:49.568  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-27 22:20:49.587  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-12-27 22:20:49.698  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@28cb4be0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
