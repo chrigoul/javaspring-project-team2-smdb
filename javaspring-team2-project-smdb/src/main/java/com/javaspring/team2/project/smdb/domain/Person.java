@@ -3,6 +3,7 @@ package com.javaspring.team2.project.smdb.domain;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
+import org.springframework.lang.Nullable;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -44,5 +45,8 @@ public class Person extends BaseModel {
     @Enumerated(EnumType.STRING)
     @CollectionTable(name="person_worked_as", joinColumns= {@JoinColumn(name="PERSON_ID")})
     private Set<ContributionRole> professions;
+
+//    @Column
+//    private String character;
 
 }

@@ -6,9 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 
 import javax.persistence.*;
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.*;
 import java.util.EnumSet;
 import java.util.Enumeration;
 import java.util.HashSet;
@@ -54,11 +52,19 @@ public class Title extends BaseModel {
     private Set<String> languages;
 
     @Column
-    @Min(0)
-    @Max(10)
-    private Float smdbRating;
+    @NotNull
+    @DecimalMin(value = "0.0", inclusive = true)
+    @DecimalMax(value = "10.0", inclusive = true)
+    @Digits(integer = 2, fraction = 1)
+    private Double smdbRating;
 
 
     @Column
     private Integer releaseYear;
+
+//    @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.LAZY)
+//    @JoinTable(name = "ACTORS",
+//            joinColumns = @JoinColumn(name = "TITLE_ID"),
+//            inverseJoinColumns = @JoinColumn(name = "PERSON_ID"))
+//    private Set<Person> actors = new HashSet<>();
 }

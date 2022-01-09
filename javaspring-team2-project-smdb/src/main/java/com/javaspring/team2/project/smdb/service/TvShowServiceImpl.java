@@ -16,4 +16,10 @@ public class TvShowServiceImpl extends BaseServiceImpl<TvShow> implements TvShow
         return tvShowRepository;
     }
 
+    @Override
+    public TvShow findTvShowByPrimaryTitle(String primaryTitle){
+        return tvShowRepository.findTvShowByPrimaryTitle(primaryTitle);
+    }
+
+
 }

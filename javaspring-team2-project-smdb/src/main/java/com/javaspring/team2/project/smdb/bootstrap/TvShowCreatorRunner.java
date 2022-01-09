@@ -5,7 +5,6 @@ import com.javaspring.team2.project.smdb.domain.*;
 import com.javaspring.team2.project.smdb.service.PersonService;
 import com.javaspring.team2.project.smdb.service.TvShowService;
 import lombok.RequiredArgsConstructor;
-import org.slf4j.Logger;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
@@ -26,7 +25,7 @@ public class TvShowCreatorRunner extends AbstractLogComponent implements Command
 
         //Insert a title
         TvShow tvShow = TvShow.builder().primaryTitle("Lucifer").durationInMinutes(90).genres(Set.of(Genre.CRIME,Genre.MYSTERY))
-                .releaseYear(2015).smdbRating(8.1f).storyLine("Devil runs LA club and solves murders").build();
+                .releaseYear(2015).smdbRating(8.1).storyLine("Devil runs LA club and solves murders").build();
 
         tvShowService.create(tvShow);
 

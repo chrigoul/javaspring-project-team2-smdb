@@ -15,7 +15,6 @@ import org.json.simple.parser.JSONParser;
 
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
-import org.springframework.util.ResourceUtils;
 
 import java.io.FileReader;
 import java.util.*;
@@ -58,7 +57,7 @@ public class TvShowCreatorRunnerFile extends AbstractLogComponent implements Com
             tvShow.setEndYear(Integer.parseInt((String) dummyIterrator.get("endYear")));
             tvShow.setNumberOfSeasons(Integer.parseInt((String) dummyIterrator.get("numberOfSeasons")));
             tvShow.setNumberOfEpisodes(Integer.parseInt((String) dummyIterrator.get("numberOfEpisodes")));
-            tvShow.setSmdbRating(Float.parseFloat((String) dummyIterrator.get("smdbRating")));
+            tvShow.setSmdbRating(Double.parseDouble((String) dummyIterrator.get("smdbRating")));
             tvShow.setStoryLine((String) dummyIterrator.get("storyLine"));
 
             Set<String> languages = new HashSet<>();

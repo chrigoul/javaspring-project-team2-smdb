@@ -1,6 +1,8 @@
 package com.javaspring.team2.project.smdb.service;
 
+import com.javaspring.team2.project.smdb.domain.Actor;
 import com.javaspring.team2.project.smdb.domain.Movie;
+import com.javaspring.team2.project.smdb.domain.Person;
 import com.javaspring.team2.project.smdb.repository.MovieRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -15,5 +17,20 @@ public class MovieServiceImpl extends BaseServiceImpl<Movie> implements MovieSer
     JpaRepository<Movie, Long> getRepository() {
         return movieRepository;
     }
+
+    @Override
+    public Movie findMovieByPrimaryTitle(String primaryTitle){
+        return movieRepository.findMovieByPrimaryTitle(primaryTitle);
+    }
+
+//    @Override
+//    public void addActorsToMovie(Movie movie, Person person, String role){
+//        movie.getActors().add(newActor(movie, person, role));
+//    }
+//
+//    private Actor newActor(Movie movie, Person person, String role) {
+//        return Actor.builder().
+//    }
+
 
 }
