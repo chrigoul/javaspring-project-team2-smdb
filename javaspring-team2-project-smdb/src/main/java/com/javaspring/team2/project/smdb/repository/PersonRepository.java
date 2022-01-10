@@ -8,9 +8,11 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface PersonRepository extends JpaRepository<Person, Long> {
 
-    @Query("select p from Person p join fetch p.actors where p.id = ?1")
+    @Query("select p from Person p join fetch p.professions where p.id = ?1")
     Person findLazy(Long id);
 
     Person findPersonByFirstNameAndLastName(String firstName, String lastName);
+
+    Boolean existsByFirstNameAndLastName(String firstName, String lastName);
 
 }

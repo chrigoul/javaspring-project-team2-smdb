@@ -36,9 +36,7 @@
           "birthPlace": "Basauri, Spain",
           "professions": ["ACTOR"],
           "role": "Raquel Murillo"
-        }
-      ],
-      "producers": [
+        },
         {
           "firstName":"Alex",
           "lastName": "Pina",
@@ -139,31 +137,29 @@
           "birthPlace": "England, UK",
           "professions": ["ACTOR"],
           "role": "Samwell Tarly"
+        },
+        {
+          "firstName":"David",
+          "lastName": "Beionff",
+          "birthday": "29-9-1970",
+          "birthPlace": "New York, USA",
+          "professions": ["WRITER", "PRODUCER", "DIRECTOR"]
+        },
+        {
+          "firstName":"George R R",
+          "lastName": "Martin",
+          "birthday": "20-9-1948",
+          "birthPlace": "New Jersey, USA",
+          "professions": ["PRODUCER", "WRITER"]
+        },
+        {
+          "firstName":"D.B.",
+          "lastName": "Weiss",
+          "birthday": "23-4-1971",
+          "birthPlace": "Chicago, USA",
+          "professions": ["WRITER", "PRODUCER", "DIRECTOR"]
         }
-      ],
-        "producers": [
-          {
-            "firstName":"David",
-            "lastName": "Beionff",
-            "birthday": "29-9-1970",
-            "birthPlace": "New York, USA",
-            "professions": ["WRITER", "PRODUCER", "DIRECTOR"]
-          },
-          {
-            "firstName":"George R R",
-            "lastName": "Martin",
-            "birthday": "20-9-1948",
-            "birthPlace": "New Jersey, USA",
-            "professions": ["PRODUCER", "WRITER"]
-          },
-          {
-            "firstName":"D.B.",
-            "lastName": "Weiss",
-            "birthday": "23-4-1971",
-            "birthPlace": "Chicago, USA",
-            "professions": ["WRITER", "PRODUCER", "DIRECTOR"]
-          }
-        ]
+      ]
     }
   ]
 }

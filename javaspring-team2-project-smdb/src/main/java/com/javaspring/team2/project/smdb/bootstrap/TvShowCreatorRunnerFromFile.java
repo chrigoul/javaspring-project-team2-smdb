@@ -49,9 +49,9 @@ public class TvShowCreatorRunnerFromFile extends AbstractLogComponent implements
             Iterator<JSONObject> castIterator = castArray.iterator();
             JSONObject dummy;
             //Prepare for adding actors
-            Set<Actor> actorSet = tvShow.getActors();
-            if (actorSet == null)
-                actorSet = new HashSet<>();
+            Set<Profession> professionSet = tvShow.getProfessions();
+            if (professionSet == null)
+                professionSet = new HashSet<>();
             while (castIterator.hasNext()) {
                 dummy = castIterator.next();
                 Person person= im.addPerson(dummy);
@@ -60,15 +60,15 @@ public class TvShowCreatorRunnerFromFile extends AbstractLogComponent implements
                 logger.info("Created Person {} {}", person.getFirstName(), person.getLastName());
 
                 String role = (String) dummy.get("role");
-                Actor actor = Actor.builder().key(ActorKey.builder().build())
-                        .title(tvShow).person(person).role(role).build();
-                actorSet.add(actor);
+                Profession profession = Profession.builder().key(ProfessionKey.builder().build())
+                        .title(tvShow).person(person).build();
+                professionSet.add(profession);
             }
-            tvShow.setActors(actorSet);
+            tvShow.setProfessions(professionSet);
             tvShowService.update(tvShow);
-            logger.info("Added {} actors from Show: {}", actorSet.size(), tvShow.getPrimaryTitle());
+            logger.info("Added {} actors from Show: {}", professionSet.size(), tvShow.getPrimaryTitle());
 
-            JSONArray productionArray = (JSONArray) dummyIterator.get("producers");
+ /*           JSONArray productionArray = (JSONArray) dummyIterator.get("producers");
             Iterator<JSONObject> productionIterator = productionArray.iterator();
             JSONObject dummyProd;
             Set<Person> newProducers = tvShow.getProducers();
@@ -82,7 +82,7 @@ public class TvShowCreatorRunnerFromFile extends AbstractLogComponent implements
                 newProducers.add(person);
             }
             tvShow.setProducers(newProducers);
-            tvShowService.update(tvShow);
+            tvShowService.update(tvShow);*/
         }
     }
 }

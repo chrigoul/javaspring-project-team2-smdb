@@ -1,8 +1,6 @@
 package com.javaspring.team2.project.smdb.service;
 
-import com.javaspring.team2.project.smdb.domain.Actor;
 import com.javaspring.team2.project.smdb.domain.Movie;
-import com.javaspring.team2.project.smdb.domain.Person;
 import com.javaspring.team2.project.smdb.repository.MovieRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.jpa.repository.JpaRepository;

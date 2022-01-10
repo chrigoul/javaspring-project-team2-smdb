@@ -50,17 +50,15 @@ public class TvShowCreatorRunner extends AbstractLogComponent implements Command
         );
         String roles[] = {"Lucifer", "Chloe", "Daniel", "Amenadiel", "Mazekeen", "Linda", "Ella", "Trixie"};
         logger.info("Created {} people.", personService.createAll(people).size());
-        Set<Actor> actorSet = tvShow.getActors();
-        int i = 0;
+        Set<Profession> professionSet = tvShow.getProfessions();
         for (Person p : people) {
-            Actor actor = Actor.builder().key(ActorKey.builder().build())
-                    .title(tvShow).person(p).role(roles[i]).build();
-            if (actorSet == null)
-                actorSet = new HashSet<>();
-            actorSet.add(actor);
-            i++;
+            Profession profession = Profession.builder().key(ProfessionKey.builder().build())
+                    .title(tvShow).person(p).build();
+            if (professionSet == null)
+                professionSet = new HashSet<>();
+            professionSet.add(profession);
         }
-        tvShow.setActors(actorSet);
+        tvShow.setProfessions(professionSet);
 
 
 

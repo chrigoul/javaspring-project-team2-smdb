@@ -1,3 +1,4 @@
+/*
 package com.javaspring.team2.project.smdb.bootstrap;
 
 import com.javaspring.team2.project.smdb.base.AbstractLogComponent;
@@ -113,3 +114,4 @@ public class ContentCreatorRunner extends AbstractLogComponent implements Comman
 
     }
 }
+*/
