@@ -1,0 +1,65 @@
+{
+  "movie": [
+    {
+      "primaryTitle": "Interstellar",
+      "genre": ["ADVENTURE", "DRAMA", "SCIFI"],
+      "durationInMinutes": "169",
+      "releaseYear": "2014",
+      "smdbRating": "8.6",
+      "storyLine": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+      "countriesOfOrigin": ["UNITED STATES", "UNITED KINGDOM", "CANADA"],
+      "languages": ["ENGLISH"],
+      "cast": [
+        {
+          "firstName": "Matthew",
+          "lastName": "McConaughey",
+          "birthday": "4-11-1969",
+          "birthPlace": "Uvalde, Texas, USA",
+          "professions": ["ACTOR", "PRODUCER", "DIRECTOR"],
+          "role": "Cooper"
+        },
+        {
+          "firstName": "Ellen",
+          "lastName": "Burstyn",
+          "birthday": "7-12-1932",
+          "birthPlace": "Detroit, Michigan, USA",
+          "professions": ["ACTOR","PRODUCER", "DIRECTOR"],
+          "role": "Murph (Older)"
+        },
+        {
+          "firstName": "Mackenzie",
+          "lastName": "Foy",
+          "birthday": "10-11-2000",
+          "birthPlace": "Los Angeles, California, USA",
+          "professions": ["ACTOR"],
+          "role": "Murph"
+        }
+      ],
+      "directors": [
+        {
+          "firstName": "Christopher",
+          "lastName": "Nolan",
+          "birthday": "30-7-1970",
+          "birthPlace": "London, England, UK",
+          "professions": ["WRITER", "PRODUCER", "DIRECTOR"]
+        }
+      ],
+      "writers": [
+        {
+          "firstName": "Christopher",
+          "lastName": "Nolan",
+          "birthday": "30-7-1970",
+          "birthPlace": "London, England, UK",
+          "professions": ["WRITER", "PRODUCER", "DIRECTOR"]
+        },
+        {
+          "firstName": "Jonathan",
+          "lastName": "Nolan",
+          "birthday": "6-6-1976",
+          "birthPlace": "London, England, UK",
+          "professions": ["WRITER", "PRODUCER", "DIRECTOR"]
+        }
+      ]
+    }
+  ]
+}

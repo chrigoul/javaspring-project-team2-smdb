@@ -23,7 +23,7 @@ import java.util.*;
 @Component
 @Profile("tvShow-content-loader")
 @RequiredArgsConstructor
-public class TvShowCreatorRunnerFile extends AbstractLogComponent implements CommandLineRunner {
+public class TvShowCreatorRunnerFromFile extends AbstractLogComponent implements CommandLineRunner {
 
     private final PersonService personService;
     private final TvShowService tvShowService;
@@ -57,6 +57,7 @@ public class TvShowCreatorRunnerFile extends AbstractLogComponent implements Com
                 Person person= im.addPerson(dummy);
                 //!!! To do --> Before creating object check if person exists in database
                 personService.create(person);
+                logger.info("Created Person {} {}", person.getFirstName(), person.getLastName());
 
                 String role = (String) dummy.get("role");
                 Actor actor = Actor.builder().key(ActorKey.builder().build())
@@ -84,6 +85,4 @@ public class TvShowCreatorRunnerFile extends AbstractLogComponent implements Com
             tvShowService.update(tvShow);
         }
     }
-
-
 }

@@ -1,9 +1,6 @@
 package com.javaspring.team2.project.smdb.extraMethods;
 
-import com.javaspring.team2.project.smdb.domain.ContributionRole;
-import com.javaspring.team2.project.smdb.domain.Genre;
-import com.javaspring.team2.project.smdb.domain.Person;
-import com.javaspring.team2.project.smdb.domain.TvShow;
+import com.javaspring.team2.project.smdb.domain.*;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.springframework.context.annotation.Bean;
@@ -75,5 +72,25 @@ public class InsertMethods {
         tvShow.setCountriesOfOrigin(addSet(countriesArray));
         
         return tvShow;
+    }
+
+    public Movie addMovie(JSONObject iterator){
+        Movie movie=new Movie();
+
+        movie.setPrimaryTitle((String) iterator.get("primaryTitle"));
+        movie.setDurationInMinutes(Integer.parseInt((String) iterator.get("durationInMinutes")));
+        movie.setReleaseYear(Integer.parseInt((String) iterator.get("releaseYear")));
+        movie.setSmdbRating(Double.parseDouble((String) iterator.get("smdbRating")));
+        movie.setStoryLine((String) iterator.get("storyLine"));
+
+        JSONArray genresArray = (JSONArray) iterator.get("genre");
+        movie.setGenres(addGenres(genresArray));
+        JSONArray countriesArray = (JSONArray) iterator.get("countriesOfOrigin");
+        movie.setCountriesOfOrigin(addSet(countriesArray));
+        JSONArray langsArray = (JSONArray) iterator.get("languages");
+        movie.setLanguages(addSet(langsArray));
+
+        return movie;
+
     }
 }
