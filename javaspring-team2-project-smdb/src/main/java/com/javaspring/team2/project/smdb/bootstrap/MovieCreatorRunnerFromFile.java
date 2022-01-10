@@ -57,7 +57,7 @@ public class MovieCreatorRunnerFromFile extends AbstractLogComponent implements 
                 Person person = im.addPerson(dummy);
                 logger.info("Person {} is going to be added", person);
 
-                //!!! To do --> Before creating object check if person exists in database
+                //Before creating object check if person exists in database
                 Boolean check = personService.existsByFirstNameAndLastName(person.getFirstName(), person.getLastName());
                 if (check == Boolean.TRUE) {
                     logger.info("Person {} {}, already exists", person.getFirstName(), person.getLastName());

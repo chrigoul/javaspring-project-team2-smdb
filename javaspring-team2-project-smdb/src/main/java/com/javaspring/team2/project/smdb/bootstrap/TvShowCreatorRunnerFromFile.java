@@ -54,35 +54,30 @@ public class TvShowCreatorRunnerFromFile extends AbstractLogComponent implements
                 professionSet = new HashSet<>();
             while (castIterator.hasNext()) {
                 dummy = castIterator.next();
-                Person person= im.addPerson(dummy);
-                //!!! To do --> Before creating object check if person exists in database
-                personService.create(person);
-                logger.info("Created Person {} {}", person.getFirstName(), person.getLastName());
+                Person person = im.addPerson(dummy);
+                logger.info("Person {} is going to be added", person);
+                //Before creating object check if person exists in database
+                Boolean check = personService.existsByFirstNameAndLastName(person.getFirstName(), person.getLastName());
+                if (check == Boolean.TRUE) {
+                    logger.info("Person {} {}, already exists", person.getFirstName(), person.getLastName());
+                    person = personService.findPersonByFirstNameAndLastName(person.getFirstName(), person.getLastName());
+                } else {
+                    personService.create(person);
+                    logger.info("Created Person {}", person);
+                }
 
-                String role = (String) dummy.get("role");
                 Profession profession = Profession.builder().key(ProfessionKey.builder().build())
                         .title(tvShow).person(person).build();
+                JSONArray contributionsArray = (JSONArray) dummy.get("contributionRole");
+                profession.setRole((String) dummy.get("role"));
+                Set<ContributionRole> titleContributionRole= im.addContributionRole(contributionsArray);
+                profession.setTitleContributionRole(titleContributionRole);
                 professionSet.add(profession);
             }
             tvShow.setProfessions(professionSet);
             tvShowService.update(tvShow);
-            logger.info("Added {} actors from Show: {}", professionSet.size(), tvShow.getPrimaryTitle());
+            logger.info("Added {} people from Show: {}", professionSet.size(), tvShow.getPrimaryTitle());
 
- /*           JSONArray productionArray = (JSONArray) dummyIterator.get("producers");
-            Iterator<JSONObject> productionIterator = productionArray.iterator();
-            JSONObject dummyProd;
-            Set<Person> newProducers = tvShow.getProducers();
-            if(newProducers==null)
-                newProducers=new HashSet<>();
-            while (productionIterator.hasNext()) {
-                dummyProd=productionIterator.next();
-
-                Person person = im.addPerson(dummyProd);
-                personService.create(person);
-                newProducers.add(person);
-            }
-            tvShow.setProducers(newProducers);
-            tvShowService.update(tvShow);*/
         }
     }
 }

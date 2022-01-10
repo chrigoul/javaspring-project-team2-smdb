@@ -8158,3 +8158,515 @@ insert into PEOPLE (birthDay, birthPlace, deathDay, firstName, lastName, id) val
 2022-01-10 19:12:16.191  INFO DESKTOP-NRAM18P - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-01-10 19:12:16.191  INFO DESKTOP-NRAM18P - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
 2022-01-10 19:12:18.245  INFO DESKTOP-NRAM18P - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7d692581] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-10 19:23:03.953  INFO DESKTOP-NRAM18P - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-10 19:23:04.022  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on DESKTOP-NRAM18P with PID 12180 (C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by azeli in C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-10 19:23:04.027  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: tvShow-content-loader,movie-content-loader
+2022-01-10 19:23:05.506  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-10 19:23:05.517  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-10 19:23:05.518  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-10 19:23:05.518  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-10 19:23:05.647  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-10 19:23:05.647  INFO DESKTOP-NRAM18P - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1570 ms
+2022-01-10 19:23:05.940  INFO DESKTOP-NRAM18P - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-10 19:23:06.196  INFO DESKTOP-NRAM18P - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-10 19:23:06.281  INFO DESKTOP-NRAM18P - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-10 19:23:06.397 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-10 19:23:06.456  INFO DESKTOP-NRAM18P - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-10 19:23:06.478 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerMapping] : 20 mappings in 'requestMappingHandlerMapping'
+2022-01-10 19:23:06.518 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-10 19:23:06.529 DEBUG DESKTOP-NRAM18P - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-10 19:23:06.593  INFO DESKTOP-NRAM18P - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-10 19:23:06.690 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-10 19:23:06.707  WARN DESKTOP-NRAM18P - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-10 19:23:06.764  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-10 19:23:06.765  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-10 19:23:06.770  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-10 19:23:06.783  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-10 19:23:06.784  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-10 19:23:07.500  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@31620323] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-10 19:23:07.509  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@77a818c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-10 19:23:07.549  INFO DESKTOP-NRAM18P - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-10 19:23:08.052  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 4.622 seconds (JVM running for 6.429)
+2022-01-10 19:23:08.293  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Matthew, lastName=McConaughey, birthDay=4-11-1969, deathDay=null, birthPlace=Uvalde, Texas, USA) is going to be added
+2022-01-10 19:23:08.343  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=1), firstName=Matthew, lastName=McConaughey, birthDay=4-11-1969, deathDay=null, birthPlace=Uvalde, Texas, USA)
+2022-01-10 19:23:08.343  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Ellen, lastName=Burstyn, birthDay=7-12-1932, deathDay=null, birthPlace=Detroit, Michigan, USA) is going to be added
+2022-01-10 19:23:08.347  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=2), firstName=Ellen, lastName=Burstyn, birthDay=7-12-1932, deathDay=null, birthPlace=Detroit, Michigan, USA)
+2022-01-10 19:23:08.347  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Mackenzie, lastName=Foy, birthDay=10-11-2000, deathDay=null, birthPlace=Los Angeles, California, USA) is going to be added
+2022-01-10 19:23:08.350  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=3), firstName=Mackenzie, lastName=Foy, birthDay=10-11-2000, deathDay=null, birthPlace=Los Angeles, California, USA)
+2022-01-10 19:23:08.350  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Christopher, lastName=Nolan, birthDay=30-7-1970, deathDay=null, birthPlace=London, England, UK) is going to be added
+2022-01-10 19:23:08.353  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=4), firstName=Christopher, lastName=Nolan, birthDay=30-7-1970, deathDay=null, birthPlace=London, England, UK)
+2022-01-10 19:23:08.353  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Jonathan, lastName=Nolan, birthDay=6-6-1976, deathDay=null, birthPlace=London, England, UK) is going to be added
+2022-01-10 19:23:08.356  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=5), firstName=Jonathan, lastName=Nolan, birthDay=6-6-1976, deathDay=null, birthPlace=London, England, UK)
+2022-01-10 19:23:08.407  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Added 5 cast from movie: Interstellar
+2022-01-10 19:23:08.412  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Matthew, lastName=McConaughey, birthDay=4-11-1969, deathDay=null, birthPlace=Uvalde, Texas, USA) is going to be added
+2022-01-10 19:23:08.414  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Matthew McConaughey, already exists
+2022-01-10 19:23:08.428  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Added 1 cast from movie: InterstellarTheSequel
+2022-01-10 19:23:08.438  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Ursula, lastName=Corbero, birthDay=11-8-1989, deathDay=null, birthPlace=Barcelona, Spain) is going to be added
+2022-01-10 19:23:08.441  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=6), firstName=Ursula, lastName=Corbero, birthDay=11-8-1989, deathDay=null, birthPlace=Barcelona, Spain)
+2022-01-10 19:23:08.444  INFO DESKTOP-NRAM18P - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-10 19:23:08.466 ERROR DESKTOP-NRAM18P - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: java.lang.NullPointerException
+	at com.javaspring.team2.project.smdb.extraMethods.InsertMethods.addContributionRole(InsertMethods.java:18)
+	at com.javaspring.team2.project.smdb.bootstrap.TvShowCreatorRunnerFromFile.run(TvShowCreatorRunnerFromFile.java:73)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767)
+	... 5 more
+2022-01-10 19:23:08.528  INFO DESKTOP-NRAM18P - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-10 19:23:08.529  INFO DESKTOP-NRAM18P - [           main] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-10 19:23:08.529  INFO DESKTOP-NRAM18P - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3f6906f4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-10 19:23:23.761  INFO DESKTOP-NRAM18P - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-10 19:23:23.801  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on DESKTOP-NRAM18P with PID 14660 (C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by azeli in C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-10 19:23:23.804  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: tvShow-content-loader
+2022-01-10 19:23:25.100  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-10 19:23:25.110  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-10 19:23:25.110  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-10 19:23:25.111  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-10 19:23:25.235  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-10 19:23:25.235  INFO DESKTOP-NRAM18P - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1393 ms
+2022-01-10 19:23:25.502  INFO DESKTOP-NRAM18P - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-10 19:23:25.609  INFO DESKTOP-NRAM18P - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-10 19:23:25.659  INFO DESKTOP-NRAM18P - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-10 19:23:25.778 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-10 19:23:25.789  INFO DESKTOP-NRAM18P - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-10 19:23:25.852 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerMapping] : 20 mappings in 'requestMappingHandlerMapping'
+2022-01-10 19:23:25.883 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-10 19:23:25.894 DEBUG DESKTOP-NRAM18P - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-10 19:23:25.902  INFO DESKTOP-NRAM18P - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-10 19:23:26.021 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-10 19:23:26.037  WARN DESKTOP-NRAM18P - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-10 19:23:26.052  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-10 19:23:26.055  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-10 19:23:26.073  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-10 19:23:26.092  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-10 19:23:26.114  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-10 19:23:26.810  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e0ef4ee] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-10 19:23:26.816  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@da4da41] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-10 19:23:26.870  INFO DESKTOP-NRAM18P - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-10 19:23:27.368  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 4.034 seconds (JVM running for 5.622)
+2022-01-10 19:23:27.475  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Ursula, lastName=Corbero, birthDay=11-8-1989, deathDay=null, birthPlace=Barcelona, Spain) is going to be added
+2022-01-10 19:23:27.524  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=1), firstName=Ursula, lastName=Corbero, birthDay=11-8-1989, deathDay=null, birthPlace=Barcelona, Spain)
+2022-01-10 19:23:27.527  INFO DESKTOP-NRAM18P - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-10 19:23:27.550 ERROR DESKTOP-NRAM18P - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: java.lang.NullPointerException
+	at com.javaspring.team2.project.smdb.extraMethods.InsertMethods.addContributionRole(InsertMethods.java:18)
+	at com.javaspring.team2.project.smdb.bootstrap.TvShowCreatorRunnerFromFile.run(TvShowCreatorRunnerFromFile.java:73)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767)
+	... 5 more
+2022-01-10 19:23:27.608  INFO DESKTOP-NRAM18P - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-10 19:23:27.608  INFO DESKTOP-NRAM18P - [           main] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-10 19:23:27.609  INFO DESKTOP-NRAM18P - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2633d09c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-10 19:26:55.691  INFO DESKTOP-NRAM18P - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-10 19:26:55.730  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on DESKTOP-NRAM18P with PID 14664 (C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by azeli in C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-10 19:26:55.733  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: tvShow-content-loader
+2022-01-10 19:26:57.007  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-10 19:26:57.016  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-10 19:26:57.017  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-10 19:26:57.017  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-10 19:26:57.141  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-10 19:26:57.141  INFO DESKTOP-NRAM18P - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1359 ms
+2022-01-10 19:26:57.387  INFO DESKTOP-NRAM18P - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-10 19:26:57.496  INFO DESKTOP-NRAM18P - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-10 19:26:57.541  INFO DESKTOP-NRAM18P - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-10 19:26:57.662 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-10 19:26:57.673  INFO DESKTOP-NRAM18P - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-10 19:26:57.737 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerMapping] : 20 mappings in 'requestMappingHandlerMapping'
+2022-01-10 19:26:57.769 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-10 19:26:57.779 DEBUG DESKTOP-NRAM18P - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-10 19:26:57.786  INFO DESKTOP-NRAM18P - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-10 19:26:57.903 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-10 19:26:57.919  WARN DESKTOP-NRAM18P - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-10 19:26:57.936  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-10 19:26:57.940  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-10 19:26:57.954  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-10 19:26:57.972  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-10 19:26:57.989  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-10 19:26:58.539  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@65af66c5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-10 19:26:58.545  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4f157efd] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-10 19:26:58.583  INFO DESKTOP-NRAM18P - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-10 19:26:59.035  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 3.755 seconds (JVM running for 5.859)
+2022-01-10 19:26:59.153  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Ursula, lastName=Corbero, birthDay=11-8-1989, deathDay=null, birthPlace=Barcelona, Spain) is going to be added
+2022-01-10 19:26:59.205  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=1), firstName=Ursula, lastName=Corbero, birthDay=11-8-1989, deathDay=null, birthPlace=Barcelona, Spain)
+2022-01-10 19:26:59.208  INFO DESKTOP-NRAM18P - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-10 19:26:59.231 ERROR DESKTOP-NRAM18P - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: java.lang.NullPointerException
+	at com.javaspring.team2.project.smdb.extraMethods.InsertMethods.addContributionRole(InsertMethods.java:18)
+	at com.javaspring.team2.project.smdb.bootstrap.TvShowCreatorRunnerFromFile.run(TvShowCreatorRunnerFromFile.java:73)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767)
+	... 5 more
+2022-01-10 19:26:59.289  INFO DESKTOP-NRAM18P - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-10 19:26:59.289  INFO DESKTOP-NRAM18P - [           main] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-10 19:26:59.290  INFO DESKTOP-NRAM18P - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4ec27c4c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-10 19:27:27.664  INFO DESKTOP-NRAM18P - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-10 19:27:27.703  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on DESKTOP-NRAM18P with PID 4240 (C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by azeli in C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-10 19:27:27.707  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: tvShow-content-loader
+2022-01-10 19:27:29.003  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-10 19:27:29.012  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-10 19:27:29.012  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-10 19:27:29.013  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-10 19:27:29.149  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-10 19:27:29.150  INFO DESKTOP-NRAM18P - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1393 ms
+2022-01-10 19:27:29.389  INFO DESKTOP-NRAM18P - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-10 19:27:29.499  INFO DESKTOP-NRAM18P - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-10 19:27:29.545  INFO DESKTOP-NRAM18P - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-10 19:27:29.675 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-10 19:27:29.683  INFO DESKTOP-NRAM18P - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-10 19:27:29.741 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerMapping] : 20 mappings in 'requestMappingHandlerMapping'
+2022-01-10 19:27:29.772 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-10 19:27:29.782 DEBUG DESKTOP-NRAM18P - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-10 19:27:29.788  INFO DESKTOP-NRAM18P - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-10 19:27:29.907 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-10 19:27:29.931  WARN DESKTOP-NRAM18P - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-10 19:27:29.947  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-10 19:27:29.950  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-10 19:27:29.967  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-10 19:27:29.987  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-10 19:27:30.004  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-10 19:27:30.537  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7150de7] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-10 19:27:30.543  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7a4e4716] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-10 19:27:30.593  INFO DESKTOP-NRAM18P - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-10 19:27:31.035  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 3.786 seconds (JVM running for 5.81)
+2022-01-10 19:27:31.172  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Ursula, lastName=Corbero, birthDay=11-8-1989, deathDay=null, birthPlace=Barcelona, Spain) is going to be added
+2022-01-10 19:27:31.226  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=1), firstName=Ursula, lastName=Corbero, birthDay=11-8-1989, deathDay=null, birthPlace=Barcelona, Spain)
+2022-01-10 19:27:31.229  INFO DESKTOP-NRAM18P - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-10 19:27:31.254 ERROR DESKTOP-NRAM18P - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: java.lang.NullPointerException
+	at com.javaspring.team2.project.smdb.extraMethods.InsertMethods.addContributionRole(InsertMethods.java:18)
+	at com.javaspring.team2.project.smdb.bootstrap.TvShowCreatorRunnerFromFile.run(TvShowCreatorRunnerFromFile.java:73)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767)
+	... 5 more
+2022-01-10 19:27:31.310  INFO DESKTOP-NRAM18P - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-10 19:27:31.310  INFO DESKTOP-NRAM18P - [           main] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-10 19:27:31.311  INFO DESKTOP-NRAM18P - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1eabfad5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-10 19:29:59.706  INFO DESKTOP-NRAM18P - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-10 19:29:59.750  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on DESKTOP-NRAM18P with PID 660 (C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by azeli in C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-10 19:29:59.754  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: tvShow-content-loader
+2022-01-10 19:30:01.120  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-10 19:30:01.128  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-10 19:30:01.129  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-10 19:30:01.129  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-10 19:30:01.264  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-10 19:30:01.265  INFO DESKTOP-NRAM18P - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1456 ms
+2022-01-10 19:30:01.507  INFO DESKTOP-NRAM18P - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-10 19:30:01.616  INFO DESKTOP-NRAM18P - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-10 19:30:01.662  INFO DESKTOP-NRAM18P - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-10 19:30:01.795 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-10 19:30:01.803  INFO DESKTOP-NRAM18P - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-10 19:30:01.861 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerMapping] : 20 mappings in 'requestMappingHandlerMapping'
+2022-01-10 19:30:01.891 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-10 19:30:01.904 DEBUG DESKTOP-NRAM18P - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-10 19:30:01.907  INFO DESKTOP-NRAM18P - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-10 19:30:02.027 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-10 19:30:02.043  WARN DESKTOP-NRAM18P - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-10 19:30:02.054  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-10 19:30:02.059  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-10 19:30:02.073  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-10 19:30:02.097  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-10 19:30:02.114  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-10 19:30:02.656  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e0ef4ee] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-10 19:30:02.663  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@da4da41] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-10 19:30:02.702  INFO DESKTOP-NRAM18P - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-10 19:30:03.136  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 3.924 seconds (JVM running for 5.615)
+2022-01-10 19:30:03.284  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Ursula, lastName=Corbero, birthDay=11-8-1989, deathDay=null, birthPlace=Barcelona, Spain) is going to be added
+2022-01-10 19:30:03.349  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=1), firstName=Ursula, lastName=Corbero, birthDay=11-8-1989, deathDay=null, birthPlace=Barcelona, Spain)
+2022-01-10 19:30:03.350  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Alvaro, lastName=Morte, birthDay=23-2-1975, deathDay=null, birthPlace=Algeciras, Spain) is going to be added
+2022-01-10 19:30:03.354  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=2), firstName=Alvaro, lastName=Morte, birthDay=23-2-1975, deathDay=null, birthPlace=Algeciras, Spain)
+2022-01-10 19:30:03.354  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Iztiar, lastName=Ituno, birthDay=1975, deathDay=null, birthPlace=Basauri, Spain) is going to be added
+2022-01-10 19:30:03.360  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=3), firstName=Iztiar, lastName=Ituno, birthDay=1975, deathDay=null, birthPlace=Basauri, Spain)
+2022-01-10 19:30:03.360  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Alex, lastName=Pina, birthDay=Unknown, deathDay=null, birthPlace=Unknown) is going to be added
+2022-01-10 19:30:03.370  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=4), firstName=Alex, lastName=Pina, birthDay=Unknown, deathDay=null, birthPlace=Unknown)
+2022-01-10 19:30:03.370  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Jesus, lastName=Colmenar, birthDay=Unknown, deathDay=null, birthPlace=Unknown) is going to be added
+2022-01-10 19:30:03.377  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=5), firstName=Jesus, lastName=Colmenar, birthDay=Unknown, deathDay=null, birthPlace=Unknown)
+2022-01-10 19:30:03.444  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Added 5 actors from Show: Money Heist
+2022-01-10 19:30:03.451  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Peter, lastName=Dinklage, birthDay=11-6-1969, deathDay=null, birthPlace=Morristown, New Jersey USA) is going to be added
+2022-01-10 19:30:03.454  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=6), firstName=Peter, lastName=Dinklage, birthDay=11-6-1969, deathDay=null, birthPlace=Morristown, New Jersey USA)
+2022-01-10 19:30:03.455  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Lena, lastName=Hedey, birthDay=3-10-1973, deathDay=null, birthPlace=Hamilton, Bermuda) is going to be added
+2022-01-10 19:30:03.457  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=7), firstName=Lena, lastName=Hedey, birthDay=3-10-1973, deathDay=null, birthPlace=Hamilton, Bermuda)
+2022-01-10 19:30:03.457  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Emilia, lastName=Clarke, birthDay=23-10-1986, deathDay=null, birthPlace=London, UK) is going to be added
+2022-01-10 19:30:03.460  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=8), firstName=Emilia, lastName=Clarke, birthDay=23-10-1986, deathDay=null, birthPlace=London, UK)
+2022-01-10 19:30:03.460  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Kit, lastName=Harrington, birthDay=26-12-1986, deathDay=null, birthPlace=London, UK) is going to be added
+2022-01-10 19:30:03.463  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=9), firstName=Kit, lastName=Harrington, birthDay=26-12-1986, deathDay=null, birthPlace=London, UK)
+2022-01-10 19:30:03.464  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Sophie, lastName=Turner, birthDay=21-2-1996, deathDay=null, birthPlace=Northhampton, UK) is going to be added
+2022-01-10 19:30:03.466  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=10), firstName=Sophie, lastName=Turner, birthDay=21-2-1996, deathDay=null, birthPlace=Northhampton, UK)
+2022-01-10 19:30:03.469  INFO DESKTOP-NRAM18P - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-10 19:30:03.492 ERROR DESKTOP-NRAM18P - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: java.lang.NullPointerException
+	at com.javaspring.team2.project.smdb.extraMethods.InsertMethods.addContributionRole(InsertMethods.java:18)
+	at com.javaspring.team2.project.smdb.bootstrap.TvShowCreatorRunnerFromFile.run(TvShowCreatorRunnerFromFile.java:73)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767)
+	... 5 more
+2022-01-10 19:30:03.544  INFO DESKTOP-NRAM18P - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-10 19:30:03.545  INFO DESKTOP-NRAM18P - [           main] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-10 19:30:03.545  INFO DESKTOP-NRAM18P - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1f19d423] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-10 19:31:00.157  INFO DESKTOP-NRAM18P - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-10 19:31:00.197  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on DESKTOP-NRAM18P with PID 8564 (C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by azeli in C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-10 19:31:00.201  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: tvShow-content-loader
+2022-01-10 19:31:01.533  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-10 19:31:01.541  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-10 19:31:01.541  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-10 19:31:01.542  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-10 19:31:01.713  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-10 19:31:01.714  INFO DESKTOP-NRAM18P - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1476 ms
+2022-01-10 19:31:02.064  INFO DESKTOP-NRAM18P - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-10 19:31:02.233  INFO DESKTOP-NRAM18P - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-10 19:31:02.291  INFO DESKTOP-NRAM18P - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-10 19:31:02.574  INFO DESKTOP-NRAM18P - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-10 19:31:02.600 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-10 19:31:02.685 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerMapping] : 20 mappings in 'requestMappingHandlerMapping'
+2022-01-10 19:31:02.711  INFO DESKTOP-NRAM18P - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-10 19:31:02.716 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-10 19:31:02.726 DEBUG DESKTOP-NRAM18P - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-10 19:31:02.859 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-10 19:31:02.872  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-10 19:31:02.875  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-10 19:31:02.877  WARN DESKTOP-NRAM18P - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-10 19:31:02.889  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-10 19:31:02.928  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-10 19:31:02.943  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-10 19:31:03.523  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e40df50] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-10 19:31:03.531  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@bd03f17] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-10 19:31:03.572  INFO DESKTOP-NRAM18P - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-10 19:31:04.014  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 4.299 seconds (JVM running for 5.886)
+2022-01-10 19:31:04.148  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Ursula, lastName=Corbero, birthDay=11-8-1989, deathDay=null, birthPlace=Barcelona, Spain) is going to be added
+2022-01-10 19:31:04.198  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=1), firstName=Ursula, lastName=Corbero, birthDay=11-8-1989, deathDay=null, birthPlace=Barcelona, Spain)
+2022-01-10 19:31:04.198  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Alvaro, lastName=Morte, birthDay=23-2-1975, deathDay=null, birthPlace=Algeciras, Spain) is going to be added
+2022-01-10 19:31:04.201  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=2), firstName=Alvaro, lastName=Morte, birthDay=23-2-1975, deathDay=null, birthPlace=Algeciras, Spain)
+2022-01-10 19:31:04.201  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Iztiar, lastName=Ituno, birthDay=1975, deathDay=null, birthPlace=Basauri, Spain) is going to be added
+2022-01-10 19:31:04.204  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=3), firstName=Iztiar, lastName=Ituno, birthDay=1975, deathDay=null, birthPlace=Basauri, Spain)
+2022-01-10 19:31:04.204  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Alex, lastName=Pina, birthDay=Unknown, deathDay=null, birthPlace=Unknown) is going to be added
+2022-01-10 19:31:04.207  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=4), firstName=Alex, lastName=Pina, birthDay=Unknown, deathDay=null, birthPlace=Unknown)
+2022-01-10 19:31:04.207  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Jesus, lastName=Colmenar, birthDay=Unknown, deathDay=null, birthPlace=Unknown) is going to be added
+2022-01-10 19:31:04.211  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=5), firstName=Jesus, lastName=Colmenar, birthDay=Unknown, deathDay=null, birthPlace=Unknown)
+2022-01-10 19:31:04.269  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Added 5 actors from Show: Money Heist
+2022-01-10 19:31:04.277  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Peter, lastName=Dinklage, birthDay=11-6-1969, deathDay=null, birthPlace=Morristown, New Jersey USA) is going to be added
+2022-01-10 19:31:04.281  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=6), firstName=Peter, lastName=Dinklage, birthDay=11-6-1969, deathDay=null, birthPlace=Morristown, New Jersey USA)
+2022-01-10 19:31:04.281  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Lena, lastName=Hedey, birthDay=3-10-1973, deathDay=null, birthPlace=Hamilton, Bermuda) is going to be added
+2022-01-10 19:31:04.284  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=7), firstName=Lena, lastName=Hedey, birthDay=3-10-1973, deathDay=null, birthPlace=Hamilton, Bermuda)
+2022-01-10 19:31:04.284  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Emilia, lastName=Clarke, birthDay=23-10-1986, deathDay=null, birthPlace=London, UK) is going to be added
+2022-01-10 19:31:04.287  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=8), firstName=Emilia, lastName=Clarke, birthDay=23-10-1986, deathDay=null, birthPlace=London, UK)
+2022-01-10 19:31:04.288  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Kit, lastName=Harrington, birthDay=26-12-1986, deathDay=null, birthPlace=London, UK) is going to be added
+2022-01-10 19:31:04.291  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=9), firstName=Kit, lastName=Harrington, birthDay=26-12-1986, deathDay=null, birthPlace=London, UK)
+2022-01-10 19:31:04.291  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Sophie, lastName=Turner, birthDay=21-2-1996, deathDay=null, birthPlace=Northhampton, UK) is going to be added
+2022-01-10 19:31:04.297  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=10), firstName=Sophie, lastName=Turner, birthDay=21-2-1996, deathDay=null, birthPlace=Northhampton, UK)
+2022-01-10 19:31:04.297  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Maisie, lastName=Williams, birthDay=15-4-1997, deathDay=null, birthPlace=Bristol, UK) is going to be added
+2022-01-10 19:31:04.300  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=11), firstName=Maisie, lastName=Williams, birthDay=15-4-1997, deathDay=null, birthPlace=Bristol, UK)
+2022-01-10 19:31:04.300  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Nicolaj, lastName=Coster-Waldau, birthDay=27-7-1970, deathDay=null, birthPlace=Rudkøbing, Denmark) is going to be added
+2022-01-10 19:31:04.303  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=12), firstName=Nicolaj, lastName=Coster-Waldau, birthDay=27-7-1970, deathDay=null, birthPlace=Rudkøbing, Denmark)
+2022-01-10 19:31:04.303  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Iain, lastName=Glain, birthDay=24-6-1961, deathDay=null, birthPlace=Edinburgh, Scotland, UK) is going to be added
+2022-01-10 19:31:04.307  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=13), firstName=Iain, lastName=Glain, birthDay=24-6-1961, deathDay=null, birthPlace=Edinburgh, Scotland, UK)
+2022-01-10 19:31:04.307  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=John, lastName=Bradley, birthDay=15-9-1988, deathDay=null, birthPlace=England, UK) is going to be added
+2022-01-10 19:31:04.312  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=14), firstName=John, lastName=Bradley, birthDay=15-9-1988, deathDay=null, birthPlace=England, UK)
+2022-01-10 19:31:04.312  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=David, lastName=Beionff, birthDay=29-9-1970, deathDay=null, birthPlace=New York, USA) is going to be added
+2022-01-10 19:31:04.315  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=15), firstName=David, lastName=Beionff, birthDay=29-9-1970, deathDay=null, birthPlace=New York, USA)
+2022-01-10 19:31:04.315  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=George R R, lastName=Martin, birthDay=20-9-1948, deathDay=null, birthPlace=New Jersey, USA) is going to be added
+2022-01-10 19:31:04.319  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=16), firstName=George R R, lastName=Martin, birthDay=20-9-1948, deathDay=null, birthPlace=New Jersey, USA)
+2022-01-10 19:31:04.319  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=D.B., lastName=Weiss, birthDay=23-4-1971, deathDay=null, birthPlace=Chicago, USA) is going to be added
+2022-01-10 19:31:04.321  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=17), firstName=D.B., lastName=Weiss, birthDay=23-4-1971, deathDay=null, birthPlace=Chicago, USA)
+2022-01-10 19:31:04.358  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Added 12 actors from Show: Game of Thrones
+2022-01-10 19:32:01.686  INFO DESKTOP-NRAM18P - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-10 19:32:01.686  INFO DESKTOP-NRAM18P - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-10 19:32:01.687  INFO DESKTOP-NRAM18P - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@47f1a60] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-10 19:32:28.753  INFO DESKTOP-NRAM18P - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-10 19:32:28.789  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on DESKTOP-NRAM18P with PID 800 (C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by azeli in C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-10 19:32:28.793  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: tvShow-content-loader,movie-content-loader
+2022-01-10 19:32:30.038  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-10 19:32:30.047  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-10 19:32:30.047  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-10 19:32:30.047  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-10 19:32:30.166  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-10 19:32:30.166  INFO DESKTOP-NRAM18P - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1326 ms
+2022-01-10 19:32:30.435  INFO DESKTOP-NRAM18P - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-10 19:32:30.542  INFO DESKTOP-NRAM18P - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-10 19:32:30.588  INFO DESKTOP-NRAM18P - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-10 19:32:30.710 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-10 19:32:30.721  INFO DESKTOP-NRAM18P - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-10 19:32:30.785 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerMapping] : 20 mappings in 'requestMappingHandlerMapping'
+2022-01-10 19:32:30.815 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-10 19:32:30.826 DEBUG DESKTOP-NRAM18P - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-10 19:32:30.833  INFO DESKTOP-NRAM18P - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-10 19:32:30.950 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-10 19:32:30.966  WARN DESKTOP-NRAM18P - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-10 19:32:30.985  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-10 19:32:30.988  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-10 19:32:31.007  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-10 19:32:31.023  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-10 19:32:31.041  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-10 19:32:31.590  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@74caec77] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-10 19:32:31.596  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2f088e99] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-10 19:32:31.636  INFO DESKTOP-NRAM18P - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-10 19:32:32.089  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 3.879 seconds (JVM running for 5.498)
+2022-01-10 19:32:32.204  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Matthew, lastName=McConaughey, birthDay=4-11-1969, deathDay=null, birthPlace=Uvalde, Texas, USA) is going to be added
+2022-01-10 19:32:32.255  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=1), firstName=Matthew, lastName=McConaughey, birthDay=4-11-1969, deathDay=null, birthPlace=Uvalde, Texas, USA)
+2022-01-10 19:32:32.255  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Ellen, lastName=Burstyn, birthDay=7-12-1932, deathDay=null, birthPlace=Detroit, Michigan, USA) is going to be added
+2022-01-10 19:32:32.259  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=2), firstName=Ellen, lastName=Burstyn, birthDay=7-12-1932, deathDay=null, birthPlace=Detroit, Michigan, USA)
+2022-01-10 19:32:32.259  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Mackenzie, lastName=Foy, birthDay=10-11-2000, deathDay=null, birthPlace=Los Angeles, California, USA) is going to be added
+2022-01-10 19:32:32.263  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=3), firstName=Mackenzie, lastName=Foy, birthDay=10-11-2000, deathDay=null, birthPlace=Los Angeles, California, USA)
+2022-01-10 19:32:32.264  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Christopher, lastName=Nolan, birthDay=30-7-1970, deathDay=null, birthPlace=London, England, UK) is going to be added
+2022-01-10 19:32:32.267  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=4), firstName=Christopher, lastName=Nolan, birthDay=30-7-1970, deathDay=null, birthPlace=London, England, UK)
+2022-01-10 19:32:32.267  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Jonathan, lastName=Nolan, birthDay=6-6-1976, deathDay=null, birthPlace=London, England, UK) is going to be added
+2022-01-10 19:32:32.272  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=5), firstName=Jonathan, lastName=Nolan, birthDay=6-6-1976, deathDay=null, birthPlace=London, England, UK)
+2022-01-10 19:32:32.341  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Added 5 cast from movie: Interstellar
+2022-01-10 19:32:32.347  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Matthew, lastName=McConaughey, birthDay=4-11-1969, deathDay=null, birthPlace=Uvalde, Texas, USA) is going to be added
+2022-01-10 19:32:32.349  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Matthew McConaughey, already exists
+2022-01-10 19:32:32.366  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Added 1 cast from movie: InterstellarTheSequel
+2022-01-10 19:32:32.379  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Ursula, lastName=Corbero, birthDay=11-8-1989, deathDay=null, birthPlace=Barcelona, Spain) is going to be added
+2022-01-10 19:32:32.382  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=6), firstName=Ursula, lastName=Corbero, birthDay=11-8-1989, deathDay=null, birthPlace=Barcelona, Spain)
+2022-01-10 19:32:32.382  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Alvaro, lastName=Morte, birthDay=23-2-1975, deathDay=null, birthPlace=Algeciras, Spain) is going to be added
+2022-01-10 19:32:32.387  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=7), firstName=Alvaro, lastName=Morte, birthDay=23-2-1975, deathDay=null, birthPlace=Algeciras, Spain)
+2022-01-10 19:32:32.388  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Iztiar, lastName=Ituno, birthDay=1975, deathDay=null, birthPlace=Basauri, Spain) is going to be added
+2022-01-10 19:32:32.392  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=8), firstName=Iztiar, lastName=Ituno, birthDay=1975, deathDay=null, birthPlace=Basauri, Spain)
+2022-01-10 19:32:32.392  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Alex, lastName=Pina, birthDay=Unknown, deathDay=null, birthPlace=Unknown) is going to be added
+2022-01-10 19:32:32.396  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=9), firstName=Alex, lastName=Pina, birthDay=Unknown, deathDay=null, birthPlace=Unknown)
+2022-01-10 19:32:32.396  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Jesus, lastName=Colmenar, birthDay=Unknown, deathDay=null, birthPlace=Unknown) is going to be added
+2022-01-10 19:32:32.398  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=10), firstName=Jesus, lastName=Colmenar, birthDay=Unknown, deathDay=null, birthPlace=Unknown)
+2022-01-10 19:32:32.420  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Added 5 people from Show: Money Heist
+2022-01-10 19:32:32.425  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Peter, lastName=Dinklage, birthDay=11-6-1969, deathDay=null, birthPlace=Morristown, New Jersey USA) is going to be added
+2022-01-10 19:32:32.430  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=11), firstName=Peter, lastName=Dinklage, birthDay=11-6-1969, deathDay=null, birthPlace=Morristown, New Jersey USA)
+2022-01-10 19:32:32.430  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Lena, lastName=Hedey, birthDay=3-10-1973, deathDay=null, birthPlace=Hamilton, Bermuda) is going to be added
+2022-01-10 19:32:32.433  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=12), firstName=Lena, lastName=Hedey, birthDay=3-10-1973, deathDay=null, birthPlace=Hamilton, Bermuda)
+2022-01-10 19:32:32.433  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Emilia, lastName=Clarke, birthDay=23-10-1986, deathDay=null, birthPlace=London, UK) is going to be added
+2022-01-10 19:32:32.437  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=13), firstName=Emilia, lastName=Clarke, birthDay=23-10-1986, deathDay=null, birthPlace=London, UK)
+2022-01-10 19:32:32.437  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Kit, lastName=Harrington, birthDay=26-12-1986, deathDay=null, birthPlace=London, UK) is going to be added
+2022-01-10 19:32:32.440  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=14), firstName=Kit, lastName=Harrington, birthDay=26-12-1986, deathDay=null, birthPlace=London, UK)
+2022-01-10 19:32:32.440  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Sophie, lastName=Turner, birthDay=21-2-1996, deathDay=null, birthPlace=Northhampton, UK) is going to be added
+2022-01-10 19:32:32.443  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=15), firstName=Sophie, lastName=Turner, birthDay=21-2-1996, deathDay=null, birthPlace=Northhampton, UK)
+2022-01-10 19:32:32.443  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Maisie, lastName=Williams, birthDay=15-4-1997, deathDay=null, birthPlace=Bristol, UK) is going to be added
+2022-01-10 19:32:32.446  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=16), firstName=Maisie, lastName=Williams, birthDay=15-4-1997, deathDay=null, birthPlace=Bristol, UK)
+2022-01-10 19:32:32.446  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Nicolaj, lastName=Coster-Waldau, birthDay=27-7-1970, deathDay=null, birthPlace=Rudkøbing, Denmark) is going to be added
+2022-01-10 19:32:32.449  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=17), firstName=Nicolaj, lastName=Coster-Waldau, birthDay=27-7-1970, deathDay=null, birthPlace=Rudkøbing, Denmark)
+2022-01-10 19:32:32.449  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Iain, lastName=Glain, birthDay=24-6-1961, deathDay=null, birthPlace=Edinburgh, Scotland, UK) is going to be added
+2022-01-10 19:32:32.452  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=18), firstName=Iain, lastName=Glain, birthDay=24-6-1961, deathDay=null, birthPlace=Edinburgh, Scotland, UK)
+2022-01-10 19:32:32.452  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=John, lastName=Bradley, birthDay=15-9-1988, deathDay=null, birthPlace=England, UK) is going to be added
+2022-01-10 19:32:32.455  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=19), firstName=John, lastName=Bradley, birthDay=15-9-1988, deathDay=null, birthPlace=England, UK)
+2022-01-10 19:32:32.455  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=David, lastName=Beionff, birthDay=29-9-1970, deathDay=null, birthPlace=New York, USA) is going to be added
+2022-01-10 19:32:32.458  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=20), firstName=David, lastName=Beionff, birthDay=29-9-1970, deathDay=null, birthPlace=New York, USA)
+2022-01-10 19:32:32.458  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=George R R, lastName=Martin, birthDay=20-9-1948, deathDay=null, birthPlace=New Jersey, USA) is going to be added
+2022-01-10 19:32:32.460  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=21), firstName=George R R, lastName=Martin, birthDay=20-9-1948, deathDay=null, birthPlace=New Jersey, USA)
+2022-01-10 19:32:32.460  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=D.B., lastName=Weiss, birthDay=23-4-1971, deathDay=null, birthPlace=Chicago, USA) is going to be added
+2022-01-10 19:32:32.463  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=22), firstName=D.B., lastName=Weiss, birthDay=23-4-1971, deathDay=null, birthPlace=Chicago, USA)
+2022-01-10 19:32:32.496  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Added 12 people from Show: Game of Thrones
+2022-01-10 19:33:28.767  INFO DESKTOP-NRAM18P - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-10 19:33:28.768  INFO DESKTOP-NRAM18P - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-10 19:33:30.850  INFO DESKTOP-NRAM18P - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7728976f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-10 19:45:05.812  INFO DESKTOP-NRAM18P - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-10 19:45:05.865  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on DESKTOP-NRAM18P with PID 12184 (C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by azeli in C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-10 19:45:05.869  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: tvShow-content-loader,movie-content-loader
+2022-01-10 19:45:07.421  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-10 19:45:07.442  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-10 19:45:07.443  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-10 19:45:07.444  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-10 19:45:07.661  INFO DESKTOP-NRAM18P - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-10 19:45:07.661  INFO DESKTOP-NRAM18P - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1754 ms
+2022-01-10 19:45:08.105  INFO DESKTOP-NRAM18P - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-10 19:45:08.284  INFO DESKTOP-NRAM18P - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-10 19:45:08.375  INFO DESKTOP-NRAM18P - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-10 19:45:08.549 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-10 19:45:08.606  INFO DESKTOP-NRAM18P - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-10 19:45:08.639 DEBUG DESKTOP-NRAM18P - [           main] [.m.m.a.RequestMappingHandlerMapping] : 20 mappings in 'requestMappingHandlerMapping'
+2022-01-10 19:45:08.675 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-10 19:45:08.693 DEBUG DESKTOP-NRAM18P - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-10 19:45:08.753  INFO DESKTOP-NRAM18P - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-10 19:45:08.963 DEBUG DESKTOP-NRAM18P - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-10 19:45:08.992  WARN DESKTOP-NRAM18P - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-10 19:45:09.092  INFO DESKTOP-NRAM18P - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-10 19:45:09.129  INFO DESKTOP-NRAM18P - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-10 19:45:09.132  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-10 19:45:09.139  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-10 19:45:09.190  WARN DESKTOP-NRAM18P - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-10 19:45:10.006  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@713d72e8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-10 19:45:10.018  INFO DESKTOP-NRAM18P - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@13aec40d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-10 19:45:10.091  INFO DESKTOP-NRAM18P - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-10 19:45:10.715  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 5.343 seconds (JVM running for 6.953)
+2022-01-10 19:45:10.904  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Matthew, lastName=McConaughey, birthDay=4-11-1969, deathDay=null, birthPlace=Uvalde, Texas, USA) is going to be added
+2022-01-10 19:45:10.957  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=1), firstName=Matthew, lastName=McConaughey, birthDay=4-11-1969, deathDay=null, birthPlace=Uvalde, Texas, USA)
+2022-01-10 19:45:10.958  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Ellen, lastName=Burstyn, birthDay=7-12-1932, deathDay=null, birthPlace=Detroit, Michigan, USA) is going to be added
+2022-01-10 19:45:10.963  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=2), firstName=Ellen, lastName=Burstyn, birthDay=7-12-1932, deathDay=null, birthPlace=Detroit, Michigan, USA)
+2022-01-10 19:45:10.963  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Mackenzie, lastName=Foy, birthDay=10-11-2000, deathDay=null, birthPlace=Los Angeles, California, USA) is going to be added
+2022-01-10 19:45:10.966  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=3), firstName=Mackenzie, lastName=Foy, birthDay=10-11-2000, deathDay=null, birthPlace=Los Angeles, California, USA)
+2022-01-10 19:45:10.966  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Christopher, lastName=Nolan, birthDay=30-7-1970, deathDay=null, birthPlace=London, England, UK) is going to be added
+2022-01-10 19:45:10.969  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=4), firstName=Christopher, lastName=Nolan, birthDay=30-7-1970, deathDay=null, birthPlace=London, England, UK)
+2022-01-10 19:45:10.969  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Jonathan, lastName=Nolan, birthDay=6-6-1976, deathDay=null, birthPlace=London, England, UK) is going to be added
+2022-01-10 19:45:10.972  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=5), firstName=Jonathan, lastName=Nolan, birthDay=6-6-1976, deathDay=null, birthPlace=London, England, UK)
+2022-01-10 19:45:11.025  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Added 5 cast from movie: Interstellar
+2022-01-10 19:45:11.030  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Matthew, lastName=McConaughey, birthDay=4-11-1969, deathDay=null, birthPlace=Uvalde, Texas, USA) is going to be added
+2022-01-10 19:45:11.032  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Matthew McConaughey, already exists
+2022-01-10 19:45:11.045  INFO DESKTOP-NRAM18P - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Added 1 cast from movie: InterstellarTheSequel
+2022-01-10 19:45:11.054  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Ursula, lastName=Corbero, birthDay=11-8-1989, deathDay=null, birthPlace=Barcelona, Spain) is going to be added
+2022-01-10 19:45:11.059  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=6), firstName=Ursula, lastName=Corbero, birthDay=11-8-1989, deathDay=null, birthPlace=Barcelona, Spain)
+2022-01-10 19:45:11.059  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Alvaro, lastName=Morte, birthDay=23-2-1975, deathDay=null, birthPlace=Algeciras, Spain) is going to be added
+2022-01-10 19:45:11.062  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=7), firstName=Alvaro, lastName=Morte, birthDay=23-2-1975, deathDay=null, birthPlace=Algeciras, Spain)
+2022-01-10 19:45:11.062  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Iztiar, lastName=Ituno, birthDay=1975, deathDay=null, birthPlace=Basauri, Spain) is going to be added
+2022-01-10 19:45:11.064  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=8), firstName=Iztiar, lastName=Ituno, birthDay=1975, deathDay=null, birthPlace=Basauri, Spain)
+2022-01-10 19:45:11.064  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Alex, lastName=Pina, birthDay=Unknown, deathDay=null, birthPlace=Unknown) is going to be added
+2022-01-10 19:45:11.067  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=9), firstName=Alex, lastName=Pina, birthDay=Unknown, deathDay=null, birthPlace=Unknown)
+2022-01-10 19:45:11.067  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Jesus, lastName=Colmenar, birthDay=Unknown, deathDay=null, birthPlace=Unknown) is going to be added
+2022-01-10 19:45:11.070  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=10), firstName=Jesus, lastName=Colmenar, birthDay=Unknown, deathDay=null, birthPlace=Unknown)
+2022-01-10 19:45:11.090  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Added 5 people from Show: Money Heist
+2022-01-10 19:45:11.095  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Peter, lastName=Dinklage, birthDay=11-6-1969, deathDay=null, birthPlace=Morristown, New Jersey USA) is going to be added
+2022-01-10 19:45:11.099  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=11), firstName=Peter, lastName=Dinklage, birthDay=11-6-1969, deathDay=null, birthPlace=Morristown, New Jersey USA)
+2022-01-10 19:45:11.099  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Lena, lastName=Hedey, birthDay=3-10-1973, deathDay=null, birthPlace=Hamilton, Bermuda) is going to be added
+2022-01-10 19:45:11.102  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=12), firstName=Lena, lastName=Hedey, birthDay=3-10-1973, deathDay=null, birthPlace=Hamilton, Bermuda)
+2022-01-10 19:45:11.102  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Emilia, lastName=Clarke, birthDay=23-10-1986, deathDay=null, birthPlace=London, UK) is going to be added
+2022-01-10 19:45:11.104  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=13), firstName=Emilia, lastName=Clarke, birthDay=23-10-1986, deathDay=null, birthPlace=London, UK)
+2022-01-10 19:45:11.104  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Kit, lastName=Harrington, birthDay=26-12-1986, deathDay=null, birthPlace=London, UK) is going to be added
+2022-01-10 19:45:11.107  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=14), firstName=Kit, lastName=Harrington, birthDay=26-12-1986, deathDay=null, birthPlace=London, UK)
+2022-01-10 19:45:11.107  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Sophie, lastName=Turner, birthDay=21-2-1996, deathDay=null, birthPlace=Northhampton, UK) is going to be added
+2022-01-10 19:45:11.111  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=15), firstName=Sophie, lastName=Turner, birthDay=21-2-1996, deathDay=null, birthPlace=Northhampton, UK)
+2022-01-10 19:45:11.111  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Maisie, lastName=Williams, birthDay=15-4-1997, deathDay=null, birthPlace=Bristol, UK) is going to be added
+2022-01-10 19:45:11.113  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=16), firstName=Maisie, lastName=Williams, birthDay=15-4-1997, deathDay=null, birthPlace=Bristol, UK)
+2022-01-10 19:45:11.113  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Nicolaj, lastName=Coster-Waldau, birthDay=27-7-1970, deathDay=null, birthPlace=Rudkøbing, Denmark) is going to be added
+2022-01-10 19:45:11.115  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=17), firstName=Nicolaj, lastName=Coster-Waldau, birthDay=27-7-1970, deathDay=null, birthPlace=Rudkøbing, Denmark)
+2022-01-10 19:45:11.116  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Iain, lastName=Glain, birthDay=24-6-1961, deathDay=null, birthPlace=Edinburgh, Scotland, UK) is going to be added
+2022-01-10 19:45:11.119  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=18), firstName=Iain, lastName=Glain, birthDay=24-6-1961, deathDay=null, birthPlace=Edinburgh, Scotland, UK)
+2022-01-10 19:45:11.119  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=John, lastName=Bradley, birthDay=15-9-1988, deathDay=null, birthPlace=England, UK) is going to be added
+2022-01-10 19:45:11.123  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=19), firstName=John, lastName=Bradley, birthDay=15-9-1988, deathDay=null, birthPlace=England, UK)
+2022-01-10 19:45:11.123  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=David, lastName=Beionff, birthDay=29-9-1970, deathDay=null, birthPlace=New York, USA) is going to be added
+2022-01-10 19:45:11.126  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=20), firstName=David, lastName=Beionff, birthDay=29-9-1970, deathDay=null, birthPlace=New York, USA)
+2022-01-10 19:45:11.126  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=George R R, lastName=Martin, birthDay=20-9-1948, deathDay=null, birthPlace=New Jersey, USA) is going to be added
+2022-01-10 19:45:11.129  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=21), firstName=George R R, lastName=Martin, birthDay=20-9-1948, deathDay=null, birthPlace=New Jersey, USA)
+2022-01-10 19:45:11.129  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=D.B., lastName=Weiss, birthDay=23-4-1971, deathDay=null, birthPlace=Chicago, USA) is going to be added
+2022-01-10 19:45:11.131  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=22), firstName=D.B., lastName=Weiss, birthDay=23-4-1971, deathDay=null, birthPlace=Chicago, USA)
+2022-01-10 19:45:11.162  INFO DESKTOP-NRAM18P - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Added 12 people from Show: Game of Thrones

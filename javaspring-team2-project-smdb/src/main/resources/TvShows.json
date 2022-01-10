@@ -18,7 +18,7 @@
           "lastName": "Corbero",
           "birthday": "11-8-1989",
           "birthPlace": "Barcelona, Spain",
-          "professions": ["ACTOR"],
+          "contributionRole": ["ACTOR"],
           "role": "Tokyo"
         },
         {
@@ -26,7 +26,7 @@
           "lastName": "Morte",
           "birthday": "23-2-1975",
           "birthPlace": "Algeciras, Spain",
-          "professions": ["ACTOR"],
+          "contributionRole": ["ACTOR"],
           "role": "El Professor"
         },
         {
@@ -34,7 +34,7 @@
           "lastName": "Ituno",
           "birthday": "1975",
           "birthPlace": "Basauri, Spain",
-          "professions": ["ACTOR"],
+          "contributionRole": ["ACTOR"],
           "role": "Raquel Murillo"
         },
         {
@@ -42,14 +42,16 @@
           "lastName": "Pina",
           "birthday": "Unknown",
           "birthPlace": "Unknown",
-          "professions": ["WRITER", "PRODUCER", "DIRECTOR"]
+          "contributionRole": ["WRITER", "PRODUCER", "DIRECTOR"],
+          "role":""
         },
         {
           "firstName":"Jesus",
           "lastName": "Colmenar",
           "birthday": "Unknown",
           "birthPlace": "Unknown",
-          "professions": ["PRODUCER", "DIRECTOR"]
+          "contributionRole": ["PRODUCER", "DIRECTOR"],
+          "role":""
         }
       ]
     },
@@ -71,7 +73,7 @@
           "lastName": "Dinklage",
           "birthday": "11-6-1969",
           "birthPlace": "Morristown, New Jersey USA",
-          "professions": ["ACTOR","PRODUCER"],
+          "contributionRole": ["ACTOR"],
           "role": "Tyrion Lannister"
         },
         {
@@ -79,7 +81,7 @@
           "lastName": "Hedey",
           "birthday": "3-10-1973",
           "birthPlace": "Hamilton, Bermuda",
-          "professions": ["ACTOR","PRODUCER","DIRECTOR"],
+          "contributionRole": ["ACTOR"],
           "role": "Cercei Lannister"
         },
         {
@@ -87,7 +89,7 @@
           "lastName": "Clarke",
           "birthday": "23-10-1986",
           "birthPlace": "London, UK",
-          "professions": ["ACTOR", "PRODUCER"],
+          "contributionRole": ["ACTOR"],
           "role": "Daenerys Targaryen"
         },
         {
@@ -95,7 +97,7 @@
           "lastName": "Harrington",
           "birthday": "26-12-1986",
           "birthPlace": "London, UK",
-          "professions": ["ACTOR","WRITER","PRODUCER"],
+          "contributionRole": ["ACTOR"],
           "role": "Jon Snow"
         },
         {
@@ -103,7 +105,7 @@
           "lastName": "Turner",
           "birthday": "21-2-1996",
           "birthPlace": "Northhampton, UK",
-          "professions": ["ACTOR"],
+          "contributionRole": ["ACTOR"],
           "role": "Sansa Stark"
         },
         {
@@ -111,7 +113,7 @@
           "lastName": "Williams",
           "birthday": "15-4-1997",
           "birthPlace": "Bristol, UK",
-          "professions": ["ACTOR","PRODUCER"],
+          "contributionRole": ["ACTOR"],
           "role": "Arya Stark"
         },
         {
@@ -119,7 +121,7 @@
           "lastName": "Coster-Waldau",
           "birthday": "27-7-1970",
           "birthPlace": "Rudkøbing, Denmark",
-          "professions": ["ACTOR","WRITER","PRODUCER"],
+          "contributionRole": ["ACTOR"],
           "role": "Jaime Lannister"
         },
         {
@@ -127,7 +129,7 @@
           "lastName": "Glain",
           "birthday": "24-6-1961",
           "birthPlace": "Edinburgh, Scotland, UK",
-          "professions": ["ACTOR","PRODUCER"],
+          "contributionRole": ["ACTOR"],
           "role": "Jorah Mormont"
         },
         {
@@ -135,7 +137,7 @@
           "lastName": "Bradley",
           "birthday": "15-9-1988",
           "birthPlace": "England, UK",
-          "professions": ["ACTOR"],
+          "contributionRole": ["ACTOR"],
           "role": "Samwell Tarly"
         },
         {
@@ -143,21 +145,24 @@
           "lastName": "Beionff",
           "birthday": "29-9-1970",
           "birthPlace": "New York, USA",
-          "professions": ["WRITER", "PRODUCER", "DIRECTOR"]
+          "contributionRole": ["WRITER", "PRODUCER", "DIRECTOR"],
+          "role":""
         },
         {
           "firstName":"George R R",
           "lastName": "Martin",
           "birthday": "20-9-1948",
           "birthPlace": "New Jersey, USA",
-          "professions": ["PRODUCER", "WRITER"]
+          "contributionRole": ["PRODUCER", "WRITER"],
+          "role":""
         },
         {
           "firstName":"D.B.",
           "lastName": "Weiss",
           "birthday": "23-4-1971",
           "birthPlace": "Chicago, USA",
-          "professions": ["WRITER", "PRODUCER", "DIRECTOR"]
+          "contributionRole": ["WRITER", "PRODUCER", "DIRECTOR"],
+          "role":""
         }
       ]
     }
