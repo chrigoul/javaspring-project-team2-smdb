@@ -5,6 +5,7 @@ import com.javaspring.team2.project.smdb.domain.*;
 import com.javaspring.team2.project.smdb.extraMethods.InsertMethods;
 import com.javaspring.team2.project.smdb.service.MovieService;
 import com.javaspring.team2.project.smdb.service.PersonService;
+import com.javaspring.team2.project.smdb.service.TitleService;
 import lombok.RequiredArgsConstructor;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -25,6 +26,7 @@ public class MovieCreatorRunnerFromFile extends AbstractLogComponent implements 
 
     private final MovieService movieService;
     private final PersonService personService;
+    private final TitleService titleService;
     private final InsertMethods im;
 
     @Override
@@ -40,6 +42,11 @@ public class MovieCreatorRunnerFromFile extends AbstractLogComponent implements 
 
             //Movie
             //!!! To do --> Before creating object check if movie exists in database
+            String title= (String) dummyIterator.get("primaryTitle");
+            if(titleService.existsByPrimaryTitle(title)) {
+                logger.info("Movie {} already exists! Skipping!", title);
+                continue;
+            }
             Movie movie = movieService.create(im.addMovie((dummyIterator)));
 
             //Cast and Crew

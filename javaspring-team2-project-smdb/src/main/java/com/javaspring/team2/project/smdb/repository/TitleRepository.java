@@ -29,4 +29,6 @@ public interface TitleRepository extends JpaRepository<Title, Long> {
 
     List<Title> findAllByGenresContains(Genre genre);
 
+    Boolean existsByPrimaryTitle(String primaryTitle);
+
 }

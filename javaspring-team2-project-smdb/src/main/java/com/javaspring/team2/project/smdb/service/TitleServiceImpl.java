@@ -39,22 +39,13 @@ public class TitleServiceImpl extends BaseServiceImpl<Title> implements TitleSer
 //    public List<Title> findParticipationOfAPerson(){
 //        return titleRepository.findParticipationOfAPerson();
 //    }
-
     @Override
     public List<Title> findAllByGenresContains(Genre genre){
         return titleRepository.findAllByGenresContains(genre);
     }
 
-
-//
-//    @Override
-//    public void addActorsToTitle(Title title, Person person, String role){
-//        title.getActors().add(newActor(title, person, role));
-//    }
-//
-//    private Actor newActor(Title title, Person person, String role) {
-//        return Actor.builder().title(title).person(person).role(role).build();
-//    }
+    @Override
+    public Boolean existsByPrimaryTitle(String primaryTitle){ return titleRepository.existsByPrimaryTitle(primaryTitle); }
 //    @Override
 //    public Title findLazy(Long id){
 //        return titleRepository.findLazy(id);

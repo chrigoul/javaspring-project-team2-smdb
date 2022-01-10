@@ -15,6 +15,8 @@ public interface TitleService extends BaseService<Title, Long> {
 
     List<Title> findAllByGenresContains(Genre genre);
 
+    Boolean existsByPrimaryTitle(String primaryTitle);
+
 
 //    List<Title> findParticipationOfAPerson();
 

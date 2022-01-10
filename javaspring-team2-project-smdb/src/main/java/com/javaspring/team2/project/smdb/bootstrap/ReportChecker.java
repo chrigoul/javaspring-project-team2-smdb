@@ -27,8 +27,8 @@ public class ReportChecker extends AbstractLogComponent implements CommandLineRu
 
     public void run(String... args) throws Exception {
 
-        Person x = personService.findPersonByFirstNameAndLastName("Jorje", "Ramos");
-        logger.info("The person is {}", x.getLastName());
+/*        Person x = personService.findPersonByFirstNameAndLastName("Jorje", "Ramos");
+        logger.info("The person is {}", x.getLastName());*/
 
         List<Title> top3 = titleService.findTop3ByOrderBySmdbRatingDesc();
         logger.info("The top three rating titles are:");

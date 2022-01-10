@@ -150,6 +150,40 @@
           "role": ""
         }
       ]
+    },
+    {
+      "primaryTitle": "Inception",
+      "genre": [
+        "ADVENTURE",
+        "ACTION",
+        "SCIFI"
+      ],
+      "durationInMinutes": "148",
+      "releaseYear": "2010",
+      "smdbRating": "8.8",
+      "ageRating": "13",
+      "storyLine": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.",
+      "countriesOfOrigin": [
+        "UNITED STATES",
+        "UNITED KINGDOM"
+      ],
+      "languages": [
+        "ENGLISH",
+        "JAPANESE",
+        "FRENCH"
+      ],
+      "cast": [
+        {
+          "firstName": "Leonardo",
+          "lastName": "Di Caprio",
+          "birthday": "11-11-1974",
+          "birthPlace": "Hollywood, Los Angeles, California, USA",
+          "contributionRole": [
+            "ACTOR"
+          ],
+          "role": "Cobb"
+        }
+      ]
     }
   ]
 }

@@ -4,6 +4,7 @@ import com.javaspring.team2.project.smdb.base.AbstractLogComponent;
 import com.javaspring.team2.project.smdb.domain.*;
 import com.javaspring.team2.project.smdb.extraMethods.InsertMethods;
 import com.javaspring.team2.project.smdb.service.PersonService;
+import com.javaspring.team2.project.smdb.service.TitleService;
 import com.javaspring.team2.project.smdb.service.TvShowService;
 import lombok.RequiredArgsConstructor;
 
@@ -27,6 +28,7 @@ public class TvShowCreatorRunnerFromFile extends AbstractLogComponent implements
 
     private final PersonService personService;
     private final TvShowService tvShowService;
+    private final TitleService titleService;
     private final InsertMethods im;
 
     @Override
@@ -42,7 +44,8 @@ public class TvShowCreatorRunnerFromFile extends AbstractLogComponent implements
             dummyIterator = showIterator.next();
 
             //TvShow
-            //!!! To do --> Before creating object check if tvShow exists in database
+            String title= (String) dummyIterator.get("primaryTitle");
+            if(titleService.existsByPrimaryTitle(title)) continue;
             TvShow tvShow = tvShowService.create(im.addTvShow(dummyIterator));
             //Cast and Crew
             JSONArray castArray = (JSONArray) dummyIterator.get("cast");
