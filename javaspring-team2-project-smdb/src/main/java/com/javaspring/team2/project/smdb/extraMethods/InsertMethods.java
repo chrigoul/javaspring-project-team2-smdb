@@ -77,6 +77,7 @@ public class InsertMethods {
         movie.setPrimaryTitle((String) iterator.get("primaryTitle"));
         movie.setDurationInMinutes(Integer.parseInt((String) iterator.get("durationInMinutes")));
         movie.setReleaseYear(Integer.parseInt((String) iterator.get("releaseYear")));
+        movie.setAgeRating(Integer.parseInt((String) iterator.get("ageRating")));
         movie.setSmdbRating(Double.parseDouble((String) iterator.get("smdbRating")));
         movie.setStoryLine((String) iterator.get("storyLine"));
 

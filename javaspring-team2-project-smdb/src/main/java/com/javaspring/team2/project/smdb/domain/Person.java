@@ -38,13 +38,5 @@ public class Person extends BaseModel {
     @OneToMany( mappedBy = "person", cascade = CascadeType.ALL, orphanRemoval = true,fetch = FetchType.LAZY)
     private Set<Profession> professions = new HashSet<>();
 
-/*    @Column(name = "profession", nullable = false)
-    @ElementCollection(targetClass = ContributionRole.class, fetch = FetchType.EAGER)
-    @Enumerated(EnumType.STRING)
-    @CollectionTable(name="person_worked_as", joinColumns= {@JoinColumn(name="PERSON_ID")})
-    private Set<ContributionRole> hasWorkedAs;*/
-
-//    @Column
-//    private String character;
 
 }

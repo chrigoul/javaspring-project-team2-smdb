@@ -6,6 +6,7 @@
       "durationInMinutes": "169",
       "releaseYear": "2014",
       "smdbRating": "8.6",
+      "ageRating": "13",
       "storyLine": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
       "countriesOfOrigin": ["UNITED STATES", "UNITED KINGDOM", "CANADA"],
       "languages": ["ENGLISH"],
@@ -54,10 +55,11 @@
     },
     {
       "primaryTitle": "InterstellarTheSequel",
-      "genre": ["ADVENTURE", "DRAMA", "SCIFI"],
+      "genre": ["ADVENTURE", "DRAMA", "SCIFI", "THRILLER"],
       "durationInMinutes": "169",
       "releaseYear": "2022",
       "smdbRating": "9.9",
+      "ageRating": "13",
       "storyLine": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival yet again.",
       "countriesOfOrigin": ["UNITED STATES", "UNITED KINGDOM", "CANADA"],
       "languages": ["ENGLISH"],
@@ -69,6 +71,83 @@
           "birthPlace": "Uvalde, Texas, USA",
           "contributionRole": ["ACTOR"],
           "role": "Cooper"
+        }
+      ]
+    },
+    {
+      "primaryTitle": "Inception",
+      "genre": ["ADVENTURE", "ACTION", "SCIFI"],
+      "durationInMinutes": "148",
+      "releaseYear": "2010",
+      "smdbRating": "8.8",
+      "ageRating": "13",
+      "storyLine": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.",
+      "countriesOfOrigin": ["UNITED STATES", "UNITED KINGDOM"],
+      "languages": ["ENGLISH","JAPANESE", "FRENCH"],
+      "cast": [
+        {
+          "firstName": "Leonardo",
+          "lastName": "Di Caprio",
+          "birthday": "11-11-1974",
+          "birthPlace": "Hollywood, Los Angeles, California, USA",
+          "contributionRole": ["ACTOR"],
+          "role": "Cobb"
+        },
+        {
+          "firstName": "Joseph",
+          "lastName": "Gordon-Levitt",
+          "birthday": "17-2-1981",
+          "birthPlace": "Los Angeles, California, USA",
+          "contributionRole": ["ACTOR"],
+          "role": "Arthur"
+        },
+        {
+          "firstName": "Elliot",
+          "lastName": "Page",
+          "birthday": "21-2-1987",
+          "birthPlace": "Halifax, Nova Scotia, Canada",
+          "contributionRole": ["ACTOR"],
+          "role": "Ariadne"
+        },
+        {
+          "firstName": "Tom",
+          "lastName": "Hardy",
+          "birthday": "15-9-1977",
+          "birthPlace": "Hammersmith, London, England, UK",
+          "contributionRole": ["ACTOR"],
+          "role": "Eames"
+        },
+        {
+          "firstName": "Ken",
+          "lastName": "Watanabe",
+          "birthday": "21-10-1959",
+          "birthPlace": "Uonuma, Japan",
+          "contributionRole": ["ACTOR"],
+          "role": "Saito"
+        },
+        {
+          "firstName": "Dileep",
+          "lastName": "Rao",
+          "birthday": "29-7-1973",
+          "birthPlace": "Los Angeles, California, USA",
+          "contributionRole": ["ACTOR"],
+          "role": "Yusuf"
+        },
+        {
+          "firstName": "Cillian",
+          "lastName": "Murphy",
+          "birthday": "21-10-1959",
+          "birthPlace": "Douglas, Cork, Ireland",
+          "contributionRole": ["ACTOR"],
+          "role": "Robert Fischer"
+        },
+        {
+          "firstName": "Christopher",
+          "lastName": "Nolan",
+          "birthday": "30-7-1970",
+          "birthPlace": "London, England, UK",
+          "contributionRole": ["WRITER","DIRECTOR"],
+          "role": ""
         }
       ]
     }
