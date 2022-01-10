@@ -41,5 +41,11 @@ public class ReportChecker extends AbstractLogComponent implements CommandLineRu
 
         allByGenre.forEach(i-> logger.info("Action titles are: {}", i.getPrimaryTitle()));
 
+        Integer numberOfComedyTvShows = tvShowService.countTvShowsByGenresContains(Genre.COMEDY);
+        logger.info("The number of comedy tv shows is {}", numberOfComedyTvShows);
+
+//        Integer numberOf2014ComedyTvShows = tvShowService.countTvShowsByGenresAndReleaseYearContains(Genre.COMEDY, 2014);
+//        logger.info("The number of comedy tv shows that came out in 2014 is {}", numberOf2014ComedyTvShows);
+
     }
 }

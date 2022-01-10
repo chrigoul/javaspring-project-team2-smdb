@@ -15,6 +15,7 @@ public interface TitleService extends BaseService<Title, Long> {
 
     List<Title> findAllByGenresContains(Genre genre);
 
+
 //    List<Title> findParticipationOfAPerson();
 
 //    void addActorsToTitle(Title title, Person person, String role);

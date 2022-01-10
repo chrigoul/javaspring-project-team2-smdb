@@ -65,7 +65,16 @@ public class ContentCreatorRunner extends AbstractLogComponent implements Comman
         List<TvShow> tvShows = List.of(
         TvShow.builder().primaryTitle("Stupid thing").genres(Set.of(Genre.COMEDY)).durationInMinutes(20).smdbRating(5.2).releaseYear(2014)
                 .endYear(2018).storyLine("A stupid story").countriesOfOrigin(Set.of("USA")).languages(Set.of("English")).producers(Set.of(people.get(1),people.get(3)))
-                .numberOfEpisodes(22).numberOfSeasons(4).build()
+                .numberOfEpisodes(22).numberOfSeasons(4).build(),
+        TvShow.builder().primaryTitle("The show").genres(Set.of(Genre.COMEDY)).durationInMinutes(25).smdbRating(7.5).releaseYear(2018)
+                .endYear(2021).storyLine("A different world").countriesOfOrigin(Set.of("USA")).languages(Set.of("English")).producers(Set.of(people.get(3),people.get(2)))
+                .numberOfEpisodes(12).numberOfSeasons(3).build(),
+        TvShow.builder().primaryTitle("Computer nerds").genres(Set.of(Genre.COMEDY, Genre.DRAMA)).durationInMinutes(20).smdbRating(5.9).releaseYear(2014)
+                .endYear(2016).storyLine("PC....").countriesOfOrigin(Set.of("USA")).languages(Set.of("English")).producers(Set.of(people.get(4),people.get(1)))
+                .numberOfEpisodes(18).numberOfSeasons(2).build(),
+        TvShow.builder().primaryTitle("La cafe").genres(Set.of(Genre.DRAMA)).durationInMinutes(45).smdbRating(7.8).releaseYear(2014)
+                .endYear(2019).storyLine("Somewhere in France").countriesOfOrigin(Set.of("France")).languages(Set.of("French")).producers(Set.of(people.get(1),people.get(0)))
+                .numberOfEpisodes(8).numberOfSeasons(5).build()
         );
 
         logger.info("TvShows created: {}.",tvShowService.createAll(tvShows).size());
