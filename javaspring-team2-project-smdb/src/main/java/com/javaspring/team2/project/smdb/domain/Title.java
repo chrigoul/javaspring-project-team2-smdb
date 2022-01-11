@@ -2,13 +2,10 @@ package com.javaspring.team2.project.smdb.domain;
 
 import lombok.*;
 import lombok.experimental.SuperBuilder;
-import org.springframework.web.bind.annotation.GetMapping;
 
 
 import javax.persistence.*;
 import javax.validation.constraints.*;
-import java.util.EnumSet;
-import java.util.Enumeration;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -38,7 +35,7 @@ public class Title extends BaseModel {
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "title")
-    private Set<Actor> actors = new HashSet<>();
+    private Set<Profession> professions = new HashSet<>();
 
     @Column(length = 4096, nullable = false)
     private String storyLine;

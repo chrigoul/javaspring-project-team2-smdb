@@ -26,12 +26,6 @@ public class TvShow extends Title{
         @Column
         private Integer numberOfEpisodes;
 
-        @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.LAZY)
-        @JoinTable(name = "PRODUCERS",
-                joinColumns = @JoinColumn(name = "TV_SHOW_ID"),
-                inverseJoinColumns = @JoinColumn(name = "PERSON_ID"))
-        private Set<Person> producers = new HashSet<>();
-
         @Column
         private Integer endYear;
 }

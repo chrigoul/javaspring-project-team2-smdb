@@ -22,20 +22,14 @@ public class TvShowServiceImpl extends BaseServiceImpl<TvShow> implements TvShow
         return tvShowRepository.findTvShowByPrimaryTitle(primaryTitle);
     }
 
-    public Integer countTvShowsByGenresContains(Genre genre){
-        return tvShowRepository.countTvShowsByGenresContains(genre);
+    @Override
+    public Long countTvShowsByGenres(Genre genre){
+        return tvShowRepository.countTvShowsByGenres(genre);
     }
-//
-//    @Override
-//    public Integer countTvShowsByGenresContainsAndReleaseYearContains(Genre genre, Integer releaseYear){
-//        return tvShowRepository.countTvShowsByGenresContainsAndReleaseYearContains(genre, releaseYear);
-//    }
-//
-//    @Override
-//    public Integer countTvShowsByGenresAndReleaseYearContains(Genre genre, Integer releaseYear){
-//        return tvShowRepository.countTvShowsByGenresAndReleaseYearContains(genre,releaseYear);
-//    }
 
-
+    @Override
+    public Long countTvShowByGenresAndReleaseYear(Genre genre, Integer releaseYear){
+        return tvShowRepository.countTvShowByGenresAndReleaseYear(genre, releaseYear);
+    }
 
 }

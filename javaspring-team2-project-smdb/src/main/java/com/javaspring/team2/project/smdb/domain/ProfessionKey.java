@@ -14,7 +14,7 @@ import java.io.Serializable;
 @SuperBuilder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ActorKey implements Serializable {
+public class ProfessionKey implements Serializable {
 
     @Column(name = "TITLE_ID")
     private Long titleId;

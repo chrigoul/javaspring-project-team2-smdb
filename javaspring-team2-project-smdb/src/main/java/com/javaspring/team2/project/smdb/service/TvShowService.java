@@ -5,9 +5,7 @@ import com.javaspring.team2.project.smdb.domain.TvShow;
 
 public interface TvShowService extends BaseService<TvShow, Long> {
     TvShow findTvShowByPrimaryTitle(String primaryTitle);
-    Integer countTvShowsByGenresContains(Genre genre);
-//    Integer countTvShowsByGenresContainsAndReleaseYearContains(Genre genre, Integer releaseYear);
-
-//    Integer countTvShowsByGenresAndReleaseYearContains(Genre genre, Integer releaseYear);
+    Long countTvShowsByGenres(Genre genre);
+    Long countTvShowByGenresAndReleaseYear(Genre genre, Integer releaseYear);
 
 }

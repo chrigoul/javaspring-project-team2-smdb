@@ -8,20 +8,14 @@ import java.util.List;
 public interface TitleService extends BaseService<Title, Long> {
 
     Title findTitleByPrimaryTitle(String primaryTitle);
-//
-//    List<Title> findThreeTopRatedTitles();
 
     List<Title> findTop3ByOrderBySmdbRatingDesc();
 
     List<Title> findAllByGenresContains(Genre genre);
 
+    Boolean existsByPrimaryTitle(String primaryTitle);
 
-//    List<Title> findParticipationOfAPerson();
-
-//    void addActorsToTitle(Title title, Person person, String role);
-//
-//    Title findLazy(Long id);
-
+//    List<Title> findPersonParticipationInTitleByFullName(String firstName,String lastName);
 
 
 }

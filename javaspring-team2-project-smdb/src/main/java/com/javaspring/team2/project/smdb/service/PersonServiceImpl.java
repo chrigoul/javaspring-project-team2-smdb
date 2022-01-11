@@ -26,5 +26,8 @@ public class PersonServiceImpl extends BaseServiceImpl<Person> implements Person
         return personRepository.findLazy(id);
     }
 
-
+    @Override
+    public Boolean existsByFirstNameAndLastName(String firstName, String lastName){
+       return personRepository.existsByFirstNameAndLastName(firstName,lastName);
+    }
 }

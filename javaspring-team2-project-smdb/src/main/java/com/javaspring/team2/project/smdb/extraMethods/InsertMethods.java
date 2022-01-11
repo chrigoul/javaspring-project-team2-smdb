@@ -14,11 +14,11 @@ import java.util.Set;
 public class InsertMethods {
 
     public Set<ContributionRole> addContributionRole(JSONArray professionsArray) {
-        Set<ContributionRole> professions = new HashSet<>();
+        Set<ContributionRole> hasWorkedAs = new HashSet<>();
         for (int i = 0; i < professionsArray.size(); i++) {
-            professions.add(ContributionRole.valueOf((String) professionsArray.get(i)));
+            hasWorkedAs.add(ContributionRole.valueOf((String) professionsArray.get(i)));
         }
-        return professions;
+        return hasWorkedAs;
     }
 
     public Set<Genre> addGenres(JSONArray genresArray){
@@ -43,9 +43,6 @@ public class InsertMethods {
         person.setLastName((String) iterator.get("lastName"));
         person.setBirthDay((String) iterator.get("birthday"));
         person.setBirthPlace((String) iterator.get("birthPlace"));
-
-        JSONArray professionsArray = (JSONArray) iterator.get("professions");
-        person.setProfessions(addContributionRole(professionsArray));
 
         return person;
     }
@@ -80,6 +77,7 @@ public class InsertMethods {
         movie.setPrimaryTitle((String) iterator.get("primaryTitle"));
         movie.setDurationInMinutes(Integer.parseInt((String) iterator.get("durationInMinutes")));
         movie.setReleaseYear(Integer.parseInt((String) iterator.get("releaseYear")));
+        movie.setAgeRating(Integer.parseInt((String) iterator.get("ageRating")));
         movie.setSmdbRating(Double.parseDouble((String) iterator.get("smdbRating")));
         movie.setStoryLine((String) iterator.get("storyLine"));
 

@@ -1,18 +1,17 @@
 package com.javaspring.team2.project.smdb.bootstrap;
 
 import com.javaspring.team2.project.smdb.base.AbstractLogComponent;
-import com.javaspring.team2.project.smdb.domain.Actor;
-import com.javaspring.team2.project.smdb.domain.ActorKey;
-import com.javaspring.team2.project.smdb.domain.Movie;
-import com.javaspring.team2.project.smdb.domain.Person;
+import com.javaspring.team2.project.smdb.domain.*;
 import com.javaspring.team2.project.smdb.extraMethods.InsertMethods;
 import com.javaspring.team2.project.smdb.service.MovieService;
 import com.javaspring.team2.project.smdb.service.PersonService;
+import com.javaspring.team2.project.smdb.service.TitleService;
 import lombok.RequiredArgsConstructor;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
@@ -28,6 +27,7 @@ public class MovieCreatorRunnerFromFile extends AbstractLogComponent implements 
 
     private final MovieService movieService;
     private final PersonService personService;
+    private final TitleService titleService;
     private final InsertMethods im;
 
     @Override
@@ -38,12 +38,17 @@ public class MovieCreatorRunnerFromFile extends AbstractLogComponent implements 
         Iterator<JSONObject> movieIterator = movies.iterator();
         JSONObject dummyIterator;
 
-        while(movieIterator.hasNext()){
-            dummyIterator=movieIterator.next();
+        while (movieIterator.hasNext()) {
+            dummyIterator = movieIterator.next();
 
             //Movie
             //!!! To do --> Before creating object check if movie exists in database
-            Movie movie=movieService.create(im.addMovie((dummyIterator)));
+            String title= (String) dummyIterator.get("primaryTitle");
+            if(titleService.existsByPrimaryTitle(title)) {
+                logger.info("Movie {} already exists! Skipping!", title);
+                continue;
+            }
+            Movie movie = movieService.create(im.addMovie((dummyIterator)));
 
             //Cast and Crew
             JSONArray castArray = (JSONArray) dummyIterator.get("cast");
@@ -51,58 +56,37 @@ public class MovieCreatorRunnerFromFile extends AbstractLogComponent implements 
             JSONObject dummy;
 
             //Prepare for adding actors
-            Set<Actor> actorSet = movie.getActors();
-            if (actorSet == null)
-                actorSet = new HashSet<>();
+            Set<Profession> professionSet = movie.getProfessions();
+            if (professionSet == null)
+                professionSet = new HashSet<>();
+
             while (castIterator.hasNext()) {
                 dummy = castIterator.next();
-                Person person= im.addPerson(dummy);
-                //!!! To do --> Before creating object check if person exists in database
-                personService.create(person);
-                logger.info("Created Person {} {}", person.getFirstName(), person.getLastName());
+                Person person = im.addPerson(dummy);
+                logger.info("Person {} is going to be added", person);
 
-                String role = (String) dummy.get("role");
-                Actor actor = Actor.builder().key(ActorKey.builder().build())
-                        .title(movie).person(person).role(role).build();
-                actorSet.add(actor);
+                //Before creating object check if person exists in database
+                Boolean check = personService.existsByFirstNameAndLastName(person.getFirstName(), person.getLastName());
+                if (check == Boolean.TRUE) {
+                    logger.info("Person {} {}, already exists", person.getFirstName(), person.getLastName());
+                    person = personService.findPersonByFirstNameAndLastName(person.getFirstName(), person.getLastName());
+                } else {
+                    personService.create(person);
+                    logger.info("Created Person {}", person);
+                }
+
+                Profession profession = Profession.builder().key(ProfessionKey.builder().build())
+                        .title(movie).person(person).build();
+                JSONArray contributionsArray = (JSONArray) dummy.get("contributionRole");
+                profession.setRole((String) dummy.get("role"));
+                Set<ContributionRole> titleContributionRole= im.addContributionRole(contributionsArray);
+                profession.setTitleContributionRole(titleContributionRole);
+                professionSet.add(profession);
             }
-            movie.setActors(actorSet);
+            movie.setProfessions(professionSet);
             movieService.update(movie);
-            logger.info("Added {} actors from movie: {}", actorSet.size(), movie.getPrimaryTitle());
+            logger.info("Added {} cast from movie: {}", professionSet.size(), movie.getPrimaryTitle());
 
-            JSONArray directorsArray = (JSONArray) dummyIterator.get("directors");
-            Iterator<JSONObject> directorsIterator = directorsArray.iterator();
-            JSONObject dummydirect;
-
-            Set<Person> newDirectors = movie.getDirectors();
-
-            if(newDirectors==null)
-                newDirectors=new HashSet<>();
-
-            while (directorsIterator.hasNext()) {
-                dummydirect=directorsIterator.next();
-                Person person = im.addPerson(dummydirect);
-                personService.create(person);
-                newDirectors.add(person);
-            }
-            movie.setDirectors(newDirectors);
-
-            JSONArray writersArray = (JSONArray) dummyIterator.get("writers");
-            Iterator<JSONObject> writersIterator = writersArray.iterator();
-            JSONObject dummywriter;
-            Set<Person> newWriters = movie.getWriters();
-            if(newWriters==null)
-                newWriters=new HashSet<>();
-            while (writersIterator.hasNext()) {
-                dummywriter=writersIterator.next();
-
-                Person person = im.addPerson(dummywriter);
-                personService.create(person);
-                newWriters.add(person);
-            }
-            movie.setWriters(newWriters);
-
-            movieService.update(movie);
         }
     }
 }

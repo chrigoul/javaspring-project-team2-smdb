@@ -1,9 +1,7 @@
 package com.javaspring.team2.project.smdb.domain;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
-import org.springframework.lang.Nullable;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -38,15 +36,7 @@ public class Person extends BaseModel {
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     @OneToMany( mappedBy = "person", cascade = CascadeType.ALL, orphanRemoval = true,fetch = FetchType.LAZY)
-    private Set<Actor> actors = new HashSet<>();
+    private Set<Profession> professions = new HashSet<>();
 
-    @Column(name = "profession", nullable = false)
-    @ElementCollection(targetClass = ContributionRole.class)
-    @Enumerated(EnumType.STRING)
-    @CollectionTable(name="person_worked_as", joinColumns= {@JoinColumn(name="PERSON_ID")})
-    private Set<ContributionRole> professions;
-
-//    @Column
-//    private String character;
 
 }
