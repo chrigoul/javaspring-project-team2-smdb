@@ -5,9 +5,12 @@ import com.javaspring.team2.project.smdb.domain.Movie;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+import java.util.Set;
+
 @Repository
 public interface MovieRepository extends JpaRepository<Movie, Long> {
     Movie findMovieByPrimaryTitle(String primaryTitle);
 
-    Long countMovieByGenresContaining(Genre genre);
+    List<Movie> getMovieBySmdbRating(Double smdbRating);
 }

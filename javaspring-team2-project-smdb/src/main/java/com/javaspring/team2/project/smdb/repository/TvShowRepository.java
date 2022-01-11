@@ -14,10 +14,11 @@ import java.util.List;
 @Repository
 public interface TvShowRepository extends JpaRepository<TvShow, Long> {
     TvShow findTvShowByPrimaryTitle(String primaryTitle);
+
+    //    5th Report: Number of TvShows per a given Genre
     Long countTvShowsByGenres(Genre genre);
+
+    //    6th: Report: Number of TvShows per a Genre per Release Year
     Long countTvShowByGenresAndReleaseYear(Genre genre, Integer releaseYear);
-
-
-
 
 }

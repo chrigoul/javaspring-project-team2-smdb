@@ -1,5 +1,6 @@
 package com.javaspring.team2.project.smdb.service;
 
+import com.javaspring.team2.project.smdb.domain.ContributionRole;
 import com.javaspring.team2.project.smdb.domain.Genre;
 import com.javaspring.team2.project.smdb.domain.Person;
 import com.javaspring.team2.project.smdb.domain.Title;
@@ -9,6 +10,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Set;
 
 @Service
 @RequiredArgsConstructor
@@ -42,10 +44,15 @@ public class TitleServiceImpl extends BaseServiceImpl<Title> implements TitleSer
     }
 
 //
-//    @Override
-//    public List<Title> findPersonParticipationInTitleByFullName(String firstName,String lastName){
-//        return titleRepository.findPersonParticipationInTitleByFullName(firstName, lastName);
-//    }
+    @Override
+    public List<Title> findPersonParticipationInTitleByFullName(String firstName, String lastName){
+        return titleRepository.findPersonParticipationInTitleByFullName(firstName, lastName);
+    }
+
+    @Override
+    public List<Title> findPersonParticipationInTitleByFullNameByAndProfessions(String firstName, String lastName, ContributionRole profession){
+        return titleRepository.findPersonParticipationInTitleByFullNameByAndProfessions(firstName, lastName, profession);
+    }
 
 
 //

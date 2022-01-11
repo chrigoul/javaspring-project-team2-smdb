@@ -17,4 +17,6 @@ public class TvShowController extends AbstractController<TvShow>{
     protected BaseService<TvShow, Long> getBaseService() {
         return tvShowService;
     }
+
+
 }

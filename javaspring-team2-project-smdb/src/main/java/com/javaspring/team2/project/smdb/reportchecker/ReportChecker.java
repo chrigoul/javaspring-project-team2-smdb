@@ -1,13 +1,13 @@
 package com.javaspring.team2.project.smdb.reportchecker;
 
 import com.javaspring.team2.project.smdb.base.AbstractLogComponent;
+import com.javaspring.team2.project.smdb.domain.ContributionRole;
 import com.javaspring.team2.project.smdb.domain.Genre;
-import com.javaspring.team2.project.smdb.domain.Person;
+import com.javaspring.team2.project.smdb.domain.Movie;
 import com.javaspring.team2.project.smdb.domain.Title;
-import com.javaspring.team2.project.smdb.service.MovieService;
-import com.javaspring.team2.project.smdb.service.PersonService;
-import com.javaspring.team2.project.smdb.service.TitleService;
-import com.javaspring.team2.project.smdb.service.TvShowService;
+import com.javaspring.team2.project.smdb.repository.MovieRepository;
+import com.javaspring.team2.project.smdb.repository.TvShowRepository;
+import com.javaspring.team2.project.smdb.service.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Profile;
@@ -15,6 +15,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 @Component
 @Profile("report-checker")
@@ -44,6 +45,14 @@ public class ReportChecker extends AbstractLogComponent implements CommandLineRu
 
         Long numberOfAdventureTvShowsFor2017 = tvShowService.countTvShowByGenresAndReleaseYear(Genre.ADVENTURE, 2017);
         logger.info("The number of adventure tv shows for 2017 is {}", numberOfAdventureTvShowsFor2017);
+
+        logger.info("Person is {}", personService.findPersonByFirstNameAndLastName("Cillian", "Murphy"));
+
+        logger.info("Title is {}", titleService.findTitleByPrimaryTitle("Money Heist").getClass());
+
+        logger.info("Titles that {} has participated are: {}", personService.findPersonByFirstNameAndLastName("Cillian", "Murphy").getLastName(), titleService.findPersonParticipationInTitleByFullName("Cillian", "Murphy"));
+
+//        logger.info("Titles that {} has participated as an Actor are: {}", personService.findPersonByFirstNameAndLastName("Cillian", "Murphy").getLastName(), titleService.findPersonParticipationInTitleByFullNameByAndProfessions("Cillian", "Murphy", ContributionRole.ACTOR));
 
     }
 }

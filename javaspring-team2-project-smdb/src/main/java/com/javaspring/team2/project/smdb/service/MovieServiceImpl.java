@@ -22,12 +22,6 @@ public class MovieServiceImpl extends BaseServiceImpl<Movie> implements MovieSer
         return movieRepository.findMovieByPrimaryTitle(primaryTitle);
     }
 
-
-    @Override
-    public Long countMovieByGenresContaining(Genre genre){
-        return movieRepository.countMovieByGenresContaining(genre);
-    }
-
 //    @Override
 //    public void addActorsToMovie(Movie movie, Person person, String role){
 //        movie.getActors().add(newActor(movie, person, role));

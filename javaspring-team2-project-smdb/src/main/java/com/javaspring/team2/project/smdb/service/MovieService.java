@@ -8,7 +8,4 @@ public interface MovieService extends BaseService<Movie, Long> {
     Movie findMovieByPrimaryTitle(String primaryTitle);
 //    void addActorsToMovie(Movie movie, Person person, String role);
 
-    Long countMovieByGenresContaining(Genre genre);
-
-
 }
