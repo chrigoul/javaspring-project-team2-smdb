@@ -25,27 +25,38 @@ public class TitleServiceImpl extends BaseServiceImpl<Title> implements TitleSer
         return titleRepository.findTitleByPrimaryTitle(primaryTitle);
     }
 
-//    @Override
-//    public List<Title> findThreeTopRatedTitles(){
-//        return titleRepository.findThreeTopRatedTitles();
-//    }
-
     @Override
     public List<Title> findTop3ByOrderBySmdbRatingDesc(){
         return titleRepository.findTop3ByOrderBySmdbRatingDesc();
     }
 
-//    @Override
-//    public List<Title> findParticipationOfAPerson(){
-//        return titleRepository.findParticipationOfAPerson();
-//    }
+
     @Override
     public List<Title> findAllByGenresContains(Genre genre){
         return titleRepository.findAllByGenresContains(genre);
     }
 
     @Override
-    public Boolean existsByPrimaryTitle(String primaryTitle){ return titleRepository.existsByPrimaryTitle(primaryTitle); }
+    public Boolean existsByPrimaryTitle(String primaryTitle){
+        return titleRepository.existsByPrimaryTitle(primaryTitle);
+    }
+
+//
+//    @Override
+//    public List<Title> findPersonParticipationInTitleByFullName(String firstName,String lastName){
+//        return titleRepository.findPersonParticipationInTitleByFullName(firstName, lastName);
+//    }
+
+
+//
+//    @Override
+//    public void addActorsToTitle(Title title, Person person, String role){
+//        title.getActors().add(newActor(title, person, role));
+//    }
+//
+//    private Actor newActor(Title title, Person person, String role) {
+//        return Actor.builder().title(title).person(person).role(role).build();
+//    }
 //    @Override
 //    public Title findLazy(Long id){
 //        return titleRepository.findLazy(id);

@@ -1,6 +1,7 @@
 package com.javaspring.team2.project.smdb.repository;
 
 import com.javaspring.team2.project.smdb.domain.Person;
+import com.javaspring.team2.project.smdb.domain.Title;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

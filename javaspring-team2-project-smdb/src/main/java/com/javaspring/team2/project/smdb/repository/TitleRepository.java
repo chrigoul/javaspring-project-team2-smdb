@@ -13,19 +13,13 @@ import java.util.List;
 @Repository
 public interface TitleRepository extends JpaRepository<Title, Long> {
 
-//
-//    @Query("select t from Title t join fetch t.actors where t.id = ?1")
-//    Title findLazy(Long id);
-
     Title findTitleByPrimaryTitle(String primaryTitle);
-//
-//    @Query(value = "select top 3 * from TITLES t order by t.smdbRating desc", nativeQuery = true)
-//    List<Title> findThreeTopRatedTitles();
 
     List<Title> findTop3ByOrderBySmdbRatingDesc();
 
-//    @Query(value = "select * from TITLES t, people p where p.person_id = t.id", nativeQuery = true)
-//    List<Title> findParticipationOfAPerson();
+//    @Query("select DISTINCT t from Title t JOIN t.professions f JOIN f.person p where p.id =(select " +
+//            "DISTINCT p.id from Person p WHERE p.firstName = :firstname and p.lastName =:lastname)")
+//    List<Title> findPersonParticipationInTitleByFullName(String firstName,String lastName);
 
     List<Title> findAllByGenresContains(Genre genre);
 

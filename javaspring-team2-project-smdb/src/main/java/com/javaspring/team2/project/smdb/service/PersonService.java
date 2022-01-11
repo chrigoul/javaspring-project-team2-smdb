@@ -13,5 +13,4 @@ public interface PersonService extends BaseService<Person, Long> {
     Person findLazy(Long id);
 
     Boolean existsByFirstNameAndLastName(String firstName, String lastName);
-
 }

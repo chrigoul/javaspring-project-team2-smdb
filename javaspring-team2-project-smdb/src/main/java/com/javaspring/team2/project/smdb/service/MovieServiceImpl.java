@@ -1,5 +1,6 @@
 package com.javaspring.team2.project.smdb.service;
 
+import com.javaspring.team2.project.smdb.domain.Genre;
 import com.javaspring.team2.project.smdb.domain.Movie;
 import com.javaspring.team2.project.smdb.repository.MovieRepository;
 import lombok.RequiredArgsConstructor;
@@ -19,6 +20,12 @@ public class MovieServiceImpl extends BaseServiceImpl<Movie> implements MovieSer
     @Override
     public Movie findMovieByPrimaryTitle(String primaryTitle){
         return movieRepository.findMovieByPrimaryTitle(primaryTitle);
+    }
+
+
+    @Override
+    public Long countMovieByGenresContaining(Genre genre){
+        return movieRepository.countMovieByGenresContaining(genre);
     }
 
 //    @Override

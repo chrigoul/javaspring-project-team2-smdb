@@ -1,4 +1,4 @@
-package com.javaspring.team2.project.smdb.bootstrap;
+package com.javaspring.team2.project.smdb.reportchecker;
 
 import com.javaspring.team2.project.smdb.base.AbstractLogComponent;
 import com.javaspring.team2.project.smdb.domain.Genre;
@@ -27,8 +27,6 @@ public class ReportChecker extends AbstractLogComponent implements CommandLineRu
 
     public void run(String... args) throws Exception {
 
-/*        Person x = personService.findPersonByFirstNameAndLastName("Jorje", "Ramos");
-        logger.info("The person is {}", x.getLastName());*/
 
         List<Title> top3 = titleService.findTop3ByOrderBySmdbRatingDesc();
         logger.info("The top three rating titles are:");
@@ -41,11 +39,11 @@ public class ReportChecker extends AbstractLogComponent implements CommandLineRu
 
         allByGenre.forEach(i-> logger.info("Action titles are: {}", i.getPrimaryTitle()));
 
-        Integer numberOfComedyTvShows = tvShowService.countTvShowsByGenresContains(Genre.COMEDY);
-        logger.info("The number of comedy tv shows is {}", numberOfComedyTvShows);
+        Long numberOfAdventureTvShows = tvShowService.countTvShowsByGenres(Genre.ADVENTURE);
+        logger.info("The number of adventure tv shows is {}", numberOfAdventureTvShows);
 
-//        Integer numberOf2014ComedyTvShows = tvShowService.countTvShowsByGenresAndReleaseYearContains(Genre.COMEDY, 2014);
-//        logger.info("The number of comedy tv shows that came out in 2014 is {}", numberOf2014ComedyTvShows);
+        Long numberOfAdventureTvShowsFor2017 = tvShowService.countTvShowByGenresAndReleaseYear(Genre.ADVENTURE, 2017);
+        logger.info("The number of adventure tv shows for 2017 is {}", numberOfAdventureTvShowsFor2017);
 
     }
 }
