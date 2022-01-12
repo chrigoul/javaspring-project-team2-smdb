@@ -53,7 +53,7 @@ public class MovieController extends AbstractController<Movie>{
     public ResponseEntity<ApiResponse<List<Movie>>> getAllMoviesBetweenTwoYears(@RequestParam("startYear") Integer startYear,
                                                                                 @RequestParam("endYear") Integer endYear){
         return ResponseEntity.ok(ApiResponse.<List<Movie>>builder()
-                .data(movieService.getMovieByReleaseYearGreaterThanAndReleaseYearLessThan(startYear, endYear))
+                .data(movieService.getMovieByReleaseYearGreaterThanEqualAndReleaseYearLessThanEqual(startYear, endYear))
                 .build());
     }
 }

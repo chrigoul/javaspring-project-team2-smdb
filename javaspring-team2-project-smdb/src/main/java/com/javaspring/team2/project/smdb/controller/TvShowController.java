@@ -46,7 +46,7 @@ public class TvShowController extends AbstractController<TvShow>{
     public ResponseEntity<ApiResponse<List<TvShow>>> getAllTvShowsBetweenTwoYears(@RequestParam("startYear") Integer startYear,
                                                                                 @RequestParam("endYear") Integer endYear){
         return ResponseEntity.ok(ApiResponse.<List<TvShow>>builder()
-                .data(tvShowService.getTvShowByReleaseYearGreaterThanAndReleaseYearLessThan(startYear, endYear))
+                .data(tvShowService.getTvShowByReleaseYearGreaterThanEqualAndReleaseYearLessThanEqual(startYear, endYear))
                 .build());
     }
 

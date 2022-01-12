@@ -16,6 +16,6 @@ public interface MovieService extends BaseService<Movie, Long> {
 
     List<Movie> getMovieByReleaseYearEquals(Integer year);
 
-    List<Movie> getMovieByReleaseYearGreaterThanAndReleaseYearLessThan(Integer startYear, Integer endYear);
+    List<Movie> getMovieByReleaseYearGreaterThanEqualAndReleaseYearLessThanEqual(Integer startYear, Integer endYear);
 
 }

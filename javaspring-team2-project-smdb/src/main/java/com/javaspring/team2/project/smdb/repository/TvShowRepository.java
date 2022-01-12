@@ -31,5 +31,5 @@ public interface TvShowRepository extends JpaRepository<TvShow, Long> {
 
     List<TvShow> getTvShowByReleaseYearEquals(Integer year);
 
-    List<TvShow> getTvShowByReleaseYearGreaterThanAndReleaseYearLessThan(Integer startYear, Integer endYear);
+    List<TvShow> getTvShowByReleaseYearGreaterThanEqualAndReleaseYearLessThanEqual(Integer startYear, Integer endYear);
 }

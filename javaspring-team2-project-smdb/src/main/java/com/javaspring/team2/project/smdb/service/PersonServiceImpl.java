@@ -1,10 +1,12 @@
 package com.javaspring.team2.project.smdb.service;
 
+import com.javaspring.team2.project.smdb.domain.ContributionRole;
 import com.javaspring.team2.project.smdb.domain.Person;
 import com.javaspring.team2.project.smdb.domain.Title;
 import com.javaspring.team2.project.smdb.repository.PersonRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -32,6 +34,12 @@ public class PersonServiceImpl extends BaseServiceImpl<Person> implements Person
     public Boolean existsByFirstNameAndLastName(String firstName, String lastName){
        return personRepository.existsByFirstNameAndLastName(firstName,lastName);
     }
+
+//    @Override
+//    public List<Person> getPersonForaContributionRole(@Param("contributionRole") ContributionRole contributionRole){
+//        return personRepository.getPersonForaContributionRole(contributionRole);
+//    }
+//
 
 
 }
