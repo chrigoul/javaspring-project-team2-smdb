@@ -32,4 +32,28 @@ public class MovieController extends AbstractController<Movie>{
                 .data(movieService.getPeopleParticipatingInTitle(primaryTitle))
                 .build());
     }
+
+    @GetMapping(path = "age", params = {"age"})
+    public ResponseEntity<ApiResponse<List<Movie>>> getAllMoviesWithAgeRatingGreaterThan(@RequestParam("age") Integer age )
+    {
+        return ResponseEntity.ok(ApiResponse.<List<Movie>>builder()
+                .data(movieService.getMovieByAgeRatingGreaterThan(age))
+                .build());
+    }
+
+    @GetMapping(path= "releaseYear", params = {"year"})
+    public ResponseEntity<ApiResponse<List<Movie>>> getAllMoviesReleasedInYear(@RequestParam("year") Integer year )
+    {
+        return ResponseEntity.ok(ApiResponse.<List<Movie>>builder()
+                .data(movieService.getMovieByReleaseYearEquals(year))
+                .build());
+    }
+
+    @GetMapping(path = "years", params = {"startYear", "endYear"})
+    public ResponseEntity<ApiResponse<List<Movie>>> getAllMoviesBetweenTwoYears(@RequestParam("startYear") Integer startYear,
+                                                                                @RequestParam("endYear") Integer endYear){
+        return ResponseEntity.ok(ApiResponse.<List<Movie>>builder()
+                .data(movieService.getMovieByReleaseYearGreaterThanAndReleaseYearLessThan(startYear, endYear))
+                .build());
+    }
 }

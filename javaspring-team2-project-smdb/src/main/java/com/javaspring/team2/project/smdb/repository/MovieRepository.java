@@ -18,4 +18,10 @@ public interface MovieRepository extends JpaRepository<Movie, Long> {
 
     @Query(value = "select distinct p from Person p join p.professions f join f.title t where t.id = (select distinct t.id from Title where t.primaryTitle = :primaryTitle)")
     List<Person> getPeopleParticipatingInTitle(String primaryTitle);
+
+    List<Movie> getMovieByAgeRatingGreaterThan(Integer age);
+
+    List<Movie> getMovieByReleaseYearEquals(Integer year);
+
+    List<Movie> getMovieByReleaseYearGreaterThanAndReleaseYearLessThan(Integer startYear, Integer endYear);
 }

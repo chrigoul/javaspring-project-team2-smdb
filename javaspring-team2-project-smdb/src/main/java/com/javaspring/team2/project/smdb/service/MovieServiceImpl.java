@@ -29,6 +29,21 @@ public class MovieServiceImpl extends BaseServiceImpl<Movie> implements MovieSer
         return movieRepository.getPeopleParticipatingInTitle(primaryTitle);
     }
 
+    @Override
+    public List<Movie> getMovieByAgeRatingGreaterThan(Integer age) {
+        return movieRepository.getMovieByAgeRatingGreaterThan(age);
+    }
+
+    @Override
+    public List<Movie> getMovieByReleaseYearEquals(Integer year) {
+        return movieRepository.getMovieByReleaseYearEquals(year);
+    }
+
+    @Override
+    public List<Movie> getMovieByReleaseYearGreaterThanAndReleaseYearLessThan(Integer startYear, Integer endYear) {
+        return movieRepository.getMovieByReleaseYearGreaterThanAndReleaseYearLessThan(startYear, endYear);
+    }
+
 //    @Override
 //    public void addActorsToMovie(Movie movie, Person person, String role){
 //        movie.getActors().add(newActor(movie, person, role));

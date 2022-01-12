@@ -12,7 +12,7 @@ public interface ReportService {
 
     List<Title> getPersonParticipationInTitleByFullName(String firstName, String lastName);
 
-    List<Title> getPersonParticipationInTitleByFullNameAndProfessions(String firstName, String lastName, String contributionRole);
+//    List<Title> getPersonParticipationInTitleByFullNameAndProfessions(String firstName, String lastName, String contributionRole);
 
     List<Title> findAllByGenresContains(Genre genre);
 

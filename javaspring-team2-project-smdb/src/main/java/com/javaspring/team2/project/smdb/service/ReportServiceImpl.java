@@ -34,10 +34,10 @@ public class ReportServiceImpl implements ReportService {
         return reportRepository.getPersonParticipationInTitleByFullName(firstName, lastName);
     }
 
-    @Override
+/*    @Override
     public List<Title> getPersonParticipationInTitleByFullNameAndProfessions(String firstName, String lastName, String contributionRole) {
         return reportRepository.getPersonParticipationInTitleByFullNameAndProfessions(firstName,lastName,contributionRole);
-    }
+    }*/
 
 
     @Override

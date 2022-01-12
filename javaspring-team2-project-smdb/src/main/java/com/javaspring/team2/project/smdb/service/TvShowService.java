@@ -12,4 +12,12 @@ public interface TvShowService extends BaseService<TvShow, Long> {
     Long countTvShowByGenresAndReleaseYear(Genre genre, Integer releaseYear);
 
     List<Person> getPeopleParticipatingInTitle(String primaryTitle);
+
+    List<TvShow> getTvShowByNumberOfEpisodesGreaterThan(Integer num);
+
+    List<TvShow> getTvShowByNumberOfSeasonsGreaterThan(Integer num);
+
+    List<TvShow> getTvShowByReleaseYearEquals(Integer year);
+
+    List<TvShow> getTvShowByReleaseYearGreaterThanAndReleaseYearLessThan(Integer startYear, Integer endYear);
 }

@@ -12,4 +12,10 @@ public interface MovieService extends BaseService<Movie, Long> {
 
     List<Person> getPeopleParticipatingInTitle(String primaryTitle);
 
+    List<Movie> getMovieByAgeRatingGreaterThan(Integer age);
+
+    List<Movie> getMovieByReleaseYearEquals(Integer year);
+
+    List<Movie> getMovieByReleaseYearGreaterThanAndReleaseYearLessThan(Integer startYear, Integer endYear);
+
 }

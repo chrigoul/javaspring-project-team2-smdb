@@ -24,4 +24,12 @@ public interface TvShowRepository extends JpaRepository<TvShow, Long> {
 
     @Query(value = "select distinct p from Person p join p.professions f join f.title t where t.id = (select distinct t.id from TvShow where t.primaryTitle = :primaryTitle)")
     List<Person> getPeopleParticipatingInTitle(String primaryTitle);
+
+    List<TvShow> getTvShowByNumberOfEpisodesGreaterThan(Integer num);
+
+    List<TvShow> getTvShowByNumberOfSeasonsGreaterThan(Integer num);
+
+    List<TvShow> getTvShowByReleaseYearEquals(Integer year);
+
+    List<TvShow> getTvShowByReleaseYearGreaterThanAndReleaseYearLessThan(Integer startYear, Integer endYear);
 }

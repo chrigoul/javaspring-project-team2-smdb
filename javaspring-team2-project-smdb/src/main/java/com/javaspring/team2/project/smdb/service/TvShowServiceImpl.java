@@ -39,4 +39,24 @@ public class TvShowServiceImpl extends BaseServiceImpl<TvShow> implements TvShow
         return tvShowRepository.getPeopleParticipatingInTitle(primaryTitle);
     }
 
+    @Override
+    public List<TvShow> getTvShowByNumberOfEpisodesGreaterThan(Integer num) {
+        return tvShowRepository.getTvShowByNumberOfEpisodesGreaterThan(num);
+    }
+
+    @Override
+    public List<TvShow> getTvShowByNumberOfSeasonsGreaterThan(Integer num) {
+        return tvShowRepository.getTvShowByNumberOfSeasonsGreaterThan(num);
+    }
+
+    @Override
+    public List<TvShow> getTvShowByReleaseYearEquals(Integer year) {
+        return tvShowRepository.getTvShowByReleaseYearEquals(year);
+    }
+
+    @Override
+    public List<TvShow> getTvShowByReleaseYearGreaterThanAndReleaseYearLessThan(Integer startYear, Integer endYear) {
+        return tvShowRepository.getTvShowByReleaseYearGreaterThanAndReleaseYearLessThan(startYear,endYear);
+    }
+
 }

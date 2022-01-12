@@ -1,5 +1,6 @@
 package com.javaspring.team2.project.smdb.controller;
 
+import com.javaspring.team2.project.smdb.domain.Movie;
 import com.javaspring.team2.project.smdb.domain.Person;
 import com.javaspring.team2.project.smdb.domain.TvShow;
 import com.javaspring.team2.project.smdb.service.BaseService;
@@ -30,6 +31,37 @@ public class TvShowController extends AbstractController<TvShow>{
     {
         return ResponseEntity.ok(ApiResponse.<List<Person>>builder()
                 .data(tvShowService.getPeopleParticipatingInTitle(primaryTitle))
+                .build());
+    }
+
+    @GetMapping(path= "releaseYear", params = {"year"})
+    public ResponseEntity<ApiResponse<List<TvShow>>> getAllTvShowsReleasedInYear(@RequestParam("year") Integer year )
+    {
+        return ResponseEntity.ok(ApiResponse.<List<TvShow>>builder()
+                .data(tvShowService.getTvShowByReleaseYearEquals(year))
+                .build());
+    }
+
+    @GetMapping(path = "years", params = {"startYear", "endYear"})
+    public ResponseEntity<ApiResponse<List<TvShow>>> getAllTvShowsBetweenTwoYears(@RequestParam("startYear") Integer startYear,
+                                                                                @RequestParam("endYear") Integer endYear){
+        return ResponseEntity.ok(ApiResponse.<List<TvShow>>builder()
+                .data(tvShowService.getTvShowByReleaseYearGreaterThanAndReleaseYearLessThan(startYear, endYear))
+                .build());
+    }
+
+    @GetMapping(path= "episodes", params = {"episodes"})
+    public ResponseEntity<ApiResponse<List<TvShow>>> getAllTvShowsWithEpisodesMOreThan(@RequestParam("episodes") Integer episodes )
+    {
+        return ResponseEntity.ok(ApiResponse.<List<TvShow>>builder()
+                .data(tvShowService.getTvShowByNumberOfEpisodesGreaterThan(episodes))
+                .build());
+    }
+    @GetMapping(path= "seasons", params = {"seasons"})
+    public ResponseEntity<ApiResponse<List<TvShow>>> getAllTvShowsWithSeasonsMoreThan(@RequestParam("seasons") Integer season )
+    {
+        return ResponseEntity.ok(ApiResponse.<List<TvShow>>builder()
+                .data(tvShowService.getTvShowByNumberOfSeasonsGreaterThan(season))
                 .build());
     }
 }
