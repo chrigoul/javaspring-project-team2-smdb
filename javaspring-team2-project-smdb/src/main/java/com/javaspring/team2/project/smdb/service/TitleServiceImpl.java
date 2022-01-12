@@ -54,6 +54,11 @@ public class TitleServiceImpl extends BaseServiceImpl<Title> implements TitleSer
         return titleRepository.findPersonParticipationInTitleByFullNameByAndProfessions(firstName, lastName, profession);
     }
 
+    @Override
+    public List<Person> getPeopleParticipatingInTitle(String primaryTitle) {
+        return titleRepository.getPeopleParticipatingInTitle(primaryTitle);
+    }
+
 
 //
 //    @Override

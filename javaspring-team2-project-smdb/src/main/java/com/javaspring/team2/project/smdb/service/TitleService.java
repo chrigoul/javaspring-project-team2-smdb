@@ -2,6 +2,7 @@ package com.javaspring.team2.project.smdb.service;
 
 import com.javaspring.team2.project.smdb.domain.ContributionRole;
 import com.javaspring.team2.project.smdb.domain.Genre;
+import com.javaspring.team2.project.smdb.domain.Person;
 import com.javaspring.team2.project.smdb.domain.Title;
 import org.springframework.data.repository.query.Param;
 
@@ -22,6 +23,6 @@ public interface TitleService extends BaseService<Title, Long> {
 
     List<Title> findPersonParticipationInTitleByFullNameByAndProfessions(String firstName, String lastName, ContributionRole profession);
 
-
+    List<Person> getPeopleParticipatingInTitle(String primaryTitle);
 
 }

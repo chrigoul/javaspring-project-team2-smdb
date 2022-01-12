@@ -7,6 +7,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class PersonServiceImpl extends BaseServiceImpl<Person> implements PersonService {
@@ -30,4 +32,6 @@ public class PersonServiceImpl extends BaseServiceImpl<Person> implements Person
     public Boolean existsByFirstNameAndLastName(String firstName, String lastName){
        return personRepository.existsByFirstNameAndLastName(firstName,lastName);
     }
+
+
 }

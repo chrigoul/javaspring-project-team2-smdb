@@ -1,5 +1,6 @@
 package com.javaspring.team2.project.smdb.repository;
 
+import com.javaspring.team2.project.smdb.domain.ContributionRole;
 import com.javaspring.team2.project.smdb.domain.Genre;
 import com.javaspring.team2.project.smdb.domain.Title;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -19,6 +20,8 @@ public interface ReportRepository extends JpaRepository<Title, Long> {
     @Query(value = "select distinct t from Title t join t.professions f join f.person p where p.id = (select distinct p.id from Person p where p.firstName = :firstName and p.lastName = :lastName)")
     List<Title> getPersonParticipationInTitleByFullName(@Param("firstName") String firstName, @Param("lastName") String lastName);
 
+    @Query(value = "select distinct t from Title t join t.professions f join f.person p where p.id = (select distinct p.id from Person p where p.firstName = :firstName and p.lastName = :lastName and f.titleContributionRole =:contributionRole)")
+    List<Title> getPersonParticipationInTitleByFullNameAndProfessions(@Param("firstName") String firstName, @Param("lastName") String lastName, String contributionRole);
 
     //    4th Report: All TvShows per a given Genre
     List<Title> findAllByGenresContains(Genre genre);

@@ -1,5 +1,6 @@
 package com.javaspring.team2.project.smdb.service;
 
+import com.javaspring.team2.project.smdb.domain.ContributionRole;
 import com.javaspring.team2.project.smdb.domain.Genre;
 import com.javaspring.team2.project.smdb.domain.Title;
 import com.javaspring.team2.project.smdb.repository.ReportRepository;
@@ -32,6 +33,12 @@ public class ReportServiceImpl implements ReportService {
     public List<Title> getPersonParticipationInTitleByFullName(String firstName, String lastName){
         return reportRepository.getPersonParticipationInTitleByFullName(firstName, lastName);
     }
+
+    @Override
+    public List<Title> getPersonParticipationInTitleByFullNameAndProfessions(String firstName, String lastName, String contributionRole) {
+        return reportRepository.getPersonParticipationInTitleByFullNameAndProfessions(firstName,lastName,contributionRole);
+    }
+
 
     @Override
     public List<Title> getAllByGenresContaining(Genre genre){

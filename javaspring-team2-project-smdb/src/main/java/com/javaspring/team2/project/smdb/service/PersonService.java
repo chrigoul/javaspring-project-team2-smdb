@@ -5,6 +5,8 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 public interface PersonService extends BaseService<Person, Long> {
 
 //    @Transactional(propagation= Propagation.REQUIRED, readOnly=true, noRollbackFor=Exception.class)
@@ -13,4 +15,5 @@ public interface PersonService extends BaseService<Person, Long> {
     Person findLazy(Long id);
 
     Boolean existsByFirstNameAndLastName(String firstName, String lastName);
+
 }

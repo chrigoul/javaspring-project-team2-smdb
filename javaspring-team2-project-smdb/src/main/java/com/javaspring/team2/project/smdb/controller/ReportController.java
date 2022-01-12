@@ -1,5 +1,6 @@
 package com.javaspring.team2.project.smdb.controller;
 
+import com.javaspring.team2.project.smdb.domain.ContributionRole;
 import com.javaspring.team2.project.smdb.domain.Genre;
 import com.javaspring.team2.project.smdb.domain.Person;
 import com.javaspring.team2.project.smdb.domain.Title;
@@ -38,6 +39,8 @@ public class ReportController {
                 .build());
     }
 
+
+
     @GetMapping(path = "titles", params = {"genre"})
     public ResponseEntity<ApiResponse<List<Title>>> getAllByGenresContaining(@RequestParam("genre") Genre genre)
     {
@@ -45,4 +48,17 @@ public class ReportController {
                 .data(reportService.getAllByGenresContaining(genre))
                 .build());
     }
+
+/*    @GetMapping(path = "titles/person&ContributionRole", params = {"firstname", "lastname", "contributionRole"})
+    public ResponseEntity<ApiResponse<List<Title>>> getAllContentByContributorByFullNameAndContributionRole(@RequestParam("firstname") String firstName,
+                                                                                                            @RequestParam("lastname") String lastName,
+                                                                                                            @RequestParam("contributionRole") String contributionRole)
+    {
+        return ResponseEntity.ok(ApiResponse.<List<Title>>builder()
+                .data(reportService.getPersonParticipationInTitleByFullNameAndProfessions(firstName, lastName, contributionRole))
+                .build());
+    }*/
+
+
+
 }

@@ -1,5 +1,6 @@
 package com.javaspring.team2.project.smdb.service;
 
+import com.javaspring.team2.project.smdb.domain.ContributionRole;
 import com.javaspring.team2.project.smdb.domain.Genre;
 import com.javaspring.team2.project.smdb.domain.Title;
 
@@ -11,6 +12,7 @@ public interface ReportService {
 
     List<Title> getPersonParticipationInTitleByFullName(String firstName, String lastName);
 
+    List<Title> getPersonParticipationInTitleByFullNameAndProfessions(String firstName, String lastName, String contributionRole);
 
     List<Title> findAllByGenresContains(Genre genre);
 

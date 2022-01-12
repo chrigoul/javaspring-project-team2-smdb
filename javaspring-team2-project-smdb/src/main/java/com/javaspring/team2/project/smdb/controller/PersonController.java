@@ -17,4 +17,5 @@ public class PersonController extends AbstractController<Person>{
     protected BaseService<Person, Long> getBaseService() {
         return personService;
     }
+
 }

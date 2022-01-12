@@ -2,6 +2,7 @@ package com.javaspring.team2.project.smdb.repository;
 
 import com.javaspring.team2.project.smdb.domain.ContributionRole;
 import com.javaspring.team2.project.smdb.domain.Genre;
+import com.javaspring.team2.project.smdb.domain.Person;
 import com.javaspring.team2.project.smdb.domain.Title;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -33,4 +34,6 @@ public interface TitleRepository extends JpaRepository<Title, Long> {
 
     Boolean existsByPrimaryTitle(String primaryTitle);
 
+    @Query(value = "select distinct p from Person p join p.professions f join f.title t where t.id = (select distinct t.id from Title where t.primaryTitle = :primaryTitle)")
+    List<Person> getPeopleParticipatingInTitle(String primaryTitle);
 }
