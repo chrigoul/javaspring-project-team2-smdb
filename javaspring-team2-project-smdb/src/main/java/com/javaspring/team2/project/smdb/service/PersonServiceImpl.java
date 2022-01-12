@@ -26,9 +26,18 @@ public class PersonServiceImpl extends BaseServiceImpl<Person> implements Person
     }
 
     @Override
-    public Person findLazy(Long id){
-        return personRepository.findLazy(id);
+    public Person findLazy(Long id) {
+        return null;
     }
+
+    public List<Person> findPersonByLastName(String lastName){
+        return personRepository.findPersonByLastName(lastName);
+    }
+
+/*    @Override
+    public List<Title> findLazy(Long id){
+        return personRepository.findLazy(id);
+    }*/
 
     @Override
     public Boolean existsByFirstNameAndLastName(String firstName, String lastName){
@@ -40,6 +49,15 @@ public class PersonServiceImpl extends BaseServiceImpl<Person> implements Person
 //        return personRepository.getPersonForaContributionRole(contributionRole);
 //    }
 //
+
+/*    @Override
+    public List<Title> getTitlesThatPersonParticipatedIn(String firstName,String lastName){
+        return personRepository.getTitlesThatPersonParticipatedIn(firstName,lastName);
+    }*/
+
+
+
+
 
 
 }

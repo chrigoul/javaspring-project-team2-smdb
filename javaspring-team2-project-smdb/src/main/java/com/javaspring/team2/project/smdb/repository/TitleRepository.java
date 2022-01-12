@@ -26,8 +26,9 @@ public interface TitleRepository extends JpaRepository<Title, Long> {
     List<Title> findPersonParticipationInTitleByFullName(@Param("firstName") String firstName, @Param("lastName") String lastName);
 
     //    3rd Report: All Titles a Person has participated per his/her profession
-/*    @Query("select distinct t from Title t join t.professions f join f.person p where p.id = (select distinct p.id from Person p where p.firstName = :firstName and p.lastName = :lastName) and (f.titleContributionRole = :profession)")
-    List<Title> findPersonParticipationInTitleByFullNameByAndProfessions(@Param("firstName") String name, @Param("lastName") String surname, @Param("profession") ContributionRole profession);*/
+    //@Query("select distinct t from Title t join t.professions f join f.person p where p.id = (select distinct p.id from Person p where p.firstName = :firstName and p.lastName = :lastName) and (f.titleContributionRole = :profession)")
+ //   @Query("select distinct t from Title t join t.professions f join f.person p join f.titleContributionRole ft where p.id = (select distinct p.id from Person p where p.firstName = :firstName and p.lastName = :lastName and ft = :contributionRole)")
+  //  List<Title> findPersonParticipationInTitleByFullNameByAndProfessions(@Param("firstName") String name, @Param("lastName") String surname, @Param("profession") ContributionRole profession);
 
     //    4th Report: All TvShows per a given Genre
     List<Title> findAllByGenresContains(Genre genre);

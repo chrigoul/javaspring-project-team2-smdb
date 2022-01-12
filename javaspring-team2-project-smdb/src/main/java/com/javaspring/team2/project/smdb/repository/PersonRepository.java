@@ -24,6 +24,10 @@ public interface PersonRepository extends JpaRepository<Person, Long> {
 
     Person findPersonByFirstNameAndLastName(String firstName, String lastName);
 
+    List<Person> findPersonByLastName(String lastName);
+
+  //  List<Title> getTitlesThatPersonParticipatedIn(String firstName,String lastName);
+
     Boolean existsByFirstNameAndLastName(String firstName, String lastName);
 
 }

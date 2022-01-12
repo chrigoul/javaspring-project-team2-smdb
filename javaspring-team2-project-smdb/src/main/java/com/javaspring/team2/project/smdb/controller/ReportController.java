@@ -49,15 +49,14 @@ public class ReportController {
                 .build());
     }
 
-/*    @GetMapping(path = "titles/person&ContributionRole", params = {"firstname", "lastname", "contributionRole"})
+   @GetMapping(path = "titles/personContributionRole", params = {"firstname", "lastname"})
     public ResponseEntity<ApiResponse<List<Title>>> getAllContentByContributorByFullNameAndContributionRole(@RequestParam("firstname") String firstName,
-                                                                                                            @RequestParam("lastname") String lastName,
-                                                                                                            @RequestParam("contributionRole") String contributionRole)
+                                                                                                            @RequestParam("lastname") String lastName)
     {
         return ResponseEntity.ok(ApiResponse.<List<Title>>builder()
-                .data(reportService.getPersonParticipationInTitleByFullNameAndProfessions(firstName, lastName, contributionRole))
+                .data(reportService.getPersonParticipationInTitleByFullNameAndProfessions(firstName, lastName, ContributionRole.ACTOR))
                 .build());
-    }*/
+    }
 
 
 
