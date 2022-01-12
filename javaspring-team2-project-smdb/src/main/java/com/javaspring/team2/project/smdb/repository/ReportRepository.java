@@ -3,6 +3,7 @@ package com.javaspring.team2.project.smdb.repository;
 import com.javaspring.team2.project.smdb.domain.ContributionRole;
 import com.javaspring.team2.project.smdb.domain.Genre;
 import com.javaspring.team2.project.smdb.domain.Title;
+import com.javaspring.team2.project.smdb.transfer.NumberOfShowsPerGenreDto;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -20,21 +21,22 @@ public interface ReportRepository extends JpaRepository<Title, Long> {
     @Query(value = "select distinct t from Title t join t.professions f join f.person p where p.id = (select distinct p.id from Person p where p.firstName = :firstName and p.lastName = :lastName)")
     List<Title> getPersonParticipationInTitleByFullName(String firstName,String lastName);
 
-    //@Query(value = "select distinct t from Title t join t.professions f on t.id join f.titleContributionRole ft join f.person where p.id = (select distinct p.id from Person p where p.firstName = :firstName and p.lastName = :lastName and ft= :contributionRole)")
-    @Query(value = "select distinct t from Title t join t.professions f join f.person p join f.titleContributionRole ft where p.id = (select distinct p.id from Person p where p.firstName = :firstName and p.lastName = :lastName and ft = :contributionRole)")
+    //    3rd Report: All Titles a Person has participated per his/her profession
+    @Query(value = "select distinct t from Title t join t.professions f join f.person p join f.titleContributionRole ft where p.id = (select distinct p.id from Person p where p.firstName = :firstName and p.lastName = :lastName and ft =:contributionRole)")
     List<Title> getPersonParticipationInTitleByFullNameAndProfessions(String firstName, String lastName, ContributionRole contributionRole);
 
-  //  @Query("select distinct t from Title t join t.professions f join f.person p join f.titleContributionRole ft where p.id = (select distinct p.id from Person p where p.firstName = :firstName and p.lastName = :lastName) and (f.titleContributionRole in (:profession))")
     //    4th Report: All TvShows per a given Genre
-    List<Title> findAllByGenresContains(Genre genre);
-
     List<Title> getAllByGenresContaining(Genre genre);
 
+    //    5th Report: Number of TvShows per a given Genre
+    @Query(value = "select genre, count(title_id) as number from title_genres group by genre", nativeQuery = true)
+    List<NumberOfShowsPerGenreDto> getNumberOfShowsPerGenre();
 
-//    //    5th Report: Number of TvShows per a given Genre
-//    Long countTvShowsByGenres(Genre genre);
+//    @Query(value = "")
+//    List<NumberOfShowsPerReleaseYearPerGenreDto> getNumberOfShowsPerReleaseYearPerGenre();
 //
-//    //    6th: Report: Number of TvShows per a Genre per Release Year
-//    Long countTvShowByGenresAndReleaseYear(Genre genre, Integer releaseYear);
+//    @Query(value = "select distinct t from Title t join t.professions f join f.person p where p.id = (select distinct p.id from Person p where p.firstName = :firstName and p.lastName = :lastName) order by t.genres")
+//    List<Title> getAllTitlesForAPersonOrganizedByGenres(String firstName, String lastName);
+
 
 }

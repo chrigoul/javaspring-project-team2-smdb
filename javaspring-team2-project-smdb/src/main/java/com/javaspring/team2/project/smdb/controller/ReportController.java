@@ -8,6 +8,7 @@ import com.javaspring.team2.project.smdb.service.BaseService;
 import com.javaspring.team2.project.smdb.service.PersonService;
 import com.javaspring.team2.project.smdb.service.ReportService;
 import com.javaspring.team2.project.smdb.transfer.ApiResponse;
+import com.javaspring.team2.project.smdb.transfer.NumberOfShowsPerGenreDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -49,12 +50,29 @@ public class ReportController {
                 .build());
     }
 
-   @GetMapping(path = "titles/personContributionRole", params = {"firstname", "lastname"})
+   @GetMapping(path = "titles/person", params = {"firstname", "lastname", "profession"})
     public ResponseEntity<ApiResponse<List<Title>>> getAllContentByContributorByFullNameAndContributionRole(@RequestParam("firstname") String firstName,
-                                                                                                            @RequestParam("lastname") String lastName)
+                                                                                                            @RequestParam("lastname") String lastName,
+                                                                                                            @RequestParam("profession") String contributionRole)
     {
         return ResponseEntity.ok(ApiResponse.<List<Title>>builder()
-                .data(reportService.getPersonParticipationInTitleByFullNameAndProfessions(firstName, lastName, ContributionRole.ACTOR))
+                .data(reportService.getPersonParticipationInTitleByFullNameAndProfessions(firstName, lastName, ContributionRole.valueOf(contributionRole)))
+                .build());
+    }
+
+    @GetMapping(path = "tvShows/noPerGenre")
+    public ResponseEntity<ApiResponse<List<NumberOfShowsPerGenreDto>>> getNumberOfShowsPerGenre()
+    {
+        return ResponseEntity.ok(ApiResponse.<List<NumberOfShowsPerGenreDto>>builder()
+                .data(reportService.getNumberOfShowsPerGenre())
+                .build());
+    }
+
+    @GetMapping(path = "titles/person/byGenres", params = {"firstname", "lastname"})
+    public ResponseEntity<ApiResponse<List<Title>>> getAllTitlesForAPersonOrganizedByGenres(@RequestParam("firstname") String firstName, @RequestParam("lastname") String lastName)
+    {
+        return ResponseEntity.ok(ApiResponse.<List<Title>>builder()
+                .data(reportService.getAllTitlesForAPersonOrganizedByGenres(firstName, lastName))
                 .build());
     }
 

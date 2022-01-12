@@ -4,6 +4,7 @@ import com.javaspring.team2.project.smdb.domain.ContributionRole;
 import com.javaspring.team2.project.smdb.domain.Genre;
 import com.javaspring.team2.project.smdb.domain.Person;
 import com.javaspring.team2.project.smdb.domain.Title;
+import com.javaspring.team2.project.smdb.transfer.NumberOfShowsPerGenreDto;
 
 import java.util.List;
 
@@ -15,11 +16,13 @@ public interface ReportService {
 
    List<Title> getPersonParticipationInTitleByFullNameAndProfessions(String firstName, String lastName, ContributionRole contributionRole);
 
-    List<Title> findAllByGenresContains(Genre genre);
-
-
-
     List<Title> getAllByGenresContaining(Genre genre);
+
+    List<NumberOfShowsPerGenreDto> getNumberOfShowsPerGenre();
+
+    List<Title> getAllTitlesForAPersonOrganizedByGenres(String firstName, String lastName);
+
+
 
 //
 //    Long countTvShowsByGenres(Genre genre);

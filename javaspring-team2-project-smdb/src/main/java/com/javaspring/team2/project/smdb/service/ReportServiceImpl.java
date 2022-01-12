@@ -4,9 +4,8 @@ import com.javaspring.team2.project.smdb.domain.ContributionRole;
 import com.javaspring.team2.project.smdb.domain.Genre;
 import com.javaspring.team2.project.smdb.domain.Title;
 import com.javaspring.team2.project.smdb.repository.ReportRepository;
-import com.javaspring.team2.project.smdb.repository.TitleRepository;
+import com.javaspring.team2.project.smdb.transfer.NumberOfShowsPerGenreDto;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -22,13 +21,6 @@ public class ReportServiceImpl implements ReportService {
         return reportRepository.getTop3ByOrderBySmdbRatingDesc();
     }
 
-
-    @Override
-    public List<Title> findAllByGenresContains(Genre genre){
-        return reportRepository.findAllByGenresContains(genre);
-    }
-
-
     @Override
     public List<Title> getPersonParticipationInTitleByFullName(String firstName, String lastName){
         return reportRepository.getPersonParticipationInTitleByFullName(firstName, lastName);
@@ -42,19 +34,19 @@ public class ReportServiceImpl implements ReportService {
 
     @Override
     public List<Title> getAllByGenresContaining(Genre genre){
-        return reportRepository.findAllByGenresContains(genre);
+        return reportRepository.getAllByGenresContaining(genre);
+    }
+
+    @Override
+    public List<NumberOfShowsPerGenreDto> getNumberOfShowsPerGenre(){
+        return reportRepository.getNumberOfShowsPerGenre();
     }
 
 
-//
-//    @Override
-//    public Long countTvShowsByGenres(Genre genre){
-//        return reportRepository.countTvShowsByGenres(genre);
-//    }
-//
-//    @Override
-//    public Long countTvShowByGenresAndReleaseYear(Genre genre, Integer releaseYear){
-//        return reportRepository.countTvShowByGenresAndReleaseYear(genre, releaseYear);
-//    }
+    @Override
+    public List<Title> getAllTitlesForAPersonOrganizedByGenres(String firstName, String lastName){
+        return reportRepository.getAllTitlesForAPersonOrganizedByGenres(firstName, lastName);
+    }
+
 
 }
