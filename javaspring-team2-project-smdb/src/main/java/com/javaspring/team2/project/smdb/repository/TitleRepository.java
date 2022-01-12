@@ -34,6 +34,6 @@ public interface TitleRepository extends JpaRepository<Title, Long> {
 
     Boolean existsByPrimaryTitle(String primaryTitle);
 
-    @Query(value = "select distinct p from Person p join p.professions f join f.title t where t.id = (select distinct t.id from Title where t.primaryTitle = :primaryTitle)")
+    @Query(value = "select distinct p from Person p join p.professions f join f.title t where t.id = (select distinct t.id from Movie where t.primaryTitle = :primaryTitle)")
     List<Person> getPeopleParticipatingInTitle(String primaryTitle);
 }

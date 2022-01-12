@@ -2,6 +2,7 @@ package com.javaspring.team2.project.smdb.repository;
 
 import com.javaspring.team2.project.smdb.domain.Genre;
 import com.javaspring.team2.project.smdb.domain.Movie;
+import com.javaspring.team2.project.smdb.domain.Person;
 import com.javaspring.team2.project.smdb.domain.TvShow;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -21,4 +22,6 @@ public interface TvShowRepository extends JpaRepository<TvShow, Long> {
     //    6th: Report: Number of TvShows per a Genre per Release Year
     Long countTvShowByGenresAndReleaseYear(Genre genre, Integer releaseYear);
 
+    @Query(value = "select distinct p from Person p join p.professions f join f.title t where t.id = (select distinct t.id from TvShow where t.primaryTitle = :primaryTitle)")
+    List<Person> getPeopleParticipatingInTitle(String primaryTitle);
 }
