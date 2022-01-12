@@ -49,10 +49,10 @@ public class TitleServiceImpl extends BaseServiceImpl<Title> implements TitleSer
         return titleRepository.findPersonParticipationInTitleByFullName(firstName, lastName);
     }
 
-/*   @Override
-    public List<Title> findPersonParticipationInTitleByFullNameByAndProfessions(String firstName, String lastName, ContributionRole profession){
-        return titleRepository.findPersonParticipationInTitleByFullNameByAndProfessions(firstName, lastName, profession);
-    }*/
+   @Override
+    public List<Title> getPersonParticipationInTitleWithFullNameProfessions(String firstName, String lastName, ContributionRole profession){
+        return titleRepository.getPersonParticipationInTitleWithFullNameProfessions(firstName, lastName, profession);
+    }
 
     @Override
     public List<Person> getPeopleParticipatingInTitle(String primaryTitle) {

@@ -18,11 +18,11 @@ public interface ReportRepository extends JpaRepository<Title, Long> {
 
     //    2nd Report: All Titles a Person has participated in regardless of his/her profession
     @Query(value = "select distinct t from Title t join t.professions f join f.person p where p.id = (select distinct p.id from Person p where p.firstName = :firstName and p.lastName = :lastName)")
-    List<Title> getPersonParticipationInTitleByFullName(@Param("firstName") String firstName, @Param("lastName") String lastName);
+    List<Title> getPersonParticipationInTitleByFullName(String firstName,String lastName);
 
     //@Query(value = "select distinct t from Title t join t.professions f on t.id join f.titleContributionRole ft join f.person where p.id = (select distinct p.id from Person p where p.firstName = :firstName and p.lastName = :lastName and ft= :contributionRole)")
     @Query(value = "select distinct t from Title t join t.professions f join f.person p join f.titleContributionRole ft where p.id = (select distinct p.id from Person p where p.firstName = :firstName and p.lastName = :lastName and ft = :contributionRole)")
-    List<Title> getPersonParticipationInTitleByFullNameAndProfessions(@Param("firstName") String firstName, @Param("lastName") String lastName, ContributionRole contributionRole);
+    List<Title> getPersonParticipationInTitleByFullNameAndProfessions(String firstName, String lastName, ContributionRole contributionRole);
 
   //  @Query("select distinct t from Title t join t.professions f join f.person p join f.titleContributionRole ft where p.id = (select distinct p.id from Person p where p.firstName = :firstName and p.lastName = :lastName) and (f.titleContributionRole in (:profession))")
     //    4th Report: All TvShows per a given Genre

@@ -24,13 +24,13 @@ public class PersonController extends AbstractController<Person>{
     }
 
 
-/*    @GetMapping(path = "titles/person", params = {"firstname", "lastname"})
+    @GetMapping(path = "titles/person", params = {"firstname", "lastname"})
     public ResponseEntity<ApiResponse<List<Title>>> getAllContentByContributorByFullName(@RequestParam("firstname") String firstName, @RequestParam("lastname") String lastName)
     {
         return ResponseEntity.ok(ApiResponse.<List<Title>>builder()
                 .data(personService.getTitlesThatPersonParticipatedIn(firstName, lastName))
                 .build());
-    }*/
+    }
 
     @GetMapping(params = {"lastname"})
     public ResponseEntity<ApiResponse<List<Person>>> getAllContentByContributorByLastName(@RequestParam("lastname") String lastName)

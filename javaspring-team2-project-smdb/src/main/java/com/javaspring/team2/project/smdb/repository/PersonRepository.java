@@ -25,8 +25,8 @@ public interface PersonRepository extends JpaRepository<Person, Long> {
     Person findPersonByFirstNameAndLastName(String firstName, String lastName);
 
     List<Person> findPersonByLastName(String lastName);
-
-  //  List<Title> getTitlesThatPersonParticipatedIn(String firstName,String lastName);
+    @Query("select distinct t from Title t join t.professions f join f.person p where p.id = (select distinct p.id from Person p where p.firstName = :firstName and p.lastName = :lastName)")
+    List<Title> getTitlesThatPersonParticipatedIn(String firstName,String lastName);
 
     Boolean existsByFirstNameAndLastName(String firstName, String lastName);
 

@@ -50,10 +50,10 @@ public class PersonServiceImpl extends BaseServiceImpl<Person> implements Person
 //    }
 //
 
-/*    @Override
+    @Override
     public List<Title> getTitlesThatPersonParticipatedIn(String firstName,String lastName){
         return personRepository.getTitlesThatPersonParticipatedIn(firstName,lastName);
-    }*/
+    }
 
 
 

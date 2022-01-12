@@ -21,7 +21,7 @@ public interface TitleService extends BaseService<Title, Long> {
 
     List<Title> findPersonParticipationInTitleByFullName(String firstName, String lastName);
 
-//    List<Title> findPersonParticipationInTitleByFullNameByAndProfessions(String firstName, String lastName, ContributionRole profession);
+    List<Title> getPersonParticipationInTitleWithFullNameProfessions(String firstName, String lastName, ContributionRole profession);
 
     List<Person> getPeopleParticipatingInTitle(String primaryTitle);
 

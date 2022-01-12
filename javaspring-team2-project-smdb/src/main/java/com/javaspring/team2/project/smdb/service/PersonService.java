@@ -23,6 +23,6 @@ public interface PersonService extends BaseService<Person, Long> {
 
     Boolean existsByFirstNameAndLastName(String firstName, String lastName);
 
-    //List<Title> getTitlesThatPersonParticipatedIn(String firstName, String lastName);
+    List<Title> getTitlesThatPersonParticipatedIn(String firstName, String lastName);
 
 }
