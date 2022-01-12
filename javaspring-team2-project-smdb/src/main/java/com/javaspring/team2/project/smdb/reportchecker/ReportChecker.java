@@ -25,18 +25,20 @@ public class ReportChecker extends AbstractLogComponent implements CommandLineRu
     private final MovieService movieService;
     private final TvShowService tvShowService;
     private final TitleService titleService;
+    private final ReportService reportService;
+
 
     public void run(String... args) throws Exception {
 
 
-        List<Title> top3 = titleService.findTop3ByOrderBySmdbRatingDesc();
+        List<Title> top3 = reportService.getTop3ByOrderBySmdbRatingDesc();
         logger.info("The top three rating titles are:");
         logger.info("1. {}      SMDB Rating: {}", top3.get(0).getPrimaryTitle(), top3.get(0).getSmdbRating());
         logger.info("2. {}      SMDB Rating: {}", top3.get(1).getPrimaryTitle(), top3.get(1).getSmdbRating());
         logger.info("3. {}      SMDB Rating: {}", top3.get(2).getPrimaryTitle(), top3.get(2).getSmdbRating());
 
         List<Title> allByGenre = new ArrayList<>();
-        allByGenre = titleService.findAllByGenresContains(Genre.ACTION);
+        allByGenre = reportService.getAllByGenresContaining(Genre.ACTION);
 
         allByGenre.forEach(i-> logger.info("Action titles are: {}", i.getPrimaryTitle()));
 
@@ -50,7 +52,7 @@ public class ReportChecker extends AbstractLogComponent implements CommandLineRu
 
         logger.info("Title is {}", titleService.findTitleByPrimaryTitle("Money Heist").getClass());
 
-        logger.info("Titles that {} has participated are: {}", personService.findPersonByFirstNameAndLastName("Cillian", "Murphy").getLastName(), titleService.findPersonParticipationInTitleByFullName("Cillian", "Murphy"));
+        logger.info("Titles that {} has participated are: {}", personService.findPersonByFirstNameAndLastName("Cillian", "Murphy").getLastName(), reportService.getPersonParticipationInTitleByFullName("Cillian", "Murphy"));
 
 //        logger.info("Titles that {} has participated as an Actor are: {}", personService.findPersonByFirstNameAndLastName("Cillian", "Murphy").getLastName(), titleService.findPersonParticipationInTitleByFullNameByAndProfessions("Cillian", "Murphy", ContributionRole.ACTOR));
 

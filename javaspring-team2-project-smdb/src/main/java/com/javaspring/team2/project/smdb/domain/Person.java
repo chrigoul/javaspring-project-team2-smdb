@@ -1,5 +1,6 @@
 package com.javaspring.team2.project.smdb.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
@@ -33,6 +34,7 @@ public class Person extends BaseModel {
     @Column(length = 50, nullable = false)
     private String birthPlace;
 
+    @JsonIgnore
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     @OneToMany( mappedBy = "person", cascade = CascadeType.ALL, orphanRemoval = true,fetch = FetchType.LAZY)

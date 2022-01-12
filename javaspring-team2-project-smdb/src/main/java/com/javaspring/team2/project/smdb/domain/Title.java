@@ -1,5 +1,7 @@
 package com.javaspring.team2.project.smdb.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
@@ -23,7 +25,7 @@ public class Title extends BaseModel {
     private String primaryTitle;
 
     @Column(name = "genre", nullable = false)
-    @ElementCollection(targetClass = Genre.class)
+    @ElementCollection(targetClass = Genre.class, fetch = FetchType.EAGER)
     @Enumerated(EnumType.STRING)
     @CollectionTable(name="title_genres", joinColumns= {@JoinColumn(name="TITLE_ID")})
     private Set<Genre> genres;
@@ -32,6 +34,7 @@ public class Title extends BaseModel {
     @Column(nullable = false)
     private Integer durationInMinutes;
 
+    @JsonIgnore
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "title")
@@ -41,11 +44,11 @@ public class Title extends BaseModel {
     private String storyLine;
 
     @Column
-    @ElementCollection
+    @ElementCollection(fetch = FetchType.EAGER)
     private Set<String> countriesOfOrigin;
 
     @Column
-    @ElementCollection
+    @ElementCollection(fetch = FetchType.EAGER)
     private Set<String> languages;
 
     @Column
