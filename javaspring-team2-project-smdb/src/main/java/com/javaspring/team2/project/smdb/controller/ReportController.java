@@ -9,6 +9,8 @@ import com.javaspring.team2.project.smdb.service.PersonService;
 import com.javaspring.team2.project.smdb.service.ReportService;
 import com.javaspring.team2.project.smdb.transfer.ApiResponse;
 import com.javaspring.team2.project.smdb.transfer.NumberOfShowsPerGenreDto;
+import com.javaspring.team2.project.smdb.transfer.NumberOfShowsPerReleaseYearGenreDto;
+import com.javaspring.team2.project.smdb.transfer.TitlesForAPersonOrganizedByGenresDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -67,14 +69,22 @@ public class ReportController {
                 .data(reportService.getNumberOfShowsPerGenre())
                 .build());
     }
+    @GetMapping(path= "tvShows/perYearPerGenre")
+    public ResponseEntity<ApiResponse<List<NumberOfShowsPerReleaseYearGenreDto>>> getNumberOfShowsPerYearPerGenre()
+    {
+        return ResponseEntity.ok(ApiResponse.<List<NumberOfShowsPerReleaseYearGenreDto>>builder()
+                .data(reportService.getNumberOfShowsPerReleaseYearPerGenre(2022))
+                .build());
+    }
 
-    @GetMapping(path = "titles/person/byGenres", params = {"firstname", "lastname"})
+
+/*    @GetMapping(path = "titles/person/byGenres", params = {"firstname", "lastname"})
     public ResponseEntity<ApiResponse<List<Title>>> getAllTitlesForAPersonOrganizedByGenres(@RequestParam("firstname") String firstName, @RequestParam("lastname") String lastName)
     {
         return ResponseEntity.ok(ApiResponse.<List<Title>>builder()
                 .data(reportService.getAllTitlesForAPersonOrganizedByGenres(firstName, lastName))
                 .build());
-    }
+    }*/
 
 
 

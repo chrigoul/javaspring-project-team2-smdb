@@ -5,6 +5,8 @@ import com.javaspring.team2.project.smdb.domain.Genre;
 import com.javaspring.team2.project.smdb.domain.Title;
 import com.javaspring.team2.project.smdb.repository.ReportRepository;
 import com.javaspring.team2.project.smdb.transfer.NumberOfShowsPerGenreDto;
+import com.javaspring.team2.project.smdb.transfer.NumberOfShowsPerReleaseYearGenreDto;
+import com.javaspring.team2.project.smdb.transfer.TitlesForAPersonOrganizedByGenresDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -42,11 +44,16 @@ public class ReportServiceImpl implements ReportService {
         return reportRepository.getNumberOfShowsPerGenre();
     }
 
-
     @Override
+    public List<NumberOfShowsPerReleaseYearGenreDto> getNumberOfShowsPerReleaseYearPerGenre(Integer year) {
+        return reportRepository.getNumberOfShowsPerReleaseYearPerGenre(year);
+    }
+
+
+/*    @Override
     public List<Title> getAllTitlesForAPersonOrganizedByGenres(String firstName, String lastName){
         return reportRepository.getAllTitlesForAPersonOrganizedByGenres(firstName, lastName);
-    }
+    }*/
 
 
 }
