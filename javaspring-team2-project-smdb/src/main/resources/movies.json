@@ -184,6 +184,141 @@
           "role": "Cobb"
         }
       ]
+    },
+    {
+      "primaryTitle": "Underground",
+      "genre": ["COMEDY", "DRAMA", "FANTASY"],
+      "durationInMinutes": "167",
+      "releaseYear": "1995",
+      "smdbRating": "8.1",
+      "ageRating": "16",
+      "storyLine": "A group of Serbian socialists prepares for the war in a surreal underground filled by parties, tragedies, love, and hate.",
+      "countriesOfOrigin": ["FEDERAL REPUBLIC OF YUGOSLAVIA", "FRANCE",  "GERMANY",  "BULGARIA", "HUNGARY", "UNITED STATES", "UNITED KINGDOM"],
+      "languages": ["SERBIAN", "GERMAN", "ENGLISH", "FRENCH"],
+      "cast": [
+        {
+          "firstName": "Emir",
+          "lastName": "Kusturica",
+          "birthday": "24-11-1954",
+          "birthPlace":  "Sarajevo, Bosnia and Herzegovina, Yugoslavia",
+          "contributionRole": ["DIRECTOR",  "WRITER"],
+          "role": ""
+        },
+        {
+          "firstName": "Predrag",
+          "lastName": "Manojilovic",
+          "birthday": "5-4-1950",
+          "birthPlace": " Nis, Serbia, Yugoslavia",
+          "contributionRole": ["ACTOR"],
+          "role": "Marko"
+        },
+        {
+          "firstName": "Lazar",
+          "lastName": "Ristovski ",
+          "birthday": "26-10-1952",
+          "birthPlace": "Ravno Selo near Vrbas, Serbia, Yugoslavia",
+          "contributionRole": ["ACTOR"],
+          "role": "Crni"
+        },
+        {
+          "firstName": "Mirjana",
+          "lastName": "Jokovic",
+          "birthday": "24-11-1967",
+          "birthPlace": "Belgrade, Serbia, Yugoslavia",
+          "contributionRole": ["ACTOR"],
+          "role": "Natalija"
+        }
+      ]
+    },
+    {
+      "primaryTitle": "The Trial of the Chicago 7",
+      "genre": ["HISTORY", "DRAMA", "THRILLER"],
+      "durationInMinutes": "129",
+      "releaseYear": "2020",
+      "smdbRating": "7.8",
+      "ageRating": "16",
+      "storyLine": "The story of 7 people on trial stemming from various charges surrounding the uprising at the 1968 Democratic National Convention in Chicago, Illinois.",
+      "countriesOfOrigin": ["UNITED STATES", "UNITED KINGDOM", "INDIA"],
+      "languages": ["ENGLISH", "LATIN", "FRENCH"],
+      "cast": [
+        {
+          "firstName": "Aaron",
+          "lastName": "Sorkin",
+          "birthday": "9-6-1961",
+          "birthPlace":  "New York City, New York, USA",
+          "contributionRole": ["DIRECTOR",  "WRITER"],
+          "role": ""
+        },
+        {
+          "firstName": "Eddie",
+          "lastName": "Redmayne",
+          "birthday": "6-1-1982",
+          "birthPlace": "Westminster, London, England, UK",
+          "contributionRole": ["ACTOR"],
+          "role": "Tom Hayden"
+        },
+        {
+          "firstName": "Alex",
+          "lastName": "Sharp",
+          "birthday": "2-2-1989",
+          "birthPlace": "Westminster, London, England, UK",
+          "contributionRole": ["ACTOR"],
+          "role": "Rennie Davis"
+        },
+        {
+          "firstName": "Sacha",
+          "lastName": "Cohen",
+          "birthday": "13-10-1971",
+          "birthPlace": "Hammersmith, London, England, UK",
+          "contributionRole": ["ACTOR"],
+          "role": "Abbie Hoffman"
+        }
+      ]
+    },
+    {
+      "primaryTitle": "The Intouchables",
+      "genre": ["BIOGRAPHY", "COMEDY", "DRAMA"],
+      "durationInMinutes": "112",
+      "releaseYear": "2011",
+      "smdbRating": "8.5",
+      "ageRating": "16",
+      "storyLine": "The story of 7 people on trial stemming from various charges surrounding the uprising at the 1968 Democratic National Convention in Chicago, Illinois.",
+      "countriesOfOrigin": ["UNITED STATES", "UNITED KINGDOM", "INDIA"],
+      "languages": ["ENGLISH", "LATIN", "FRENCH"],
+      "cast": [
+        {
+          "firstName": "Olivier",
+          "lastName": "Nakache",
+          "birthday": "15-4-1973",
+          "birthPlace": "Suresnes, Hauts-de-Seine, France",
+          "contributionRole": ["DIRECTOR",  "WRITER"],
+          "role": ""
+        },
+        {
+          "firstName": "François",
+          "lastName": "Cluzet",
+          "birthday": "21-9-1955",
+          "birthPlace": "Paris, France",
+          "contributionRole": ["ACTOR"],
+          "role": "Philippe"
+        },
+        {
+          "firstName": "Omar",
+          "lastName": "Sy",
+          "birthday": "20-1-1978",
+          "birthPlace": "Trappes, Yvelines, France",
+          "contributionRole": ["ACTOR"],
+          "role": "Driss"
+        },
+        {
+          "firstName": "Anne",
+          "lastName": "Ny",
+          "birthday": "16-12-1962",
+          "birthPlace": "Antony, Hauts-de-Seine, France",
+          "contributionRole": ["ACTOR"],
+          "role": "Yvonne"
+        }
+      ]
     }
   ]
 }
