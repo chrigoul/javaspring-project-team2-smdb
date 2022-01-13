@@ -4,6 +4,8 @@ import com.javaspring.team2.project.smdb.domain.Genre;
 import com.javaspring.team2.project.smdb.domain.Movie;
 import com.javaspring.team2.project.smdb.domain.Person;
 
+import java.io.IOException;
+import java.io.Writer;
 import java.util.List;
 
 public interface MovieService extends BaseService<Movie, Long> {
@@ -17,5 +19,8 @@ public interface MovieService extends BaseService<Movie, Long> {
     List<Movie> getMovieByReleaseYearEquals(Integer year);
 
     List<Movie> getMovieByReleaseYearGreaterThanEqualAndReleaseYearLessThanEqual(Integer startYear, Integer endYear);
+
+    void csvMoviesExport(Writer writer) throws IOException;
+
 
 }

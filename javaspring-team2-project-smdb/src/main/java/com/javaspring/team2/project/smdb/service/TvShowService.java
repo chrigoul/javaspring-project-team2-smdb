@@ -4,6 +4,8 @@ import com.javaspring.team2.project.smdb.domain.Genre;
 import com.javaspring.team2.project.smdb.domain.Person;
 import com.javaspring.team2.project.smdb.domain.TvShow;
 
+import java.io.IOException;
+import java.io.Writer;
 import java.util.List;
 
 public interface TvShowService extends BaseService<TvShow, Long> {
@@ -20,4 +22,7 @@ public interface TvShowService extends BaseService<TvShow, Long> {
     List<TvShow> getTvShowByReleaseYearEquals(Integer year);
 
     List<TvShow> getTvShowByReleaseYearGreaterThanEqualAndReleaseYearLessThanEqual(Integer startYear, Integer endYear);
+
+    void csvTvShowsExport(Writer writer) throws IOException;
+
 }

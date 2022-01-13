@@ -22,7 +22,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="java-path-spring-app" options="-parameters" />
-      <module name="javaspring-team2-project" options="" />
+      <module name="javaspring-team2-project" options="-parameters" />
       <module name="javaspring-team2-project-smdb" options="-parameters" />
       <module name="untitled" options="-parameters" />
       <module name="untitled1" options="-parameters" />
