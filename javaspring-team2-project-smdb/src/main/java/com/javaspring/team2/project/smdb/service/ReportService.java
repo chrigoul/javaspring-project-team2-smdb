@@ -29,6 +29,7 @@ public interface ReportService {
     //    6th Report: Number of TvShows per Genre per Release Year
     List<NumberOfShowsPerReleaseYearGenreDto> getNumberOfShowsPerReleaseYearPerGenre(Integer year);
 
+    //    7th Report: All Titles associated with a given individual organized per genre.
     List<TitlesForAPersonOrganizedByGenresDto> getAllTitlesForAPersonOrganizedByGenres(String firstName, String lastName);
 
 

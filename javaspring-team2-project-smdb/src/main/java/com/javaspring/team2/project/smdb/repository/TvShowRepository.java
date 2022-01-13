@@ -16,12 +16,6 @@ import java.util.List;
 public interface TvShowRepository extends JpaRepository<TvShow, Long> {
     TvShow findTvShowByPrimaryTitle(String primaryTitle);
 
-    //    5th Report: Number of TvShows per a given Genre
-    Long countTvShowsByGenres(Genre genre);
-
-    //    6th: Report: Number of TvShows per a Genre per Release Year
-    Long countTvShowByGenresAndReleaseYear(Genre genre, Integer releaseYear);
-
     @Query(value = "select distinct p from Person p join p.professions f join f.title t where t.id = (select distinct t.id from TvShow where t.primaryTitle = :primaryTitle)")
     List<Person> getPeopleParticipatingInTitle(String primaryTitle);
 

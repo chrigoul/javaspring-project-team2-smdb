@@ -72,16 +72,16 @@ public class ReportController {
     }
 
     //    6th Report: Number of TvShows per Genre per Release Year
-    @GetMapping(path= "report6", headers = "action=getNumberOfShowsPerReleaseYearPerGenre")
-    public ResponseEntity<ApiResponse<List<NumberOfShowsPerReleaseYearGenreDto>>> getNumberOfShowsPerYearPerGenre()
+    @GetMapping(path= "report6", params = {"year"}, headers = "action=getNumberOfShowsPerReleaseYearPerGenre")
+    public ResponseEntity<ApiResponse<List<NumberOfShowsPerReleaseYearGenreDto>>> getNumberOfShowsPerYearPerGenre(@RequestParam("year") Integer year)
     {
         return ResponseEntity.ok(ApiResponse.<List<NumberOfShowsPerReleaseYearGenreDto>>builder()
-                .data(reportService.getNumberOfShowsPerReleaseYearPerGenre(2022))
+                .data(reportService.getNumberOfShowsPerReleaseYearPerGenre(year))
                 .build());
     }
-
-
-    @GetMapping(path = "titles/person/byGenres", params = {"firstname", "lastname"})
+    
+    //    7th Report: All Titles associated with a given individual organized per genre.
+    @GetMapping(path = "report7", params = {"firstname", "lastname"}, headers = "action=getAllTitlesForAPersonOrganizedByGenres")
     public ResponseEntity<ApiResponse<List<TitlesForAPersonOrganizedByGenresDto>>> getAllTitlesForAPersonOrganizedByGenres(@RequestParam("firstname") String firstName, @RequestParam("lastname") String lastName)
     {
         return ResponseEntity.ok(ApiResponse.<List<TitlesForAPersonOrganizedByGenresDto>>builder()

@@ -37,8 +37,8 @@ public interface ReportRepository extends JpaRepository<Title, Long> {
     @Query(value = "SELECT genre, count(TVS.id) as number FROM TITLE_GENRES AS TG INNER JOIN TV_SHOWS AS TVS on TVS.ID = TG.TITLE_ID INNER JOIN TITLES T ON T.ID = TG.TITLE_ID WHERE T.RELEASEYEAR=?1 group by genre", nativeQuery = true)
     List<NumberOfShowsPerReleaseYearGenreDto> getNumberOfShowsPerReleaseYearPerGenre(Integer year);//
 
+    //    7th Report: All Titles associated with a given individual organized per genre.
     @Query(value = "SELECT TG.genre, T.primaryTitle as name FROM TITLE_GENRES AS TG INNER JOIN TITLES as T ON T.ID = TG.TITLE_ID INNER JOIN PROFESSIONS AS P ON P.TITLE_ID = TG.TITLE_ID INNER JOIN PEOPLE AS P2 ON P2.ID = P.PERSON_ID WHERE P2.FIRSTNAME=?1 AND P2.LASTNAME=?2 group by TG.genre", nativeQuery = true)
     List<TitlesForAPersonOrganizedByGenresDto> getAllTitlesForAPersonOrganizedByGenres(String firstName, String lastName);
-
 
 }

@@ -61,10 +61,4 @@ public class Title extends BaseModel {
 
     @Column
     private Integer releaseYear;
-
-//    @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.LAZY)
-//    @JoinTable(name = "ACTORS",
-//            joinColumns = @JoinColumn(name = "TITLE_ID"),
-//            inverseJoinColumns = @JoinColumn(name = "PERSON_ID"))
-//    private Set<Person> actors = new HashSet<>();
 }

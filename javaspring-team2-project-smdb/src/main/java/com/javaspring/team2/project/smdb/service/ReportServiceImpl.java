@@ -53,11 +53,10 @@ public class ReportServiceImpl implements ReportService {
         return reportRepository.getNumberOfShowsPerReleaseYearPerGenre(year);
     }
 
-
+    //    7th Report: All Titles associated with a given individual organized per genre.
     @Override
     public List<TitlesForAPersonOrganizedByGenresDto> getAllTitlesForAPersonOrganizedByGenres(String firstName, String lastName){
         return reportRepository.getAllTitlesForAPersonOrganizedByGenres(firstName, lastName);
     }
-
 
 }

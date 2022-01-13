@@ -15,19 +15,10 @@ public interface TitleService extends BaseService<Title, Long> {
 
     Title findTitleByPrimaryTitle(String primaryTitle);
 
-    List<Title> findTop3ByOrderBySmdbRatingDesc();
-
-    List<Title> findAllByGenresContains(Genre genre);
-
     Boolean existsByPrimaryTitle(String primaryTitle);
-
-    List<Title> findPersonParticipationInTitleByFullName(String firstName, String lastName);
-
-    List<Title> getPersonParticipationInTitleWithFullNameProfessions(String firstName, String lastName, ContributionRole profession);
 
     List<Person> getPeopleParticipatingInTitle(String primaryTitle);
 
     void csvTitlesExport(Writer writer) throws IOException;
-
 
 }

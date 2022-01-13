@@ -31,15 +31,6 @@ public class TvShowServiceImpl extends BaseServiceImpl<TvShow> implements TvShow
     }
 
     @Override
-    public Long countTvShowsByGenres(Genre genre){
-        return tvShowRepository.countTvShowsByGenres(genre);
-    }
-
-    @Override
-    public Long countTvShowByGenresAndReleaseYear(Genre genre, Integer releaseYear){
-        return tvShowRepository.countTvShowByGenresAndReleaseYear(genre, releaseYear);
-    }
-    @Override
     public List<Person> getPeopleParticipatingInTitle(String primaryTitle) {
         return tvShowRepository.getPeopleParticipatingInTitle(primaryTitle);
     }

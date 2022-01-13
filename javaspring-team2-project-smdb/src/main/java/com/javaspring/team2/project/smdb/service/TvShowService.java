@@ -10,8 +10,6 @@ import java.util.List;
 
 public interface TvShowService extends BaseService<TvShow, Long> {
     TvShow findTvShowByPrimaryTitle(String primaryTitle);
-    Long countTvShowsByGenres(Genre genre);
-    Long countTvShowByGenresAndReleaseYear(Genre genre, Integer releaseYear);
 
     List<Person> getPeopleParticipatingInTitle(String primaryTitle);
 
