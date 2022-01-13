@@ -33,8 +33,8 @@ public class TitleController extends AbstractController<Title> {
         return titleService;
     }
 
-    @GetMapping(path = "person/title", params = {"primaryTitle"})
-    public ResponseEntity<ApiResponse<List<Person>>> getAllContentByContributorByFullName(@RequestParam("primaryTitle") String primaryTitle )
+    @GetMapping(path = "search", params = {"title"})
+    public ResponseEntity<ApiResponse<List<Person>>> getAllContentByContributorByFullName(@RequestParam("title") String primaryTitle )
     {
         return ResponseEntity.ok(ApiResponse.<List<Person>>builder()
                 .data(titleService.getPeopleParticipatingInTitle(primaryTitle))

@@ -12068,6 +12068,216 @@ java.util.NoSuchElementException
 2022-01-13 14:24:43.123  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-01-13 14:24:43.149  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
 2022-01-13 14:24:43.521  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@71f45dc3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-13 14:40:46.540  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-13 14:40:46.674  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 5776 (C:\Users\chris\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-13 14:40:46.684  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: report-checker,movie-content-loader,tvShow-content-loader
+2022-01-13 14:40:50.652  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-13 14:40:50.676  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-13 14:40:50.678  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-13 14:40:50.678  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-13 14:40:50.943  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-13 14:40:50.943  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 4134 ms
+2022-01-13 14:40:51.563  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-13 14:40:51.903  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-13 14:40:52.098  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-13 14:40:52.487 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-13 14:40:52.677  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-13 14:40:52.725 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 48 mappings in 'requestMappingHandlerMapping'
+2022-01-13 14:40:52.807 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-13 14:40:52.835 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-13 14:40:53.023  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-13 14:40:53.198 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-13 14:40:53.246  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-13 14:40:53.413  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-13 14:40:53.460  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-13 14:40:53.478  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-13 14:40:53.485  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-13 14:40:53.519  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-13 14:40:55.438  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6f85ffd9] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-13 14:40:55.456  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@51636650] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-13 14:40:55.573  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-13 14:40:57.000  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 11.745 seconds (JVM running for 16.761)
+2022-01-13 14:40:57.391  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Matthew, lastName=McConaughey, birthDay=4-11-1969, deathDay=null, birthPlace=Uvalde, Texas, USA) is going to be added
+2022-01-13 14:40:57.443  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=1), firstName=Matthew, lastName=McConaughey, birthDay=4-11-1969, deathDay=null, birthPlace=Uvalde, Texas, USA)
+2022-01-13 14:40:57.444  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Ellen, lastName=Burstyn, birthDay=7-12-1932, deathDay=null, birthPlace=Detroit, Michigan, USA) is going to be added
+2022-01-13 14:40:57.454  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=2), firstName=Ellen, lastName=Burstyn, birthDay=7-12-1932, deathDay=null, birthPlace=Detroit, Michigan, USA)
+2022-01-13 14:40:57.455  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Mackenzie, lastName=Foy, birthDay=10-11-2000, deathDay=null, birthPlace=Los Angeles, California, USA) is going to be added
+2022-01-13 14:40:57.468  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=3), firstName=Mackenzie, lastName=Foy, birthDay=10-11-2000, deathDay=null, birthPlace=Los Angeles, California, USA)
+2022-01-13 14:40:57.468  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Christopher, lastName=Nolan, birthDay=30-7-1970, deathDay=null, birthPlace=London, England, UK) is going to be added
+2022-01-13 14:40:57.478  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=4), firstName=Christopher, lastName=Nolan, birthDay=30-7-1970, deathDay=null, birthPlace=London, England, UK)
+2022-01-13 14:40:57.478  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Jonathan, lastName=Nolan, birthDay=6-6-1976, deathDay=null, birthPlace=London, England, UK) is going to be added
+2022-01-13 14:40:57.488  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=5), firstName=Jonathan, lastName=Nolan, birthDay=6-6-1976, deathDay=null, birthPlace=London, England, UK)
+2022-01-13 14:40:57.616  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Added 5 cast from movie: Interstellar
+2022-01-13 14:40:57.633  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Matthew, lastName=McConaughey, birthDay=4-11-1969, deathDay=null, birthPlace=Uvalde, Texas, USA) is going to be added
+2022-01-13 14:40:57.638  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Matthew McConaughey, already exists
+2022-01-13 14:40:57.685  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Added 1 cast from movie: InterstellarTheSequel
+2022-01-13 14:40:57.702  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Leonardo, lastName=Di Caprio, birthDay=11-11-1974, deathDay=null, birthPlace=Hollywood, Los Angeles, California, USA) is going to be added
+2022-01-13 14:40:57.711  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=6), firstName=Leonardo, lastName=Di Caprio, birthDay=11-11-1974, deathDay=null, birthPlace=Hollywood, Los Angeles, California, USA)
+2022-01-13 14:40:57.712  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Joseph, lastName=Gordon-Levitt, birthDay=17-2-1981, deathDay=null, birthPlace=Los Angeles, California, USA) is going to be added
+2022-01-13 14:40:57.719  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=7), firstName=Joseph, lastName=Gordon-Levitt, birthDay=17-2-1981, deathDay=null, birthPlace=Los Angeles, California, USA)
+2022-01-13 14:40:57.720  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Elliot, lastName=Page, birthDay=21-2-1987, deathDay=null, birthPlace=Halifax, Nova Scotia, Canada) is going to be added
+2022-01-13 14:40:57.729  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=8), firstName=Elliot, lastName=Page, birthDay=21-2-1987, deathDay=null, birthPlace=Halifax, Nova Scotia, Canada)
+2022-01-13 14:40:57.729  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Tom, lastName=Hardy, birthDay=15-9-1977, deathDay=null, birthPlace=Hammersmith, London, England, UK) is going to be added
+2022-01-13 14:40:57.738  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=9), firstName=Tom, lastName=Hardy, birthDay=15-9-1977, deathDay=null, birthPlace=Hammersmith, London, England, UK)
+2022-01-13 14:40:57.738  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Ken, lastName=Watanabe, birthDay=21-10-1959, deathDay=null, birthPlace=Uonuma, Japan) is going to be added
+2022-01-13 14:40:57.745  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=10), firstName=Ken, lastName=Watanabe, birthDay=21-10-1959, deathDay=null, birthPlace=Uonuma, Japan)
+2022-01-13 14:40:57.745  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Dileep, lastName=Rao, birthDay=29-7-1973, deathDay=null, birthPlace=Los Angeles, California, USA) is going to be added
+2022-01-13 14:40:57.755  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=11), firstName=Dileep, lastName=Rao, birthDay=29-7-1973, deathDay=null, birthPlace=Los Angeles, California, USA)
+2022-01-13 14:40:57.756  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Cillian, lastName=Murphy, birthDay=21-10-1959, deathDay=null, birthPlace=Douglas, Cork, Ireland) is going to be added
+2022-01-13 14:40:57.763  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=12), firstName=Cillian, lastName=Murphy, birthDay=21-10-1959, deathDay=null, birthPlace=Douglas, Cork, Ireland)
+2022-01-13 14:40:57.764  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Christopher, lastName=Nolan, birthDay=30-7-1970, deathDay=null, birthPlace=London, England, UK) is going to be added
+2022-01-13 14:40:57.766  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Christopher Nolan, already exists
+2022-01-13 14:40:57.841  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Added 8 cast from movie: Inception
+2022-01-13 14:40:57.844  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Movie Inception already exists! Skipping!
+2022-01-13 14:40:57.869  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Ursula, lastName=Corbero, birthDay=11-8-1989, deathDay=null, birthPlace=Barcelona, Spain) is going to be added
+2022-01-13 14:40:57.876  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=13), firstName=Ursula, lastName=Corbero, birthDay=11-8-1989, deathDay=null, birthPlace=Barcelona, Spain)
+2022-01-13 14:40:57.877  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Alvaro, lastName=Morte, birthDay=23-2-1975, deathDay=null, birthPlace=Algeciras, Spain) is going to be added
+2022-01-13 14:40:57.884  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=14), firstName=Alvaro, lastName=Morte, birthDay=23-2-1975, deathDay=null, birthPlace=Algeciras, Spain)
+2022-01-13 14:40:57.884  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Iztiar, lastName=Ituno, birthDay=1975, deathDay=null, birthPlace=Basauri, Spain) is going to be added
+2022-01-13 14:40:57.891  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=15), firstName=Iztiar, lastName=Ituno, birthDay=1975, deathDay=null, birthPlace=Basauri, Spain)
+2022-01-13 14:40:57.892  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Alex, lastName=Pina, birthDay=Unknown, deathDay=null, birthPlace=Unknown) is going to be added
+2022-01-13 14:40:57.899  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=16), firstName=Alex, lastName=Pina, birthDay=Unknown, deathDay=null, birthPlace=Unknown)
+2022-01-13 14:40:57.899  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Jesus, lastName=Colmenar, birthDay=Unknown, deathDay=null, birthPlace=Unknown) is going to be added
+2022-01-13 14:40:57.906  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=17), firstName=Jesus, lastName=Colmenar, birthDay=Unknown, deathDay=null, birthPlace=Unknown)
+2022-01-13 14:40:57.952  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Added 5 people from Show: Money Heist
+2022-01-13 14:40:57.965  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Peter, lastName=Dinklage, birthDay=11-6-1969, deathDay=null, birthPlace=Morristown, New Jersey USA) is going to be added
+2022-01-13 14:40:57.972  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=18), firstName=Peter, lastName=Dinklage, birthDay=11-6-1969, deathDay=null, birthPlace=Morristown, New Jersey USA)
+2022-01-13 14:40:57.973  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Lena, lastName=Hedey, birthDay=3-10-1973, deathDay=null, birthPlace=Hamilton, Bermuda) is going to be added
+2022-01-13 14:40:57.980  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=19), firstName=Lena, lastName=Hedey, birthDay=3-10-1973, deathDay=null, birthPlace=Hamilton, Bermuda)
+2022-01-13 14:40:57.980  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Emilia, lastName=Clarke, birthDay=23-10-1986, deathDay=null, birthPlace=London, UK) is going to be added
+2022-01-13 14:40:57.988  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=20), firstName=Emilia, lastName=Clarke, birthDay=23-10-1986, deathDay=null, birthPlace=London, UK)
+2022-01-13 14:40:57.988  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Kit, lastName=Harrington, birthDay=26-12-1986, deathDay=null, birthPlace=London, UK) is going to be added
+2022-01-13 14:40:57.996  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=21), firstName=Kit, lastName=Harrington, birthDay=26-12-1986, deathDay=null, birthPlace=London, UK)
+2022-01-13 14:40:57.996  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Sophie, lastName=Turner, birthDay=21-2-1996, deathDay=null, birthPlace=Northhampton, UK) is going to be added
+2022-01-13 14:40:58.005  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=22), firstName=Sophie, lastName=Turner, birthDay=21-2-1996, deathDay=null, birthPlace=Northhampton, UK)
+2022-01-13 14:40:58.005  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Maisie, lastName=Williams, birthDay=15-4-1997, deathDay=null, birthPlace=Bristol, UK) is going to be added
+2022-01-13 14:40:58.012  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=23), firstName=Maisie, lastName=Williams, birthDay=15-4-1997, deathDay=null, birthPlace=Bristol, UK)
+2022-01-13 14:40:58.012  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Nicolaj, lastName=Coster-Waldau, birthDay=27-7-1970, deathDay=null, birthPlace=Rudkøbing, Denmark) is going to be added
+2022-01-13 14:40:58.019  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=24), firstName=Nicolaj, lastName=Coster-Waldau, birthDay=27-7-1970, deathDay=null, birthPlace=Rudkøbing, Denmark)
+2022-01-13 14:40:58.020  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Iain, lastName=Glain, birthDay=24-6-1961, deathDay=null, birthPlace=Edinburgh, Scotland, UK) is going to be added
+2022-01-13 14:40:58.027  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=25), firstName=Iain, lastName=Glain, birthDay=24-6-1961, deathDay=null, birthPlace=Edinburgh, Scotland, UK)
+2022-01-13 14:40:58.028  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=John, lastName=Bradley, birthDay=15-9-1988, deathDay=null, birthPlace=England, UK) is going to be added
+2022-01-13 14:40:58.036  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=26), firstName=John, lastName=Bradley, birthDay=15-9-1988, deathDay=null, birthPlace=England, UK)
+2022-01-13 14:40:58.036  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=David, lastName=Beionff, birthDay=29-9-1970, deathDay=null, birthPlace=New York, USA) is going to be added
+2022-01-13 14:40:58.044  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=27), firstName=David, lastName=Beionff, birthDay=29-9-1970, deathDay=null, birthPlace=New York, USA)
+2022-01-13 14:40:58.045  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=George R R, lastName=Martin, birthDay=20-9-1948, deathDay=null, birthPlace=New Jersey, USA) is going to be added
+2022-01-13 14:40:58.053  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=28), firstName=George R R, lastName=Martin, birthDay=20-9-1948, deathDay=null, birthPlace=New Jersey, USA)
+2022-01-13 14:40:58.053  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=D.B., lastName=Weiss, birthDay=23-4-1971, deathDay=null, birthPlace=Chicago, USA) is going to be added
+2022-01-13 14:40:58.060  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=29), firstName=D.B., lastName=Weiss, birthDay=23-4-1971, deathDay=null, birthPlace=Chicago, USA)
+2022-01-13 14:40:58.153  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Added 12 people from Show: Game of Thrones
+2022-01-13 14:40:58.165  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Cillian, lastName=Murphy, birthDay=21-10-1959, deathDay=null, birthPlace=Douglas, Cork, Ireland) is going to be added
+2022-01-13 14:40:58.169  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Cillian Murphy, already exists
+2022-01-13 14:40:58.172  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Paul, lastName=Anderson, birthDay=unknown, deathDay=null, birthPlace=England, UK) is going to be added
+2022-01-13 14:40:58.179  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=30), firstName=Paul, lastName=Anderson, birthDay=unknown, deathDay=null, birthPlace=England, UK)
+2022-01-13 14:40:58.179  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Helen, lastName=McRory, birthDay=17-8-1968, deathDay=null, birthPlace=Paddington, London, England, UK) is going to be added
+2022-01-13 14:40:58.185  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=31), firstName=Helen, lastName=McRory, birthDay=17-8-1968, deathDay=null, birthPlace=Paddington, London, England, UK)
+2022-01-13 14:40:58.186  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Sophie, lastName=Rundle, birthDay=21-4-1988, deathDay=null, birthPlace=Buckinghamshire, England, UK) is going to be added
+2022-01-13 14:40:58.191  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=32), firstName=Sophie, lastName=Rundle, birthDay=21-4-1988, deathDay=null, birthPlace=Buckinghamshire, England, UK)
+2022-01-13 14:40:58.192  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Finn, lastName=Cole, birthDay=9-11-1995, deathDay=null, birthPlace=Kingston, London, England, UK) is going to be added
+2022-01-13 14:40:58.198  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=33), firstName=Finn, lastName=Cole, birthDay=9-11-1995, deathDay=null, birthPlace=Kingston, London, England, UK)
+2022-01-13 14:40:58.234  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Added 5 people from Show: Peaky Blinders
+2022-01-13 14:40:59.637  INFO Christos-PC - [nio-8080-exec-2] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-13 14:40:59.637  INFO Christos-PC - [nio-8080-exec-2] [o.s.w.s.DispatcherServlet          ] : Initializing Servlet 'dispatcherServlet'
+2022-01-13 14:40:59.638 DEBUG Christos-PC - [nio-8080-exec-2] [o.s.w.s.DispatcherServlet          ] : Detected StandardServletMultipartResolver
+2022-01-13 14:40:59.638 DEBUG Christos-PC - [nio-8080-exec-2] [o.s.w.s.DispatcherServlet          ] : Detected AcceptHeaderLocaleResolver
+2022-01-13 14:40:59.638 DEBUG Christos-PC - [nio-8080-exec-2] [o.s.w.s.DispatcherServlet          ] : Detected FixedThemeResolver
+2022-01-13 14:40:59.641 DEBUG Christos-PC - [nio-8080-exec-2] [o.s.w.s.DispatcherServlet          ] : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4d0e1a9a
+2022-01-13 14:40:59.641 DEBUG Christos-PC - [nio-8080-exec-2] [o.s.w.s.DispatcherServlet          ] : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7cdb7fc
+2022-01-13 14:40:59.641 DEBUG Christos-PC - [nio-8080-exec-2] [o.s.w.s.DispatcherServlet          ] : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-01-13 14:40:59.641  INFO Christos-PC - [nio-8080-exec-2] [o.s.w.s.DispatcherServlet          ] : Completed initialization in 3 ms
+2022-01-13 14:40:59.666 DEBUG Christos-PC - [nio-8080-exec-2] [o.s.w.s.DispatcherServlet          ] : GET "/movies/2", parameters={}
+2022-01-13 14:40:59.686 DEBUG Christos-PC - [nio-8080-exec-2] [.m.m.a.RequestMappingHandlerMapping] : Mapped to com.javaspring.team2.project.smdb.controller.MovieController#get(Long)
+2022-01-13 14:40:59.920 DEBUG Christos-PC - [nio-8080-exec-2] [w.s.m.m.a.HttpEntityMethodProcessor] : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-01-13 14:40:59.941 DEBUG Christos-PC - [nio-8080-exec-2] [w.s.m.m.a.HttpEntityMethodProcessor] : Writing [ApiResponse(transactionId=375F4C18-983D-469A-A2BD-7001480C9916, createdAt=Thu Jan 13 14:40:59 EET 20 (truncated)...]
+2022-01-13 14:41:00.035 DEBUG Christos-PC - [nio-8080-exec-2] [o.s.w.s.DispatcherServlet          ] : Completed 200 OK
+2022-01-13 14:41:07.837 DEBUG Christos-PC - [nio-8080-exec-3] [o.s.w.s.DispatcherServlet          ] : GET "/titles", parameters={}
+2022-01-13 14:41:07.838 DEBUG Christos-PC - [nio-8080-exec-3] [.m.m.a.RequestMappingHandlerMapping] : Mapped to com.javaspring.team2.project.smdb.controller.TitleController#findAll()
+2022-01-13 14:41:07.892 DEBUG Christos-PC - [nio-8080-exec-3] [w.s.m.m.a.HttpEntityMethodProcessor] : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-01-13 14:41:07.904 DEBUG Christos-PC - [nio-8080-exec-3] [w.s.m.m.a.HttpEntityMethodProcessor] : Writing [ApiResponse(transactionId=D3087B77-E84A-42D9-AC84-C8A3232EA440, createdAt=Thu Jan 13 14:41:07 EET 20 (truncated)...]
+2022-01-13 14:41:07.914 DEBUG Christos-PC - [nio-8080-exec-3] [o.s.w.s.DispatcherServlet          ] : Completed 200 OK
+2022-01-13 14:50:18.234 DEBUG Christos-PC - [nio-8080-exec-6] [o.s.w.s.DispatcherServlet          ] : POST "/movies", parameters={}
+2022-01-13 14:50:18.235 DEBUG Christos-PC - [nio-8080-exec-6] [.m.m.a.RequestMappingHandlerMapping] : Mapped to com.javaspring.team2.project.smdb.controller.MovieController#create(BaseModel)
+2022-01-13 14:50:18.351 DEBUG Christos-PC - [nio-8080-exec-6] [.RequestResponseBodyMethodProcessor] : Read "application/json;charset=UTF-8" to [Movie(ageRating=16)]
+2022-01-13 14:50:18.438 DEBUG Christos-PC - [nio-8080-exec-6] [w.s.m.m.a.HttpEntityMethodProcessor] : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-01-13 14:50:18.438 DEBUG Christos-PC - [nio-8080-exec-6] [w.s.m.m.a.HttpEntityMethodProcessor] : Writing [ApiResponse(transactionId=1F75CACF-959D-40C3-9631-3A4285458524, createdAt=Thu Jan 13 14:50:18 EET 20 (truncated)...]
+2022-01-13 14:50:18.440 DEBUG Christos-PC - [nio-8080-exec-6] [o.s.w.s.DispatcherServlet          ] : Completed 201 CREATED
+2022-01-13 14:50:26.728 DEBUG Christos-PC - [nio-8080-exec-7] [o.s.w.s.DispatcherServlet          ] : GET "/movies", parameters={}
+2022-01-13 14:50:26.729 DEBUG Christos-PC - [nio-8080-exec-7] [.m.m.a.RequestMappingHandlerMapping] : Mapped to com.javaspring.team2.project.smdb.controller.MovieController#findAll()
+2022-01-13 14:50:26.757 DEBUG Christos-PC - [nio-8080-exec-7] [w.s.m.m.a.HttpEntityMethodProcessor] : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-01-13 14:50:26.757 DEBUG Christos-PC - [nio-8080-exec-7] [w.s.m.m.a.HttpEntityMethodProcessor] : Writing [ApiResponse(transactionId=232A163F-96E0-491B-B2B0-C082BA88EB90, createdAt=Thu Jan 13 14:50:26 EET 20 (truncated)...]
+2022-01-13 14:50:26.772 DEBUG Christos-PC - [nio-8080-exec-7] [o.s.w.s.DispatcherServlet          ] : Completed 200 OK
+2022-01-13 14:51:34.739 DEBUG Christos-PC - [io-8080-exec-10] [o.s.w.s.DispatcherServlet          ] : GET "/movies", parameters={}
+2022-01-13 14:51:34.740 DEBUG Christos-PC - [io-8080-exec-10] [.m.m.a.RequestMappingHandlerMapping] : Mapped to com.javaspring.team2.project.smdb.controller.MovieController#findAll()
+2022-01-13 14:51:34.770 DEBUG Christos-PC - [io-8080-exec-10] [w.s.m.m.a.HttpEntityMethodProcessor] : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-01-13 14:51:34.770 DEBUG Christos-PC - [io-8080-exec-10] [w.s.m.m.a.HttpEntityMethodProcessor] : Writing [ApiResponse(transactionId=6E1C90E7-62D0-4E06-B873-5438DE004C4F, createdAt=Thu Jan 13 14:51:34 EET 20 (truncated)...]
+2022-01-13 14:51:34.776 DEBUG Christos-PC - [io-8080-exec-10] [o.s.w.s.DispatcherServlet          ] : Completed 200 OK
+2022-01-13 14:52:59.552 DEBUG Christos-PC - [nio-8080-exec-3] [o.s.w.s.DispatcherServlet          ] : PUT "/movies/7", parameters={}
+2022-01-13 14:52:59.564 DEBUG Christos-PC - [nio-8080-exec-3] [a.ExceptionHandlerExceptionResolver] : Using @ExceptionHandler com.javaspring.team2.project.smdb.controller.CustomizedExceptionHandler#handleAllExceptions(Exception, WebRequest)
+2022-01-13 14:52:59.566 ERROR Christos-PC - [nio-8080-exec-3] [.t.p.s.c.CustomizedExceptionHandler] : Unexpected exception occurred.
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:253)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:442)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:383)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:125)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:498)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1261)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1043)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:684)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-01-13 14:52:59.573 DEBUG Christos-PC - [nio-8080-exec-3] [w.s.m.m.a.HttpEntityMethodProcessor] : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-01-13 14:52:59.576 DEBUG Christos-PC - [nio-8080-exec-3] [w.s.m.m.a.HttpEntityMethodProcessor] : Writing [ApiResponse(transactionId=7FCC4D45-1455-45DC-A2F9-2DB8C447C10E, createdAt=Thu Jan 13 14:52:59 EET 20 (truncated)...]
+2022-01-13 14:52:59.579 DEBUG Christos-PC - [nio-8080-exec-3] [a.ExceptionHandlerExceptionResolver] : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' not supported]
+2022-01-13 14:52:59.580 DEBUG Christos-PC - [nio-8080-exec-3] [o.s.w.s.DispatcherServlet          ] : Completed 500 INTERNAL_SERVER_ERROR
+2022-01-13 14:53:42.523 DEBUG Christos-PC - [nio-8080-exec-5] [o.s.w.s.DispatcherServlet          ] : PUT "/movies", parameters={}
+2022-01-13 14:53:42.524 DEBUG Christos-PC - [nio-8080-exec-5] [.m.m.a.RequestMappingHandlerMapping] : Mapped to com.javaspring.team2.project.smdb.controller.MovieController#update(BaseModel)
+2022-01-13 14:53:42.527 DEBUG Christos-PC - [nio-8080-exec-5] [.RequestResponseBodyMethodProcessor] : Read "application/json;charset=UTF-8" to [Movie(ageRating=16)]
+2022-01-13 14:53:42.559 DEBUG Christos-PC - [nio-8080-exec-5] [o.s.w.s.DispatcherServlet          ] : Completed 204 NO_CONTENT
+2022-01-13 14:53:48.166 DEBUG Christos-PC - [nio-8080-exec-6] [o.s.w.s.DispatcherServlet          ] : GET "/movies", parameters={}
+2022-01-13 14:53:48.166 DEBUG Christos-PC - [nio-8080-exec-6] [.m.m.a.RequestMappingHandlerMapping] : Mapped to com.javaspring.team2.project.smdb.controller.MovieController#findAll()
+2022-01-13 14:53:48.186 DEBUG Christos-PC - [nio-8080-exec-6] [w.s.m.m.a.HttpEntityMethodProcessor] : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-01-13 14:53:48.186 DEBUG Christos-PC - [nio-8080-exec-6] [w.s.m.m.a.HttpEntityMethodProcessor] : Writing [ApiResponse(transactionId=87C76CD8-1E94-4532-BD37-68BD0C9F5E76, createdAt=Thu Jan 13 14:53:48 EET 20 (truncated)...]
+2022-01-13 14:53:48.189 DEBUG Christos-PC - [nio-8080-exec-6] [o.s.w.s.DispatcherServlet          ] : Completed 200 OK
+2022-01-13 15:13:27.528  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-13 15:13:27.565  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-13 15:13:27.704  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5dfd0862] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 2022-01-13 14:56:43.150  INFO DESKTOP-NRAM18P - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
 2022-01-13 14:56:43.199  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on DESKTOP-NRAM18P with PID 9984 (C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by azeli in C:\Users\azeli\IdeaProjects\javaspring-project-team2-smdb)
 2022-01-13 14:56:43.203  INFO DESKTOP-NRAM18P - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: movie-content-loader,tvShow-content-loader
@@ -12415,3 +12625,534 @@ Caused by: java.lang.NumberFormatException: For input string: "test"
 2022-01-13 15:03:55.769  INFO DESKTOP-NRAM18P - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-01-13 15:03:55.770  INFO DESKTOP-NRAM18P - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
 2022-01-13 15:03:57.832  INFO DESKTOP-NRAM18P - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@418d2093] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-13 15:20:48.708  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-13 15:20:48.887  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 19572 (C:\Users\chris\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-13 15:20:48.900  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: report-checker,movie-content-loader,tvShow-content-loader
+2022-01-13 15:20:52.957  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-13 15:20:52.980  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-13 15:20:52.982  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-13 15:20:52.983  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-13 15:20:53.284  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-13 15:20:53.284  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 4209 ms
+2022-01-13 15:20:54.036  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-13 15:20:54.351  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-13 15:20:54.542  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-13 15:20:54.854 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-13 15:20:55.011  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-13 15:20:55.086 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 50 mappings in 'requestMappingHandlerMapping'
+2022-01-13 15:20:55.179 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-13 15:20:55.213 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-13 15:20:55.395  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-13 15:20:55.924 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-13 15:20:55.978  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-13 15:20:56.117  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-13 15:20:56.181  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-13 15:20:56.591  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-13 15:20:56.597  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-13 15:20:56.629  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-13 15:20:59.245  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7ead63f1] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-13 15:20:59.262  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7c88e5cf] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-13 15:20:59.443  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-13 15:21:01.290  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 14.476 seconds (JVM running for 20.358)
+2022-01-13 15:21:05.060  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Matthew, lastName=McConaughey, birthDay=4-11-1969, deathDay=null, birthPlace=Uvalde, Texas, USA) is going to be added
+2022-01-13 15:21:05.113  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=1), firstName=Matthew, lastName=McConaughey, birthDay=4-11-1969, deathDay=null, birthPlace=Uvalde, Texas, USA)
+2022-01-13 15:21:05.114  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Ellen, lastName=Burstyn, birthDay=7-12-1932, deathDay=null, birthPlace=Detroit, Michigan, USA) is going to be added
+2022-01-13 15:21:05.124  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=2), firstName=Ellen, lastName=Burstyn, birthDay=7-12-1932, deathDay=null, birthPlace=Detroit, Michigan, USA)
+2022-01-13 15:21:05.124  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Mackenzie, lastName=Foy, birthDay=10-11-2000, deathDay=null, birthPlace=Los Angeles, California, USA) is going to be added
+2022-01-13 15:21:05.133  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=3), firstName=Mackenzie, lastName=Foy, birthDay=10-11-2000, deathDay=null, birthPlace=Los Angeles, California, USA)
+2022-01-13 15:21:05.133  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Christopher, lastName=Nolan, birthDay=30-7-1970, deathDay=null, birthPlace=London, England, UK) is going to be added
+2022-01-13 15:21:05.142  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=4), firstName=Christopher, lastName=Nolan, birthDay=30-7-1970, deathDay=null, birthPlace=London, England, UK)
+2022-01-13 15:21:05.142  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Jonathan, lastName=Nolan, birthDay=6-6-1976, deathDay=null, birthPlace=London, England, UK) is going to be added
+2022-01-13 15:21:05.152  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=5), firstName=Jonathan, lastName=Nolan, birthDay=6-6-1976, deathDay=null, birthPlace=London, England, UK)
+2022-01-13 15:21:05.286  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Added 5 cast from movie: Interstellar
+2022-01-13 15:21:05.309  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Matthew, lastName=McConaughey, birthDay=4-11-1969, deathDay=null, birthPlace=Uvalde, Texas, USA) is going to be added
+2022-01-13 15:21:05.317  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Matthew McConaughey, already exists
+2022-01-13 15:21:05.365  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Added 1 cast from movie: InterstellarTheSequel
+2022-01-13 15:21:05.382  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Leonardo, lastName=Di Caprio, birthDay=11-11-1974, deathDay=null, birthPlace=Hollywood, Los Angeles, California, USA) is going to be added
+2022-01-13 15:21:05.392  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=6), firstName=Leonardo, lastName=Di Caprio, birthDay=11-11-1974, deathDay=null, birthPlace=Hollywood, Los Angeles, California, USA)
+2022-01-13 15:21:05.392  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Joseph, lastName=Gordon-Levitt, birthDay=17-2-1981, deathDay=null, birthPlace=Los Angeles, California, USA) is going to be added
+2022-01-13 15:21:05.401  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=7), firstName=Joseph, lastName=Gordon-Levitt, birthDay=17-2-1981, deathDay=null, birthPlace=Los Angeles, California, USA)
+2022-01-13 15:21:05.401  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Elliot, lastName=Page, birthDay=21-2-1987, deathDay=null, birthPlace=Halifax, Nova Scotia, Canada) is going to be added
+2022-01-13 15:21:05.409  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=8), firstName=Elliot, lastName=Page, birthDay=21-2-1987, deathDay=null, birthPlace=Halifax, Nova Scotia, Canada)
+2022-01-13 15:21:05.409  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Tom, lastName=Hardy, birthDay=15-9-1977, deathDay=null, birthPlace=Hammersmith, London, England, UK) is going to be added
+2022-01-13 15:21:05.422  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=9), firstName=Tom, lastName=Hardy, birthDay=15-9-1977, deathDay=null, birthPlace=Hammersmith, London, England, UK)
+2022-01-13 15:21:05.422  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Ken, lastName=Watanabe, birthDay=21-10-1959, deathDay=null, birthPlace=Uonuma, Japan) is going to be added
+2022-01-13 15:21:05.432  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=10), firstName=Ken, lastName=Watanabe, birthDay=21-10-1959, deathDay=null, birthPlace=Uonuma, Japan)
+2022-01-13 15:21:05.432  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Dileep, lastName=Rao, birthDay=29-7-1973, deathDay=null, birthPlace=Los Angeles, California, USA) is going to be added
+2022-01-13 15:21:05.442  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=11), firstName=Dileep, lastName=Rao, birthDay=29-7-1973, deathDay=null, birthPlace=Los Angeles, California, USA)
+2022-01-13 15:21:05.442  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Cillian, lastName=Murphy, birthDay=21-10-1959, deathDay=null, birthPlace=Douglas, Cork, Ireland) is going to be added
+2022-01-13 15:21:05.451  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=12), firstName=Cillian, lastName=Murphy, birthDay=21-10-1959, deathDay=null, birthPlace=Douglas, Cork, Ireland)
+2022-01-13 15:21:05.451  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Christopher, lastName=Nolan, birthDay=30-7-1970, deathDay=null, birthPlace=London, England, UK) is going to be added
+2022-01-13 15:21:05.455  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Christopher Nolan, already exists
+2022-01-13 15:21:05.534  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Added 8 cast from movie: Inception
+2022-01-13 15:21:05.537  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Movie Inception already exists! Skipping!
+2022-01-13 15:21:05.717  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Ursula, lastName=Corbero, birthDay=11-8-1989, deathDay=null, birthPlace=Barcelona, Spain) is going to be added
+2022-01-13 15:21:05.724  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=13), firstName=Ursula, lastName=Corbero, birthDay=11-8-1989, deathDay=null, birthPlace=Barcelona, Spain)
+2022-01-13 15:21:05.724  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Alvaro, lastName=Morte, birthDay=23-2-1975, deathDay=null, birthPlace=Algeciras, Spain) is going to be added
+2022-01-13 15:21:05.729  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=14), firstName=Alvaro, lastName=Morte, birthDay=23-2-1975, deathDay=null, birthPlace=Algeciras, Spain)
+2022-01-13 15:21:05.730  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Iztiar, lastName=Ituno, birthDay=1975, deathDay=null, birthPlace=Basauri, Spain) is going to be added
+2022-01-13 15:21:05.736  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=15), firstName=Iztiar, lastName=Ituno, birthDay=1975, deathDay=null, birthPlace=Basauri, Spain)
+2022-01-13 15:21:05.736  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Alex, lastName=Pina, birthDay=Unknown, deathDay=null, birthPlace=Unknown) is going to be added
+2022-01-13 15:21:05.743  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=16), firstName=Alex, lastName=Pina, birthDay=Unknown, deathDay=null, birthPlace=Unknown)
+2022-01-13 15:21:05.743  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Jesus, lastName=Colmenar, birthDay=Unknown, deathDay=null, birthPlace=Unknown) is going to be added
+2022-01-13 15:21:05.750  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=17), firstName=Jesus, lastName=Colmenar, birthDay=Unknown, deathDay=null, birthPlace=Unknown)
+2022-01-13 15:21:05.808  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Added 5 people from Show: Money Heist
+2022-01-13 15:21:05.822  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Peter, lastName=Dinklage, birthDay=11-6-1969, deathDay=null, birthPlace=Morristown, New Jersey USA) is going to be added
+2022-01-13 15:21:05.831  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=18), firstName=Peter, lastName=Dinklage, birthDay=11-6-1969, deathDay=null, birthPlace=Morristown, New Jersey USA)
+2022-01-13 15:21:05.831  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Lena, lastName=Hedey, birthDay=3-10-1973, deathDay=null, birthPlace=Hamilton, Bermuda) is going to be added
+2022-01-13 15:21:05.839  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=19), firstName=Lena, lastName=Hedey, birthDay=3-10-1973, deathDay=null, birthPlace=Hamilton, Bermuda)
+2022-01-13 15:21:05.840  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Emilia, lastName=Clarke, birthDay=23-10-1986, deathDay=null, birthPlace=London, UK) is going to be added
+2022-01-13 15:21:05.845  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=20), firstName=Emilia, lastName=Clarke, birthDay=23-10-1986, deathDay=null, birthPlace=London, UK)
+2022-01-13 15:21:05.846  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Kit, lastName=Harrington, birthDay=26-12-1986, deathDay=null, birthPlace=London, UK) is going to be added
+2022-01-13 15:21:05.853  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=21), firstName=Kit, lastName=Harrington, birthDay=26-12-1986, deathDay=null, birthPlace=London, UK)
+2022-01-13 15:21:05.853  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Sophie, lastName=Turner, birthDay=21-2-1996, deathDay=null, birthPlace=Northhampton, UK) is going to be added
+2022-01-13 15:21:05.860  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=22), firstName=Sophie, lastName=Turner, birthDay=21-2-1996, deathDay=null, birthPlace=Northhampton, UK)
+2022-01-13 15:21:05.860  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Maisie, lastName=Williams, birthDay=15-4-1997, deathDay=null, birthPlace=Bristol, UK) is going to be added
+2022-01-13 15:21:05.867  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=23), firstName=Maisie, lastName=Williams, birthDay=15-4-1997, deathDay=null, birthPlace=Bristol, UK)
+2022-01-13 15:21:05.867  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Nicolaj, lastName=Coster-Waldau, birthDay=27-7-1970, deathDay=null, birthPlace=Rudkøbing, Denmark) is going to be added
+2022-01-13 15:21:06.055  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=24), firstName=Nicolaj, lastName=Coster-Waldau, birthDay=27-7-1970, deathDay=null, birthPlace=Rudkøbing, Denmark)
+2022-01-13 15:21:06.056  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Iain, lastName=Glain, birthDay=24-6-1961, deathDay=null, birthPlace=Edinburgh, Scotland, UK) is going to be added
+2022-01-13 15:21:06.065  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=25), firstName=Iain, lastName=Glain, birthDay=24-6-1961, deathDay=null, birthPlace=Edinburgh, Scotland, UK)
+2022-01-13 15:21:06.065  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=John, lastName=Bradley, birthDay=15-9-1988, deathDay=null, birthPlace=England, UK) is going to be added
+2022-01-13 15:21:06.090  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=26), firstName=John, lastName=Bradley, birthDay=15-9-1988, deathDay=null, birthPlace=England, UK)
+2022-01-13 15:21:06.090  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=David, lastName=Beionff, birthDay=29-9-1970, deathDay=null, birthPlace=New York, USA) is going to be added
+2022-01-13 15:21:06.105  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=27), firstName=David, lastName=Beionff, birthDay=29-9-1970, deathDay=null, birthPlace=New York, USA)
+2022-01-13 15:21:06.106  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=George R R, lastName=Martin, birthDay=20-9-1948, deathDay=null, birthPlace=New Jersey, USA) is going to be added
+2022-01-13 15:21:06.124  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=28), firstName=George R R, lastName=Martin, birthDay=20-9-1948, deathDay=null, birthPlace=New Jersey, USA)
+2022-01-13 15:21:06.126  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=D.B., lastName=Weiss, birthDay=23-4-1971, deathDay=null, birthPlace=Chicago, USA) is going to be added
+2022-01-13 15:21:06.143  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=29), firstName=D.B., lastName=Weiss, birthDay=23-4-1971, deathDay=null, birthPlace=Chicago, USA)
+2022-01-13 15:21:06.280  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Added 12 people from Show: Game of Thrones
+2022-01-13 15:21:06.296  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Cillian, lastName=Murphy, birthDay=21-10-1959, deathDay=null, birthPlace=Douglas, Cork, Ireland) is going to be added
+2022-01-13 15:21:06.300  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Cillian Murphy, already exists
+2022-01-13 15:21:06.304  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Paul, lastName=Anderson, birthDay=unknown, deathDay=null, birthPlace=England, UK) is going to be added
+2022-01-13 15:21:06.312  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=30), firstName=Paul, lastName=Anderson, birthDay=unknown, deathDay=null, birthPlace=England, UK)
+2022-01-13 15:21:06.312  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Helen, lastName=McRory, birthDay=17-8-1968, deathDay=null, birthPlace=Paddington, London, England, UK) is going to be added
+2022-01-13 15:21:06.320  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=31), firstName=Helen, lastName=McRory, birthDay=17-8-1968, deathDay=null, birthPlace=Paddington, London, England, UK)
+2022-01-13 15:21:06.320  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Sophie, lastName=Rundle, birthDay=21-4-1988, deathDay=null, birthPlace=Buckinghamshire, England, UK) is going to be added
+2022-01-13 15:21:06.327  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=32), firstName=Sophie, lastName=Rundle, birthDay=21-4-1988, deathDay=null, birthPlace=Buckinghamshire, England, UK)
+2022-01-13 15:21:06.327  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Finn, lastName=Cole, birthDay=9-11-1995, deathDay=null, birthPlace=Kingston, London, England, UK) is going to be added
+2022-01-13 15:21:06.335  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=33), firstName=Finn, lastName=Cole, birthDay=9-11-1995, deathDay=null, birthPlace=Kingston, London, England, UK)
+2022-01-13 15:21:06.373  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Added 5 people from Show: Peaky Blinders
+2022-01-13 15:21:42.597  INFO Christos-PC - [nio-8080-exec-2] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-13 15:21:42.598  INFO Christos-PC - [nio-8080-exec-2] [o.s.w.s.DispatcherServlet          ] : Initializing Servlet 'dispatcherServlet'
+2022-01-13 15:21:42.598 DEBUG Christos-PC - [nio-8080-exec-2] [o.s.w.s.DispatcherServlet          ] : Detected StandardServletMultipartResolver
+2022-01-13 15:21:42.598 DEBUG Christos-PC - [nio-8080-exec-2] [o.s.w.s.DispatcherServlet          ] : Detected AcceptHeaderLocaleResolver
+2022-01-13 15:21:42.598 DEBUG Christos-PC - [nio-8080-exec-2] [o.s.w.s.DispatcherServlet          ] : Detected FixedThemeResolver
+2022-01-13 15:21:42.599 DEBUG Christos-PC - [nio-8080-exec-2] [o.s.w.s.DispatcherServlet          ] : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@bf2aa32
+2022-01-13 15:21:42.600 DEBUG Christos-PC - [nio-8080-exec-2] [o.s.w.s.DispatcherServlet          ] : Detected org.springframework.web.servlet.support.SessionFlashMapManager@586843bc
+2022-01-13 15:21:42.600 DEBUG Christos-PC - [nio-8080-exec-2] [o.s.w.s.DispatcherServlet          ] : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-01-13 15:21:42.600  INFO Christos-PC - [nio-8080-exec-2] [o.s.w.s.DispatcherServlet          ] : Completed initialization in 2 ms
+2022-01-13 15:21:42.622 DEBUG Christos-PC - [nio-8080-exec-2] [o.s.w.s.DispatcherServlet          ] : GET "/movies/search?title=Inception", parameters={masked}
+2022-01-13 15:21:42.635 DEBUG Christos-PC - [nio-8080-exec-2] [.m.m.a.RequestMappingHandlerMapping] : Mapped to com.javaspring.team2.project.smdb.controller.MovieController#getAllContributorsForMovie(String)
+2022-01-13 15:21:42.921 DEBUG Christos-PC - [nio-8080-exec-2] [w.s.m.m.a.HttpEntityMethodProcessor] : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-01-13 15:21:42.941 DEBUG Christos-PC - [nio-8080-exec-2] [w.s.m.m.a.HttpEntityMethodProcessor] : Writing [ApiResponse(transactionId=5613EBEA-7E29-4677-B3EE-794DDBDC2125, createdAt=Thu Jan 13 15:21:42 EET 20 (truncated)...]
+2022-01-13 15:21:43.013 DEBUG Christos-PC - [nio-8080-exec-2] [o.s.w.s.DispatcherServlet          ] : Completed 200 OK
+2022-01-13 15:21:49.547 DEBUG Christos-PC - [nio-8080-exec-3] [o.s.w.s.DispatcherServlet          ] : GET "/titles/search?title=Inception", parameters={masked}
+2022-01-13 15:21:49.548 DEBUG Christos-PC - [nio-8080-exec-3] [.m.m.a.RequestMappingHandlerMapping] : Mapped to com.javaspring.team2.project.smdb.controller.TitleController#getAllContentByContributorByFullName(String)
+2022-01-13 15:21:49.566 DEBUG Christos-PC - [nio-8080-exec-3] [w.s.m.m.a.HttpEntityMethodProcessor] : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-01-13 15:21:49.567 DEBUG Christos-PC - [nio-8080-exec-3] [w.s.m.m.a.HttpEntityMethodProcessor] : Writing [ApiResponse(transactionId=21F884CA-28D0-4DAF-93F4-AE770AFF495F, createdAt=Thu Jan 13 15:21:49 EET 20 (truncated)...]
+2022-01-13 15:21:49.572 DEBUG Christos-PC - [nio-8080-exec-3] [o.s.w.s.DispatcherServlet          ] : Completed 200 OK
+2022-01-13 15:22:04.837 DEBUG Christos-PC - [nio-8080-exec-4] [o.s.w.s.DispatcherServlet          ] : GET "/titles/search?title=Peaky%20Blinders", parameters={masked}
+2022-01-13 15:22:04.838 DEBUG Christos-PC - [nio-8080-exec-4] [.m.m.a.RequestMappingHandlerMapping] : Mapped to com.javaspring.team2.project.smdb.controller.TitleController#getAllContentByContributorByFullName(String)
+2022-01-13 15:22:04.854 DEBUG Christos-PC - [nio-8080-exec-4] [w.s.m.m.a.HttpEntityMethodProcessor] : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-01-13 15:22:04.854 DEBUG Christos-PC - [nio-8080-exec-4] [w.s.m.m.a.HttpEntityMethodProcessor] : Writing [ApiResponse(transactionId=E54221C6-3C39-4D26-B9FC-B319F6DD90AA, createdAt=Thu Jan 13 15:22:04 EET 20 (truncated)...]
+2022-01-13 15:22:04.858 DEBUG Christos-PC - [nio-8080-exec-4] [o.s.w.s.DispatcherServlet          ] : Completed 200 OK
+2022-01-13 15:22:28.364 DEBUG Christos-PC - [nio-8080-exec-5] [o.s.w.s.DispatcherServlet          ] : GET "/movies/search?title=Peaky%20Blinders", parameters={masked}
+2022-01-13 15:22:28.365 DEBUG Christos-PC - [nio-8080-exec-5] [.m.m.a.RequestMappingHandlerMapping] : Mapped to com.javaspring.team2.project.smdb.controller.MovieController#getAllContributorsForMovie(String)
+2022-01-13 15:22:28.379 DEBUG Christos-PC - [nio-8080-exec-5] [w.s.m.m.a.HttpEntityMethodProcessor] : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-01-13 15:22:28.380 DEBUG Christos-PC - [nio-8080-exec-5] [w.s.m.m.a.HttpEntityMethodProcessor] : Writing [ApiResponse(transactionId=29310D53-4DC2-4E95-8C6C-67C338B43A99, createdAt=Thu Jan 13 15:22:28 EET 20 (truncated)...]
+2022-01-13 15:22:28.382 DEBUG Christos-PC - [nio-8080-exec-5] [o.s.w.s.DispatcherServlet          ] : Completed 200 OK
+2022-01-13 15:22:41.973 DEBUG Christos-PC - [nio-8080-exec-6] [o.s.w.s.DispatcherServlet          ] : GET "/tvShows?title=Peaky%20Blinders", parameters={masked}
+2022-01-13 15:22:41.974 DEBUG Christos-PC - [nio-8080-exec-6] [.m.m.a.RequestMappingHandlerMapping] : Mapped to com.javaspring.team2.project.smdb.controller.TvShowController#findAll()
+2022-01-13 15:22:42.012 DEBUG Christos-PC - [nio-8080-exec-6] [w.s.m.m.a.HttpEntityMethodProcessor] : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-01-13 15:22:42.022 DEBUG Christos-PC - [nio-8080-exec-6] [w.s.m.m.a.HttpEntityMethodProcessor] : Writing [ApiResponse(transactionId=0022E372-D98D-4CD8-9FAB-1834452FAD78, createdAt=Thu Jan 13 15:22:42 EET 20 (truncated)...]
+2022-01-13 15:22:42.045 DEBUG Christos-PC - [nio-8080-exec-6] [o.s.w.s.DispatcherServlet          ] : Completed 200 OK
+2022-01-13 15:22:48.834 DEBUG Christos-PC - [nio-8080-exec-7] [o.s.w.s.DispatcherServlet          ] : GET "/tvShows?title=Inception", parameters={masked}
+2022-01-13 15:22:48.835 DEBUG Christos-PC - [nio-8080-exec-7] [.m.m.a.RequestMappingHandlerMapping] : Mapped to com.javaspring.team2.project.smdb.controller.TvShowController#findAll()
+2022-01-13 15:22:48.858 DEBUG Christos-PC - [nio-8080-exec-7] [w.s.m.m.a.HttpEntityMethodProcessor] : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-01-13 15:22:48.858 DEBUG Christos-PC - [nio-8080-exec-7] [w.s.m.m.a.HttpEntityMethodProcessor] : Writing [ApiResponse(transactionId=DE8A8515-280D-4403-B543-C82597D967F7, createdAt=Thu Jan 13 15:22:48 EET 20 (truncated)...]
+2022-01-13 15:22:48.861 DEBUG Christos-PC - [nio-8080-exec-7] [o.s.w.s.DispatcherServlet          ] : Completed 200 OK
+2022-01-13 15:22:56.311 DEBUG Christos-PC - [nio-8080-exec-8] [o.s.w.s.DispatcherServlet          ] : GET "/tvShows?title=Inception", parameters={masked}
+2022-01-13 15:22:56.312 DEBUG Christos-PC - [nio-8080-exec-8] [.m.m.a.RequestMappingHandlerMapping] : Mapped to com.javaspring.team2.project.smdb.controller.TvShowController#findAll()
+2022-01-13 15:22:56.349 DEBUG Christos-PC - [nio-8080-exec-8] [w.s.m.m.a.HttpEntityMethodProcessor] : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-01-13 15:22:56.351 DEBUG Christos-PC - [nio-8080-exec-8] [w.s.m.m.a.HttpEntityMethodProcessor] : Writing [ApiResponse(transactionId=449980B1-ACA5-4D8A-93FB-5F4B21AC25CA, createdAt=Thu Jan 13 15:22:56 EET 20 (truncated)...]
+2022-01-13 15:22:56.354 DEBUG Christos-PC - [nio-8080-exec-8] [o.s.w.s.DispatcherServlet          ] : Completed 200 OK
+2022-01-13 15:23:28.178 DEBUG Christos-PC - [nio-8080-exec-9] [o.s.w.s.DispatcherServlet          ] : GET "/tvShows?title=InceptionTheSequel", parameters={masked}
+2022-01-13 15:23:28.179 DEBUG Christos-PC - [nio-8080-exec-9] [.m.m.a.RequestMappingHandlerMapping] : Mapped to com.javaspring.team2.project.smdb.controller.TvShowController#findAll()
+2022-01-13 15:23:28.199 DEBUG Christos-PC - [nio-8080-exec-9] [w.s.m.m.a.HttpEntityMethodProcessor] : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-01-13 15:23:28.199 DEBUG Christos-PC - [nio-8080-exec-9] [w.s.m.m.a.HttpEntityMethodProcessor] : Writing [ApiResponse(transactionId=FB5A5BEA-983A-4BFF-9C6C-A3DCCC13725B, createdAt=Thu Jan 13 15:23:28 EET 20 (truncated)...]
+2022-01-13 15:23:28.202 DEBUG Christos-PC - [nio-8080-exec-9] [o.s.w.s.DispatcherServlet          ] : Completed 200 OK
+2022-01-13 15:23:56.427 DEBUG Christos-PC - [io-8080-exec-10] [o.s.w.s.DispatcherServlet          ] : GET "/tvShows?title=", parameters={masked}
+2022-01-13 15:23:56.427 DEBUG Christos-PC - [io-8080-exec-10] [.m.m.a.RequestMappingHandlerMapping] : Mapped to com.javaspring.team2.project.smdb.controller.TvShowController#findAll()
+2022-01-13 15:23:56.447 DEBUG Christos-PC - [io-8080-exec-10] [w.s.m.m.a.HttpEntityMethodProcessor] : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-01-13 15:23:56.447 DEBUG Christos-PC - [io-8080-exec-10] [w.s.m.m.a.HttpEntityMethodProcessor] : Writing [ApiResponse(transactionId=FF6CB618-6B40-4334-B73A-C97AE4548E4A, createdAt=Thu Jan 13 15:23:56 EET 20 (truncated)...]
+2022-01-13 15:23:56.449 DEBUG Christos-PC - [io-8080-exec-10] [o.s.w.s.DispatcherServlet          ] : Completed 200 OK
+2022-01-13 15:24:46.978 DEBUG Christos-PC - [nio-8080-exec-1] [o.s.w.s.DispatcherServlet          ] : GET "/tvShows/search?title=Inception", parameters={masked}
+2022-01-13 15:24:46.979 DEBUG Christos-PC - [nio-8080-exec-1] [.m.m.a.RequestMappingHandlerMapping] : Mapped to com.javaspring.team2.project.smdb.controller.TvShowController#getAllContributorsForTvShow(String)
+2022-01-13 15:24:46.994 DEBUG Christos-PC - [nio-8080-exec-1] [w.s.m.m.a.HttpEntityMethodProcessor] : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-01-13 15:24:46.995 DEBUG Christos-PC - [nio-8080-exec-1] [w.s.m.m.a.HttpEntityMethodProcessor] : Writing [ApiResponse(transactionId=7F3CFFF4-1D2A-4400-8190-6DCF604BDE6B, createdAt=Thu Jan 13 15:24:46 EET 20 (truncated)...]
+2022-01-13 15:24:46.996 DEBUG Christos-PC - [nio-8080-exec-1] [o.s.w.s.DispatcherServlet          ] : Completed 200 OK
+2022-01-13 15:24:54.114 DEBUG Christos-PC - [nio-8080-exec-2] [o.s.w.s.DispatcherServlet          ] : GET "/tvShows/search?title=Peaky%20Blinders", parameters={masked}
+2022-01-13 15:24:54.115 DEBUG Christos-PC - [nio-8080-exec-2] [.m.m.a.RequestMappingHandlerMapping] : Mapped to com.javaspring.team2.project.smdb.controller.TvShowController#getAllContributorsForTvShow(String)
+2022-01-13 15:24:54.128 DEBUG Christos-PC - [nio-8080-exec-2] [w.s.m.m.a.HttpEntityMethodProcessor] : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-01-13 15:24:54.128 DEBUG Christos-PC - [nio-8080-exec-2] [w.s.m.m.a.HttpEntityMethodProcessor] : Writing [ApiResponse(transactionId=1CB956D5-95F7-4B0B-91E2-2BC1D960FAA3, createdAt=Thu Jan 13 15:24:54 EET 20 (truncated)...]
+2022-01-13 15:24:54.131 DEBUG Christos-PC - [nio-8080-exec-2] [o.s.w.s.DispatcherServlet          ] : Completed 200 OK
+2022-01-13 15:29:36.785  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-13 15:29:36.796  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-13 15:29:36.877  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7f29984] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-13 15:29:49.936  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-13 15:29:50.040  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 11796 (C:\Users\chris\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-13 15:29:50.050  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: report-checker,movie-content-loader,tvShow-content-loader
+2022-01-13 15:29:53.950  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-13 15:29:53.979  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-13 15:29:53.981  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-13 15:29:53.982  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-13 15:29:54.291  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-13 15:29:54.292  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 4138 ms
+2022-01-13 15:29:55.243  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-13 15:29:55.764  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-13 15:29:55.965  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-13 15:29:56.324 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-13 15:29:56.525  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-13 15:29:56.623 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 50 mappings in 'requestMappingHandlerMapping'
+2022-01-13 15:29:56.723 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-13 15:29:56.755 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-13 15:29:56.965  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-13 15:29:57.176 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-13 15:29:57.233  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-13 15:29:57.359  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-13 15:29:57.407  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-13 15:29:57.446  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-13 15:29:57.453  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-13 15:29:57.481  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-13 15:29:59.306  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@29f1799c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-13 15:29:59.323  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@60d8b417] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-13 15:29:59.423  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-13 15:30:00.801  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 12.176 seconds (JVM running for 17.185)
+2022-01-13 15:30:00.823  INFO Christos-PC - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-13 15:30:00.875 ERROR Christos-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: Unexpected token COMMA(,) at position 6218.
+	at org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at com.javaspring.team2.project.smdb.bootstrap.MovieCreatorRunnerFromFile.run(MovieCreatorRunnerFromFile.java:36)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767)
+	... 5 more
+2022-01-13 15:30:01.405  INFO Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-13 15:30:01.405  INFO Christos-PC - [           main] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-13 15:30:01.408  INFO Christos-PC - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6143b2b1] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-13 15:31:22.218  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-13 15:31:22.313  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 12128 (C:\Users\chris\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-13 15:31:22.325  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: report-checker,movie-content-loader,tvShow-content-loader
+2022-01-13 15:31:25.616  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-13 15:31:25.634  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-13 15:31:25.635  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-13 15:31:25.636  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-13 15:31:25.885  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-13 15:31:25.885  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3458 ms
+2022-01-13 15:31:26.405  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-13 15:31:26.687  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-13 15:31:26.831  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-13 15:31:27.105 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-13 15:31:27.193  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-13 15:31:27.376 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 50 mappings in 'requestMappingHandlerMapping'
+2022-01-13 15:31:27.472 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-13 15:31:27.500 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-13 15:31:27.611  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-13 15:31:27.916 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-13 15:31:27.955  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-13 15:31:28.071  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-13 15:31:28.073  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-13 15:31:28.081  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-13 15:31:28.110  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-13 15:31:28.114  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-13 15:31:29.702  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@44bef2f9] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-13 15:31:29.720  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@76091325] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-13 15:31:29.839  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-13 15:31:31.052  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 9.917 seconds (JVM running for 14.533)
+2022-01-13 15:31:31.070  INFO Christos-PC - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-13 15:31:31.119 ERROR Christos-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: Unexpected token COMMA(,) at position 6218.
+	at org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at com.javaspring.team2.project.smdb.bootstrap.MovieCreatorRunnerFromFile.run(MovieCreatorRunnerFromFile.java:36)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767)
+	... 5 more
+2022-01-13 15:31:31.779  INFO Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-13 15:31:31.779  INFO Christos-PC - [           main] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-13 15:31:31.781  INFO Christos-PC - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@27fc0217] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-13 15:31:54.286  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-13 15:31:54.444  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 21616 (C:\Users\chris\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-13 15:31:54.472  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: report-checker,movie-content-loader,tvShow-content-loader
+2022-01-13 15:32:00.162  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-13 15:32:00.234  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-13 15:32:00.236  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-13 15:32:00.238  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-13 15:32:00.576  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-13 15:32:00.577  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 5927 ms
+2022-01-13 15:32:01.292  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-13 15:32:01.623  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-13 15:32:01.806  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-13 15:32:02.149 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-13 15:32:02.288  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-13 15:32:02.361 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 50 mappings in 'requestMappingHandlerMapping'
+2022-01-13 15:32:02.486 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-13 15:32:02.516 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-13 15:32:02.720  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-13 15:32:02.999 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-13 15:32:03.050  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-13 15:32:03.182  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-13 15:32:03.244  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-13 15:32:03.247  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-13 15:32:03.251  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-13 15:32:03.287  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-13 15:32:05.178  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@aa6541] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-13 15:32:05.196  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2561df16] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-13 15:32:05.310  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-13 15:32:06.766  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 14.014 seconds (JVM running for 20.24)
+2022-01-13 15:32:06.787  INFO Christos-PC - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-13 15:32:06.841 ERROR Christos-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: Unexpected token COMMA(,) at position 6218.
+	at org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at com.javaspring.team2.project.smdb.bootstrap.MovieCreatorRunnerFromFile.run(MovieCreatorRunnerFromFile.java:36)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767)
+	... 5 more
+2022-01-13 15:32:07.422  INFO Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-13 15:32:07.423  INFO Christos-PC - [           main] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-13 15:32:07.425  INFO Christos-PC - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5cfa2ac5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-13 15:35:32.733  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-13 15:35:32.844  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 23440 (C:\Users\chris\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-13 15:35:32.856  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: report-checker,movie-content-loader,tvShow-content-loader
+2022-01-13 15:35:36.468  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-13 15:35:36.486  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-13 15:35:36.488  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-13 15:35:36.489  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-13 15:35:36.768  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-13 15:35:36.769  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3804 ms
+2022-01-13 15:35:37.294  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-13 15:35:37.581  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-13 15:35:37.738  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-13 15:35:38.081 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-13 15:35:38.165  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-13 15:35:38.325 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 50 mappings in 'requestMappingHandlerMapping'
+2022-01-13 15:35:38.426 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-13 15:35:38.451 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-13 15:35:38.569  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-13 15:35:38.871 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-13 15:35:38.919  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-13 15:35:39.060  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-13 15:35:39.072  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-13 15:35:39.082  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-13 15:35:39.113  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-13 15:35:39.118  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-13 15:35:40.839  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@ae57f41] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-13 15:35:40.853  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4530e1cf] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-13 15:35:40.948  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-13 15:35:42.341  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 10.775 seconds (JVM running for 15.917)
+2022-01-13 15:35:42.384  INFO Christos-PC - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-13 15:35:42.488 ERROR Christos-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: Unexpected token COMMA(,) at position 6218.
+	at org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at com.javaspring.team2.project.smdb.bootstrap.MovieCreatorRunnerFromFile.run(MovieCreatorRunnerFromFile.java:36)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767)
+	... 5 more
+2022-01-13 15:35:43.047  INFO Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-13 15:35:43.048  INFO Christos-PC - [           main] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-13 15:35:43.050  INFO Christos-PC - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5cfa2ac5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-13 15:36:44.897  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-13 15:36:44.995  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 22556 (C:\Users\chris\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-13 15:36:45.003  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: report-checker,movie-content-loader,tvShow-content-loader
+2022-01-13 15:36:48.221  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-13 15:36:48.268  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-13 15:36:48.269  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-13 15:36:48.270  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-13 15:36:48.506  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-13 15:36:48.507  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3408 ms
+2022-01-13 15:36:49.095  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-13 15:36:49.373  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-13 15:36:49.538  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-13 15:36:49.924 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-13 15:36:50.019  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-13 15:36:50.186 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 50 mappings in 'requestMappingHandlerMapping'
+2022-01-13 15:36:50.280 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-13 15:36:50.303 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-13 15:36:50.361  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-13 15:36:50.700 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-13 15:36:50.754  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-13 15:36:50.843  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-13 15:36:50.853  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-13 15:36:50.896  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-13 15:36:50.912  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-13 15:36:50.964  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-13 15:36:52.620  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5581b5ff] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-13 15:36:52.635  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@654b5238] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-13 15:36:52.740  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-13 15:36:54.359  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 10.583 seconds (JVM running for 15.253)
+2022-01-13 15:36:54.848  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Matthew, lastName=McConaughey, birthDay=4-11-1969, deathDay=null, birthPlace=Uvalde, Texas, USA) is going to be added
+2022-01-13 15:36:54.892  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=1), firstName=Matthew, lastName=McConaughey, birthDay=4-11-1969, deathDay=null, birthPlace=Uvalde, Texas, USA)
+2022-01-13 15:36:54.893  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Ellen, lastName=Burstyn, birthDay=7-12-1932, deathDay=null, birthPlace=Detroit, Michigan, USA) is going to be added
+2022-01-13 15:36:54.901  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=2), firstName=Ellen, lastName=Burstyn, birthDay=7-12-1932, deathDay=null, birthPlace=Detroit, Michigan, USA)
+2022-01-13 15:36:54.901  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Mackenzie, lastName=Foy, birthDay=10-11-2000, deathDay=null, birthPlace=Los Angeles, California, USA) is going to be added
+2022-01-13 15:36:54.908  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=3), firstName=Mackenzie, lastName=Foy, birthDay=10-11-2000, deathDay=null, birthPlace=Los Angeles, California, USA)
+2022-01-13 15:36:54.909  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Christopher, lastName=Nolan, birthDay=30-7-1970, deathDay=null, birthPlace=London, England, UK) is going to be added
+2022-01-13 15:36:54.918  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=4), firstName=Christopher, lastName=Nolan, birthDay=30-7-1970, deathDay=null, birthPlace=London, England, UK)
+2022-01-13 15:36:54.918  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Jonathan, lastName=Nolan, birthDay=6-6-1976, deathDay=null, birthPlace=London, England, UK) is going to be added
+2022-01-13 15:36:54.930  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=5), firstName=Jonathan, lastName=Nolan, birthDay=6-6-1976, deathDay=null, birthPlace=London, England, UK)
+2022-01-13 15:36:55.113  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Added 5 cast from movie: Interstellar
+2022-01-13 15:36:55.135  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Matthew, lastName=McConaughey, birthDay=4-11-1969, deathDay=null, birthPlace=Uvalde, Texas, USA) is going to be added
+2022-01-13 15:36:55.142  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Matthew McConaughey, already exists
+2022-01-13 15:36:55.187  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Added 1 cast from movie: InterstellarTheSequel
+2022-01-13 15:36:55.210  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Leonardo, lastName=Di Caprio, birthDay=11-11-1974, deathDay=null, birthPlace=Hollywood, Los Angeles, California, USA) is going to be added
+2022-01-13 15:36:55.220  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=6), firstName=Leonardo, lastName=Di Caprio, birthDay=11-11-1974, deathDay=null, birthPlace=Hollywood, Los Angeles, California, USA)
+2022-01-13 15:36:55.220  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Joseph, lastName=Gordon-Levitt, birthDay=17-2-1981, deathDay=null, birthPlace=Los Angeles, California, USA) is going to be added
+2022-01-13 15:36:55.230  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=7), firstName=Joseph, lastName=Gordon-Levitt, birthDay=17-2-1981, deathDay=null, birthPlace=Los Angeles, California, USA)
+2022-01-13 15:36:55.230  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Elliot, lastName=Page, birthDay=21-2-1987, deathDay=null, birthPlace=Halifax, Nova Scotia, Canada) is going to be added
+2022-01-13 15:36:55.239  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=8), firstName=Elliot, lastName=Page, birthDay=21-2-1987, deathDay=null, birthPlace=Halifax, Nova Scotia, Canada)
+2022-01-13 15:36:55.239  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Tom, lastName=Hardy, birthDay=15-9-1977, deathDay=null, birthPlace=Hammersmith, London, England, UK) is going to be added
+2022-01-13 15:36:55.250  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=9), firstName=Tom, lastName=Hardy, birthDay=15-9-1977, deathDay=null, birthPlace=Hammersmith, London, England, UK)
+2022-01-13 15:36:55.251  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Ken, lastName=Watanabe, birthDay=21-10-1959, deathDay=null, birthPlace=Uonuma, Japan) is going to be added
+2022-01-13 15:36:55.262  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=10), firstName=Ken, lastName=Watanabe, birthDay=21-10-1959, deathDay=null, birthPlace=Uonuma, Japan)
+2022-01-13 15:36:55.262  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Dileep, lastName=Rao, birthDay=29-7-1973, deathDay=null, birthPlace=Los Angeles, California, USA) is going to be added
+2022-01-13 15:36:55.277  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=11), firstName=Dileep, lastName=Rao, birthDay=29-7-1973, deathDay=null, birthPlace=Los Angeles, California, USA)
+2022-01-13 15:36:55.278  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Cillian, lastName=Murphy, birthDay=21-10-1959, deathDay=null, birthPlace=Douglas, Cork, Ireland) is going to be added
+2022-01-13 15:36:55.287  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=12), firstName=Cillian, lastName=Murphy, birthDay=21-10-1959, deathDay=null, birthPlace=Douglas, Cork, Ireland)
+2022-01-13 15:36:55.288  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Christopher, lastName=Nolan, birthDay=30-7-1970, deathDay=null, birthPlace=London, England, UK) is going to be added
+2022-01-13 15:36:55.291  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Person Christopher Nolan, already exists
+2022-01-13 15:36:55.384  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Added 8 cast from movie: Inception
+2022-01-13 15:36:55.389  INFO Christos-PC - [           main] [.t.p.s.b.MovieCreatorRunnerFromFile] : Movie Inception already exists! Skipping!
+2022-01-13 15:36:55.421  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Ursula, lastName=Corbero, birthDay=11-8-1989, deathDay=null, birthPlace=Barcelona, Spain) is going to be added
+2022-01-13 15:36:55.431  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=13), firstName=Ursula, lastName=Corbero, birthDay=11-8-1989, deathDay=null, birthPlace=Barcelona, Spain)
+2022-01-13 15:36:55.431  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Alvaro, lastName=Morte, birthDay=23-2-1975, deathDay=null, birthPlace=Algeciras, Spain) is going to be added
+2022-01-13 15:36:55.441  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=14), firstName=Alvaro, lastName=Morte, birthDay=23-2-1975, deathDay=null, birthPlace=Algeciras, Spain)
+2022-01-13 15:36:55.441  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Iztiar, lastName=Ituno, birthDay=1975, deathDay=null, birthPlace=Basauri, Spain) is going to be added
+2022-01-13 15:36:55.450  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=15), firstName=Iztiar, lastName=Ituno, birthDay=1975, deathDay=null, birthPlace=Basauri, Spain)
+2022-01-13 15:36:55.450  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Alex, lastName=Pina, birthDay=Unknown, deathDay=null, birthPlace=Unknown) is going to be added
+2022-01-13 15:36:55.459  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=16), firstName=Alex, lastName=Pina, birthDay=Unknown, deathDay=null, birthPlace=Unknown)
+2022-01-13 15:36:55.459  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Jesus, lastName=Colmenar, birthDay=Unknown, deathDay=null, birthPlace=Unknown) is going to be added
+2022-01-13 15:36:55.467  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=17), firstName=Jesus, lastName=Colmenar, birthDay=Unknown, deathDay=null, birthPlace=Unknown)
+2022-01-13 15:36:55.537  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Added 5 people from Show: Money Heist
+2022-01-13 15:36:55.564  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Peter, lastName=Dinklage, birthDay=11-6-1969, deathDay=null, birthPlace=Morristown, New Jersey USA) is going to be added
+2022-01-13 15:36:55.579  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=18), firstName=Peter, lastName=Dinklage, birthDay=11-6-1969, deathDay=null, birthPlace=Morristown, New Jersey USA)
+2022-01-13 15:36:55.580  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Lena, lastName=Hedey, birthDay=3-10-1973, deathDay=null, birthPlace=Hamilton, Bermuda) is going to be added
+2022-01-13 15:36:55.591  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=19), firstName=Lena, lastName=Hedey, birthDay=3-10-1973, deathDay=null, birthPlace=Hamilton, Bermuda)
+2022-01-13 15:36:55.592  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Emilia, lastName=Clarke, birthDay=23-10-1986, deathDay=null, birthPlace=London, UK) is going to be added
+2022-01-13 15:36:55.604  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=20), firstName=Emilia, lastName=Clarke, birthDay=23-10-1986, deathDay=null, birthPlace=London, UK)
+2022-01-13 15:36:55.605  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Kit, lastName=Harrington, birthDay=26-12-1986, deathDay=null, birthPlace=London, UK) is going to be added
+2022-01-13 15:36:55.615  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=21), firstName=Kit, lastName=Harrington, birthDay=26-12-1986, deathDay=null, birthPlace=London, UK)
+2022-01-13 15:36:55.616  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Sophie, lastName=Turner, birthDay=21-2-1996, deathDay=null, birthPlace=Northhampton, UK) is going to be added
+2022-01-13 15:36:55.628  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=22), firstName=Sophie, lastName=Turner, birthDay=21-2-1996, deathDay=null, birthPlace=Northhampton, UK)
+2022-01-13 15:36:55.628  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Maisie, lastName=Williams, birthDay=15-4-1997, deathDay=null, birthPlace=Bristol, UK) is going to be added
+2022-01-13 15:36:55.635  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=23), firstName=Maisie, lastName=Williams, birthDay=15-4-1997, deathDay=null, birthPlace=Bristol, UK)
+2022-01-13 15:36:55.635  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Nicolaj, lastName=Coster-Waldau, birthDay=27-7-1970, deathDay=null, birthPlace=Rudkøbing, Denmark) is going to be added
+2022-01-13 15:36:55.644  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=24), firstName=Nicolaj, lastName=Coster-Waldau, birthDay=27-7-1970, deathDay=null, birthPlace=Rudkøbing, Denmark)
+2022-01-13 15:36:55.644  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Iain, lastName=Glain, birthDay=24-6-1961, deathDay=null, birthPlace=Edinburgh, Scotland, UK) is going to be added
+2022-01-13 15:36:55.651  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=25), firstName=Iain, lastName=Glain, birthDay=24-6-1961, deathDay=null, birthPlace=Edinburgh, Scotland, UK)
+2022-01-13 15:36:55.652  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=John, lastName=Bradley, birthDay=15-9-1988, deathDay=null, birthPlace=England, UK) is going to be added
+2022-01-13 15:36:55.659  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=26), firstName=John, lastName=Bradley, birthDay=15-9-1988, deathDay=null, birthPlace=England, UK)
+2022-01-13 15:36:55.659  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=David, lastName=Beionff, birthDay=29-9-1970, deathDay=null, birthPlace=New York, USA) is going to be added
+2022-01-13 15:36:55.665  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=27), firstName=David, lastName=Beionff, birthDay=29-9-1970, deathDay=null, birthPlace=New York, USA)
+2022-01-13 15:36:55.665  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=George R R, lastName=Martin, birthDay=20-9-1948, deathDay=null, birthPlace=New Jersey, USA) is going to be added
+2022-01-13 15:36:55.672  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=28), firstName=George R R, lastName=Martin, birthDay=20-9-1948, deathDay=null, birthPlace=New Jersey, USA)
+2022-01-13 15:36:55.672  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=D.B., lastName=Weiss, birthDay=23-4-1971, deathDay=null, birthPlace=Chicago, USA) is going to be added
+2022-01-13 15:36:55.679  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=29), firstName=D.B., lastName=Weiss, birthDay=23-4-1971, deathDay=null, birthPlace=Chicago, USA)
+2022-01-13 15:36:55.778  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Added 12 people from Show: Game of Thrones
+2022-01-13 15:36:55.792  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Cillian, lastName=Murphy, birthDay=21-10-1959, deathDay=null, birthPlace=Douglas, Cork, Ireland) is going to be added
+2022-01-13 15:36:55.795  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Cillian Murphy, already exists
+2022-01-13 15:36:55.798  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Paul, lastName=Anderson, birthDay=unknown, deathDay=null, birthPlace=England, UK) is going to be added
+2022-01-13 15:36:55.808  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=30), firstName=Paul, lastName=Anderson, birthDay=unknown, deathDay=null, birthPlace=England, UK)
+2022-01-13 15:36:55.808  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Helen, lastName=McRory, birthDay=17-8-1968, deathDay=null, birthPlace=Paddington, London, England, UK) is going to be added
+2022-01-13 15:36:55.816  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=31), firstName=Helen, lastName=McRory, birthDay=17-8-1968, deathDay=null, birthPlace=Paddington, London, England, UK)
+2022-01-13 15:36:55.817  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Sophie, lastName=Rundle, birthDay=21-4-1988, deathDay=null, birthPlace=Buckinghamshire, England, UK) is going to be added
+2022-01-13 15:36:55.827  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=32), firstName=Sophie, lastName=Rundle, birthDay=21-4-1988, deathDay=null, birthPlace=Buckinghamshire, England, UK)
+2022-01-13 15:36:55.827  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Person Person(super=BaseModel(id=null), firstName=Finn, lastName=Cole, birthDay=9-11-1995, deathDay=null, birthPlace=Kingston, London, England, UK) is going to be added
+2022-01-13 15:36:55.836  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Created Person Person(super=BaseModel(id=33), firstName=Finn, lastName=Cole, birthDay=9-11-1995, deathDay=null, birthPlace=Kingston, London, England, UK)
+2022-01-13 15:36:55.883  INFO Christos-PC - [           main] [t.p.s.b.TvShowCreatorRunnerFromFile] : Added 5 people from Show: Peaky Blinders
+2022-01-13 15:37:12.876  INFO Christos-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-13 15:37:12.876  INFO Christos-PC - [ionShutdownHook] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-13 15:37:12.959  INFO Christos-PC - [ionShutdownHook] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@74bb2257] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-13 15:37:24.010  INFO Christos-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 6.2.0.Final
+2022-01-13 15:37:24.099  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Starting SmdbApplication using Java 11.0.13 on Christos-PC with PID 7980 (C:\Users\chris\IdeaProjects\javaspring-project-team2-smdb\javaspring-team2-project-smdb\target\classes started by chris in C:\Users\chris\IdeaProjects\javaspring-project-team2-smdb)
+2022-01-13 15:37:24.109  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : The following profiles are active: report-checker,movie-content-loader,tvShow-content-loader
+2022-01-13 15:37:27.091  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2022-01-13 15:37:27.108  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-13 15:37:27.109  INFO Christos-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2022-01-13 15:37:27.110  INFO Christos-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-13 15:37:27.370  INFO Christos-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2022-01-13 15:37:27.371  INFO Christos-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 3166 ms
+2022-01-13 15:37:27.871  INFO Christos-PC - [           main] [.s.b.a.h.H2ConsoleAutoConfiguration] : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./smdb'
+2022-01-13 15:37:28.168  INFO Christos-PC - [         task-1] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-13 15:37:28.309  INFO Christos-PC - [         task-1] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-13 15:37:28.599 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-13 15:37:28.685  INFO Christos-PC - [         task-1] [o.h.a.c.Version                    ] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-13 15:37:28.802 DEBUG Christos-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 50 mappings in 'requestMappingHandlerMapping'
+2022-01-13 15:37:28.906 DEBUG Christos-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-13 15:37:28.937 DEBUG Christos-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-13 15:37:29.027  INFO Christos-PC - [         task-1] [o.h.d.Dialect                      ] : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-13 15:37:29.290 DEBUG Christos-PC - [           main] [o.s.w.s.v.f.FreeMarkerConfigurer   ] : File system access not preferred: using SpringTemplateLoader
+2022-01-13 15:37:29.328  WARN Christos-PC - [           main] [s.b.a.f.FreeMarkerAutoConfiguration] : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2022-01-13 15:37:29.441  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-13 15:37:29.449  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-13 15:37:29.452  INFO Christos-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2022-01-13 15:37:29.480  WARN Christos-PC - [         task-1] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2022-01-13 15:37:29.496  INFO Christos-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-13 15:37:30.960  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3a03b6aa] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-13 15:37:30.975  INFO Christos-PC - [         task-1] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@51a1d929] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-01-13 15:37:31.071  INFO Christos-PC - [         task-1] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-13 15:37:32.298  INFO Christos-PC - [           main] [c.j.t.p.s.SmdbApplication          ] : Started SmdbApplication in 9.323 seconds (JVM running for 13.825)
+2022-01-13 15:37:32.321  INFO Christos-PC - [           main] [tionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-13 15:37:32.382 ERROR Christos-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.javaspring.team2.project.smdb.SmdbApplication.main(SmdbApplication.java:11)
+Caused by: Unexpected token COMMA(,) at position 6218.
+	at org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at com.javaspring.team2.project.smdb.bootstrap.MovieCreatorRunnerFromFile.run(MovieCreatorRunnerFromFile.java:36)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767)
+	... 5 more
+2022-01-13 15:37:32.881  INFO Christos-PC - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-13 15:37:32.881  INFO Christos-PC - [           main] [maDropperImpl$DelayedDropActionImpl] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-13 15:37:32.883  INFO Christos-PC - [           main] [o.h.o.c.access                     ] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7482309c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.

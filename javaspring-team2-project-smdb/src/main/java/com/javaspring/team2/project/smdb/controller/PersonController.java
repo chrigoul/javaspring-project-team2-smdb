@@ -29,7 +29,7 @@ public class PersonController extends AbstractController<Person>{
     }
 
 
-    @GetMapping(path = "titles/person", params = {"firstname", "lastname"})
+    @GetMapping(path = "search", params = {"firstname", "lastname"})
     public ResponseEntity<ApiResponse<List<Title>>> getAllContentByContributorByFullName(@RequestParam("firstname") String firstName, @RequestParam("lastname") String lastName)
     {
         return ResponseEntity.ok(ApiResponse.<List<Title>>builder()
