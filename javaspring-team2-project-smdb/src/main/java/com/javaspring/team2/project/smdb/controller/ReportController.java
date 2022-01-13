@@ -69,11 +69,11 @@ public class ReportController {
                 .data(reportService.getNumberOfShowsPerGenre())
                 .build());
     }
-    @GetMapping(path= "tvShows/perYearPerGenre")
-    public ResponseEntity<ApiResponse<List<NumberOfShowsPerReleaseYearGenreDto>>> getNumberOfShowsPerYearPerGenre()
+    @GetMapping(path= "tvShows/perYearPerGenre", params = {"year"})
+    public ResponseEntity<ApiResponse<List<NumberOfShowsPerReleaseYearGenreDto>>> getNumberOfShowsPerYearPerGenre(@RequestParam("year") Integer year)
     {
         return ResponseEntity.ok(ApiResponse.<List<NumberOfShowsPerReleaseYearGenreDto>>builder()
-                .data(reportService.getNumberOfShowsPerReleaseYearPerGenre(2022))
+                .data(reportService.getNumberOfShowsPerReleaseYearPerGenre(year))
                 .build());
     }
 
