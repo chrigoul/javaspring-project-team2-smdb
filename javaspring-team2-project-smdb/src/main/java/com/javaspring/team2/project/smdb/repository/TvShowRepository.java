@@ -16,7 +16,7 @@ import java.util.List;
 public interface TvShowRepository extends JpaRepository<TvShow, Long> {
     TvShow findTvShowByPrimaryTitle(String primaryTitle);
 
-    @Query(value = "select distinct p from Person p join p.professions f join f.title t where t.id = (select distinct t.id from TvShow where t.primaryTitle = :primaryTitle)")
+    @Query(value = "select distinct p from Person p join p.professions f join f.title t inner join TvShow tv on tv.id=t.id  where tv.id = (select distinct tv.id from TvShow where tv.primaryTitle = :primaryTitle)")
     List<Person> getPeopleParticipatingInTitle(String primaryTitle);
 
     List<TvShow> getTvShowByNumberOfEpisodesGreaterThan(Integer num);

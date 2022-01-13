@@ -30,6 +30,14 @@ public class MovieController extends AbstractController<Movie>{
         return movieService;
     }
 
+    @GetMapping("/search")
+    public ResponseEntity<ApiResponse<List<Person>>> getAllContributorsForMovie(@RequestParam("title") String title )
+    {
+        return ResponseEntity.ok(ApiResponse.<List<Person>>builder()
+                .data(movieService.getPeopleParticipatingInTitle(title))
+                .build());
+    }
+
 
     @GetMapping(params = {"age"})
     public ResponseEntity<ApiResponse<List<Movie>>> getAllMoviesWithAgeRatingGreaterThan(@RequestParam("age") Integer age )

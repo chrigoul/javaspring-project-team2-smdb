@@ -42,7 +42,7 @@ public class MovieCreatorRunnerFromFile extends AbstractLogComponent implements 
             dummyIterator = movieIterator.next();
 
             //Movie
-            //!!! To do --> Before creating object check if movie exists in database
+            // Before creating object check if movie exists in database
             String title= (String) dummyIterator.get("primaryTitle");
             if(titleService.existsByPrimaryTitle(title)) {
                 logger.info("Movie {} already exists! Skipping!", title);

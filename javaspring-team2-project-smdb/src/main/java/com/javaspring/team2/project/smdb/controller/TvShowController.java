@@ -31,6 +31,14 @@ public class TvShowController extends AbstractController<TvShow>{
         return tvShowService;
     }
 
+    @GetMapping("/search")
+    public ResponseEntity<ApiResponse<List<Person>>> getAllContributorsForTvShow(@RequestParam("title") String title )
+    {
+        return ResponseEntity.ok(ApiResponse.<List<Person>>builder()
+                .data(tvShowService.getPeopleParticipatingInTitle(title))
+                .build());
+    }
+
     @GetMapping(params = {"year"})
     public ResponseEntity<ApiResponse<List<TvShow>>> getAllTvShowsReleasedInYear(@RequestParam("year") Integer year )
     {

@@ -16,7 +16,7 @@ public interface MovieRepository extends JpaRepository<Movie, Long> {
 
     List<Movie> getMovieBySmdbRating(Double smdbRating);
 
-    @Query(value = "select distinct p from Person p join p.professions f join f.title t where t.id = (select distinct t.id from Title where t.primaryTitle = :primaryTitle)")
+    @Query(value = "select distinct p from Person p join p.professions f join f.title t inner join Movie m on m.id=t.id  where m.id = (select distinct m.id from Movie where m.primaryTitle = :primaryTitle)")
     List<Person> getPeopleParticipatingInTitle(String primaryTitle);
 
     List<Movie> getMovieByAgeRatingGreaterThan(Integer age);
