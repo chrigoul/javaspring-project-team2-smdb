@@ -5,10 +5,9 @@ import com.javaspring.team2.project.smdb.domain.Genre;
 import com.javaspring.team2.project.smdb.domain.Title;
 import com.javaspring.team2.project.smdb.transfer.NumberOfShowsPerGenreDto;
 import com.javaspring.team2.project.smdb.transfer.NumberOfShowsPerReleaseYearGenreDto;
-import com.javaspring.team2.project.smdb.transfer.TitlesForAPersonOrganizedByGenresDTO;
+import com.javaspring.team2.project.smdb.transfer.TitlesForAPersonOrganizedByGenresDto;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -35,11 +34,11 @@ public interface ReportRepository extends JpaRepository<Title, Long> {
     List<NumberOfShowsPerGenreDto> getNumberOfShowsPerGenre();
 
     //    6th Report: Number of TvShows per Genre per Release Year
-    @Query(value = "SELECT TD.genre, count(T.id) as number FROM TITLE_GENRES AS TD INNER JOIN TITLES AS T on T.ID = TD.TITLE_ID WHERE RELEASEYEAR=2022 GROUP BY GENRE", nativeQuery = true)
-    List<NumberOfShowsPerReleaseYearGenreDto> getNumberOfShowsPerReleaseYearPerGenre(Integer year);
-//
-    //  @Query(value = "select genre, select distinct t from Title t join t.genres gn join t.professions f join f.person p where p.id = (select distinct p.id from Person p where p.firstName = :firstName and p.lastName = :lastName) as content group by genre", nativeQuery = true)
-/*    @Query(value = "SELECT title.*, p.person_id FROM (select t.id as titleId, t.primaryTitle as primarytitle, t.storyLine as storyline, t.releaseYear as releaseyear t.smdbRatind as smdbrating FROM TITLE_GENRES as TG inner join TITLES as T on T.ID = TG.TITLE_ID) AS titlecontents inner join professions as p on titlecontents.id = p.TITLE_ID WHERE P", nativeQuery = true)
-    List<Title> getAllTitlesForAPersonOrganizedByGenres(Long id, String lastName);*/
+    @Query(value = "SELECT genre, count(TVS.id) as number FROM TITLE_GENRES AS TG INNER JOIN TV_SHOWS AS TVS on TVS.ID = TG.TITLE_ID INNER JOIN TITLES T ON T.ID = TG.TITLE_ID WHERE T.RELEASEYEAR=?1 group by genre", nativeQuery = true)
+    List<NumberOfShowsPerReleaseYearGenreDto> getNumberOfShowsPerReleaseYearPerGenre(Integer year);//
+
+    @Query(value = "SELECT TG.genre, T.primaryTitle as name FROM TITLE_GENRES AS TG INNER JOIN TITLES as T ON T.ID = TG.TITLE_ID INNER JOIN PROFESSIONS AS P ON P.TITLE_ID = TG.TITLE_ID INNER JOIN PEOPLE AS P2 ON P2.ID = P.PERSON_ID WHERE P2.FIRSTNAME=?1 AND P2.LASTNAME=?2 group by TG.genre", nativeQuery = true)
+    List<TitlesForAPersonOrganizedByGenresDto> getAllTitlesForAPersonOrganizedByGenres(String firstName, String lastName);
+
 
 }

@@ -6,7 +6,7 @@ import com.javaspring.team2.project.smdb.domain.Title;
 import com.javaspring.team2.project.smdb.repository.ReportRepository;
 import com.javaspring.team2.project.smdb.transfer.NumberOfShowsPerGenreDto;
 import com.javaspring.team2.project.smdb.transfer.NumberOfShowsPerReleaseYearGenreDto;
-import com.javaspring.team2.project.smdb.transfer.TitlesForAPersonOrganizedByGenresDTO;
+import com.javaspring.team2.project.smdb.transfer.TitlesForAPersonOrganizedByGenresDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -54,10 +54,10 @@ public class ReportServiceImpl implements ReportService {
     }
 
 
-/*    @Override
-    public List<Title> getAllTitlesForAPersonOrganizedByGenres(String firstName, String lastName){
+    @Override
+    public List<TitlesForAPersonOrganizedByGenresDto> getAllTitlesForAPersonOrganizedByGenres(String firstName, String lastName){
         return reportRepository.getAllTitlesForAPersonOrganizedByGenres(firstName, lastName);
-    }*/
+    }
 
 
 }

@@ -2,15 +2,12 @@ package com.javaspring.team2.project.smdb.controller;
 
 import com.javaspring.team2.project.smdb.domain.ContributionRole;
 import com.javaspring.team2.project.smdb.domain.Genre;
-import com.javaspring.team2.project.smdb.domain.Person;
 import com.javaspring.team2.project.smdb.domain.Title;
-import com.javaspring.team2.project.smdb.service.BaseService;
-import com.javaspring.team2.project.smdb.service.PersonService;
 import com.javaspring.team2.project.smdb.service.ReportService;
 import com.javaspring.team2.project.smdb.transfer.ApiResponse;
 import com.javaspring.team2.project.smdb.transfer.NumberOfShowsPerGenreDto;
 import com.javaspring.team2.project.smdb.transfer.NumberOfShowsPerReleaseYearGenreDto;
-import com.javaspring.team2.project.smdb.transfer.TitlesForAPersonOrganizedByGenresDTO;
+import com.javaspring.team2.project.smdb.transfer.TitlesForAPersonOrganizedByGenresDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -84,13 +81,13 @@ public class ReportController {
     }
 
 
-/*    @GetMapping(path = "titles/person/byGenres", params = {"firstname", "lastname"})
-    public ResponseEntity<ApiResponse<List<Title>>> getAllTitlesForAPersonOrganizedByGenres(@RequestParam("firstname") String firstName, @RequestParam("lastname") String lastName)
+    @GetMapping(path = "titles/person/byGenres", params = {"firstname", "lastname"})
+    public ResponseEntity<ApiResponse<List<TitlesForAPersonOrganizedByGenresDto>>> getAllTitlesForAPersonOrganizedByGenres(@RequestParam("firstname") String firstName, @RequestParam("lastname") String lastName)
     {
-        return ResponseEntity.ok(ApiResponse.<List<Title>>builder()
+        return ResponseEntity.ok(ApiResponse.<List<TitlesForAPersonOrganizedByGenresDto>>builder()
                 .data(reportService.getAllTitlesForAPersonOrganizedByGenres(firstName, lastName))
                 .build());
-    }*/
+    }
 
 
 
