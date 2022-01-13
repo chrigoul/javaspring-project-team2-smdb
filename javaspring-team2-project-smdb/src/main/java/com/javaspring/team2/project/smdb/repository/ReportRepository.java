@@ -30,10 +30,11 @@ public interface ReportRepository extends JpaRepository<Title, Long> {
     //    4th Report: All TvShows per a given Genre
     List<Title> getAllByGenresContaining(Genre genre);
 
-    //    5th Report: Number of TvShows per a given Genre
+    //    5th Report: Number of TvShows per  Genre
     @Query(value = "select genre, count(title_id) as number from title_genres group by genre", nativeQuery = true)
     List<NumberOfShowsPerGenreDto> getNumberOfShowsPerGenre();
 
+    //    6th Report: Number of TvShows per Genre per Release Year
     @Query(value = "SELECT TD.genre, count(T.id) as number FROM TITLE_GENRES AS TD INNER JOIN TITLES AS T on T.ID = TD.TITLE_ID WHERE RELEASEYEAR=2022 GROUP BY GENRE", nativeQuery = true)
     List<NumberOfShowsPerReleaseYearGenreDto> getNumberOfShowsPerReleaseYearPerGenre(Integer year);
 //

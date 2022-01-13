@@ -23,7 +23,7 @@ public interface PersonService extends BaseService<Person, Long> {
 
     Person findLazy(Long id);
 
-    List<Person> findPersonByLastName(String lastName);
+    Person findPersonByLastName(String lastName);
 
     Boolean existsByFirstNameAndLastName(String firstName, String lastName);
 

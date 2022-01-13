@@ -26,7 +26,9 @@ import java.util.List;
 public class ReportController {
     final private ReportService reportService;
 
-    @GetMapping(path = "titles/top3")
+
+    //    1st Report: Top 3 Titles containing both Movies and TvShows
+    @GetMapping(path = "report1", headers = "action=getTop3ByOrderBySmdbRatingDesc")
     public ResponseEntity<ApiResponse<List<Title>>> getTop3ByOrderBySmdbRatingDesc()
     {
         return ResponseEntity.ok(ApiResponse.<List<Title>>builder()
@@ -34,7 +36,8 @@ public class ReportController {
                 .build());
     }
 
-    @GetMapping(path = "titles/person", params = {"firstname", "lastname"})
+    //    2nd Report: All Titles a Person has participated in regardless of his/her profession
+    @GetMapping(path = "report2", params = {"firstname", "lastname"}, headers = "action=getAllContentByContributorByFullName")
     public ResponseEntity<ApiResponse<List<Title>>> getAllContentByContributorByFullName(@RequestParam("firstname") String firstName, @RequestParam("lastname") String lastName)
     {
         return ResponseEntity.ok(ApiResponse.<List<Title>>builder()
@@ -42,17 +45,8 @@ public class ReportController {
                 .build());
     }
 
-
-
-    @GetMapping(path = "titles", params = {"genre"})
-    public ResponseEntity<ApiResponse<List<Title>>> getAllByGenresContaining(@RequestParam("genre") Genre genre)
-    {
-        return ResponseEntity.ok(ApiResponse.<List<Title>>builder()
-                .data(reportService.getAllByGenresContaining(genre))
-                .build());
-    }
-
-   @GetMapping(path = "titles/person", params = {"firstname", "lastname", "profession"})
+    //    3rd Report: All Titles a Person has participated per his/her profession
+    @GetMapping(path = "report3", params = {"firstname", "lastname", "profession"}, headers = "action=getAllContentByContributorByFullNameAndContributionRole")
     public ResponseEntity<ApiResponse<List<Title>>> getAllContentByContributorByFullNameAndContributionRole(@RequestParam("firstname") String firstName,
                                                                                                             @RequestParam("lastname") String lastName,
                                                                                                             @RequestParam("profession") String contributionRole)
@@ -62,14 +56,26 @@ public class ReportController {
                 .build());
     }
 
-    @GetMapping(path = "tvShows/noPerGenre")
+    //    4th Report: All TvShows per a given Genre
+    @GetMapping(path = "report4", params = {"genre"}, headers = "action=getAllByGenresContaining")
+    public ResponseEntity<ApiResponse<List<Title>>> getAllByGenresContaining(@RequestParam("genre") Genre genre)
+    {
+        return ResponseEntity.ok(ApiResponse.<List<Title>>builder()
+                .data(reportService.getAllByGenresContaining(genre))
+                .build());
+    }
+
+    //    5th Report: Number of TvShows per Genre
+    @GetMapping(path = "report5", headers = "action=getNumberOfShowsPerGenre" )
     public ResponseEntity<ApiResponse<List<NumberOfShowsPerGenreDto>>> getNumberOfShowsPerGenre()
     {
         return ResponseEntity.ok(ApiResponse.<List<NumberOfShowsPerGenreDto>>builder()
                 .data(reportService.getNumberOfShowsPerGenre())
                 .build());
     }
-    @GetMapping(path= "tvShows/perYearPerGenre")
+
+    //    6th Report: Number of TvShows per Genre per Release Year
+    @GetMapping(path= "report6", headers = "action=getNumberOfShowsPerReleaseYearPerGenre")
     public ResponseEntity<ApiResponse<List<NumberOfShowsPerReleaseYearGenreDto>>> getNumberOfShowsPerYearPerGenre()
     {
         return ResponseEntity.ok(ApiResponse.<List<NumberOfShowsPerReleaseYearGenreDto>>builder()

@@ -31,15 +31,7 @@ public class TvShowController extends AbstractController<TvShow>{
         return tvShowService;
     }
 
-    @GetMapping(path = "person/tvShow", params = {"primaryTitle"})
-    public ResponseEntity<ApiResponse<List<Person>>> getAllContentByContributorByFullName(@RequestParam("primaryTitle") String primaryTitle )
-    {
-        return ResponseEntity.ok(ApiResponse.<List<Person>>builder()
-                .data(tvShowService.getPeopleParticipatingInTitle(primaryTitle))
-                .build());
-    }
-
-    @GetMapping(path= "releaseYear", params = {"year"})
+    @GetMapping(params = {"year"})
     public ResponseEntity<ApiResponse<List<TvShow>>> getAllTvShowsReleasedInYear(@RequestParam("year") Integer year )
     {
         return ResponseEntity.ok(ApiResponse.<List<TvShow>>builder()
@@ -47,22 +39,22 @@ public class TvShowController extends AbstractController<TvShow>{
                 .build());
     }
 
-    @GetMapping(path = "years", params = {"startYear", "endYear"})
-    public ResponseEntity<ApiResponse<List<TvShow>>> getAllTvShowsBetweenTwoYears(@RequestParam("startYear") Integer startYear,
-                                                                                @RequestParam("endYear") Integer endYear){
+    @GetMapping(params = {"rating"})
+    public ResponseEntity<ApiResponse<List<TvShow>>> getAllTvShowsBetweenTwoYears(@RequestParam("rating") Double smdbRating)
+    {
         return ResponseEntity.ok(ApiResponse.<List<TvShow>>builder()
-                .data(tvShowService.getTvShowByReleaseYearGreaterThanEqualAndReleaseYearLessThanEqual(startYear, endYear))
+                .data(tvShowService.getTvShowBySmdbRatingGreaterThanEqual(smdbRating))
                 .build());
     }
 
-    @GetMapping(path= "episodes", params = {"episodes"})
-    public ResponseEntity<ApiResponse<List<TvShow>>> getAllTvShowsWithEpisodesMOreThan(@RequestParam("episodes") Integer episodes )
+    @GetMapping(params = {"episodes"})
+    public ResponseEntity<ApiResponse<List<TvShow>>> getAllTvShowsWithEpisodesMoreThan(@RequestParam("episodes") Integer episodes )
     {
         return ResponseEntity.ok(ApiResponse.<List<TvShow>>builder()
                 .data(tvShowService.getTvShowByNumberOfEpisodesGreaterThan(episodes))
                 .build());
     }
-    @GetMapping(path= "seasons", params = {"seasons"})
+    @GetMapping(params = {"seasons"})
     public ResponseEntity<ApiResponse<List<TvShow>>> getAllTvShowsWithSeasonsMoreThan(@RequestParam("seasons") Integer season )
     {
         return ResponseEntity.ok(ApiResponse.<List<TvShow>>builder()

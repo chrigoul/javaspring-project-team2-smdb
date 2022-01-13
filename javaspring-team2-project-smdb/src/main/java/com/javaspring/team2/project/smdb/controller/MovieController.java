@@ -30,15 +30,8 @@ public class MovieController extends AbstractController<Movie>{
         return movieService;
     }
 
-    @GetMapping(path = "person/movie", params = {"primaryTitle"})
-    public ResponseEntity<ApiResponse<List<Person>>> getAllContentByContributorByFullName(@RequestParam("primaryTitle") String primaryTitle )
-    {
-        return ResponseEntity.ok(ApiResponse.<List<Person>>builder()
-                .data(movieService.getPeopleParticipatingInTitle(primaryTitle))
-                .build());
-    }
 
-    @GetMapping(path = "age", params = {"age"})
+    @GetMapping(params = {"age"})
     public ResponseEntity<ApiResponse<List<Movie>>> getAllMoviesWithAgeRatingGreaterThan(@RequestParam("age") Integer age )
     {
         return ResponseEntity.ok(ApiResponse.<List<Movie>>builder()
@@ -46,7 +39,7 @@ public class MovieController extends AbstractController<Movie>{
                 .build());
     }
 
-    @GetMapping(path= "releaseYear", params = {"year"})
+    @GetMapping(params = {"year"})
     public ResponseEntity<ApiResponse<List<Movie>>> getAllMoviesReleasedInYear(@RequestParam("year") Integer year )
     {
         return ResponseEntity.ok(ApiResponse.<List<Movie>>builder()
@@ -54,16 +47,16 @@ public class MovieController extends AbstractController<Movie>{
                 .build());
     }
 
-    @GetMapping(path = "years", params = {"startYear", "endYear"})
-    public ResponseEntity<ApiResponse<List<Movie>>> getAllMoviesBetweenTwoYears(@RequestParam("startYear") Integer startYear,
-                                                                                @RequestParam("endYear") Integer endYear){
+    @GetMapping(params = {"rating"})
+    public ResponseEntity<ApiResponse<List<Movie>>> getMovieBySmdbRatingGreaterThanEqual(@RequestParam("rating") Double smdbRating )
+    {
         return ResponseEntity.ok(ApiResponse.<List<Movie>>builder()
-                .data(movieService.getMovieByReleaseYearGreaterThanEqualAndReleaseYearLessThanEqual(startYear, endYear))
+                .data(movieService.getMovieBySmdbRatingGreaterThanEqual(smdbRating))
                 .build());
     }
 
     @RequestMapping(headers = "action=export")
-    public void export(HttpServletResponse servletResponse) throws IOException {
+    public void exportMovies(HttpServletResponse servletResponse) throws IOException {
         DateFormat dateFormatter = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
         String currentDateTime = dateFormatter.format(new Date());
 

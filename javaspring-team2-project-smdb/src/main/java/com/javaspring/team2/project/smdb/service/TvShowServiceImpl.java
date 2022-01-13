@@ -60,8 +60,8 @@ public class TvShowServiceImpl extends BaseServiceImpl<TvShow> implements TvShow
     }
 
     @Override
-    public List<TvShow> getTvShowByReleaseYearGreaterThanEqualAndReleaseYearLessThanEqual(Integer startYear, Integer endYear) {
-        return tvShowRepository.getTvShowByReleaseYearGreaterThanEqualAndReleaseYearLessThanEqual(startYear,endYear);
+    public List<TvShow> getTvShowBySmdbRatingGreaterThanEqual(Double smdbRating){
+        return tvShowRepository.getTvShowBySmdbRatingGreaterThanEqual(smdbRating);
     }
 
     @Override

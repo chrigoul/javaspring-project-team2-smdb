@@ -23,5 +23,5 @@ public interface MovieRepository extends JpaRepository<Movie, Long> {
 
     List<Movie> getMovieByReleaseYearEquals(Integer year);
 
-    List<Movie> getMovieByReleaseYearGreaterThanEqualAndReleaseYearLessThanEqual(Integer startYear, Integer endYear);
+    List<Movie> getMovieBySmdbRatingGreaterThanEqual(Double smdbRating);
 }

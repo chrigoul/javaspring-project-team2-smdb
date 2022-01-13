@@ -16,15 +16,10 @@ public interface PersonRepository extends JpaRepository<Person, Long> {
     @Query("select p from Person p join fetch p.professions where p.id = ?1")
     Person findLazy(Long id);
 
-//    @Query(value = "select p from Person p join p.professions f where f.titleContributionRole = :contributionRole")
-//    List<Person> getPersonForaContributionRole(@Param("contributionRole") ContributionRole contributionRole);
-
-//        @Query(value = "select distinct t from Title t join t.professions f join f.person p where
-//        p.id = (select distinct p.id from Person p where p.firstName = :firstName and p.lastName = :lastName)")
-
     Person findPersonByFirstNameAndLastName(String firstName, String lastName);
 
-    List<Person> findPersonByLastName(String lastName);
+    Person findPersonByLastName(String lastName);
+
     @Query("select distinct t from Title t join t.professions f join f.person p where p.id = (select distinct p.id from Person p where p.firstName = :firstName and p.lastName = :lastName)")
     List<Title> getTitlesThatPersonParticipatedIn(String firstName,String lastName);
 

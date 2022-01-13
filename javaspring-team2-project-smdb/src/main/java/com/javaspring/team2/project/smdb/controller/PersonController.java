@@ -37,10 +37,18 @@ public class PersonController extends AbstractController<Person>{
                 .build());
     }
 
-    @GetMapping(params = {"lastname"})
-    public ResponseEntity<ApiResponse<List<Person>>> getAllContentByContributorByLastName(@RequestParam("lastname") String lastName)
+    @GetMapping(params = {"firstname", "lastname"})
+    public ResponseEntity<ApiResponse<Person>> getPersonByFirstNameAndLastName(@RequestParam("firstname") String firstName, @RequestParam("lastname") String lastName)
     {
-        return ResponseEntity.ok(ApiResponse.<List<Person>>builder()
+        return ResponseEntity.ok(ApiResponse.<Person>builder()
+                .data(personService.findPersonByFirstNameAndLastName(firstName, lastName))
+                .build());
+    }
+
+    @GetMapping(params = {"lastname"})
+    public ResponseEntity<ApiResponse<Person>> getPersonByLastName(@RequestParam("lastname") String lastName)
+    {
+        return ResponseEntity.ok(ApiResponse.<Person>builder()
                 .data(personService.findPersonByLastName(lastName))
                 .build());
     }

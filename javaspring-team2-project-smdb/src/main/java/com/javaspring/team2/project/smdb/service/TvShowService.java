@@ -21,7 +21,7 @@ public interface TvShowService extends BaseService<TvShow, Long> {
 
     List<TvShow> getTvShowByReleaseYearEquals(Integer year);
 
-    List<TvShow> getTvShowByReleaseYearGreaterThanEqualAndReleaseYearLessThanEqual(Integer startYear, Integer endYear);
+    List<TvShow> getTvShowBySmdbRatingGreaterThanEqual(Double smdbRating);
 
     void csvTvShowsExport(Writer writer) throws IOException;
 

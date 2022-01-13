@@ -45,8 +45,8 @@ public class MovieServiceImpl extends BaseServiceImpl<Movie> implements MovieSer
     }
 
     @Override
-    public List<Movie> getMovieByReleaseYearGreaterThanEqualAndReleaseYearLessThanEqual(Integer startYear, Integer endYear) {
-        return movieRepository.getMovieByReleaseYearGreaterThanEqualAndReleaseYearLessThanEqual(startYear, endYear);
+    public List<Movie> getMovieBySmdbRatingGreaterThanEqual(Double smdbRating){
+        return movieRepository.getMovieBySmdbRatingGreaterThanEqual(smdbRating);
     }
 
     @Override

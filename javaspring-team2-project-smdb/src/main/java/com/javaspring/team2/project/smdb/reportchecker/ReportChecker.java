@@ -54,7 +54,6 @@ public class ReportChecker extends AbstractLogComponent implements CommandLineRu
 
         logger.info("Titles that {} has participated are: {}", personService.findPersonByFirstNameAndLastName("Cillian", "Murphy").getLastName(), reportService.getPersonParticipationInTitleByFullName("Cillian", "Murphy"));
 
-
 //        logger.info("Titles that {} has participated as an Actor are: {}", personService.findPersonByFirstNameAndLastName("Cillian", "Murphy").getLastName(), titleService.findPersonParticipationInTitleByFullNameByAndProfessions("Cillian", "Murphy", ContributionRole.ACTOR));
 
 //        logger.info("Actors are {}", personService.getPersonForaContributionRole(ContributionRole.ACTOR));

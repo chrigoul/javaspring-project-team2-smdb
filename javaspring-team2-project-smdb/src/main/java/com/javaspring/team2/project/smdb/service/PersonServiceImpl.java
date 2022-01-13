@@ -33,7 +33,7 @@ public class PersonServiceImpl extends BaseServiceImpl<Person> implements Person
         return null;
     }
 
-    public List<Person> findPersonByLastName(String lastName) {
+    public Person findPersonByLastName(String lastName) {
         return personRepository.findPersonByLastName(lastName);
     }
 
