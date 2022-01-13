@@ -12,6 +12,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -55,5 +60,15 @@ public class MovieController extends AbstractController<Movie>{
         return ResponseEntity.ok(ApiResponse.<List<Movie>>builder()
                 .data(movieService.getMovieByReleaseYearGreaterThanEqualAndReleaseYearLessThanEqual(startYear, endYear))
                 .build());
+    }
+
+    @RequestMapping(headers = "action=export")
+    public void export(HttpServletResponse servletResponse) throws IOException {
+        DateFormat dateFormatter = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
+        String currentDateTime = dateFormatter.format(new Date());
+
+        servletResponse.setContentType("text/csv");
+        servletResponse.addHeader("Content-Disposition","attachment; filename=\"movies" + "_" + currentDateTime + ".csv\"");
+        movieService.csvMoviesExport(servletResponse.getWriter());
     }
 }

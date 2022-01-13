@@ -14,6 +14,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -34,6 +39,16 @@ public class TitleController extends AbstractController<Title> {
         return ResponseEntity.ok(ApiResponse.<List<Person>>builder()
                 .data(titleService.getPeopleParticipatingInTitle(primaryTitle))
                 .build());
+    }
+
+    @RequestMapping(headers = "action=export")
+    public void export(HttpServletResponse servletResponse) throws IOException {
+        DateFormat dateFormatter = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
+        String currentDateTime = dateFormatter.format(new Date());
+
+        servletResponse.setContentType("text/csv");
+        servletResponse.addHeader("Content-Disposition","attachment; filename=\"titles" + "_" + currentDateTime + ".csv\"");
+        titleService.csvTitlesExport(servletResponse.getWriter());
     }
 }
 

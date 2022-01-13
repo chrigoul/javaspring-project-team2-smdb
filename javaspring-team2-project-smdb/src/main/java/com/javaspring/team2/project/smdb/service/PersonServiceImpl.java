@@ -1,14 +1,17 @@
 package com.javaspring.team2.project.smdb.service;
 
-import com.javaspring.team2.project.smdb.domain.ContributionRole;
 import com.javaspring.team2.project.smdb.domain.Person;
 import com.javaspring.team2.project.smdb.domain.Title;
 import com.javaspring.team2.project.smdb.repository.PersonRepository;
 import lombok.RequiredArgsConstructor;
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVPrinter;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.Writer;
 import java.util.List;
 
 @Service
@@ -21,7 +24,7 @@ public class PersonServiceImpl extends BaseServiceImpl<Person> implements Person
         return personRepository;
     }
 
-    public Person findPersonByFirstNameAndLastName(String firstName, String lastName){
+    public Person findPersonByFirstNameAndLastName(String firstName, String lastName) {
         return personRepository.findPersonByFirstNameAndLastName(firstName, lastName);
     }
 
@@ -30,7 +33,7 @@ public class PersonServiceImpl extends BaseServiceImpl<Person> implements Person
         return null;
     }
 
-    public List<Person> findPersonByLastName(String lastName){
+    public List<Person> findPersonByLastName(String lastName) {
         return personRepository.findPersonByLastName(lastName);
     }
 
@@ -40,8 +43,8 @@ public class PersonServiceImpl extends BaseServiceImpl<Person> implements Person
     }*/
 
     @Override
-    public Boolean existsByFirstNameAndLastName(String firstName, String lastName){
-       return personRepository.existsByFirstNameAndLastName(firstName,lastName);
+    public Boolean existsByFirstNameAndLastName(String firstName, String lastName) {
+        return personRepository.existsByFirstNameAndLastName(firstName, lastName);
     }
 
 //    @Override
@@ -51,13 +54,18 @@ public class PersonServiceImpl extends BaseServiceImpl<Person> implements Person
 //
 
     @Override
-    public List<Title> getTitlesThatPersonParticipatedIn(String firstName,String lastName){
-        return personRepository.getTitlesThatPersonParticipatedIn(firstName,lastName);
+    public List<Title> getTitlesThatPersonParticipatedIn(String firstName, String lastName) {
+        return personRepository.getTitlesThatPersonParticipatedIn(firstName, lastName);
     }
 
-
-
-
-
-
+    @Override
+    public void csvPeopleExport(Writer writer) throws IOException {
+        List<Person> people = personRepository.findAll();
+        CSVPrinter csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT);
+        csvPrinter.printRecord("person_id", "firstName", "lastName", "birthDay", "deathDay", "birthPlace");
+        for (Person p : people) {
+            csvPrinter.printRecord(p.getId(), p.getFirstName(), p.getLastName(), p.getBirthDay(), p.getDeathDay(), p.getBirthPlace());
+        }
+        logger.info("[People] table exported successfully. Number of rows {}", people.size());
+    }
 }
